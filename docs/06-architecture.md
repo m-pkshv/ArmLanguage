@@ -52,39 +52,47 @@
 /
 ├─ index.html                  # страница приложения (точка входа Vite)
 ├─ legacy/                     # прототип v0.1 — на сайте по адресу /old/
+├─ CLAUDE.md                   # правила работы с кодом: команды, проверка, публикация
 ├─ content/                    # учебные данные (JSON), см. 04-content.md
 │  ├─ course.json              # разделы → уроки
 │  ├─ credits.json             # авторы и лицензии материалов
 │  ├─ alphabet/letters.json
 │  ├─ words/words.json         # общий банк армянских слов
-│  └─ ru/words.json             # русские слова для задания «вставь букву»
+│  ├─ rules/ru-hy.json         # русский звук → армянские буквы (первая — основная)
+│  └─ ru/words.json, ru/phrases.json  # русские слова, фразы и мини-тексты (E08, E09)
 ├─ public/                     # файлы сайта как есть
 │  ├─ img/words/               # картинки-примеры (SVG, Twemoji)
 │  ├─ img/handwriting/         # рукописные буквы: <id>-upper.svg, <id>-lower.svg
-│  └─ audio/letters/           # звуки букв (V1, после записи)
+│  ├─ icons/                   # иконки приложения (scripts/make-icons.mjs)
+│  └─ audio/letters/           # звуки букв (отложено, после записи у носителя)
 ├─ src/
 │  ├─ main.ts
-│  ├─ app/                     # маршрутизация, каркас, экраны
-│  │  ├─ router.ts
-│  │  └─ screens/              # Home, Alphabet, LetterCard, Session, Practice, Profile, Settings
+│  ├─ app/                     # каркас, адреса экранов (routes.ts), состояние (state.svelte.ts), экраны
+│  │  └─ screens/              # Home, Lessons, Lesson, Session, SessionResults, Alphabet, Letter, Practice,
+│  │                           # Pairs, Custom, Profile, Settings, Backup, About, Credits
 │  ├─ core/
 │  │  ├─ content/              # типы контента, загрузка, производные индексы
 │  │  ├─ progress/             # интервальное повторение, модель прогресса, миграции
 │  │  ├─ session/              # типы занятия (сохраняются в прогрессе)
-│  │  ├─ checking/             # нормализация, сравнение, транскрипция, ошибки по буквам
-│  │  └─ text/                 # армянский текст: разбиение на буквы (ու, և), смешанное письмо
+│  │  ├─ checking/             # нормализация и проверка ответов, раскладка клавиатуры
+│  │  ├─ text/                 # армянский текст: буквы (ու, և), чтение по буквам, смешанное письмо (mixed.ts)
+│  │  ├─ course.ts             # уроки: порядок, открытие, изученные буквы, читаемые слова
+│  │  ├─ pairs.ts              # пары-ловушки: группы, путаницы, уверенность
+│  │  ├─ dates.ts, random.ts   # местные даты, предсказуемый генератор случайных чисел
 │  ├─ exercises/
 │  │  ├─ types.ts              # интерфейс типа задания
 │  │  ├─ logic.ts              # реестр логики: id → generate/check
 │  │  ├─ registry.ts           # реестр видов: id → компонент
-│  │  ├─ choice.ts, picture.ts, typeSound.ts, ruWordInsert.ts  # логика заданий
+│  │  ├─ choice.ts (E02, E03, E15), picture.ts (E04), typeSound.ts (E06), ruWordInsert.ts (E08),
+│  │  │  confusable.ts (E10), mixedReading.ts (E09)  # логика заданий
 │  │  └─ views/                # вид заданий (Svelte)
 │  ├─ session/                 # занятия: состав (plan), выбор задания (select), ход (run), «Продолжить» (next)
-│  ├─ ui/                      # общие компоненты: Keyboard, Glyph, OptionGrid, WordCard, ProgressBar
+│  ├─ ui/                      # общие компоненты: клавиатуры, Glyph, LetterCard, OptionGrid, ResultPanel…
 │  ├─ platform/                # хранилище, статистика посещений, PWA (обновление)
 │  ├─ config.ts                # адреса внешних сервисов (форма обратной связи, GoatCounter)
 │  └─ i18n/ru.json             # все тексты интерфейса
-├─ scripts/pull-content.ts     # Google-таблица → content/*.json (когда появится таблица)
+├─ scripts/make-icons.mjs      # иконки приложения из рукописной Ա
+│                              # (скрипт Google-таблица → content/*.json — отложен вместе с проверкой носителем)
 ├─ tests/
 ├─ docs/
 └─ .github/workflows/deploy.yml
