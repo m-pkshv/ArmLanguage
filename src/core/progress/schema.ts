@@ -18,6 +18,8 @@ export function createEmptyProgress(now: Date): ProgressData {
     confusions: {},
     daily: {},
     settings: { ...DEFAULT_SETTINGS },
+    session: null,
+    finalTest: null,
     meta: { lastBackupAt: null },
   };
 }
@@ -33,8 +35,10 @@ export class ProgressFormatError extends Error {
 type Migration = (data: Record<string, unknown>) => Record<string, unknown>;
 
 // Миграции: ключ — версия, ИЗ которой переводим в следующую.
-// Пример для будущего: 1: (d) => ({ ...d, schemaVersion: 2, newField: … })
-const MIGRATIONS: Record<number, Migration> = {};
+const MIGRATIONS: Record<number, Migration> = {
+  // v2: незаконченное занятие и итоговый тест (этап 3)
+  1: (d) => ({ ...d, schemaVersion: 2, session: null, finalTest: null }),
+};
 
 const isObject = (v: unknown): v is Record<string, unknown> =>
   typeof v === "object" && v !== null && !Array.isArray(v);
@@ -84,6 +88,12 @@ export function migrate(raw: unknown, now: Date): ProgressData {
     confusions: record(data.confusions),
     daily: record(data.daily),
     settings: normalizeSettings(data.settings),
+    // Незаконченное занятие не проверяем подробно: если оно повреждено, его безопаснее сбросить, чем восстанавливать.
+    session: isObject(data.session) && Array.isArray(data.session.steps) ? (data.session as unknown as ProgressData["session"]) : null,
+    finalTest:
+      isObject(data.finalTest) && typeof data.finalTest.bestScore === "number"
+        ? { bestScore: data.finalTest.bestScore, passedAt: typeof data.finalTest.passedAt === "string" ? data.finalTest.passedAt : null }
+        : null,
     meta: { lastBackupAt: typeof meta.lastBackupAt === "string" ? meta.lastBackupAt : null },
   };
 }

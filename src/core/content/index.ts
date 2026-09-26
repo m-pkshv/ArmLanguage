@@ -1,15 +1,17 @@
 // Учебный контент приложения: данные из папки content/ (см. docs/04-content.md).
 import lettersJson from "../../../content/alphabet/letters.json";
 import courseJson from "../../../content/course.json";
+import ruHyJson from "../../../content/rules/ru-hy.json";
 import ruWordsJson from "../../../content/ru/words.json";
 import wordsJson from "../../../content/words/words.json";
-import type { Content, Course, Letter, RuWord, Word } from "./types";
+import type { Content, Course, Letter, RuHyRules, RuWord, Word } from "./types";
 
 export const content: Content = {
   letters: lettersJson as Letter[],
   words: wordsJson as Word[],
   ruWords: ruWordsJson as RuWord[],
   course: courseJson as Course,
+  ruHy: ruHyJson as RuHyRules,
 };
 
 export const LETTERS = content.letters;

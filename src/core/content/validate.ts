@@ -1,3 +1,4 @@
+import { soundLabel } from "../checking/answer";
 import { indexLetters, letterwise, lettersOf, splitLetters } from "../text/armenian";
 import type { Content, ImageRef } from "./types";
 
@@ -71,6 +72,12 @@ export function validateContent(c: Content, opts: ValidateOptions): ValidationRe
       }
     }
     if (opts.release && !l.reviewed) errors.push(`${at}: не проверена носителем`);
+  }
+
+  // подписи звуков в вариантах ответа должны различаться, иначе задание «буква → звук» неоднозначно
+  dupes(c.letters.map(soundLabel), "Подписи звуков");
+  for (const [ru, ids] of Object.entries(c.ruHy)) {
+    for (const id of ids) if (!letterIds.has(id)) errors.push(`Соответствие звуков: «${ru}» → неизвестная буква «${id}»`);
   }
 
   // --- слова ---

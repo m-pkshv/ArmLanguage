@@ -13,7 +13,7 @@ function memory(): KeyValueStorage & { map: Map<string, string> } {
 
 describe("migrate", () => {
   it("fills missing fields with defaults", () => {
-    const data = migrate({ schemaVersion: 1, settings: { theme: "dark" } }, NOW);
+    const data = migrate({ schemaVersion: 2, settings: { theme: "dark" } }, NOW);
     expect(data.settings).toEqual({ ...DEFAULT_SETTINGS, theme: "dark" });
     expect(data.items).toEqual({});
     expect(data.meta.lastBackupAt).toBeNull();
@@ -21,19 +21,27 @@ describe("migrate", () => {
   });
 
   it("replaces invalid setting values with defaults", () => {
-    const data = migrate({ schemaVersion: 1, settings: { theme: "purple", autoAdvance: "yes" } }, NOW);
+    const data = migrate({ schemaVersion: 2, settings: { theme: "purple", autoAdvance: "yes" } }, NOW);
     expect(data.settings.theme).toBe("system");
     expect(data.settings.autoAdvance).toBe(true);
   });
 
   it("keeps existing progress", () => {
     const items = { "letter:tho#recall": { box: 3, due: "2026-10-02", ok: 9, bad: 2, last: "2026-09-25" } };
-    expect(migrate({ schemaVersion: 1, items }, NOW).items).toEqual(items);
+    expect(migrate({ schemaVersion: 2, items }, NOW).items).toEqual(items);
   });
 
   it("rejects non-progress data", () => {
     expect(() => migrate({ hello: 1 }, NOW)).toThrow(ProgressFormatError);
     expect(() => migrate(null, NOW)).toThrow(ProgressFormatError);
+  });
+
+  it("migrates v1 data to the current version", () => {
+    const data = migrate({ schemaVersion: 1, lessons: { "alphabet-1": { completedAt: "2026-09-25" } } }, NOW);
+    expect(data.schemaVersion).toBe(SCHEMA_VERSION);
+    expect(data.session).toBeNull();
+    expect(data.finalTest).toBeNull();
+    expect(data.lessons["alphabet-1"]).toEqual({ completedAt: "2026-09-25" });
   });
 
   it("rejects data from a newer app version", () => {

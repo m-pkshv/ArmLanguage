@@ -10,6 +10,8 @@ export interface LetterSound extends ReadingRule {
   ru: string; // описание звука для человека
   accept: string[]; // тоже полностью верно (для задания на отдельную букву)
   initial?: ReadingRule; // чтение в начале слова (Ե → «йе», Ո → «во», և → «йев»)
+  /** Подпись в вариантах ответа, если чтение совпадает с другой буквой (Հ «h — лёгкое х» против Խ «х»). */
+  choiceLabel?: string;
 }
 
 export interface ImageRef {
@@ -69,9 +71,13 @@ export interface Course {
   sections: Section[];
 }
 
+/** Русский звук → армянские буквы с этим звуком; первая — основная (docs/04-content.md). */
+export type RuHyRules = Record<string, string[]>;
+
 export interface Content {
   letters: Letter[];
   words: Word[];
   ruWords: RuWord[];
   course: Course;
+  ruHy: RuHyRules;
 }
