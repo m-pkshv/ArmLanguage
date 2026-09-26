@@ -24,6 +24,10 @@
       <span class="tt">{t("practice.review")}</span>
       <span class="sub">{due ? t("practice.reviewDue", { n: due }) : t("practice.reviewNone")}</span>
     </button>
+    <a class="tile" href="#/practice/pairs">
+      <span class="tt">{t("practice.pairs")}</span>
+      <span class="sub">{t("practice.pairsSub")}</span>
+    </a>
     <a class="tile" href="#/practice/custom">
       <span class="tt">{t("practice.custom")}</span>
       <span class="sub">{t("practice.customSub")}</span>

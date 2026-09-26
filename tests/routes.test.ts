@@ -19,7 +19,7 @@ describe("parseHash", () => {
   });
 
   it("round-trips through hrefOf", () => {
-    for (const hash of ["#/", "#/alphabet", "#/alphabet/tho", "#/practice", "#/profile", "#/backup", "#/about", "#/credits", "#/lessons", "#/lesson/alphabet-2", "#/practice/custom", "#/session"]) {
+    for (const hash of ["#/", "#/alphabet", "#/alphabet/tho", "#/practice", "#/profile", "#/backup", "#/about", "#/credits", "#/lessons", "#/lesson/alphabet-2", "#/practice/custom", "#/practice/pairs", "#/session"]) {
       expect(hrefOf(parseHash(hash))).toBe(hash);
     }
   });

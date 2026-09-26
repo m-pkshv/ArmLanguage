@@ -53,6 +53,13 @@ export function planLesson(c: Content, p: ProgressData, lessonIndex: number, see
 
   const due = dueLetters(p, today, previous).slice(0, 3);
   const consolidation = spread(rng, letters, 7);
+  // Вторая буква пары-ловушки пришла в этом уроке — сразу задание на различение (docs/02-features.md, 2.8)
+  const known = new Set([...previous, ...letters]);
+  for (const id of letters) {
+    const letter = c.letters.find((l) => l.id === id)!;
+    const partners = letter.confusable.sound.filter((pid) => previous.includes(pid) || (known.has(pid) && letters.indexOf(pid) < letters.indexOf(id)));
+    if (partners.length) consolidation.push({ kind: "exercise", letter: id, types: ["confusable-pair"], pair: partners });
+  }
   for (const d of due) consolidation.splice(rng.int(consolidation.length + 1), 0, ex(d));
   steps.push(...consolidation);
 
@@ -91,6 +98,18 @@ export function planLetter(c: Content, letterId: string, known: string[], seed: 
   const steps = [...Array(5)].map(() => ex(letterId));
   steps.push(...spread(rng, partners.length ? partners : [letterId], 3));
   return newSession("letter", spreadSteps(rng, steps), seed, today, { letterId });
+}
+
+/** Тренажёр пар-ловушек: 10 заданий на выбранные пары (docs/02-features.md, 2.8). */
+export function planPairs(groups: { letters: string[] }[], seed: number, today: Day): SavedSession {
+  const rng = createRng(seed);
+  const steps: Step[] = [];
+  for (let i = 0; i < 10; i++) {
+    const g = groups[i % groups.length]!;
+    const letter = g.letters[rng.int(g.letters.length)]!;
+    steps.push({ kind: "exercise", letter, types: ["confusable-pair"], pair: g.letters.filter((id) => id !== letter) });
+  }
+  return newSession("pairs", spreadSteps(rng, steps), seed, today);
 }
 
 /** Итоговый тест: 40 заданий по всем буквам, без повторов после ошибок (docs/02-features.md, 2.5). */

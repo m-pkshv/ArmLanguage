@@ -7,9 +7,10 @@ export type ExerciseId =
   | "picture-to-letter" // E04
   | "letter-type-sound" // E06
   | "ru-word-insert" // E08
-  | "case-match"; // E15
+  | "case-match" // E15
+  | "confusable-pair"; // E10
 
-export type SessionKind = "lesson" | "review" | "practice" | "final" | "letter";
+export type SessionKind = "lesson" | "review" | "practice" | "final" | "letter" | "pairs";
 
 export type Step =
   | { kind: "intro"; letter: string }
@@ -20,6 +21,8 @@ export type Step =
       types?: ExerciseId[];
       /** Повтор задания после ошибки. */
       retry?: boolean;
+      /** Тренажёр пар-ловушек: с какими буквами сравнивать (иначе — любая знакомая «пара»). */
+      pair?: string[];
     };
 
 export interface SessionResult {

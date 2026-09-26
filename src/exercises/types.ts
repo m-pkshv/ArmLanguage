@@ -20,6 +20,8 @@ export interface ExerciseContext {
   level: number;
   /** Упрощённая экранная клавиатура (первые уроки). */
   simpleKeyboard: boolean;
+  /** Тренажёр пар-ловушек: с какими буквами сравнивать. */
+  pair?: string[];
 }
 
 export interface CheckContext {

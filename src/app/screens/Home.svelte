@@ -8,6 +8,7 @@
   import { isFirstRun, nextAction } from "../../session/next";
   import { startFinalTest, startLesson, startReview } from "../../session/start";
   import { app, today } from "../state.svelte";
+  import ConfusionHint from "./ConfusionHint.svelte";
   import InstallHint from "./InstallHint.svelte";
 
   // Главный экран «Учить» (docs/09-navigation.md, 9.3–9.4).
@@ -99,6 +100,8 @@
     <p class="muted small">{t("home.lettersLearned", { n: learned })} · {t("home.canRead", { n: readable })}</p>
     <button class="primary" onclick={go}>{label}</button>
   </Card>
+
+  <ConfusionHint />
 
   {#if due.length}
     <Card title={t("home.dueTitle", { n: due.length })}>

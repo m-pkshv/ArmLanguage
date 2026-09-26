@@ -1,6 +1,6 @@
 import { soundLabel } from "../core/checking/answer";
 import type { Letter, Word } from "../core/content/types";
-import { splitLetters } from "../core/text/armenian";
+import { indexLetters, readingOf, splitLetters, tokensOf } from "../core/text/armenian";
 import { t } from "../i18n";
 import { byId, describe, distractors, withOptions } from "./helpers";
 import type { ExerciseContext, ExerciseLogic } from "./types";
@@ -28,18 +28,6 @@ function candidates(letter: Letter, ctx: ExerciseContext): Word[] {
   return own.length ? own : ctx.content.words.filter(withLetter);
 }
 
-/** Слово буква за буквой, но с исходным регистром. */
-function tokensOf(hy: string): string[] {
-  const out: string[] = [];
-  for (let i = 0; i < hy.length; ) {
-    const two = hy.slice(i, i + 2);
-    const tok = two.toLocaleLowerCase("hy") === "ու" ? two : hy[i]!;
-    out.push(tok);
-    i += tok.length;
-  }
-  return out;
-}
-
 export const pictureToLetter: ExerciseLogic<PictureQuestion, string> = {
   id: "picture-to-letter",
   skills: ["recognize"],
@@ -48,12 +36,7 @@ export const pictureToLetter: ExerciseLogic<PictureQuestion, string> = {
     const word = ctx.rng.pick(candidates(letter, ctx));
     const tokens = tokensOf(word.hy);
     const blank = tokens.findIndex((tok) => tok.toLocaleLowerCase("hy") === letter.lower);
-    const byLower = new Map(ctx.content.letters.map((l) => [l.lower, l]));
-    const reading = tokens.map((tok, i) => {
-      const l = byLower.get(tok.toLocaleLowerCase("hy"));
-      if (!l) return "";
-      return i === 0 && l.sound.initial ? l.sound.initial.canonical : l.sound.canonical;
-    });
+    const reading = readingOf(tokens, indexLetters(ctx.content.letters));
     // Буквы, которые читаются так же, как пропущенный звук (Ո/Օ — «о», Խ/Հ — «х»), в вариантах были бы
     // тоже «правильными» — их не показываем.
     const sound = reading[blank]!;

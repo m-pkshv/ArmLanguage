@@ -35,10 +35,13 @@ export function chooseExercise(
   rng: Rng,
   recent: ExerciseId[],
 ): Choice {
-  const applicable = (id: ExId) => EXERCISES[id].isApplicable(letter, { ...ctx, level: 0 });
+  const applicable = (id: ExId) => EXERCISES[id].isApplicable(letter, { ...ctx, level: 0, pair: step.pair });
   const rec = boxOf(p, letter.id, "recognize");
   const recall = boxOf(p, letter.id, "recall");
-  const levelFor = (id: ExId) => (EXERCISES[id].skills.includes("recall") ? recall : EXERCISES[id].skills.includes("case") ? boxOf(p, letter.id, "case") : rec);
+  const levelFor = (id: ExId) => {
+    const skill = EXERCISES[id].skills[0]!;
+    return skill === "recall" ? recall : skill === "recognize" ? rec : boxOf(p, letter.id, skill);
+  };
 
   // Типы заданы явно (тренировка, итоговый тест)
   if (step.types?.length) {
@@ -47,8 +50,15 @@ export function chooseExercise(
     return { type, level: levelFor(type) };
   }
 
-  // Изредка — дополнительный навык «заглавные ↔ строчные»
-  if (rec >= 1 && rng.next() < 0.2 && applicable("case-match")) return { type: "case-match", level: levelFor("case-match") };
+  // Изредка — дополнительные навыки: «заглавные ↔ строчные» и различение пар-ловушек
+  // (второе — только когда знакома и вторая буква пары, docs/02-features.md, 2.8)
+  if (rec >= 1 && rng.next() < 0.3) {
+    const extras = (["case-match", "confusable-pair"] as ExId[]).filter(applicable);
+    if (extras.length) {
+      const type = rng.pick(extras);
+      return { type, level: levelFor(type) };
+    }
+  }
 
   const skill = rec === 0 || recall >= rec ? "recognize" : "recall";
   const box = skill === "recognize" ? rec : recall;

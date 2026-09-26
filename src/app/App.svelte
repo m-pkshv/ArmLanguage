@@ -11,6 +11,7 @@
   import Custom from "./screens/Custom.svelte";
   import Lesson from "./screens/Lesson.svelte";
   import Lessons from "./screens/Lessons.svelte";
+  import Pairs from "./screens/Pairs.svelte";
   import Session from "./screens/Session.svelte";
   import Credits from "./screens/Credits.svelte";
   import Home from "./screens/Home.svelte";
@@ -65,6 +66,8 @@
     <Session />
   {:else if route.name === "custom"}
     <Custom />
+  {:else if route.name === "pairs"}
+    <Pairs />
   {:else if route.name === "alphabet"}
     <Alphabet />
   {:else if route.name === "letter"}

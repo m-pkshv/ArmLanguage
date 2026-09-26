@@ -1,5 +1,6 @@
 import type { ExerciseId } from "../core/session/types";
 import { caseMatch, letterToSound, soundToLetter } from "./choice";
+import { confusablePair } from "./confusable";
 import { pictureToLetter } from "./picture";
 import { ruWordInsert } from "./ruWordInsert";
 import type { ExerciseLogic } from "./types";
@@ -13,4 +14,5 @@ export const EXERCISES: Record<Exclude<ExerciseId, "letter-intro">, ExerciseLogi
   "case-match": caseMatch,
   "ru-word-insert": ruWordInsert,
   "letter-type-sound": typeSound,
+  "confusable-pair": confusablePair,
 };

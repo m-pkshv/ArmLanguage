@@ -108,3 +108,23 @@ describe("rng", () => {
     expect([a.next(), a.int(10), a.shuffle([1, 2, 3, 4])]).toEqual([b.next(), b.int(10), b.shuffle([1, 2, 3, 4])]);
   });
 });
+
+describe("pairs", async () => {
+  const { pairGroups, availableGroups, frequentConfusions } = await import("../src/core/pairs");
+  it("builds sound pairs and shape groups once each", () => {
+    const groups = pairGroups(content);
+    const ids = groups.map((g) => g.id);
+    expect(new Set(ids).size).toBe(ids.length);
+    expect(ids).toContain("sound:tho-tyun");
+    expect(groups.find((g) => g.kind === "shape" && g.letters.includes("ghat"))?.letters).toEqual(["da", "ghat", "pe"]);
+  });
+
+  it("offers only known letters and ranks frequent confusions", () => {
+    const p = createEmptyProgress(new Date());
+    const groups = availableGroups(pairGroups(content), ["tyun", "tho", "da", "pe"]);
+    expect(groups.map((g) => g.letters)).toEqual(expect.arrayContaining([["tho", "tyun"], ["da", "pe"]]));
+    p.confusions["letter:tho>letter:tyun"] = 1;
+    p.confusions["letter:tyun>letter:tho"] = 2;
+    expect(frequentConfusions(p, groups)[0]).toMatchObject({ count: 3 });
+  });
+});

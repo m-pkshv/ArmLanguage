@@ -6,6 +6,7 @@
   import { score } from "../../session/run";
   import { startFinalTest, startLesson, startPractice } from "../../session/start";
   import { app, FINAL_PASS, today } from "../state.svelte";
+  import ConfusionHint from "./ConfusionHint.svelte";
 
   // Итоги занятия и что дальше (docs/09-navigation.md, 9.9).
   let { session }: { session: SavedSession } = $props();
@@ -36,7 +37,9 @@
           : t("results.finalFailed")
         : session.kind === "review"
           ? t("results.reviewDone")
-          : t("results.practiceDone"),
+          : session.kind === "pairs"
+            ? t("results.pairsDone")
+            : t("results.practiceDone"),
   );
 
   function practiceHard() {
@@ -80,6 +83,10 @@
         {/each}
       </p>
     </section>
+  {/if}
+
+  {#if hard.length && session.kind !== "pairs"}
+    <ConfusionHint only={hard.map((h) => h.letter.id)} />
   {/if}
 
   <div class="actions">

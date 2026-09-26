@@ -58,3 +58,24 @@ export function highlightSegments(word: string, lower: string): { text: string; 
   }
   return out;
 }
+
+/** Слово буква за буквой с исходным регистром: "Հայաստան" → ["Հ","ա","յ",…], "ձուկ" → ["ձ","ու","կ"]. */
+export function tokensOf(hy: string): string[] {
+  const out: string[] = [];
+  for (let i = 0; i < hy.length; ) {
+    const two = hy.slice(i, i + 2);
+    const tok = two.toLocaleLowerCase("hy") === "ու" ? two : hy[i]!;
+    out.push(tok);
+    i += tok.length;
+  }
+  return out;
+}
+
+/** Чтение по буквам — по одному куску на букву (подсказка под словом в заданиях): ["дз","у","к"]. */
+export function readingOf(tokens: string[], index: LetterIndex): string[] {
+  return tokens.map((tok, i) => {
+    const l = index.get(tok.toLocaleLowerCase("hy"));
+    if (!l) return "";
+    return i === 0 && l.sound.initial ? l.sound.initial.canonical : l.sound.canonical;
+  });
+}

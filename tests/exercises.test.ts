@@ -6,7 +6,7 @@ import { createRng } from "../src/core/random";
 import type { ExerciseId } from "../src/core/session/types";
 import { EXERCISES } from "../src/exercises/logic";
 import type { ExerciseContext } from "../src/exercises/types";
-import { planFinalTest, planLesson, planReview } from "../src/session/plan";
+import { planFinalTest, planLesson, planPairs, planReview } from "../src/session/plan";
 import { recordAnswer, score } from "../src/session/run";
 import { chooseExercise } from "../src/session/select";
 
@@ -26,6 +26,7 @@ const checkCtx = { content, strictness: "soft" as const };
 
 describe("exercise logic", () => {
   for (const [id, ex] of Object.entries(EXERCISES)) {
+    if (id === "confusable-pair") continue; // ответ — номер варианта или клетки, проверяется отдельно ниже
     it(`${id}: every applicable letter gets a valid question`, () => {
       let applicable = 0;
       for (const [i, letter] of content.letters.entries()) {
@@ -67,6 +68,51 @@ describe("exercise logic", () => {
         const o = content.letters.find((l) => l.id === id)!;
         expect([o.sound.canonical, o.sound.initial?.canonical], `${letter.id}: ${id}`).not.toContain(sound);
       }
+    }
+  });
+
+  it("confusable-pair: spelling differs only in the letter and is decidable by the reading", () => {
+    const ex = EXERCISES["confusable-pair"];
+    let spelling = 0;
+    let grid = 0;
+    for (const [i, letter] of content.letters.entries()) {
+      for (let k = 0; k < 6; k++) {
+        const c = ctx(i * 100 + k);
+        if (!ex.isApplicable(letter, c)) continue;
+        const q = ex.generate(letter, c);
+        if (q.mode === "spelling") {
+          spelling++;
+          const [a, b] = q.options;
+          expect(a).not.toBe(b);
+          expect(a.length).toBe(b.length);
+          const partner = content.letters.find((l) => l.id === q.partner)!;
+          const first = q.blank === 0;
+          const read = (l: typeof letter) => (first && l.sound.initial ? l.sound.initial.canonical : l.sound.canonical);
+          expect(read(partner), `${letter.id}/${partner.id}`).not.toBe(read(letter));
+          expect(ex.check(q, q.correct, checkCtx).verdict).toBe("correct");
+          const bad = ex.check(q, 1 - q.correct, checkCtx);
+          expect(bad.verdict).toBe("wrong");
+          expect(bad.confusions).toEqual([[letter.id, q.partner]]);
+        } else {
+          grid++;
+          expect(q.cells).toHaveLength(8);
+          const need = q.cells.flatMap((c2: string, j: number) => (c2 === letter.id ? [j] : []));
+          expect(need.length).toBeGreaterThanOrEqual(3);
+          expect(ex.check(q, need, checkCtx).verdict).toBe("correct");
+          expect(ex.check(q, need.slice(1), checkCtx).verdict).toBe("wrong");
+        }
+      }
+    }
+    expect(spelling).toBeGreaterThan(0);
+    expect(grid).toBeGreaterThan(0);
+  });
+
+  it("confusable-pair in the trainer compares only with the chosen pair", () => {
+    const tyun = content.letters.find((l) => l.id === "tyun")!;
+    for (let k = 0; k < 10; k++) {
+      const q = EXERCISES["confusable-pair"].generate(tyun, ctx(k, 0, { pair: ["tho"] }));
+      if (q.mode === "spelling") expect(q.partner).toBe("tho");
+      else expect(q.partners).toEqual(["tho"]);
     }
   });
 
@@ -118,6 +164,18 @@ describe("session plans", () => {
       if (st.kind === "intro") expect(seen.has(st.letter)).toBe(false);
       seen.add(st.letter);
     }
+  });
+
+  it("a lesson adds a discrimination task when the second letter of a pair arrives", () => {
+    const i = alphabetLessons(content).findIndex((l) => l.newItems.includes("letter:tho"));
+    const s = planLesson(content, p, i, 3, TODAY);
+    expect(s.steps).toContainEqual({ kind: "exercise", letter: "tho", types: ["confusable-pair"], pair: ["tyun"] });
+  });
+
+  it("pairs trainer has 10 tasks on the chosen pair", () => {
+    const s = planPairs([{ letters: ["tyun", "tho"] }], 1, TODAY);
+    expect(s.steps).toHaveLength(10);
+    expect(s.steps.every((st) => st.kind === "exercise" && st.types?.[0] === "confusable-pair" && ["tyun", "tho"].includes(st.letter))).toBe(true);
   });
 
   it("final test has 40 exercises of fixed types without retries", () => {

@@ -20,7 +20,7 @@
     script: "print" | "handwriting" | "mixed";
     length: number;
   }
-  const TYPES: ExerciseId[] = ["letter-to-sound", "sound-to-letter", "picture-to-letter", "case-match", "letter-type-sound", "ru-word-insert"];
+  const TYPES: ExerciseId[] = ["letter-to-sound", "sound-to-letter", "picture-to-letter", "case-match", "confusable-pair", "letter-type-sound", "ru-word-insert"];
   const defaults: Saved = { group: "all", types: [...TYPES], script: "print", length: 20 };
   const load = (): Saved => {
     try {
