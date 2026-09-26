@@ -107,5 +107,17 @@
     "author": "Автор",
     "license": "Лицензия",
     "changes": "Изменения"
+  },
+  "ex": {
+    "correct": "Верно! {what}",
+    "almost": "Почти! {what}",
+    "rightAnswer": "Правильно: {what}",
+    "youChose": "Вы выбрали {what}",
+    "youTyped": "Вы ввели «{answer}»",
+    "partialSound": "«{answer}» — почти. Правильно «{expected}».",
+    "missing": "Пропущена буква {what}",
+    "wordLine": "{hy} [{pron}] — {ru}",
+    "bothFit": "Звук «{sound}» в армянском передают две буквы: {letters} — подходит любая.",
+    "soundIs": "«{sound}» — {what}"
   }
 }
