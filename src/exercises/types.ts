@@ -43,6 +43,8 @@ export interface CheckResult {
   explanation: Explanation;
   /** Буква, чью карточку предлагать открыть из панели результата. */
   letter: string;
+  /** Подробности для вида задания (например, разбор слова по буквам в E07). */
+  detail?: unknown;
 }
 
 export interface ExerciseLogic<Q = unknown, A = unknown> {

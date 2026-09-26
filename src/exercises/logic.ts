@@ -6,6 +6,7 @@ import { pictureToLetter } from "./picture";
 import { ruWordInsert } from "./ruWordInsert";
 import type { ExerciseLogic } from "./types";
 import { typeSound } from "./typeSound";
+import { wordReading } from "./wordReading";
 
 // Реестр логики заданий. Чтобы добавить тип: логика здесь, вид — в registry.ts (docs/06-architecture.md, 6.7).
 export const EXERCISES: Record<Exclude<ExerciseId, "letter-intro">, ExerciseLogic<any, any>> = {
@@ -17,4 +18,5 @@ export const EXERCISES: Record<Exclude<ExerciseId, "letter-intro">, ExerciseLogi
   "letter-type-sound": typeSound,
   "confusable-pair": confusablePair,
   "mixed-reading": mixedReading,
+  "word-type-reading": wordReading,
 };

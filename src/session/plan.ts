@@ -1,6 +1,7 @@
 import { alphabetLessons, lessonLetters } from "../core/course";
 import type { Content } from "../core/content/types";
 import { mixableLetters } from "../core/text/mixed";
+import { wordsToRead } from "../exercises/wordReading";
 import type { Day } from "../core/dates";
 import { boxOf, dueLetters } from "../core/progress/knowledge";
 import type { ProgressData } from "../core/progress/types";
@@ -68,6 +69,9 @@ export function planLesson(c: Content, p: ProgressData, lessonIndex: number, see
   const mixable = mixableLetters(c);
   const forMixed = rng.shuffle(letters.filter((id) => mixable.has(id))).slice(0, 2);
   for (const id of forMixed) steps.push({ kind: "exercise", letter: id, types: ["mixed-reading"] });
+  // …и одно слово целиком, если есть слово из знакомых букв с новой буквой (E07)
+  const forWord = rng.shuffle(letters).find((id) => wordsToRead(c, id, known).length);
+  if (forWord) steps.push({ kind: "exercise", letter: forWord, types: ["word-type-reading"] });
 
   return newSession("lesson", steps, seed, today, { lessonId: lesson.id });
 }
@@ -112,6 +116,13 @@ export function planMixed(c: Content, known: string[], seed: number, today: Day)
   const mixable = mixableLetters(c);
   const letters = known.filter((id) => mixable.has(id));
   return newSession("mixed", spread(rng, letters, 10, ["mixed-reading"]), seed, today);
+}
+
+/** Прочитай слово: 10 слов из знакомых букв. */
+export function planWords(c: Content, known: string[], seed: number, today: Day): SavedSession {
+  const rng = createRng(seed);
+  const letters = known.filter((id) => wordsToRead(c, id, known).length);
+  return newSession("words", spread(rng, letters, 10, ["word-type-reading"]), seed, today);
 }
 
 /** Тренажёр пар-ловушек: 10 заданий на выбранные пары (docs/02-features.md, 2.8). */

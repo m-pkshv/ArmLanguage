@@ -52,8 +52,9 @@ export function chooseExercise(
 
   // Изредка — дополнительные навыки: «заглавные ↔ строчные» и различение пар-ловушек
   // (второе — только когда знакома и вторая буква пары, docs/02-features.md, 2.8)
+  // Когда букву уже уверенно вспоминают — ещё и чтение слова целиком (E07).
   if (rec >= 1 && rng.next() < 0.3) {
-    const extras = (["case-match", "confusable-pair"] as ExId[]).filter(applicable);
+    const extras = (["case-match", "confusable-pair", ...(recall >= 2 ? ["word-type-reading"] : [])] as ExId[]).filter(applicable);
     if (extras.length) {
       const type = rng.pick(extras);
       return { type, level: levelFor(type) };

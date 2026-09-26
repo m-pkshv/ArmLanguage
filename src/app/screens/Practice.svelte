@@ -4,7 +4,7 @@
   import { dueLetters } from "../../core/progress/knowledge";
   import { t } from "../../i18n";
   import ScreenHeader from "../../ui/ScreenHeader.svelte";
-  import { startMixed, startReview } from "../../session/start";
+  import { startMixed, startReview, startWords } from "../../session/start";
   import { app, today } from "../state.svelte";
 
   // Практика (docs/09-navigation.md, 9.11). В V1 — повторение и своя тренировка.
@@ -31,6 +31,10 @@
     <button class="tile" onclick={startMixed}>
       <span class="tt">{t("practice.mixed")}</span>
       <span class="sub hy" lang="hy">{t("practice.mixedSub")}</span>
+    </button>
+    <button class="tile" onclick={startWords}>
+      <span class="tt">{t("practice.words")}</span>
+      <span class="sub hy" lang="hy">{t("practice.wordsSub")}</span>
     </button>
     <a class="tile" href="#/practice/custom">
       <span class="tt">{t("practice.custom")}</span>

@@ -6,6 +6,7 @@ import MixedView from "./views/MixedView.svelte";
 import PictureView from "./views/PictureView.svelte";
 import RuInsertView from "./views/RuInsertView.svelte";
 import TypeSoundView from "./views/TypeSoundView.svelte";
+import WordReadingView from "./views/WordReadingView.svelte";
 
 // Вид каждого типа задания. Логика — в logic.ts. Все виды получают одинаковые свойства.
 export interface ViewProps {
@@ -24,4 +25,5 @@ export const VIEWS: Record<Exclude<ExerciseId, "letter-intro">, Component<any>> 
   "ru-word-insert": RuInsertView,
   "confusable-pair": ConfusableView,
   "mixed-reading": MixedView,
+  "word-type-reading": WordReadingView,
 };

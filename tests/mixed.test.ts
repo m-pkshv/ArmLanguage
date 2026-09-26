@@ -76,7 +76,7 @@ describe("mixed-reading exercise", () => {
   it("each lesson ends with mixed reading on its new letters", () => {
     const p = createEmptyProgress(new Date());
     const s = planLesson(content, p, 0, 5, "2026-09-26");
-    const last = s.steps.slice(-2);
+    const last = s.steps.slice(-3, -1); // последний шаг — «Прочитай слово»
     expect(last.every((st) => st.kind === "exercise" && st.types?.[0] === "mixed-reading")).toBe(true);
   });
 });

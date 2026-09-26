@@ -9,9 +9,10 @@ export type ExerciseId =
   | "ru-word-insert" // E08
   | "case-match" // E15
   | "confusable-pair" // E10
-  | "mixed-reading"; // E09
+  | "mixed-reading" // E09
+  | "word-type-reading"; // E07
 
-export type SessionKind = "lesson" | "review" | "practice" | "final" | "letter" | "pairs" | "mixed";
+export type SessionKind = "lesson" | "review" | "practice" | "final" | "letter" | "pairs" | "mixed" | "words";
 
 export type Step =
   | { kind: "intro"; letter: string }
