@@ -8,9 +8,10 @@ export type ExerciseId =
   | "letter-type-sound" // E06
   | "ru-word-insert" // E08
   | "case-match" // E15
-  | "confusable-pair"; // E10
+  | "confusable-pair" // E10
+  | "mixed-reading"; // E09
 
-export type SessionKind = "lesson" | "review" | "practice" | "final" | "letter" | "pairs";
+export type SessionKind = "lesson" | "review" | "practice" | "final" | "letter" | "pairs" | "mixed";
 
 export type Step =
   | { kind: "intro"; letter: string }

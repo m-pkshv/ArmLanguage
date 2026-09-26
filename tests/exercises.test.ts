@@ -26,7 +26,8 @@ const checkCtx = { content, strictness: "soft" as const };
 
 describe("exercise logic", () => {
   for (const [id, ex] of Object.entries(EXERCISES)) {
-    if (id === "confusable-pair") continue; // ответ — номер варианта или клетки, проверяется отдельно ниже
+    // у этих заданий ответ — не буква (номер варианта, клетки, текст прочтения); они проверяются отдельно
+    if (id === "confusable-pair" || id === "mixed-reading") continue;
     it(`${id}: every applicable letter gets a valid question`, () => {
       let applicable = 0;
       for (const [i, letter] of content.letters.entries()) {

@@ -1,5 +1,6 @@
 import { alphabetLessons, lessonLetters } from "../core/course";
 import type { Content } from "../core/content/types";
+import { mixableLetters } from "../core/text/mixed";
 import type { Day } from "../core/dates";
 import { boxOf, dueLetters } from "../core/progress/knowledge";
 import type { ProgressData } from "../core/progress/types";
@@ -63,6 +64,11 @@ export function planLesson(c: Content, p: ProgressData, lessonIndex: number, see
   for (const d of due) consolidation.splice(rng.int(consolidation.length + 1), 0, ex(d));
   steps.push(...consolidation);
 
+  // В конце — смешанное чтение с новыми буквами (docs/09-navigation.md, 9.6)
+  const mixable = mixableLetters(c);
+  const forMixed = rng.shuffle(letters.filter((id) => mixable.has(id))).slice(0, 2);
+  for (const id of forMixed) steps.push({ kind: "exercise", letter: id, types: ["mixed-reading"] });
+
   return newSession("lesson", steps, seed, today, { lessonId: lesson.id });
 }
 
@@ -98,6 +104,14 @@ export function planLetter(c: Content, letterId: string, known: string[], seed: 
   const steps = [...Array(5)].map(() => ex(letterId));
   steps.push(...spread(rng, partners.length ? partners : [letterId], 3));
   return newSession("letter", spreadSteps(rng, steps), seed, today, { letterId });
+}
+
+/** Смешанное чтение: 10 заданий по знакомым буквам. */
+export function planMixed(c: Content, known: string[], seed: number, today: Day): SavedSession {
+  const rng = createRng(seed);
+  const mixable = mixableLetters(c);
+  const letters = known.filter((id) => mixable.has(id));
+  return newSession("mixed", spread(rng, letters, 10, ["mixed-reading"]), seed, today);
 }
 
 /** Тренажёр пар-ловушек: 10 заданий на выбранные пары (docs/02-features.md, 2.8). */

@@ -41,6 +41,7 @@ export function validateContent(c: Content, opts: ValidateOptions): ValidationRe
   dupes(c.letters.map((l) => l.id), "Буквы");
   dupes(c.words.map((w) => w.id), "Слова");
   dupes(c.ruWords.map((w) => w.id), "Русские слова");
+  dupes(c.ruPhrases.map((w) => w.id), "Русские фразы");
 
   const wordIds = new Map(c.words.map((w) => [w.id, w]));
   const letterIds = new Set(c.letters.map((l) => l.id));

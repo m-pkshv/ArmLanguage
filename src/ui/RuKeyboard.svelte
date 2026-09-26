@@ -10,14 +10,21 @@
     onsubmit,
     ongiveup,
     disabled = false,
-  }: { keys: string[] | null; value?: string; onsubmit: () => void; ongiveup: () => void; disabled?: boolean } = $props();
+    maxLength = 6,
+  }: {
+    keys: string[] | null;
+    value?: string;
+    onsubmit: () => void;
+    ongiveup: () => void;
+    disabled?: boolean;
+    maxLength?: number;
+  } = $props();
 
   const FULL = ["йцукенгшщзхъ", "фывапролджэ", "ячсмитьбю"].map((r) => r.split(""));
   const rows = $derived(keys ? [keys.slice(0, Math.ceil(keys.length / 2)), keys.slice(Math.ceil(keys.length / 2))] : FULL);
-  const MAX = 6;
 
   function press(ch: string) {
-    if (!disabled && value.length < MAX) value += ch;
+    if (!disabled && value.length < maxLength) value += ch;
   }
   function erase() {
     if (!disabled) value = value.slice(0, -1);

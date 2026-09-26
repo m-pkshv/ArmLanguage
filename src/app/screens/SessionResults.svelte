@@ -39,6 +39,8 @@
           ? t("results.reviewDone")
           : session.kind === "pairs"
             ? t("results.pairsDone")
+            : session.kind === "mixed"
+              ? t("results.mixedDone")
             : t("results.practiceDone"),
   );
 

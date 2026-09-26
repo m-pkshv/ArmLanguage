@@ -2,7 +2,7 @@ import { content } from "../core/content";
 import { knownLetters } from "../core/course";
 import type { ExerciseId, SessionOptions } from "../core/session/types";
 import { app, today } from "../app/state.svelte";
-import { planFinalTest, planLesson, planLetter, planPairs, planPractice, planReview } from "./plan";
+import { planFinalTest, planLesson, planLetter, planMixed, planPairs, planPractice, planReview } from "./plan";
 
 // Запуск занятий из экранов приложения.
 
@@ -22,6 +22,10 @@ export function startPractice(letters: string[], types: ExerciseId[], length: nu
 
 export function startLetterPractice(letterId: string) {
   app.startSession(planLetter(content, letterId, knownLetters(app.progress, content), seed(), today()));
+}
+
+export function startMixed() {
+  app.startSession(planMixed(content, knownLetters(app.progress, content), seed(), today()));
 }
 
 export function startPairs(groups: { letters: string[] }[]) {

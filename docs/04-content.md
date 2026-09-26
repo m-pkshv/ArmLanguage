@@ -87,8 +87,8 @@
 ```jsonc
 // content/ru/words.json
 { "id": "mashina", "ru": "машина", "image": { "file": "img/words/car.svg", … } }
-// content/ru/phrases.json
-{ "id": "mama-myla-ramu", "ru": "мама мыла раму" }
+// content/ru/phrases.json — kind: "phrase" (фраза) или "text" (мини-текст из 2–3 предложений)
+{ "id": "mama-myla-ramu", "ru": "мама мыла раму", "kind": "phrase" }
 ```
 Какие буквы можно заменять, вычисляется по таблице соответствия ниже.
 

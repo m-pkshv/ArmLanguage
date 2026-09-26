@@ -54,6 +54,13 @@ export interface RuWord {
   image: ImageRef | null;
 }
 
+/** Русская фраза или мини-текст для смешанного чтения (E09). */
+export interface RuPhrase {
+  id: string;
+  ru: string;
+  kind: "phrase" | "text";
+}
+
 export interface Lesson {
   id: string;
   title: string;
@@ -78,6 +85,7 @@ export interface Content {
   letters: Letter[];
   words: Word[];
   ruWords: RuWord[];
+  ruPhrases: RuPhrase[];
   course: Course;
   ruHy: RuHyRules;
 }

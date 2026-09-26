@@ -2,14 +2,16 @@
 import lettersJson from "../../../content/alphabet/letters.json";
 import courseJson from "../../../content/course.json";
 import ruHyJson from "../../../content/rules/ru-hy.json";
+import ruPhrasesJson from "../../../content/ru/phrases.json";
 import ruWordsJson from "../../../content/ru/words.json";
 import wordsJson from "../../../content/words/words.json";
-import type { Content, Course, Letter, RuHyRules, RuWord, Word } from "./types";
+import type { Content, Course, Letter, RuHyRules, RuPhrase, RuWord, Word } from "./types";
 
 export const content: Content = {
   letters: lettersJson as Letter[],
   words: wordsJson as Word[],
   ruWords: ruWordsJson as RuWord[],
+  ruPhrases: ruPhrasesJson as RuPhrase[],
   course: courseJson as Course,
   ruHy: ruHyJson as RuHyRules,
 };
