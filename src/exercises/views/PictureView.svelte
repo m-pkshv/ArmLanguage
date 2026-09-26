@@ -24,8 +24,10 @@
       {:else}{tok}{/if}
     {/each}
   </div>
-  <p class="ru">{word.ru}</p>
-  <p class="q">{t("session.qPicture")}</p>
+  <p class="reading">
+    [{#each question.reading as part, i (i)}{#if i === question.blank}<mark>{part}</mark>{:else}{part}{/if}{/each}] — {word.ru}
+  </p>
+  <p class="q">{t("session.qPicture", { sound: question.reading[question.blank] ?? "" })}</p>
 </div>
 
 <OptionGrid
@@ -69,9 +71,16 @@
     border-radius: 6px;
     background: var(--accent-soft);
   }
-  .ru {
-    margin: 2px 0 0;
-    font-size: 17px;
+  .reading {
+    margin: 4px 0 0;
+    font-size: 19px;
+  }
+  mark {
+    padding: 0 2px;
+    border-radius: 4px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-weight: 700;
   }
   .q {
     margin: 10px 0 0;

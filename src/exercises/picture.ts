@@ -6,6 +6,8 @@ import { byId, describe, distractors, withOptions } from "./helpers";
 import type { ExerciseContext, ExerciseLogic } from "./types";
 
 // E04: картинка + армянское слово с пропуском на месте изучаемой буквы → выбрать букву.
+// Слова пользователь ещё не знает, поэтому под словом показано его чтение русскими буквами
+// с выделенным пропущенным звуком: задание решается знанием алфавита, а не словаря.
 
 export interface PictureQuestion {
   letter: string;
@@ -13,6 +15,8 @@ export interface PictureQuestion {
   /** Слово по буквам; пропуск — на позиции blank. */
   tokens: string[];
   blank: number;
+  /** Чтение слова по буквам (по одному куску на букву) — подсказка под словом. */
+  reading: string[];
   /** Пропуск в начале слова, которое пишется с заглавной (Հայաստան) — варианты показываем заглавными. */
   upper: boolean;
   options: string[];
@@ -44,12 +48,25 @@ export const pictureToLetter: ExerciseLogic<PictureQuestion, string> = {
     const word = ctx.rng.pick(candidates(letter, ctx));
     const tokens = tokensOf(word.hy);
     const blank = tokens.findIndex((tok) => tok.toLocaleLowerCase("hy") === letter.lower);
-    const wrong = distractors(letter, ctx, 3, { distinct: soundLabel, exclude: ["yev"] });
+    const byLower = new Map(ctx.content.letters.map((l) => [l.lower, l]));
+    const reading = tokens.map((tok, i) => {
+      const l = byLower.get(tok.toLocaleLowerCase("hy"));
+      if (!l) return "";
+      return i === 0 && l.sound.initial ? l.sound.initial.canonical : l.sound.canonical;
+    });
+    // Буквы, которые читаются так же, как пропущенный звук (Ո/Օ — «о», Խ/Հ — «х»), в вариантах были бы
+    // тоже «правильными» — их не показываем.
+    const sound = reading[blank]!;
+    const sameSound = ctx.content.letters
+      .filter((l) => l.id !== letter.id && (l.sound.canonical === sound || l.sound.initial?.canonical === sound))
+      .map((l) => l.id);
+    const wrong = distractors(letter, ctx, 3, { distinct: soundLabel, exclude: ["yev", ...sameSound] });
     return {
       letter: letter.id,
       word: word.id,
       tokens,
       blank,
+      reading,
       upper: tokens[blank] !== letter.lower,
       options: withOptions(letter, wrong, ctx),
     };

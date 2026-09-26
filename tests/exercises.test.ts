@@ -55,6 +55,21 @@ describe("exercise logic", () => {
     });
   }
 
+  it("picture-to-letter shows the reading and never offers a same-sounding letter", () => {
+    for (const [i, letter] of content.letters.entries()) {
+      const c = ctx(i);
+      if (!EXERCISES["picture-to-letter"].isApplicable(letter, c)) continue;
+      const q = EXERCISES["picture-to-letter"].generate(letter, c);
+      expect(q.reading).toHaveLength(q.tokens.length);
+      const sound = q.reading[q.blank];
+      for (const id of q.options) {
+        if (id === letter.id) continue;
+        const o = content.letters.find((l) => l.id === id)!;
+        expect([o.sound.canonical, o.sound.initial?.canonical], `${letter.id}: ${id}`).not.toContain(sound);
+      }
+    }
+  });
+
   it("letter-to-sound puts the sound partner among options", () => {
     const tho = content.letters.find((l) => l.id === "tho")!;
     const q = EXERCISES["letter-to-sound"].generate(tho, ctx(1));
