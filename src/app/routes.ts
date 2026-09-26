@@ -1,12 +1,16 @@
-// Адреса экранов (hash-маршруты, см. docs/06-architecture.md, 6.10 и docs/05-ui-mobile.md, 5.3).
+// Адреса экранов (hash-маршруты, см. docs/06-architecture.md, 6.10 и docs/09-navigation.md, 9.2).
 
 export type Tab = "learn" | "alphabet" | "practice" | "profile";
 
 export type Route =
   | { name: "home" }
+  | { name: "lessons" }
+  | { name: "lesson"; id: string }
+  | { name: "session" }
   | { name: "alphabet" }
   | { name: "letter"; id: string }
   | { name: "practice" }
+  | { name: "custom" }
   | { name: "profile" }
   | { name: "settings" }
   | { name: "backup" }
@@ -14,15 +18,18 @@ export type Route =
   | { name: "credits" }
   | { name: "not-found"; path: string };
 
-/** К какой вкладке нижней панели относится экран. */
+/** К какой вкладке нижней панели относится экран; null — панель скрыта (занятие) или не выделена. */
 export function tabOf(route: Route): Tab | null {
   switch (route.name) {
     case "home":
+    case "lessons":
+    case "lesson":
       return "learn";
     case "alphabet":
     case "letter":
       return "alphabet";
     case "practice":
+    case "custom":
       return "practice";
     case "profile":
     case "settings":
@@ -35,6 +42,8 @@ export function tabOf(route: Route): Tab | null {
   }
 }
 
+const SIMPLE = ["lessons", "session", "practice", "profile", "settings", "backup", "about", "credits"] as const;
+
 /** "#/alphabet/tho" → { name: "letter", id: "tho" } */
 export function parseHash(hash: string): Route {
   const path = hash.replace(/^#/, "").replace(/\/+$/, "") || "/";
@@ -43,28 +52,24 @@ export function parseHash(hash: string): Route {
   if (rest.length) return { name: "not-found", path };
   if (!first) return { name: "home" };
   if (first === "alphabet") return second ? { name: "letter", id: decodeURIComponent(second) } : { name: "alphabet" };
+  if (first === "lesson" && second) return { name: "lesson", id: decodeURIComponent(second) };
+  if (first === "practice" && second === "custom") return { name: "custom" };
   if (second) return { name: "not-found", path };
-  switch (first) {
-    case "practice":
-    case "profile":
-    case "settings":
-    case "backup":
-    case "about":
-    case "credits":
-      return { name: first };
-    default:
-      return { name: "not-found", path };
-  }
+  if ((SIMPLE as readonly string[]).includes(first)) return { name: first as (typeof SIMPLE)[number] };
+  return { name: "not-found", path };
 }
 
 export function hrefOf(route: Route): string {
   switch (route.name) {
     case "home":
+    case "not-found":
       return "#/";
     case "letter":
       return `#/alphabet/${encodeURIComponent(route.id)}`;
-    case "not-found":
-      return "#/";
+    case "lesson":
+      return `#/lesson/${encodeURIComponent(route.id)}`;
+    case "custom":
+      return "#/practice/custom";
     default:
       return `#/${route.name}`;
   }

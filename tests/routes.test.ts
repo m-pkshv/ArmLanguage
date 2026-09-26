@@ -11,12 +11,15 @@ describe("parseHash", () => {
     ["#/settings", { name: "settings" }],
     ["#/nope", { name: "not-found", path: "/nope" }],
     ["#/settings/extra", { name: "not-found", path: "/settings/extra" }],
+    ["#/lesson/alphabet-3", { name: "lesson", id: "alphabet-3" }],
+    ["#/practice/custom", { name: "custom" }],
+    ["#/session", { name: "session" }],
   ])("%s", (hash, route) => {
     expect(parseHash(hash)).toEqual(route);
   });
 
   it("round-trips through hrefOf", () => {
-    for (const hash of ["#/", "#/alphabet", "#/alphabet/tho", "#/practice", "#/profile", "#/backup", "#/about", "#/credits"]) {
+    for (const hash of ["#/", "#/alphabet", "#/alphabet/tho", "#/practice", "#/profile", "#/backup", "#/about", "#/credits", "#/lessons", "#/lesson/alphabet-2", "#/practice/custom", "#/session"]) {
       expect(hrefOf(parseHash(hash))).toBe(hash);
     }
   });
@@ -27,5 +30,7 @@ describe("tabOf", () => {
     expect(tabOf({ name: "letter", id: "tho" })).toBe("alphabet");
     expect(tabOf({ name: "settings" })).toBe("profile");
     expect(tabOf({ name: "not-found", path: "/x" })).toBeNull();
+    expect(tabOf({ name: "session" })).toBeNull();
+    expect(tabOf({ name: "lesson", id: "alphabet-1" })).toBe("learn");
   });
 });

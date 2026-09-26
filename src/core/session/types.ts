@@ -45,4 +45,6 @@ export interface SavedSession {
   result: SessionResult;
   options: SessionOptions;
   startedAt: string; // YYYY-MM-DD
+  /** Типы последних заданий — чтобы не давать один тип много раз подряд и повторить тот же выбор после перезагрузки. */
+  recent?: ExerciseId[];
 }

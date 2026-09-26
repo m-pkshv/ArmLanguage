@@ -8,6 +8,10 @@
   import About from "./screens/About.svelte";
   import Alphabet from "./screens/Alphabet.svelte";
   import Backup from "./screens/Backup.svelte";
+  import Custom from "./screens/Custom.svelte";
+  import Lesson from "./screens/Lesson.svelte";
+  import Lessons from "./screens/Lessons.svelte";
+  import Session from "./screens/Session.svelte";
   import Credits from "./screens/Credits.svelte";
   import Home from "./screens/Home.svelte";
   import Letter from "./screens/Letter.svelte";
@@ -29,9 +33,9 @@
   });
 </script>
 
-<NavBar active={tabOf(route)} />
+{#if route.name !== "session"}<NavBar active={tabOf(route)} />{/if}
 
-<main>
+<main class:session={route.name === "session"}>
   {#if !app.storagePersistent}
     <div class="banner" role="alert">
       <Icon name="warning" size={20} />
@@ -41,6 +45,14 @@
 
   {#if route.name === "home"}
     <Home />
+  {:else if route.name === "lessons"}
+    <Lessons />
+  {:else if route.name === "lesson"}
+    {#key route.id}<Lesson id={route.id} />{/key}
+  {:else if route.name === "session"}
+    <Session />
+  {:else if route.name === "custom"}
+    <Custom />
   {:else if route.name === "alphabet"}
     <Alphabet />
   {:else if route.name === "letter"}
@@ -76,6 +88,11 @@
       max-width: 960px;
       padding: 24px 24px 48px;
     }
+  }
+  /* Занятие — без нижней панели, узкая колонка по центру */
+  main.session {
+    max-width: 640px;
+    padding-bottom: calc(24px + env(safe-area-inset-bottom));
   }
   .banner {
     display: flex;
