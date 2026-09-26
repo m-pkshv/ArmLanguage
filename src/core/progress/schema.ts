@@ -1,0 +1,89 @@
+import { SCHEMA_VERSION, type ProgressData, type Settings } from "./types";
+
+export const DEFAULT_SETTINGS: Settings = {
+  theme: "system",
+  letterSize: "normal",
+  autoAdvance: true,
+  strictness: "soft",
+  showIpa: false,
+  script: "print",
+};
+
+export function createEmptyProgress(now: Date): ProgressData {
+  return {
+    schemaVersion: SCHEMA_VERSION,
+    createdAt: now.toISOString(),
+    items: {},
+    lessons: {},
+    confusions: {},
+    daily: {},
+    settings: { ...DEFAULT_SETTINGS },
+    meta: { lastBackupAt: null },
+  };
+}
+
+/** Ошибка формата данных прогресса. `reason` — для объяснения пользователю. */
+export class ProgressFormatError extends Error {
+  constructor(public readonly reason: "not-progress" | "too-new" | "broken") {
+    super(`Неподходящие данные прогресса: ${reason}`);
+    this.name = "ProgressFormatError";
+  }
+}
+
+type Migration = (data: Record<string, unknown>) => Record<string, unknown>;
+
+// Миграции: ключ — версия, ИЗ которой переводим в следующую.
+// Пример для будущего: 1: (d) => ({ ...d, schemaVersion: 2, newField: … })
+const MIGRATIONS: Record<number, Migration> = {};
+
+const isObject = (v: unknown): v is Record<string, unknown> =>
+  typeof v === "object" && v !== null && !Array.isArray(v);
+
+function pick<T extends string>(value: unknown, allowed: readonly T[], fallback: T): T {
+  return allowed.includes(value as T) ? (value as T) : fallback;
+}
+
+function normalizeSettings(raw: unknown): Settings {
+  const s = isObject(raw) ? raw : {};
+  const d = DEFAULT_SETTINGS;
+  return {
+    theme: pick(s.theme, ["system", "light", "dark"], d.theme),
+    letterSize: pick(s.letterSize, ["normal", "large"], d.letterSize),
+    autoAdvance: typeof s.autoAdvance === "boolean" ? s.autoAdvance : d.autoAdvance,
+    strictness: pick(s.strictness, ["soft", "strict"], d.strictness),
+    showIpa: typeof s.showIpa === "boolean" ? s.showIpa : d.showIpa,
+    script: pick(s.script, ["print", "handwriting"], d.script),
+  };
+}
+
+const record = (v: unknown): Record<string, never> => (isObject(v) ? (v as Record<string, never>) : {});
+
+/**
+ * Приводит данные любой поддерживаемой версии к текущей схеме.
+ * Недостающие поля заполняются значениями по умолчанию, так что старые данные не теряются.
+ */
+export function migrate(raw: unknown, now: Date): ProgressData {
+  if (!isObject(raw) || typeof raw.schemaVersion !== "number") {
+    throw new ProgressFormatError("not-progress");
+  }
+  let data = raw;
+  let version = raw.schemaVersion;
+  if (version > SCHEMA_VERSION) throw new ProgressFormatError("too-new");
+  while (version < SCHEMA_VERSION) {
+    const step = MIGRATIONS[version];
+    if (!step) throw new ProgressFormatError("broken");
+    data = step(data);
+    version++;
+  }
+  const meta = isObject(data.meta) ? data.meta : {};
+  return {
+    schemaVersion: SCHEMA_VERSION,
+    createdAt: typeof data.createdAt === "string" ? data.createdAt : now.toISOString(),
+    items: record(data.items),
+    lessons: record(data.lessons),
+    confusions: record(data.confusions),
+    daily: record(data.daily),
+    settings: normalizeSettings(data.settings),
+    meta: { lastBackupAt: typeof meta.lastBackupAt === "string" ? meta.lastBackupAt : null },
+  };
+}

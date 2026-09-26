@@ -1,0 +1,65 @@
+# Проверка и публикация сайта на GitHub Pages (см. docs/06-architecture.md, 6.11).
+# Пока идёт разработка V1: прототип (папка legacy/) — в корне сайта, новое приложение — в /next/.
+name: Проверка и публикация
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: Проверка типов
+        run: npm run check
+
+      - name: Тесты
+        run: npm test
+
+      - name: Сборка приложения
+        run: npm run build
+        env:
+          BASE_PATH: /${{ github.event.repository.name }}/next/
+
+      - name: Сборка сайта (прототип + приложение)
+        run: |
+          mkdir -p _site
+          cp -r legacy/. _site/
+          cp -r dist _site/next
+
+      - uses: actions/upload-pages-artifact@v5
+        if: github.event_name != 'pull_request'
+        with:
+          path: _site
+
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5
