@@ -42,6 +42,13 @@ describe("migrate", () => {
     expect(data.session).toBeNull();
     expect(data.finalTest).toBeNull();
     expect(data.lessons["alphabet-1"]).toEqual({ completedAt: "2026-09-25" });
+    expect(data.games).toEqual({});
+  });
+
+  it("migrates v2 data and keeps valid game records", () => {
+    expect(migrate({ schemaVersion: 2, items: {} }, NOW).games).toEqual({});
+    const games = { sound: { bestMs: 14000, at: "2026-09-27" }, case: { bestMs: "fast" } };
+    expect(migrate({ schemaVersion: 3, games }, NOW).games).toEqual({ sound: { bestMs: 14000, at: "2026-09-27" } });
   });
 
   it("rejects data from a newer app version", () => {

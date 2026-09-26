@@ -3,7 +3,7 @@ import type { Effect } from "../core/progress/knowledge";
 import type { Verdict } from "../core/progress/srs";
 import type { Skill, Strictness } from "../core/progress/types";
 import type { Rng } from "../core/random";
-import type { ExerciseId } from "../core/session/types";
+import type { ExerciseId, MatchKind } from "../core/session/types";
 
 // Интерфейс типа задания (docs/06-architecture.md, 6.7). Логика — чистые функции без интерфейса,
 // вид — отдельный компонент View.svelte, связываются в registry.ts.
@@ -22,6 +22,9 @@ export interface ExerciseContext {
   simpleKeyboard: boolean;
   /** Тренажёр пар-ловушек: с какими буквами сравнивать. */
   pair?: string[];
+  /** «Найди пары»: буквы для поля и вид пар. */
+  group?: string[];
+  match?: MatchKind;
 }
 
 export interface CheckContext {
@@ -43,6 +46,8 @@ export interface CheckResult {
   explanation: Explanation;
   /** Буква, чью карточку предлагать открыть из панели результата. */
   letter: string;
+  /** Рекорд мини-игры: время раунда без ошибок (сохраняется, если лучше прежнего). */
+  record?: { game: string; ms: number };
   /** Подробности для вида задания (например, разбор слова по буквам в E07). */
   detail?: unknown;
 }

@@ -2,6 +2,7 @@ import type { Component } from "svelte";
 import type { ExerciseId } from "../core/session/types";
 import ChoiceView from "./views/ChoiceView.svelte";
 import ConfusableView from "./views/ConfusableView.svelte";
+import MatchView from "./views/MatchView.svelte";
 import MixedView from "./views/MixedView.svelte";
 import PictureView from "./views/PictureView.svelte";
 import RuInsertView from "./views/RuInsertView.svelte";
@@ -26,4 +27,5 @@ export const VIEWS: Record<Exclude<ExerciseId, "letter-intro">, Component<any>> 
   "confusable-pair": ConfusableView,
   "mixed-reading": MixedView,
   "word-type-reading": WordReadingView,
+  "match-pairs": MatchView,
 };

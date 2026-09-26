@@ -43,7 +43,9 @@
               ? t("results.mixedDone")
               : session.kind === "words"
                 ? t("results.wordsDone")
-                : t("results.practiceDone"),
+                : session.kind === "match"
+                  ? t("results.matchDone")
+                  : t("results.practiceDone"),
   );
 
   function practiceHard() {

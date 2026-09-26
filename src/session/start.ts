@@ -1,8 +1,8 @@
 import { content } from "../core/content";
 import { knownLetters } from "../core/course";
-import type { ExerciseId, SessionOptions } from "../core/session/types";
+import type { ExerciseId, MatchKind, SessionOptions } from "../core/session/types";
 import { app, today } from "../app/state.svelte";
-import { planFinalTest, planLesson, planLetter, planMixed, planPairs, planPractice, planReview, planWords } from "./plan";
+import { planFinalTest, planLesson, planLetter, planMixed, planPairs, planPractice, planMatch, planReview, planWords } from "./plan";
 
 // Запуск занятий из экранов приложения.
 
@@ -30,6 +30,10 @@ export function startMixed() {
 
 export function startWords() {
   app.startSession(planWords(content, knownLetters(app.progress, content), seed(), today()));
+}
+
+export function startMatch(kind: MatchKind) {
+  app.startSession(planMatch(app.progress, knownLetters(app.progress, content), kind, seed(), today()));
 }
 
 export function startPairs(groups: { letters: string[] }[]) {

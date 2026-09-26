@@ -6,7 +6,7 @@ import type { Day } from "../core/dates";
 import { boxOf, dueLetters } from "../core/progress/knowledge";
 import type { ProgressData } from "../core/progress/types";
 import { createRng, type Rng } from "../core/random";
-import type { ExerciseId, SavedSession, SessionKind, SessionOptions, Step } from "../core/session/types";
+import type { ExerciseId, MatchKind, SavedSession, SessionKind, SessionOptions, Step } from "../core/session/types";
 
 // Состав занятий (docs/09-navigation.md, 9.6): урок, повторение, тренировка, итоговый тест.
 
@@ -41,7 +41,11 @@ export function planLesson(c: Content, p: ProgressData, lessonIndex: number, see
   const previous = lessons.slice(0, lessonIndex).flatMap(lessonLetters);
   const steps: Step[] = [];
 
-  if (previous.length) steps.push(...spread(rng, rng.shuffle(previous).slice(0, 3), 3, ["letter-to-sound"]));
+  // Разминка по буквам прошлых уроков — мини-игра «Найди пары» (docs/09-navigation.md, 9.6)
+  if (previous.length) {
+    const group = rng.shuffle(previous);
+    steps.push({ kind: "exercise", letter: group[0]!, types: ["match-pairs"], group, match: "sound" });
+  }
 
   const introduced: string[] = [];
   for (let i = 0; i < letters.length; i += 2) {
@@ -123,6 +127,20 @@ export function planWords(c: Content, known: string[], seed: number, today: Day)
   const rng = createRng(seed);
   const letters = known.filter((id) => wordsToRead(c, id, known).length);
   return newSession("words", spread(rng, letters, 10, ["word-type-reading"]), seed, today);
+}
+
+/** «Найди пары» из «Практики»: три поля подряд по знакомым буквам, слабые — чаще. */
+export function planMatch(p: ProgressData, known: string[], kind: MatchKind, seed: number, today: Day): SavedSession {
+  const rng = createRng(seed);
+  const skill = kind === "sound" ? "recognize" : kind;
+  const byWeakness = rng.shuffle(known).sort((a, b) => boxOf(p, a, skill) - boxOf(p, b, skill));
+  const steps: Step[] = [0, 1, 2].map((i) => {
+    // в каждом поле — свои буквы, пока их хватает; остальные добираются из всех знакомых
+    const own = byWeakness.slice(i * 5, i * 5 + 5);
+    const group = [...own, ...rng.shuffle(known.filter((id) => !own.includes(id)))];
+    return { kind: "exercise", letter: group[0]!, types: ["match-pairs"], group, match: kind };
+  });
+  return newSession("match", steps, seed, today);
 }
 
 /** Тренажёр пар-ловушек: 10 заданий на выбранные пары (docs/02-features.md, 2.8). */

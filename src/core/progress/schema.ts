@@ -20,6 +20,7 @@ export function createEmptyProgress(now: Date): ProgressData {
     settings: { ...DEFAULT_SETTINGS },
     session: null,
     finalTest: null,
+    games: {},
     meta: { lastBackupAt: null },
   };
 }
@@ -38,6 +39,8 @@ type Migration = (data: Record<string, unknown>) => Record<string, unknown>;
 const MIGRATIONS: Record<number, Migration> = {
   // v2: незаконченное занятие и итоговый тест (этап 3)
   1: (d) => ({ ...d, schemaVersion: 2, session: null, finalTest: null }),
+  // v3: рекорды мини-игры «Найди пары» (V2)
+  2: (d) => ({ ...d, schemaVersion: 3, games: {} }),
 };
 
 const isObject = (v: unknown): v is Record<string, unknown> =>
@@ -94,6 +97,11 @@ export function migrate(raw: unknown, now: Date): ProgressData {
       isObject(data.finalTest) && typeof data.finalTest.bestScore === "number"
         ? { bestScore: data.finalTest.bestScore, passedAt: typeof data.finalTest.passedAt === "string" ? data.finalTest.passedAt : null }
         : null,
+    games: Object.fromEntries(
+      Object.entries(record(data.games)).filter(
+        ([, g]) => isObject(g) && typeof (g as Record<string, unknown>).bestMs === "number" && typeof (g as Record<string, unknown>).at === "string",
+      ),
+    ),
     meta: { lastBackupAt: typeof meta.lastBackupAt === "string" ? meta.lastBackupAt : null },
   };
 }

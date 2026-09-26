@@ -2,7 +2,7 @@
 // При любом изменении формата: увеличить SCHEMA_VERSION и добавить миграцию в schema.ts.
 import type { SavedSession } from "../session/types";
 
-export const SCHEMA_VERSION = 2;
+export const SCHEMA_VERSION = 3;
 
 export type Theme = "system" | "light" | "dark";
 export type LetterSize = "normal" | "large";
@@ -46,6 +46,12 @@ export interface FinalTestProgress {
   passedAt: string | null; // YYYY-MM-DD, когда впервые сдан на ≥ 90%
 }
 
+/** Рекорд мини-игры «Найди пары»: лучшее время раунда без ошибок. */
+export interface GameRecord {
+  bestMs: number;
+  at: string; // YYYY-MM-DD
+}
+
 export interface ProgressData {
   schemaVersion: typeof SCHEMA_VERSION;
   createdAt: string; // ISO-время
@@ -57,6 +63,8 @@ export interface ProgressData {
   /** Незаконченное занятие — чтобы продолжить с того же места (docs/09-navigation.md, 9.8). */
   session: SavedSession | null;
   finalTest: FinalTestProgress | null;
+  /** Рекорды «Найди пары», ключ — вид пар (sound, case, handwriting). */
+  games: Record<string, GameRecord>;
   meta: {
     lastBackupAt: string | null; // когда в последний раз сохраняли резервную копию
   };

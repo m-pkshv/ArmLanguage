@@ -84,7 +84,7 @@
 │  │  ├─ logic.ts              # реестр логики: id → generate/check
 │  │  ├─ registry.ts           # реестр видов: id → компонент
 │  │  ├─ choice.ts (E02, E03, E15), picture.ts (E04), typeSound.ts (E06), ruWordInsert.ts (E08),
-│  │  │  confusable.ts (E10), mixedReading.ts (E09), wordReading.ts (E07)  # логика заданий
+│  │  │  confusable.ts (E10), mixedReading.ts (E09), wordReading.ts (E07), matchPairs.ts (E05)
 │  │  └─ views/                # вид заданий (Svelte)
 │  ├─ session/                 # занятия: состав (plan), выбор задания (select), ход (run), «Продолжить» (next)
 │  ├─ ui/                      # общие компоненты: клавиатуры, Glyph, LetterCard, OptionGrid, ResultPanel…
@@ -203,14 +203,17 @@ interface CheckResult {
 ```jsonc
 // localStorage["hy:progress"]
 {
-  "schemaVersion": 1,
+  "schemaVersion": 3,
   "items": {
     "letter:tho#recognize": { "box": 3, "due": "2026-10-02", "ok": 9, "bad": 2, "last": "2026-09-25" }
   },
   "lessons": { "alphabet-1": { "completedAt": "2026-09-25" } },
   "confusions": { "letter:tho>letter:tyun": 4 },
   "daily": { "2026-09-25": { "answers": 42, "correct": 37 } },
-  "settings": { "theme": "system", "strictness": "soft", "script": "print" }
+  "settings": { "theme": "system", "strictness": "soft", "script": "print" },
+  "session": null,           // незаконченное занятие (v2)
+  "finalTest": null,         // лучший результат итогового теста (v2)
+  "games": { "sound": { "bestMs": 12400, "at": "2026-09-27" } }  // рекорды «Найди пары» (v3)
 }
 ```
 

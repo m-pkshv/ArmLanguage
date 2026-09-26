@@ -10,9 +10,13 @@ export type ExerciseId =
   | "case-match" // E15
   | "confusable-pair" // E10
   | "mixed-reading" // E09
-  | "word-type-reading"; // E07
+  | "word-type-reading" // E07
+  | "match-pairs"; // E05
 
-export type SessionKind = "lesson" | "review" | "practice" | "final" | "letter" | "pairs" | "mixed" | "words";
+/** Вид пар в мини-игре «Найди пары» (E05). */
+export type MatchKind = "sound" | "case" | "handwriting";
+
+export type SessionKind = "lesson" | "review" | "practice" | "final" | "letter" | "pairs" | "mixed" | "words" | "match";
 
 export type Step =
   | { kind: "intro"; letter: string }
@@ -25,6 +29,9 @@ export type Step =
       retry?: boolean;
       /** Тренажёр пар-ловушек: с какими буквами сравнивать (иначе — любая знакомая «пара»). */
       pair?: string[];
+      /** «Найди пары»: буквы для поля (иначе — знакомые) и вид пар. */
+      group?: string[];
+      match?: MatchKind;
     };
 
 export interface SessionResult {

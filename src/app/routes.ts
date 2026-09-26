@@ -12,6 +12,7 @@ export type Route =
   | { name: "practice" }
   | { name: "custom" }
   | { name: "pairs" }
+  | { name: "match" }
   | { name: "profile" }
   | { name: "settings" }
   | { name: "backup" }
@@ -32,6 +33,7 @@ export function tabOf(route: Route): Tab | null {
     case "practice":
     case "custom":
     case "pairs":
+    case "match":
       return "practice";
     case "profile":
     case "settings":
@@ -57,6 +59,7 @@ export function parseHash(hash: string): Route {
   if (first === "lesson" && second) return { name: "lesson", id: decodeURIComponent(second) };
   if (first === "practice" && second === "custom") return { name: "custom" };
   if (first === "practice" && second === "pairs") return { name: "pairs" };
+  if (first === "practice" && second === "match") return { name: "match" };
   if (second) return { name: "not-found", path };
   if ((SIMPLE as readonly string[]).includes(first)) return { name: first as (typeof SIMPLE)[number] };
   return { name: "not-found", path };
@@ -75,6 +78,8 @@ export function hrefOf(route: Route): string {
       return "#/practice/custom";
     case "pairs":
       return "#/practice/pairs";
+    case "match":
+      return "#/practice/match";
     default:
       return `#/${route.name}`;
   }

@@ -2,6 +2,7 @@
   import { content } from "../../core/content";
   import { knownLetters } from "../../core/course";
   import { dueLetters } from "../../core/progress/knowledge";
+  import { formatTime } from "../../exercises/matchPairs";
   import { t } from "../../i18n";
   import ScreenHeader from "../../ui/ScreenHeader.svelte";
   import { startMixed, startReview, startWords } from "../../session/start";
@@ -11,6 +12,7 @@
   const known = $derived(knownLetters(app.progress, content));
   const due = $derived(dueLetters(app.progress, today(), known).length);
   const enough = $derived(known.length >= 4);
+  const best = $derived(app.progress.games.sound?.bestMs ?? null); // на плитке — рекорд «буква ↔ звук»
 </script>
 
 <ScreenHeader title={t("practice.title")} />
@@ -32,6 +34,10 @@
       <span class="tt">{t("practice.mixed")}</span>
       <span class="sub hy" lang="hy">{t("practice.mixedSub")}</span>
     </button>
+    <a class="tile" href="#/practice/match">
+      <span class="tt">{t("practice.match")}</span>
+      <span class="sub">{best ? t("practice.matchRecord", { time: formatTime(best) }) : t("practice.matchSub")}</span>
+    </a>
     <button class="tile" onclick={startWords}>
       <span class="tt">{t("practice.words")}</span>
       <span class="sub hy" lang="hy">{t("practice.wordsSub")}</span>
@@ -41,7 +47,6 @@
       <span class="sub">{t("practice.customSub")}</span>
     </a>
   </div>
-  <p class="muted soon">{t("practice.soon")}</p>
 {/if}
 
 <style>
@@ -75,10 +80,6 @@
   }
   .sub {
     color: var(--muted);
-    font-size: 14px;
-  }
-  .soon {
-    margin-top: 16px;
     font-size: 14px;
   }
   .btn {

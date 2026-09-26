@@ -6,7 +6,7 @@
   import { t } from "../../i18n";
   import Card from "../../ui/Card.svelte";
   import { isFirstRun, nextAction } from "../../session/next";
-  import { startFinalTest, startLesson, startReview } from "../../session/start";
+  import { startFinalTest, startLesson, startMatch, startReview } from "../../session/start";
   import { app, today } from "../state.svelte";
   import ConfusionHint from "./ConfusionHint.svelte";
   import InstallHint from "./InstallHint.svelte";
@@ -109,6 +109,11 @@
       {#if action.kind !== "review"}
         <button class="secondary" onclick={startReview}>{t("home.reviewNow")}</button>
       {/if}
+    </Card>
+  {:else if doneLessons >= 1 && action.kind !== "resume"}
+    <!-- Повторять нечего — можно поиграть (docs/09-navigation.md, 9.14) -->
+    <Card title={t("home.allDone")}>
+      <button class="secondary" onclick={() => startMatch("sound")}>{t("home.playMatch")}</button>
     </Card>
   {/if}
 

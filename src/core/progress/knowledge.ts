@@ -54,9 +54,14 @@ export interface Effect {
 /** Применяет результат ответа к прогрессу (изменяет объект). */
 export function applyAnswer(
   p: ProgressData,
-  answer: { effects: Effect[]; verdict: Verdict; confusions: [expected: string, given: string][] },
+  answer: { effects: Effect[]; verdict: Verdict; confusions: [expected: string, given: string][]; record?: { game: string; ms: number } },
   today: Day,
 ): void {
+  // Рекорд мини-игры «Найди пары» — если лучше прежнего
+  if (answer.record) {
+    const prev = p.games[answer.record.game];
+    if (!prev || answer.record.ms < prev.bestMs) p.games[answer.record.game] = { bestMs: answer.record.ms, at: today };
+  }
   for (const e of answer.effects) {
     const key = itemKey(e.letter, e.skill);
     p.items[key] = review(p.items[key], e.verdict, today);
