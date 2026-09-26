@@ -46,7 +46,7 @@
     {/each}
   </div>
   <p class="q">{t("session.qWordReading")}</p>
-  {#if !result}<p class="hint">{revealed.length ? t("session.wordHintUsed") : t("session.wordHint")}</p>{/if}
+  <p class="hint">{#if !result}{revealed.length ? t("session.wordHintUsed") : t("session.wordHint")}{/if}</p>
 </div>
 
 <RuKeyboard keys={null} bind:value maxLength={16} disabled={!!result} onsubmit={() => submit(value)} ongiveup={() => submit("")} />
@@ -151,6 +151,7 @@
     font-size: 15px;
   }
   .hint {
+    min-height: 2.8em; /* две строки: клавиатура не прыгает, когда текст подсказки меняется */
     margin: 4px 0 0;
     color: var(--muted);
     font-size: 13px;
