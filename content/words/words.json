@@ -563,7 +563,12 @@
     "pronunciation": "жам",
     "exception": false,
     "ru": "час",
-    "image": null,
+    "image": {
+      "file": "img/words/clock.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
     "tags": [
       "time"
     ],
@@ -612,7 +617,12 @@
     "pronunciation": "инчх",
     "exception": false,
     "ru": "что",
-    "image": null,
+    "image": {
+      "file": "img/words/question.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
     "tags": [
       "words"
     ],
@@ -1587,7 +1597,12 @@
     "pronunciation": "цхурт",
     "exception": false,
     "ru": "холодно",
-    "image": null,
+    "image": {
+      "file": "img/words/cold-face.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
     "tags": [
       "nature"
     ],
@@ -1798,7 +1813,12 @@
     "pronunciation": "ор",
     "exception": false,
     "ru": "день",
-    "image": null,
+    "image": {
+      "file": "img/words/calendar.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
     "tags": [
       "time"
     ],
@@ -1901,7 +1921,12 @@
     "pronunciation": "мама",
     "exception": false,
     "ru": "мама",
-    "image": null,
+    "image": {
+      "file": "img/words/mother.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
     "tags": [
       "family"
     ],
@@ -1940,7 +1965,12 @@
     "pronunciation": "анна",
     "exception": false,
     "ru": "Анна (имя)",
-    "image": null,
+    "image": {
+      "file": "img/words/girl.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
     "tags": [
       "names"
     ],
@@ -1953,7 +1983,12 @@
     "pronunciation": "мат",
     "exception": false,
     "ru": "палец",
-    "image": null,
+    "image": {
+      "file": "img/words/finger.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
     "tags": [
       "body"
     ],
@@ -1979,7 +2014,12 @@
     "pronunciation": "ани",
     "exception": false,
     "ru": "Ани (имя, древний город)",
-    "image": null,
+    "image": {
+      "file": "img/words/ruins.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
     "tags": [
       "names"
     ],
@@ -1992,7 +2032,12 @@
     "pronunciation": "кин",
     "exception": false,
     "ru": "женщина, жена",
-    "image": null,
+    "image": {
+      "file": "img/words/woman.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
     "tags": [
       "family"
     ],
@@ -2005,7 +2050,12 @@
     "pronunciation": "тари",
     "exception": false,
     "ru": "год",
-    "image": null,
+    "image": {
+      "file": "img/words/year.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
     "tags": [
       "time"
     ],
@@ -2018,7 +2068,12 @@
     "pronunciation": "утум",
     "exception": false,
     "ru": "ест",
-    "image": null,
+    "image": {
+      "file": "img/words/eating.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
     "tags": [
       "words"
     ],
@@ -2031,7 +2086,12 @@
     "pronunciation": "сур",
     "exception": false,
     "ru": "острый; меч",
-    "image": null,
+    "image": {
+      "file": "img/words/dagger.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
     "tags": [
       "words"
     ],
@@ -2044,7 +2104,12 @@
     "pronunciation": "кармир",
     "exception": false,
     "ru": "красный",
-    "image": null,
+    "image": {
+      "file": "img/words/red.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
     "tags": [
       "colors"
     ],
@@ -2109,7 +2174,12 @@
     "pronunciation": "воскор",
     "exception": false,
     "ru": "кость",
-    "image": null,
+    "image": {
+      "file": "img/words/bone.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
     "tags": [
       "body"
     ],
@@ -2135,7 +2205,12 @@
     "pronunciation": "лав",
     "exception": false,
     "ru": "хорошо",
-    "image": null,
+    "image": {
+      "file": "img/words/good.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
     "tags": [
       "words"
     ],
@@ -2148,7 +2223,12 @@
     "pronunciation": "дас",
     "exception": false,
     "ru": "урок",
-    "image": null,
+    "image": {
+      "file": "img/words/teacher.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
     "tags": [
       "school"
     ],
@@ -2161,7 +2241,12 @@
     "pronunciation": "бан",
     "exception": false,
     "ru": "вещь, что-то",
-    "image": null,
+    "image": {
+      "file": "img/words/box.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
     "tags": [
       "words"
     ],
@@ -2226,7 +2311,12 @@
     "pronunciation": "мек",
     "exception": false,
     "ru": "один",
-    "image": null,
+    "image": {
+      "file": "img/words/one.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
     "tags": [
       "numbers"
     ],
@@ -2252,7 +2342,12 @@
     "pronunciation": "армен",
     "exception": false,
     "ru": "Армен (имя)",
-    "image": null,
+    "image": {
+      "file": "img/words/boy.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
     "tags": [
       "names"
     ],
@@ -2278,7 +2373,12 @@
     "pronunciation": "хай",
     "exception": false,
     "ru": "армянин",
-    "image": null,
+    "image": {
+      "file": "img/words/flag-am.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
     "tags": [
       "people"
     ],
@@ -2291,7 +2391,12 @@
     "pronunciation": "хайерен",
     "exception": false,
     "ru": "армянский язык",
-    "image": null,
+    "image": {
+      "file": "img/words/speaking.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
     "tags": [
       "words"
     ],
@@ -2304,7 +2409,12 @@
     "pronunciation": "гет",
     "exception": false,
     "ru": "река",
-    "image": null,
+    "image": {
+      "file": "img/words/river.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
     "tags": [
       "nature"
     ],
@@ -2317,7 +2427,12 @@
     "pronunciation": "гуйн",
     "exception": false,
     "ru": "цвет",
-    "image": null,
+    "image": {
+      "file": "img/words/palette.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
     "tags": [
       "colors"
     ],
@@ -2330,7 +2445,12 @@
     "pronunciation": "пат",
     "exception": false,
     "ru": "стена",
-    "image": null,
+    "image": {
+      "file": "img/words/bricks.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
     "tags": [
       "home"
     ],
@@ -2369,7 +2489,12 @@
     "pronunciation": "айо",
     "exception": false,
     "ru": "да",
-    "image": null,
+    "image": {
+      "file": "img/words/yes.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
     "tags": [
       "words"
     ],
@@ -2382,7 +2507,12 @@
     "pronunciation": "вочх",
     "exception": false,
     "ru": "нет, не",
-    "image": null,
+    "image": {
+      "file": "img/words/no.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
     "tags": [
       "words"
     ],
@@ -2395,7 +2525,12 @@
     "pronunciation": "кхуйр",
     "exception": false,
     "ru": "сестра",
-    "image": null,
+    "image": {
+      "file": "img/words/sisters.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
     "tags": [
       "family"
     ],
@@ -2426,7 +2561,12 @@
     "pronunciation": "пхокхыр",
     "exception": false,
     "ru": "маленький",
-    "image": null,
+    "image": {
+      "file": "img/words/small.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
     "tags": [
       "words"
     ],
@@ -2452,7 +2592,12 @@
     "pronunciation": "джерм",
     "exception": false,
     "ru": "тёплый",
-    "image": null,
+    "image": {
+      "file": "img/words/warm.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
     "tags": [
       "nature"
     ],
@@ -2519,7 +2664,12 @@
     "pronunciation": "кхагхакх",
     "exception": false,
     "ru": "город",
-    "image": null,
+    "image": {
+      "file": "img/words/town.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
     "tags": [
       "places"
     ],
