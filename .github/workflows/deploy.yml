@@ -1,5 +1,5 @@
 # Проверка и публикация сайта на GitHub Pages (см. docs/06-architecture.md, 6.11).
-# Пока идёт разработка V1: прототип (папка legacy/) — в корне сайта, новое приложение — в /next/.
+# Новое приложение — в корне сайта, прототип v0.1 (папка legacy/) — по адресу /old/.
 name: Проверка и публикация
 
 on:
@@ -37,13 +37,13 @@ jobs:
       - name: Сборка приложения
         run: npm run build
         env:
-          BASE_PATH: /${{ github.event.repository.name }}/next/
+          BASE_PATH: /${{ github.event.repository.name }}/
 
       - name: Сборка сайта (прототип + приложение)
         run: |
-          mkdir -p _site
-          cp -r legacy/. _site/
-          cp -r dist _site/next
+          cp -r dist _site
+          mkdir -p _site/old
+          cp -r legacy/. _site/old/
 
       - uses: actions/upload-pages-artifact@v5
         if: github.event_name != 'pull_request'

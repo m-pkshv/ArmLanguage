@@ -2,8 +2,8 @@
   import { t } from "../../i18n";
   import Card from "../../ui/Card.svelte";
 
-  // Прототип v0.1 лежит в корне сайта, пока новое приложение открывается по /next/.
-  const prototypeHref = import.meta.env.BASE_URL.endsWith("/next/") ? `${import.meta.env.BASE_URL}../` : null;
+  // Прототип v0.1 опубликован рядом, по адресу /old/ (только на сайте, не при локальной разработке).
+  const prototypeHref = import.meta.env.PROD ? `${import.meta.env.BASE_URL}old/` : null;
 
   const learned = 0; // появится вместе с уроками (этап 3)
   const upcoming = ["sectionReading", "sectionWords", "sectionPhrases"];
