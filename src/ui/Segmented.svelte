@@ -6,19 +6,22 @@
     value,
     onchange,
     hint,
+    compact = false,
   }: {
     label: string;
     options: { value: T; label: string }[];
     value: T;
     onchange: (value: T) => void;
     hint?: string;
+    /** Без рамки и видимой подписи — для панели над списком. */
+    compact?: boolean;
   } = $props();
 
   const id = `seg-${Math.random().toString(36).slice(2, 8)}`;
 </script>
 
-<div class="field" role="radiogroup" aria-labelledby={id}>
-  <div class="label" {id}>{label}</div>
+<div class="field" class:compact role="radiogroup" aria-labelledby={id}>
+  <div class="label" class:sr-only={compact} {id}>{label}</div>
   <div class="options">
     {#each options as opt (opt.value)}
       <button
@@ -41,6 +44,17 @@
   }
   .field:last-child {
     border-bottom: 0;
+  }
+  .compact {
+    padding: 0;
+    border: 0;
+  }
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
   }
   .label {
     margin-bottom: 8px;

@@ -1,0 +1,29 @@
+[
+  {
+    "what": "Картинки к словам",
+    "source": "Twemoji",
+    "url": "https://github.com/jdecked/twemoji",
+    "author": "Twitter, Inc and other contributors",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/deed.ru",
+    "changes": null
+  },
+  {
+    "what": "Рукописные буквы",
+    "source": "Wikimedia Commons: Armenian handwritten upper- and lower-case pairs with font lines",
+    "url": "https://commons.wikimedia.org/wiki/Category:Armenian_handwritten_upper-_and_lower-case_pairs_with_font_lines",
+    "author": "そらみみ; правки — Kwamikagami",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ru",
+    "changes": "каждый файл разрезан на заглавную и строчную букву, удалены служебные данные редактора"
+  },
+  {
+    "what": "Шрифты",
+    "source": "Inter и Noto Sans Armenian (через Fontsource)",
+    "url": "https://fontsource.org/",
+    "author": "Rasmus Andersson; Google",
+    "license": "SIL Open Font License 1.1",
+    "licenseUrl": "https://openfontlicense.org/",
+    "changes": null
+  }
+]

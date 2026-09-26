@@ -16,7 +16,7 @@ describe("parseHash", () => {
   });
 
   it("round-trips through hrefOf", () => {
-    for (const hash of ["#/", "#/alphabet", "#/alphabet/tho", "#/practice", "#/profile", "#/backup", "#/about"]) {
+    for (const hash of ["#/", "#/alphabet", "#/alphabet/tho", "#/practice", "#/profile", "#/backup", "#/about", "#/credits"]) {
       expect(hrefOf(parseHash(hash))).toBe(hash);
     }
   });

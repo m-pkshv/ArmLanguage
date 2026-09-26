@@ -1,0 +1,1458 @@
+[
+  {
+    "id": "ayb",
+    "upper": "Ա",
+    "lower": "ա",
+    "order": 1,
+    "name": {
+      "hy": "այբ",
+      "ru": "айб"
+    },
+    "sound": {
+      "ipa": "ɑ",
+      "ru": "а",
+      "canonical": "а",
+      "accept": [],
+      "partial": []
+    },
+    "notes": [],
+    "confusable": {
+      "sound": [],
+      "shape": []
+    },
+    "words": [
+      "arev",
+      "atorr",
+      "atam",
+      "agh"
+    ],
+    "handwriting": {
+      "upper": "img/handwriting/ayb-upper.svg",
+      "lower": "img/handwriting/ayb-lower.svg"
+    },
+    "audio": null,
+    "reviewed": false
+  },
+  {
+    "id": "ben",
+    "upper": "Բ",
+    "lower": "բ",
+    "order": 2,
+    "name": {
+      "hy": "բեն",
+      "ru": "бен"
+    },
+    "sound": {
+      "ipa": "b",
+      "ru": "б",
+      "canonical": "б",
+      "accept": [],
+      "partial": []
+    },
+    "notes": [],
+    "confusable": {
+      "sound": [],
+      "shape": []
+    },
+    "words": [
+      "banan",
+      "bad",
+      "beran",
+      "barev"
+    ],
+    "handwriting": {
+      "upper": "img/handwriting/ben-upper.svg",
+      "lower": "img/handwriting/ben-lower.svg"
+    },
+    "audio": null,
+    "reviewed": false
+  },
+  {
+    "id": "gim",
+    "upper": "Գ",
+    "lower": "գ",
+    "order": 3,
+    "name": {
+      "hy": "գիմ",
+      "ru": "гим"
+    },
+    "sound": {
+      "ipa": "ɡ",
+      "ru": "г (взрывное, как в слове «гора»)",
+      "canonical": "г",
+      "accept": [],
+      "partial": []
+    },
+    "notes": [],
+    "confusable": {
+      "sound": [
+        "ghat"
+      ],
+      "shape": [
+        "za",
+        "tsho"
+      ]
+    },
+    "words": [
+      "girk",
+      "gayl",
+      "glkhark"
+    ],
+    "handwriting": {
+      "upper": "img/handwriting/gim-upper.svg",
+      "lower": "img/handwriting/gim-lower.svg"
+    },
+    "audio": null,
+    "reviewed": false
+  },
+  {
+    "id": "da",
+    "upper": "Դ",
+    "lower": "դ",
+    "order": 4,
+    "name": {
+      "hy": "դա",
+      "ru": "да"
+    },
+    "sound": {
+      "ipa": "d",
+      "ru": "д",
+      "canonical": "д",
+      "accept": [],
+      "partial": []
+    },
+    "notes": [],
+    "confusable": {
+      "sound": [],
+      "shape": [
+        "ghat",
+        "pe"
+      ]
+    },
+    "words": [
+      "durr",
+      "ddum",
+      "dprots"
+    ],
+    "handwriting": {
+      "upper": "img/handwriting/da-upper.svg",
+      "lower": "img/handwriting/da-lower.svg"
+    },
+    "audio": null,
+    "reviewed": false
+  },
+  {
+    "id": "yech",
+    "upper": "Ե",
+    "lower": "ե",
+    "order": 5,
+    "name": {
+      "hy": "եչ",
+      "ru": "еч"
+    },
+    "sound": {
+      "ipa": "ɛ, jɛ",
+      "ru": "е; в начале слова — «йе»",
+      "canonical": "е",
+      "accept": [
+        "йе"
+      ],
+      "partial": [],
+      "initial": {
+        "canonical": "йе",
+        "partial": [
+          "е"
+        ]
+      }
+    },
+    "notes": [
+      "В начале слова читается «йе», в середине — «е», причём согласный перед ней не смягчается, как в русском."
+    ],
+    "confusable": {
+      "sound": [
+        "e"
+      ],
+      "shape": [
+        "e"
+      ]
+    },
+    "words": [
+      "yerekha",
+      "yez",
+      "yerg",
+      "meghu"
+    ],
+    "handwriting": {
+      "upper": "img/handwriting/yech-upper.svg",
+      "lower": "img/handwriting/yech-lower.svg"
+    },
+    "audio": null,
+    "reviewed": false
+  },
+  {
+    "id": "za",
+    "upper": "Զ",
+    "lower": "զ",
+    "order": 6,
+    "name": {
+      "hy": "զա",
+      "ru": "за"
+    },
+    "sound": {
+      "ipa": "z",
+      "ru": "з",
+      "canonical": "з",
+      "accept": [],
+      "partial": []
+    },
+    "notes": [],
+    "confusable": {
+      "sound": [],
+      "shape": [
+        "gim",
+        "tsho"
+      ]
+    },
+    "words": [
+      "zang",
+      "zatik",
+      "vozni"
+    ],
+    "handwriting": {
+      "upper": "img/handwriting/za-upper.svg",
+      "lower": "img/handwriting/za-lower.svg"
+    },
+    "audio": null,
+    "reviewed": false
+  },
+  {
+    "id": "e",
+    "upper": "Է",
+    "lower": "է",
+    "order": 7,
+    "name": {
+      "hy": "է",
+      "ru": "э"
+    },
+    "sound": {
+      "ipa": "ɛ",
+      "ru": "э",
+      "canonical": "э",
+      "accept": [],
+      "partial": [
+        "е"
+      ]
+    },
+    "notes": [
+      "Всегда «э», в том числе в начале слова. Сравните с Ե, которая в начале слова читается «йе»."
+    ],
+    "confusable": {
+      "sound": [
+        "yech"
+      ],
+      "shape": [
+        "yech"
+      ]
+    },
+    "words": [
+      "ej",
+      "esh",
+      "ekran"
+    ],
+    "handwriting": {
+      "upper": "img/handwriting/e-upper.svg",
+      "lower": "img/handwriting/e-lower.svg"
+    },
+    "audio": null,
+    "reviewed": false
+  },
+  {
+    "id": "yt",
+    "upper": "Ը",
+    "lower": "ը",
+    "order": 8,
+    "name": {
+      "hy": "ըթ",
+      "ru": "ыт"
+    },
+    "sound": {
+      "ipa": "ə",
+      "ru": "краткий неясный гласный",
+      "canonical": "ы",
+      "accept": [],
+      "partial": [
+        "э"
+      ]
+    },
+    "notes": [
+      "Похож на безударный гласный в первом слоге слова «молоко».",
+      "Этот же звук часто слышится между согласными, хотя буква не пишется: խնձոր читается «хындзор»."
+    ],
+    "confusable": {
+      "sound": [],
+      "shape": []
+    },
+    "words": [
+      "ynker",
+      "yntanik",
+      "ympelik"
+    ],
+    "handwriting": {
+      "upper": "img/handwriting/yt-upper.svg",
+      "lower": "img/handwriting/yt-lower.svg"
+    },
+    "audio": null,
+    "reviewed": false
+  },
+  {
+    "id": "tho",
+    "upper": "Թ",
+    "lower": "թ",
+    "order": 9,
+    "name": {
+      "hy": "թո",
+      "ru": "тхо"
+    },
+    "sound": {
+      "ipa": "tʰ",
+      "ru": "«т» с придыханием",
+      "canonical": "тх",
+      "accept": [],
+      "partial": [
+        "т"
+      ]
+    },
+    "notes": [
+      "После «т» идёт лёгкий выдох, как будто задуваете свечу. Пара без придыхания — Տ."
+    ],
+    "confusable": {
+      "sound": [
+        "tyun"
+      ],
+      "shape": []
+    },
+    "words": [
+      "trrchun",
+      "tey",
+      "titerr"
+    ],
+    "handwriting": {
+      "upper": "img/handwriting/tho-upper.svg",
+      "lower": "img/handwriting/tho-lower.svg"
+    },
+    "audio": null,
+    "reviewed": false
+  },
+  {
+    "id": "zhe",
+    "upper": "Ժ",
+    "lower": "ժ",
+    "order": 10,
+    "name": {
+      "hy": "ժե",
+      "ru": "же"
+    },
+    "sound": {
+      "ipa": "ʒ",
+      "ru": "ж",
+      "canonical": "ж",
+      "accept": [],
+      "partial": []
+    },
+    "notes": [],
+    "confusable": {
+      "sound": [],
+      "shape": []
+    },
+    "words": [
+      "zhamatsuyts",
+      "zhpit",
+      "zham"
+    ],
+    "handwriting": {
+      "upper": "img/handwriting/zhe-upper.svg",
+      "lower": "img/handwriting/zhe-lower.svg"
+    },
+    "audio": null,
+    "reviewed": false
+  },
+  {
+    "id": "ini",
+    "upper": "Ի",
+    "lower": "ի",
+    "order": 11,
+    "name": {
+      "hy": "ինի",
+      "ru": "ини"
+    },
+    "sound": {
+      "ipa": "i",
+      "ru": "и",
+      "canonical": "и",
+      "accept": [],
+      "partial": []
+    },
+    "notes": [
+      "Согласный перед ним смягчается слабее, чем в русском."
+    ],
+    "confusable": {
+      "sound": [],
+      "shape": []
+    },
+    "words": [
+      "inknatirr",
+      "dzi",
+      "inch"
+    ],
+    "handwriting": {
+      "upper": "img/handwriting/ini-upper.svg",
+      "lower": "img/handwriting/ini-lower.svg"
+    },
+    "audio": null,
+    "reviewed": false
+  },
+  {
+    "id": "lyun",
+    "upper": "Լ",
+    "lower": "լ",
+    "order": 12,
+    "name": {
+      "hy": "լյուն",
+      "ru": "люн"
+    },
+    "sound": {
+      "ipa": "l",
+      "ru": "л — среднее между «л» и «ль»",
+      "canonical": "л",
+      "accept": [],
+      "partial": []
+    },
+    "notes": [],
+    "confusable": {
+      "sound": [],
+      "shape": []
+    },
+    "words": [
+      "lusin",
+      "limon",
+      "luys"
+    ],
+    "handwriting": {
+      "upper": "img/handwriting/lyun-upper.svg",
+      "lower": "img/handwriting/lyun-lower.svg"
+    },
+    "audio": null,
+    "reviewed": false
+  },
+  {
+    "id": "xe",
+    "upper": "Խ",
+    "lower": "խ",
+    "order": 13,
+    "name": {
+      "hy": "խե",
+      "ru": "хе"
+    },
+    "sound": {
+      "ipa": "χ",
+      "ru": "х, как в русском",
+      "canonical": "х",
+      "accept": [],
+      "partial": []
+    },
+    "notes": [
+      "Как русское «х», иногда чуть более гортанное. Сравните с Հ — это лёгкий выдох."
+    ],
+    "confusable": {
+      "sound": [
+        "ho"
+      ],
+      "shape": []
+    },
+    "words": [
+      "khndzor",
+      "khaghogh",
+      "khoz"
+    ],
+    "handwriting": {
+      "upper": "img/handwriting/xe-upper.svg",
+      "lower": "img/handwriting/xe-lower.svg"
+    },
+    "audio": null,
+    "reviewed": false
+  },
+  {
+    "id": "tsa",
+    "upper": "Ծ",
+    "lower": "ծ",
+    "order": 14,
+    "name": {
+      "hy": "ծա",
+      "ru": "ца"
+    },
+    "sound": {
+      "ipa": "ts",
+      "ru": "ц без придыхания",
+      "canonical": "ц",
+      "accept": [],
+      "partial": []
+    },
+    "notes": [
+      "Твёрдое, «сжатое» ц без выдоха. Пара с придыханием — Ց."
+    ],
+    "confusable": {
+      "sound": [
+        "tsho"
+      ],
+      "shape": []
+    },
+    "words": [
+      "tsov",
+      "tsarr",
+      "tsaghik"
+    ],
+    "handwriting": {
+      "upper": "img/handwriting/tsa-upper.svg",
+      "lower": "img/handwriting/tsa-lower.svg"
+    },
+    "audio": null,
+    "reviewed": false
+  },
+  {
+    "id": "ken",
+    "upper": "Կ",
+    "lower": "կ",
+    "order": 15,
+    "name": {
+      "hy": "կեն",
+      "ru": "кен"
+    },
+    "sound": {
+      "ipa": "k",
+      "ru": "к без придыхания",
+      "canonical": "к",
+      "accept": [],
+      "partial": []
+    },
+    "notes": [
+      "Твёрдое «к» без выдоха. Пара с придыханием — Ք."
+    ],
+    "confusable": {
+      "sound": [
+        "ke"
+      ],
+      "shape": []
+    },
+    "words": [
+      "katu",
+      "kov",
+      "kat"
+    ],
+    "handwriting": {
+      "upper": "img/handwriting/ken-upper.svg",
+      "lower": "img/handwriting/ken-lower.svg"
+    },
+    "audio": null,
+    "reviewed": false
+  },
+  {
+    "id": "ho",
+    "upper": "Հ",
+    "lower": "հ",
+    "order": 16,
+    "name": {
+      "hy": "հո",
+      "ru": "хо"
+    },
+    "sound": {
+      "ipa": "h",
+      "ru": "лёгкий выдох, как английское h",
+      "canonical": "х",
+      "accept": [],
+      "partial": []
+    },
+    "notes": [
+      "Мягче русского «х»: просто выдох, как английское h или украинское «г»."
+    ],
+    "confusable": {
+      "sound": [
+        "xe"
+      ],
+      "shape": [
+        "yi"
+      ]
+    },
+    "words": [
+      "hats",
+      "hav",
+      "hayastan"
+    ],
+    "handwriting": {
+      "upper": "img/handwriting/ho-upper.svg",
+      "lower": "img/handwriting/ho-lower.svg"
+    },
+    "audio": null,
+    "reviewed": false
+  },
+  {
+    "id": "dza",
+    "upper": "Ձ",
+    "lower": "ձ",
+    "order": 17,
+    "name": {
+      "hy": "ձա",
+      "ru": "дза"
+    },
+    "sound": {
+      "ipa": "dz",
+      "ru": "дз — слитно, как в слове «дзюдо»",
+      "canonical": "дз",
+      "accept": [],
+      "partial": []
+    },
+    "notes": [],
+    "confusable": {
+      "sound": [],
+      "shape": []
+    },
+    "words": [
+      "dzuk",
+      "dzu",
+      "dzmeruk",
+      "dzi"
+    ],
+    "handwriting": {
+      "upper": "img/handwriting/dza-upper.svg",
+      "lower": "img/handwriting/dza-lower.svg"
+    },
+    "audio": null,
+    "reviewed": false
+  },
+  {
+    "id": "ghat",
+    "upper": "Ղ",
+    "lower": "ղ",
+    "order": 18,
+    "name": {
+      "hy": "ղատ",
+      "ru": "гхат"
+    },
+    "sound": {
+      "ipa": "ʁ",
+      "ru": "гортанное «р»",
+      "canonical": "гх",
+      "accept": [],
+      "partial": [
+        "г",
+        "х"
+      ]
+    },
+    "notes": [
+      "Похоже на картавое французское r или фрикативное южнорусское «г»."
+    ],
+    "confusable": {
+      "sound": [
+        "gim"
+      ],
+      "shape": [
+        "da",
+        "pe"
+      ]
+    },
+    "words": [
+      "agh",
+      "meghu",
+      "khaghogh"
+    ],
+    "handwriting": {
+      "upper": "img/handwriting/ghat-upper.svg",
+      "lower": "img/handwriting/ghat-lower.svg"
+    },
+    "audio": null,
+    "reviewed": false
+  },
+  {
+    "id": "che",
+    "upper": "Ճ",
+    "lower": "ճ",
+    "order": 19,
+    "name": {
+      "hy": "ճե",
+      "ru": "че"
+    },
+    "sound": {
+      "ipa": "tʃ",
+      "ru": "ч без придыхания",
+      "canonical": "ч",
+      "accept": [],
+      "partial": []
+    },
+    "notes": [
+      "Твёрдое «ч» без выдоха. Пара с придыханием — Չ."
+    ],
+    "confusable": {
+      "sound": [
+        "chha"
+      ],
+      "shape": []
+    },
+    "words": [
+      "chanch",
+      "chut",
+      "chanaparh"
+    ],
+    "handwriting": {
+      "upper": "img/handwriting/che-upper.svg",
+      "lower": "img/handwriting/che-lower.svg"
+    },
+    "audio": null,
+    "reviewed": false
+  },
+  {
+    "id": "men",
+    "upper": "Մ",
+    "lower": "մ",
+    "order": 20,
+    "name": {
+      "hy": "մեն",
+      "ru": "мен"
+    },
+    "sound": {
+      "ipa": "m",
+      "ru": "м",
+      "canonical": "м",
+      "accept": [],
+      "partial": []
+    },
+    "notes": [],
+    "confusable": {
+      "sound": [],
+      "shape": []
+    },
+    "words": [
+      "muk",
+      "matit",
+      "meghu",
+      "mayr"
+    ],
+    "handwriting": {
+      "upper": "img/handwriting/men-upper.svg",
+      "lower": "img/handwriting/men-lower.svg"
+    },
+    "audio": null,
+    "reviewed": false
+  },
+  {
+    "id": "yi",
+    "upper": "Յ",
+    "lower": "յ",
+    "order": 21,
+    "name": {
+      "hy": "յի",
+      "ru": "йи"
+    },
+    "sound": {
+      "ipa": "j",
+      "ru": "й",
+      "canonical": "й",
+      "accept": [],
+      "partial": []
+    },
+    "notes": [],
+    "confusable": {
+      "sound": [],
+      "shape": [
+        "ho"
+      ]
+    },
+    "words": [
+      "yugh",
+      "aytz",
+      "yot"
+    ],
+    "handwriting": {
+      "upper": "img/handwriting/yi-upper.svg",
+      "lower": "img/handwriting/yi-lower.svg"
+    },
+    "audio": null,
+    "reviewed": false
+  },
+  {
+    "id": "nu",
+    "upper": "Ն",
+    "lower": "ն",
+    "order": 22,
+    "name": {
+      "hy": "նու",
+      "ru": "ну"
+    },
+    "sound": {
+      "ipa": "n",
+      "ru": "н",
+      "canonical": "н",
+      "accept": [],
+      "partial": []
+    },
+    "notes": [],
+    "confusable": {
+      "sound": [],
+      "shape": []
+    },
+    "words": [
+      "nav",
+      "napastak",
+      "nurr"
+    ],
+    "handwriting": {
+      "upper": "img/handwriting/nu-upper.svg",
+      "lower": "img/handwriting/nu-lower.svg"
+    },
+    "audio": null,
+    "reviewed": false
+  },
+  {
+    "id": "sha",
+    "upper": "Շ",
+    "lower": "շ",
+    "order": 23,
+    "name": {
+      "hy": "շա",
+      "ru": "ша"
+    },
+    "sound": {
+      "ipa": "ʃ",
+      "ru": "ш",
+      "canonical": "ш",
+      "accept": [],
+      "partial": []
+    },
+    "notes": [],
+    "confusable": {
+      "sound": [],
+      "shape": []
+    },
+    "words": [
+      "shun",
+      "shapik",
+      "shakar"
+    ],
+    "handwriting": {
+      "upper": "img/handwriting/sha-upper.svg",
+      "lower": "img/handwriting/sha-lower.svg"
+    },
+    "audio": null,
+    "reviewed": false
+  },
+  {
+    "id": "vo",
+    "upper": "Ո",
+    "lower": "ո",
+    "order": 24,
+    "name": {
+      "hy": "ո",
+      "ru": "во"
+    },
+    "sound": {
+      "ipa": "ɔ, vɔ",
+      "ru": "о; в начале слова — «во»",
+      "canonical": "о",
+      "accept": [
+        "во"
+      ],
+      "partial": [],
+      "initial": {
+        "canonical": "во",
+        "partial": [
+          "о"
+        ]
+      }
+    },
+    "notes": [
+      "В начале слова читается «во», в середине — «о». Сравните с Օ: она всегда «о»."
+    ],
+    "confusable": {
+      "sound": [
+        "o"
+      ],
+      "shape": [
+        "se"
+      ]
+    },
+    "words": [
+      "vozni",
+      "votk",
+      "voski"
+    ],
+    "handwriting": {
+      "upper": "img/handwriting/vo-upper.svg",
+      "lower": "img/handwriting/vo-lower.svg"
+    },
+    "audio": null,
+    "reviewed": false
+  },
+  {
+    "id": "chha",
+    "upper": "Չ",
+    "lower": "չ",
+    "order": 25,
+    "name": {
+      "hy": "չա",
+      "ru": "ча"
+    },
+    "sound": {
+      "ipa": "tʃʰ",
+      "ru": "«ч» с придыханием",
+      "canonical": "чх",
+      "accept": [],
+      "partial": [
+        "ч"
+      ]
+    },
+    "notes": [
+      "Придыхательная пара к Ճ."
+    ],
+    "confusable": {
+      "sound": [
+        "che"
+      ],
+      "shape": []
+    },
+    "words": [
+      "chors",
+      "achk",
+      "chghjik"
+    ],
+    "handwriting": {
+      "upper": "img/handwriting/chha-upper.svg",
+      "lower": "img/handwriting/chha-lower.svg"
+    },
+    "audio": null,
+    "reviewed": false
+  },
+  {
+    "id": "pe",
+    "upper": "Պ",
+    "lower": "պ",
+    "order": 26,
+    "name": {
+      "hy": "պե",
+      "ru": "пе"
+    },
+    "sound": {
+      "ipa": "p",
+      "ru": "п без придыхания",
+      "canonical": "п",
+      "accept": [],
+      "partial": []
+    },
+    "notes": [
+      "Твёрдое «п» без выдоха. Пара с придыханием — Փ."
+    ],
+    "confusable": {
+      "sound": [
+        "pyur"
+      ],
+      "shape": [
+        "da",
+        "ghat"
+      ]
+    },
+    "words": [
+      "panir",
+      "pap",
+      "payusak"
+    ],
+    "handwriting": {
+      "upper": "img/handwriting/pe-upper.svg",
+      "lower": "img/handwriting/pe-lower.svg"
+    },
+    "audio": null,
+    "reviewed": false
+  },
+  {
+    "id": "je",
+    "upper": "Ջ",
+    "lower": "ջ",
+    "order": 27,
+    "name": {
+      "hy": "ջե",
+      "ru": "дже"
+    },
+    "sound": {
+      "ipa": "dʒ",
+      "ru": "дж — слитно",
+      "canonical": "дж",
+      "accept": [],
+      "partial": []
+    },
+    "notes": [],
+    "confusable": {
+      "sound": [],
+      "shape": []
+    },
+    "words": [
+      "jur",
+      "jutak",
+      "jermachap"
+    ],
+    "handwriting": {
+      "upper": "img/handwriting/je-upper.svg",
+      "lower": "img/handwriting/je-lower.svg"
+    },
+    "audio": null,
+    "reviewed": false
+  },
+  {
+    "id": "rra",
+    "upper": "Ռ",
+    "lower": "ռ",
+    "order": 28,
+    "name": {
+      "hy": "ռա",
+      "ru": "рра"
+    },
+    "sound": {
+      "ipa": "r",
+      "ru": "раскатистое «р»",
+      "canonical": "рр",
+      "accept": [],
+      "partial": [
+        "р"
+      ]
+    },
+    "notes": [
+      "Сильное, многоударное «р». Сравните с Ր — коротким, одноударным."
+    ],
+    "confusable": {
+      "sound": [
+        "re"
+      ],
+      "shape": []
+    },
+    "words": [
+      "rradio",
+      "tsarr",
+      "durr"
+    ],
+    "handwriting": {
+      "upper": "img/handwriting/rra-upper.svg",
+      "lower": "img/handwriting/rra-lower.svg"
+    },
+    "audio": null,
+    "reviewed": false
+  },
+  {
+    "id": "se",
+    "upper": "Ս",
+    "lower": "ս",
+    "order": 29,
+    "name": {
+      "hy": "սե",
+      "ru": "се"
+    },
+    "sound": {
+      "ipa": "s",
+      "ru": "с",
+      "canonical": "с",
+      "accept": [],
+      "partial": []
+    },
+    "notes": [],
+    "confusable": {
+      "sound": [],
+      "shape": [
+        "vo"
+      ]
+    },
+    "words": [
+      "sunk",
+      "sirt",
+      "sag"
+    ],
+    "handwriting": {
+      "upper": "img/handwriting/se-upper.svg",
+      "lower": "img/handwriting/se-lower.svg"
+    },
+    "audio": null,
+    "reviewed": false
+  },
+  {
+    "id": "vev",
+    "upper": "Վ",
+    "lower": "վ",
+    "order": 30,
+    "name": {
+      "hy": "վեվ",
+      "ru": "вев"
+    },
+    "sound": {
+      "ipa": "v",
+      "ru": "в",
+      "canonical": "в",
+      "accept": [],
+      "partial": []
+    },
+    "notes": [],
+    "confusable": {
+      "sound": [],
+      "shape": []
+    },
+    "words": [
+      "vard",
+      "vagr",
+      "hav"
+    ],
+    "handwriting": {
+      "upper": "img/handwriting/vev-upper.svg",
+      "lower": "img/handwriting/vev-lower.svg"
+    },
+    "audio": null,
+    "reviewed": false
+  },
+  {
+    "id": "tyun",
+    "upper": "Տ",
+    "lower": "տ",
+    "order": 31,
+    "name": {
+      "hy": "տյուն",
+      "ru": "тюн"
+    },
+    "sound": {
+      "ipa": "t",
+      "ru": "т без придыхания",
+      "canonical": "т",
+      "accept": [],
+      "partial": []
+    },
+    "notes": [
+      "Твёрдое «т» без выдоха. Пара с придыханием — Թ."
+    ],
+    "confusable": {
+      "sound": [
+        "tho"
+      ],
+      "shape": []
+    },
+    "words": [
+      "tun",
+      "tat",
+      "tandz"
+    ],
+    "handwriting": {
+      "upper": "img/handwriting/tyun-upper.svg",
+      "lower": "img/handwriting/tyun-lower.svg"
+    },
+    "audio": null,
+    "reviewed": false
+  },
+  {
+    "id": "re",
+    "upper": "Ր",
+    "lower": "ր",
+    "order": 32,
+    "name": {
+      "hy": "րե",
+      "ru": "ре"
+    },
+    "sound": {
+      "ipa": "ɾ",
+      "ru": "короткое «р»",
+      "canonical": "р",
+      "accept": [],
+      "partial": []
+    },
+    "notes": [
+      "Мягкое, одноударное «р». Раскатистое — Ռ."
+    ],
+    "confusable": {
+      "sound": [
+        "rra"
+      ],
+      "shape": []
+    },
+    "words": [
+      "rope",
+      "sirt",
+      "vard"
+    ],
+    "handwriting": {
+      "upper": "img/handwriting/re-upper.svg",
+      "lower": "img/handwriting/re-lower.svg"
+    },
+    "audio": null,
+    "reviewed": false
+  },
+  {
+    "id": "tsho",
+    "upper": "Ց",
+    "lower": "ց",
+    "order": 33,
+    "name": {
+      "hy": "ցո",
+      "ru": "цо"
+    },
+    "sound": {
+      "ipa": "tsʰ",
+      "ru": "«ц» с придыханием",
+      "canonical": "цх",
+      "accept": [],
+      "partial": [
+        "ц"
+      ]
+    },
+    "notes": [
+      "Придыхательная пара к Ծ."
+    ],
+    "confusable": {
+      "sound": [
+        "tsa"
+      ],
+      "shape": [
+        "gim",
+        "za"
+      ]
+    },
+    "words": [
+      "tskhavel",
+      "hats",
+      "tsurt"
+    ],
+    "handwriting": {
+      "upper": "img/handwriting/tsho-upper.svg",
+      "lower": "img/handwriting/tsho-lower.svg"
+    },
+    "audio": null,
+    "reviewed": false
+  },
+  {
+    "id": "u",
+    "upper": "Ու",
+    "lower": "ու",
+    "order": 34,
+    "name": {
+      "hy": "ու",
+      "ru": "у"
+    },
+    "sound": {
+      "ipa": "u",
+      "ru": "у",
+      "canonical": "у",
+      "accept": [],
+      "partial": []
+    },
+    "notes": [
+      "Пишется двумя знаками (ո + ւ), но считается одной буквой.",
+      "Знак ւ отдельно в современном языке не встречается — только внутри ու и в старом написании և."
+    ],
+    "confusable": {
+      "sound": [],
+      "shape": []
+    },
+    "words": [
+      "ught",
+      "urakh",
+      "dzuk"
+    ],
+    "handwriting": {
+      "upper": "img/handwriting/u-upper.svg",
+      "lower": "img/handwriting/u-lower.svg"
+    },
+    "audio": null,
+    "reviewed": false
+  },
+  {
+    "id": "pyur",
+    "upper": "Փ",
+    "lower": "փ",
+    "order": 35,
+    "name": {
+      "hy": "փյուր",
+      "ru": "пюр"
+    },
+    "sound": {
+      "ipa": "pʰ",
+      "ru": "«п» с придыханием",
+      "canonical": "пх",
+      "accept": [],
+      "partial": [
+        "п"
+      ]
+    },
+    "notes": [
+      "Придыхательная пара к Պ."
+    ],
+    "confusable": {
+      "sound": [
+        "pe"
+      ],
+      "shape": []
+    },
+    "words": [
+      "pigh",
+      "pogh",
+      "petur"
+    ],
+    "handwriting": {
+      "upper": "img/handwriting/pyur-upper.svg",
+      "lower": "img/handwriting/pyur-lower.svg"
+    },
+    "audio": null,
+    "reviewed": false
+  },
+  {
+    "id": "ke",
+    "upper": "Ք",
+    "lower": "ք",
+    "order": 36,
+    "name": {
+      "hy": "քե",
+      "ru": "ке"
+    },
+    "sound": {
+      "ipa": "kʰ",
+      "ru": "«к» с придыханием",
+      "canonical": "кх",
+      "accept": [],
+      "partial": [
+        "к"
+      ]
+    },
+    "notes": [
+      "Придыхательная пара к Կ."
+    ],
+    "confusable": {
+      "sound": [
+        "ken"
+      ],
+      "shape": []
+    },
+    "words": [
+      "kar",
+      "kit",
+      "kami"
+    ],
+    "handwriting": {
+      "upper": "img/handwriting/ke-upper.svg",
+      "lower": "img/handwriting/ke-lower.svg"
+    },
+    "audio": null,
+    "reviewed": false
+  },
+  {
+    "id": "yev",
+    "upper": "Եվ",
+    "lower": "և",
+    "order": 37,
+    "name": {
+      "hy": "և",
+      "ru": "ев"
+    },
+    "sound": {
+      "ipa": "ɛv, jɛv",
+      "ru": "ев; в начале слова — «йев»",
+      "canonical": "ев",
+      "accept": [
+        "йев"
+      ],
+      "partial": [],
+      "initial": {
+        "canonical": "йев",
+        "partial": [
+          "ев"
+        ]
+      }
+    },
+    "notes": [
+      "Лигатура из ե и վ (исторически — ե и ւ). Заглавной формы нет: в начале предложения пишут «Եվ».",
+      "Отдельно как слово означает «и»."
+    ],
+    "confusable": {
+      "sound": [],
+      "shape": []
+    },
+    "words": [
+      "arev",
+      "barev",
+      "yerevan"
+    ],
+    "handwriting": {
+      "upper": null,
+      "lower": "img/handwriting/yev-lower.svg"
+    },
+    "audio": null,
+    "reviewed": false
+  },
+  {
+    "id": "o",
+    "upper": "Օ",
+    "lower": "օ",
+    "order": 38,
+    "name": {
+      "hy": "օ",
+      "ru": "о"
+    },
+    "sound": {
+      "ipa": "ɔ",
+      "ru": "о",
+      "canonical": "о",
+      "accept": [],
+      "partial": []
+    },
+    "notes": [
+      "Всегда «о», даже в начале слова. Сравните с Ո."
+    ],
+    "confusable": {
+      "sound": [
+        "vo"
+      ],
+      "shape": []
+    },
+    "words": [
+      "odz",
+      "odaparik",
+      "or"
+    ],
+    "handwriting": {
+      "upper": "img/handwriting/o-upper.svg",
+      "lower": "img/handwriting/o-lower.svg"
+    },
+    "audio": null,
+    "reviewed": false
+  },
+  {
+    "id": "fe",
+    "upper": "Ֆ",
+    "lower": "ֆ",
+    "order": 39,
+    "name": {
+      "hy": "ֆե",
+      "ru": "фе"
+    },
+    "sound": {
+      "ipa": "f",
+      "ru": "ф",
+      "canonical": "ф",
+      "accept": [],
+      "partial": []
+    },
+    "notes": [
+      "Встречается в основном в заимствованных словах."
+    ],
+    "confusable": {
+      "sound": [],
+      "shape": []
+    },
+    "words": [
+      "futbol",
+      "fermer",
+      "film"
+    ],
+    "handwriting": {
+      "upper": "img/handwriting/fe-upper.svg",
+      "lower": "img/handwriting/fe-lower.svg"
+    },
+    "audio": null,
+    "reviewed": false
+  }
+]

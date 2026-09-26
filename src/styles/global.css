@@ -24,7 +24,7 @@
   --nav-h: 64px;
   --glyph-scale: 1;
 
-  --font-ui: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-ui: "Inter", "Noto Sans Armenian", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-hy: "Noto Sans Armenian", sans-serif;
 
   color-scheme: light;

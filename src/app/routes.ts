@@ -11,6 +11,7 @@ export type Route =
   | { name: "settings" }
   | { name: "backup" }
   | { name: "about" }
+  | { name: "credits" }
   | { name: "not-found"; path: string };
 
 /** К какой вкладке нижней панели относится экран. */
@@ -27,6 +28,7 @@ export function tabOf(route: Route): Tab | null {
     case "settings":
     case "backup":
     case "about":
+    case "credits":
       return "profile";
     default:
       return null;
@@ -48,6 +50,7 @@ export function parseHash(hash: string): Route {
     case "settings":
     case "backup":
     case "about":
+    case "credits":
       return { name: first };
     default:
       return { name: "not-found", path };

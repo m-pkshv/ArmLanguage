@@ -1,0 +1,116 @@
+{
+  "sections": [
+    {
+      "id": "alphabet",
+      "title": "Алфавит",
+      "status": "available",
+      "lessons": [
+        {
+          "id": "alphabet-1",
+          "title": "Первые буквы",
+          "newItems": [
+            "letter:ayb",
+            "letter:men",
+            "letter:nu",
+            "letter:tyun",
+            "letter:se"
+          ]
+        },
+        {
+          "id": "alphabet-2",
+          "title": "Первые слова",
+          "newItems": [
+            "letter:ini",
+            "letter:re",
+            "letter:vo",
+            "letter:u",
+            "letter:ken"
+          ]
+        },
+        {
+          "id": "alphabet-3",
+          "title": "Знакомые звуки",
+          "newItems": [
+            "letter:yech",
+            "letter:lyun",
+            "letter:ben",
+            "letter:da",
+            "letter:vev"
+          ]
+        },
+        {
+          "id": "alphabet-4",
+          "title": "Հայաստան",
+          "newItems": [
+            "letter:gim",
+            "letter:za",
+            "letter:yi",
+            "letter:ho",
+            "letter:pe"
+          ]
+        },
+        {
+          "id": "alphabet-5",
+          "title": "Звуки с придыханием",
+          "newItems": [
+            "letter:tho",
+            "letter:pyur",
+            "letter:ke",
+            "letter:chha",
+            "letter:che"
+          ]
+        },
+        {
+          "id": "alphabet-6",
+          "title": "Шипящие и «дз»",
+          "newItems": [
+            "letter:tsa",
+            "letter:dza",
+            "letter:je",
+            "letter:zhe",
+            "letter:sha"
+          ]
+        },
+        {
+          "id": "alphabet-7",
+          "title": "Звуки, которых нет в русском",
+          "newItems": [
+            "letter:xe",
+            "letter:ghat",
+            "letter:rra",
+            "letter:yt",
+            "letter:e"
+          ]
+        },
+        {
+          "id": "alphabet-8",
+          "title": "Последние буквы",
+          "newItems": [
+            "letter:tsho",
+            "letter:o",
+            "letter:fe",
+            "letter:yev"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading",
+      "title": "Чтение",
+      "status": "coming-soon",
+      "lessons": []
+    },
+    {
+      "id": "first-words",
+      "title": "Первые слова",
+      "status": "coming-soon",
+      "lessons": []
+    },
+    {
+      "id": "phrases",
+      "title": "Фразы",
+      "status": "coming-soon",
+      "lessons": []
+    }
+  ]
+}

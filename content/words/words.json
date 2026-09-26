@@ -1,0 +1,2560 @@
+[
+  {
+    "id": "arev",
+    "hy": "արև",
+    "pronunciation": "арев",
+    "exception": false,
+    "ru": "солнце",
+    "image": {
+      "file": "img/words/sun.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "nature"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "atorr",
+    "hy": "աթոռ",
+    "pronunciation": "атхорр",
+    "exception": false,
+    "ru": "стул",
+    "image": {
+      "file": "img/words/chair.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "home"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "atam",
+    "hy": "ատամ",
+    "pronunciation": "атам",
+    "exception": false,
+    "ru": "зуб",
+    "image": {
+      "file": "img/words/tooth.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "body"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "agh",
+    "hy": "աղ",
+    "pronunciation": "агх",
+    "exception": false,
+    "ru": "соль",
+    "image": {
+      "file": "img/words/salt.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "food"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "barev",
+    "hy": "բարև",
+    "pronunciation": "барев",
+    "exception": false,
+    "ru": "привет",
+    "image": {
+      "file": "img/words/wave.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "phrases"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "banan",
+    "hy": "բանան",
+    "pronunciation": "банан",
+    "exception": false,
+    "ru": "банан",
+    "image": {
+      "file": "img/words/banana.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "food"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "bad",
+    "hy": "բադ",
+    "pronunciation": "бад",
+    "exception": false,
+    "ru": "утка",
+    "image": {
+      "file": "img/words/duck.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "animals"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "beran",
+    "hy": "բերան",
+    "pronunciation": "беран",
+    "exception": false,
+    "ru": "рот",
+    "image": {
+      "file": "img/words/mouth.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "body"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "girk",
+    "hy": "գիրք",
+    "pronunciation": "гиркх",
+    "exception": false,
+    "ru": "книга",
+    "image": {
+      "file": "img/words/book.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "school"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "gayl",
+    "hy": "գայլ",
+    "pronunciation": "гайл",
+    "exception": false,
+    "ru": "волк",
+    "image": {
+      "file": "img/words/wolf.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "animals"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "glkhark",
+    "hy": "գլխարկ",
+    "pronunciation": "гылхарк",
+    "exception": false,
+    "ru": "шапка, шляпа",
+    "image": {
+      "file": "img/words/hat.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "clothes"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "durr",
+    "hy": "դուռ",
+    "pronunciation": "дурр",
+    "exception": false,
+    "ru": "дверь",
+    "image": {
+      "file": "img/words/door.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "home"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "ddum",
+    "hy": "դդում",
+    "pronunciation": "дыдум",
+    "exception": false,
+    "ru": "тыква",
+    "image": {
+      "file": "img/words/pumpkin.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "food"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "dprots",
+    "hy": "դպրոց",
+    "pronunciation": "дыпроцх",
+    "exception": false,
+    "ru": "школа",
+    "image": {
+      "file": "img/words/school.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "school"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "yerekha",
+    "hy": "երեխա",
+    "pronunciation": "йереха",
+    "exception": false,
+    "ru": "ребёнок",
+    "image": {
+      "file": "img/words/child.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "family"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "yez",
+    "hy": "եզ",
+    "pronunciation": "йез",
+    "exception": false,
+    "ru": "вол",
+    "image": {
+      "file": "img/words/ox.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "animals"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "yerg",
+    "hy": "երգ",
+    "pronunciation": "йерг",
+    "exception": false,
+    "ru": "песня",
+    "image": {
+      "file": "img/words/music.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "culture"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "meghu",
+    "hy": "մեղու",
+    "pronunciation": "мегху",
+    "exception": false,
+    "ru": "пчела",
+    "image": {
+      "file": "img/words/bee.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "animals"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "zang",
+    "hy": "զանգ",
+    "pronunciation": "занг",
+    "exception": false,
+    "ru": "колокол, звонок",
+    "image": {
+      "file": "img/words/bell.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "things"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "zatik",
+    "hy": "զատիկ",
+    "pronunciation": "затик",
+    "exception": false,
+    "ru": "божья коровка",
+    "image": {
+      "file": "img/words/ladybug.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "animals"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "vozni",
+    "hy": "ոզնի",
+    "pronunciation": "возни",
+    "exception": false,
+    "ru": "ёж",
+    "image": {
+      "file": "img/words/hedgehog.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "animals"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "ej",
+    "hy": "էջ",
+    "pronunciation": "эдж",
+    "exception": false,
+    "ru": "страница",
+    "image": {
+      "file": "img/words/page.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "school"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "esh",
+    "hy": "էշ",
+    "pronunciation": "эш",
+    "exception": false,
+    "ru": "осёл",
+    "image": {
+      "file": "img/words/donkey.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "animals"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "ekran",
+    "hy": "էկրան",
+    "pronunciation": "экран",
+    "exception": false,
+    "ru": "экран",
+    "image": {
+      "file": "img/words/screen.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "things"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "ynker",
+    "hy": "ընկեր",
+    "pronunciation": "ынкер",
+    "exception": false,
+    "ru": "друг",
+    "image": {
+      "file": "img/words/friends.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "family"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "yntanik",
+    "hy": "ընտանիք",
+    "pronunciation": "ынтаникх",
+    "exception": false,
+    "ru": "семья",
+    "image": {
+      "file": "img/words/family.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "family"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "trrchun",
+    "hy": "թռչուն",
+    "pronunciation": "тхыррчхун",
+    "exception": false,
+    "ru": "птица",
+    "image": {
+      "file": "img/words/bird.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "animals"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "tey",
+    "hy": "թեյ",
+    "pronunciation": "тхей",
+    "exception": false,
+    "ru": "чай",
+    "image": {
+      "file": "img/words/tea.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "food"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "titerr",
+    "hy": "թիթեռ",
+    "pronunciation": "тхитхерр",
+    "exception": false,
+    "ru": "бабочка",
+    "image": {
+      "file": "img/words/butterfly.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "animals"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "zhamatsuyts",
+    "hy": "ժամացույց",
+    "pronunciation": "жамацхуйцх",
+    "exception": false,
+    "ru": "часы",
+    "image": {
+      "file": "img/words/watch.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "things"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "zhpit",
+    "hy": "ժպիտ",
+    "pronunciation": "жыпит",
+    "exception": false,
+    "ru": "улыбка",
+    "image": {
+      "file": "img/words/smile.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "body"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "zham",
+    "hy": "ժամ",
+    "pronunciation": "жам",
+    "exception": false,
+    "ru": "час",
+    "image": null,
+    "tags": [
+      "time"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "inknatirr",
+    "hy": "ինքնաթիռ",
+    "pronunciation": "инкхнатхирр",
+    "exception": false,
+    "ru": "самолёт",
+    "image": {
+      "file": "img/words/airplane.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "transport"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "dzi",
+    "hy": "ձի",
+    "pronunciation": "дзи",
+    "exception": false,
+    "ru": "лошадь",
+    "image": {
+      "file": "img/words/horse.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "animals"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "inch",
+    "hy": "ինչ",
+    "pronunciation": "инчх",
+    "exception": false,
+    "ru": "что",
+    "image": null,
+    "tags": [
+      "words"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "lusin",
+    "hy": "լուսին",
+    "pronunciation": "лусин",
+    "exception": false,
+    "ru": "луна",
+    "image": {
+      "file": "img/words/moon.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "nature"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "limon",
+    "hy": "լիմոն",
+    "pronunciation": "лимон",
+    "exception": false,
+    "ru": "лимон",
+    "image": {
+      "file": "img/words/lemon.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "food"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "luys",
+    "hy": "լույս",
+    "pronunciation": "луйс",
+    "exception": false,
+    "ru": "свет",
+    "image": {
+      "file": "img/words/bulb.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "home"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "khndzor",
+    "hy": "խնձոր",
+    "pronunciation": "хындзор",
+    "exception": false,
+    "ru": "яблоко",
+    "image": {
+      "file": "img/words/apple.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "food"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "khaghogh",
+    "hy": "խաղող",
+    "pronunciation": "хагхогх",
+    "exception": false,
+    "ru": "виноград",
+    "image": {
+      "file": "img/words/grapes.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "food"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "khoz",
+    "hy": "խոզ",
+    "pronunciation": "хоз",
+    "exception": false,
+    "ru": "свинья",
+    "image": {
+      "file": "img/words/pig.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "animals"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "tsov",
+    "hy": "ծով",
+    "pronunciation": "цов",
+    "exception": false,
+    "ru": "море",
+    "image": {
+      "file": "img/words/sea.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "nature"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "tsarr",
+    "hy": "ծառ",
+    "pronunciation": "царр",
+    "exception": false,
+    "ru": "дерево",
+    "image": {
+      "file": "img/words/tree.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "nature"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "tsaghik",
+    "hy": "ծաղիկ",
+    "pronunciation": "цагхик",
+    "exception": false,
+    "ru": "цветок",
+    "image": {
+      "file": "img/words/flower.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "nature"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "katu",
+    "hy": "կատու",
+    "pronunciation": "кату",
+    "exception": false,
+    "ru": "кошка",
+    "image": {
+      "file": "img/words/cat.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "animals"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "kov",
+    "hy": "կով",
+    "pronunciation": "ков",
+    "exception": false,
+    "ru": "корова",
+    "image": {
+      "file": "img/words/cow.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "animals"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "kat",
+    "hy": "կաթ",
+    "pronunciation": "катх",
+    "exception": false,
+    "ru": "молоко",
+    "image": {
+      "file": "img/words/milk.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "food"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "hats",
+    "hy": "հաց",
+    "pronunciation": "хацх",
+    "exception": false,
+    "ru": "хлеб",
+    "image": {
+      "file": "img/words/bread.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "food"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "hav",
+    "hy": "հավ",
+    "pronunciation": "хав",
+    "exception": false,
+    "ru": "курица",
+    "image": {
+      "file": "img/words/chicken.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "animals"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "hayastan",
+    "hy": "Հայաստան",
+    "pronunciation": "хайастан",
+    "exception": false,
+    "ru": "Армения",
+    "image": {
+      "file": "img/words/flag-am.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "places"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "dzuk",
+    "hy": "ձուկ",
+    "pronunciation": "дзук",
+    "exception": false,
+    "ru": "рыба",
+    "image": {
+      "file": "img/words/fish.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "animals"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "dzu",
+    "hy": "ձու",
+    "pronunciation": "дзу",
+    "exception": false,
+    "ru": "яйцо",
+    "image": {
+      "file": "img/words/egg.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "food"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "dzmeruk",
+    "hy": "ձմերուկ",
+    "pronunciation": "дзымерук",
+    "exception": false,
+    "ru": "арбуз",
+    "image": {
+      "file": "img/words/watermelon.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "food"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "chanch",
+    "hy": "ճանճ",
+    "pronunciation": "чанч",
+    "exception": false,
+    "ru": "муха",
+    "image": {
+      "file": "img/words/fly.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "animals"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "chut",
+    "hy": "ճուտ",
+    "pronunciation": "чут",
+    "exception": false,
+    "ru": "цыплёнок",
+    "image": {
+      "file": "img/words/chick.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "animals"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "chanaparh",
+    "hy": "ճանապարհ",
+    "pronunciation": "чанапарх",
+    "exception": false,
+    "ru": "дорога",
+    "image": {
+      "file": "img/words/road.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "places"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "muk",
+    "hy": "մուկ",
+    "pronunciation": "мук",
+    "exception": false,
+    "ru": "мышь",
+    "image": {
+      "file": "img/words/mouse.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "animals"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "matit",
+    "hy": "մատիտ",
+    "pronunciation": "матит",
+    "exception": false,
+    "ru": "карандаш",
+    "image": {
+      "file": "img/words/pencil.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "school"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "mayr",
+    "hy": "մայր",
+    "pronunciation": "майр",
+    "exception": false,
+    "ru": "мать",
+    "image": {
+      "file": "img/words/woman.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "family"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "yugh",
+    "hy": "յուղ",
+    "pronunciation": "йугх",
+    "exception": false,
+    "ru": "масло",
+    "image": {
+      "file": "img/words/butter.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "food"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "aytz",
+    "hy": "այծ",
+    "pronunciation": "айц",
+    "exception": false,
+    "ru": "коза",
+    "image": {
+      "file": "img/words/goat.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "animals"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "yot",
+    "hy": "յոթ",
+    "pronunciation": "йотх",
+    "exception": false,
+    "ru": "семь",
+    "image": {
+      "file": "img/words/seven.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "numbers"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "nav",
+    "hy": "նավ",
+    "pronunciation": "нав",
+    "exception": false,
+    "ru": "корабль",
+    "image": {
+      "file": "img/words/ship.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "transport"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "napastak",
+    "hy": "նապաստակ",
+    "pronunciation": "напастак",
+    "exception": false,
+    "ru": "заяц",
+    "image": {
+      "file": "img/words/rabbit.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "animals"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "nurr",
+    "hy": "նուռ",
+    "pronunciation": "нурр",
+    "exception": false,
+    "ru": "гранат",
+    "image": null,
+    "tags": [
+      "food"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "shun",
+    "hy": "շուն",
+    "pronunciation": "шун",
+    "exception": false,
+    "ru": "собака",
+    "image": {
+      "file": "img/words/dog.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "animals"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "shapik",
+    "hy": "շապիկ",
+    "pronunciation": "шапик",
+    "exception": false,
+    "ru": "футболка, рубашка",
+    "image": {
+      "file": "img/words/tshirt.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "clothes"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "shakar",
+    "hy": "շաքար",
+    "pronunciation": "шакхар",
+    "exception": false,
+    "ru": "сахар",
+    "image": null,
+    "tags": [
+      "food"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "votk",
+    "hy": "ոտք",
+    "pronunciation": "воткх",
+    "exception": false,
+    "ru": "нога",
+    "image": {
+      "file": "img/words/foot.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "body"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "voski",
+    "hy": "ոսկի",
+    "pronunciation": "воски",
+    "exception": false,
+    "ru": "золото",
+    "image": {
+      "file": "img/words/coin.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "things"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "chors",
+    "hy": "չորս",
+    "pronunciation": "чхорс",
+    "exception": false,
+    "ru": "четыре",
+    "image": {
+      "file": "img/words/four.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "numbers"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "achk",
+    "hy": "աչք",
+    "pronunciation": "ачхкх",
+    "exception": false,
+    "ru": "глаз",
+    "image": {
+      "file": "img/words/eye.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "body"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "chghjik",
+    "hy": "չղջիկ",
+    "pronunciation": "чхыгхджик",
+    "exception": false,
+    "ru": "летучая мышь",
+    "image": {
+      "file": "img/words/bat.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "animals"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "panir",
+    "hy": "պանիր",
+    "pronunciation": "панир",
+    "exception": false,
+    "ru": "сыр",
+    "image": {
+      "file": "img/words/cheese.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "food"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "pap",
+    "hy": "պապ",
+    "pronunciation": "пап",
+    "exception": false,
+    "ru": "дедушка",
+    "image": {
+      "file": "img/words/grandpa.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "family"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "payusak",
+    "hy": "պայուսակ",
+    "pronunciation": "пайусак",
+    "exception": false,
+    "ru": "сумка, портфель",
+    "image": {
+      "file": "img/words/backpack.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "school"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "jur",
+    "hy": "ջուր",
+    "pronunciation": "джур",
+    "exception": false,
+    "ru": "вода",
+    "image": {
+      "file": "img/words/droplet.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "food"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "jutak",
+    "hy": "ջութակ",
+    "pronunciation": "джутхак",
+    "exception": false,
+    "ru": "скрипка",
+    "image": {
+      "file": "img/words/violin.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "culture"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "rradio",
+    "hy": "ռադիո",
+    "pronunciation": "ррадио",
+    "exception": false,
+    "ru": "радио",
+    "image": {
+      "file": "img/words/radio.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "things"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "sunk",
+    "hy": "սունկ",
+    "pronunciation": "сунк",
+    "exception": false,
+    "ru": "гриб",
+    "image": {
+      "file": "img/words/mushroom.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "nature"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "sirt",
+    "hy": "սիրտ",
+    "pronunciation": "сирт",
+    "exception": false,
+    "ru": "сердце",
+    "image": {
+      "file": "img/words/heart.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "body"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "sag",
+    "hy": "սագ",
+    "pronunciation": "саг",
+    "exception": false,
+    "ru": "гусь",
+    "image": {
+      "file": "img/words/goose.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "animals"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "vard",
+    "hy": "վարդ",
+    "pronunciation": "вард",
+    "exception": false,
+    "ru": "роза",
+    "image": {
+      "file": "img/words/rose.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "nature"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "vagr",
+    "hy": "վագր",
+    "pronunciation": "вагыр",
+    "exception": false,
+    "ru": "тигр",
+    "image": {
+      "file": "img/words/tiger.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "animals"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "tun",
+    "hy": "տուն",
+    "pronunciation": "тун",
+    "exception": false,
+    "ru": "дом",
+    "image": {
+      "file": "img/words/house.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "home"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "tat",
+    "hy": "տատ",
+    "pronunciation": "тат",
+    "exception": false,
+    "ru": "бабушка",
+    "image": {
+      "file": "img/words/grandma.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "family"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "tandz",
+    "hy": "տանձ",
+    "pronunciation": "тандз",
+    "exception": false,
+    "ru": "груша",
+    "image": {
+      "file": "img/words/pear.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "food"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "rope",
+    "hy": "րոպե",
+    "pronunciation": "ропе",
+    "exception": false,
+    "ru": "минута",
+    "image": {
+      "file": "img/words/stopwatch.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "time"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "tskhavel",
+    "hy": "ցախավել",
+    "pronunciation": "цхахавел",
+    "exception": false,
+    "ru": "веник",
+    "image": {
+      "file": "img/words/broom.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "home"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "tsurt",
+    "hy": "ցուրտ",
+    "pronunciation": "цхурт",
+    "exception": false,
+    "ru": "холодно",
+    "image": null,
+    "tags": [
+      "nature"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "ught",
+    "hy": "ուղտ",
+    "pronunciation": "угхт",
+    "exception": false,
+    "ru": "верблюд",
+    "image": {
+      "file": "img/words/camel.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "animals"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "urakh",
+    "hy": "ուրախ",
+    "pronunciation": "урах",
+    "exception": false,
+    "ru": "радостный",
+    "image": {
+      "file": "img/words/laugh.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "words"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "pigh",
+    "hy": "փիղ",
+    "pronunciation": "пхигх",
+    "exception": false,
+    "ru": "слон",
+    "image": {
+      "file": "img/words/elephant.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "animals"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "pogh",
+    "hy": "փող",
+    "pronunciation": "пхогх",
+    "exception": false,
+    "ru": "деньги",
+    "image": {
+      "file": "img/words/money.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "things"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "petur",
+    "hy": "փետուր",
+    "pronunciation": "пхетур",
+    "exception": false,
+    "ru": "перо",
+    "image": {
+      "file": "img/words/feather.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "things"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "kar",
+    "hy": "քար",
+    "pronunciation": "кхар",
+    "exception": false,
+    "ru": "камень",
+    "image": {
+      "file": "img/words/rock.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "nature"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "kit",
+    "hy": "քիթ",
+    "pronunciation": "кхитх",
+    "exception": false,
+    "ru": "нос",
+    "image": {
+      "file": "img/words/nose.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "body"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "kami",
+    "hy": "քամի",
+    "pronunciation": "кхами",
+    "exception": false,
+    "ru": "ветер",
+    "image": {
+      "file": "img/words/wind.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "nature"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "yerevan",
+    "hy": "Երևան",
+    "pronunciation": "йереван",
+    "exception": false,
+    "ru": "Ереван",
+    "image": {
+      "file": "img/words/city.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "places"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "odz",
+    "hy": "օձ",
+    "pronunciation": "одз",
+    "exception": false,
+    "ru": "змея",
+    "image": {
+      "file": "img/words/snake.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "animals"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "odaparik",
+    "hy": "օդապարիկ",
+    "pronunciation": "одапарик",
+    "exception": false,
+    "ru": "воздушный шар",
+    "image": {
+      "file": "img/words/balloon.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "things"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "or",
+    "hy": "օր",
+    "pronunciation": "ор",
+    "exception": false,
+    "ru": "день",
+    "image": null,
+    "tags": [
+      "time"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "ympelik",
+    "hy": "ըմպելիք",
+    "pronunciation": "ымпеликх",
+    "exception": false,
+    "ru": "напиток",
+    "image": {
+      "file": "img/words/drink.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "food"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "jermachap",
+    "hy": "ջերմաչափ",
+    "pronunciation": "джермачхапх",
+    "exception": false,
+    "ru": "градусник",
+    "image": {
+      "file": "img/words/thermometer.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "things"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "film",
+    "hy": "ֆիլմ",
+    "pronunciation": "филм",
+    "exception": false,
+    "ru": "фильм",
+    "image": {
+      "file": "img/words/film.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "culture"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "futbol",
+    "hy": "ֆուտբոլ",
+    "pronunciation": "футбол",
+    "exception": false,
+    "ru": "футбол",
+    "image": {
+      "file": "img/words/football.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "sport"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "fermer",
+    "hy": "ֆերմեր",
+    "pronunciation": "фермер",
+    "exception": false,
+    "ru": "фермер",
+    "image": {
+      "file": "img/words/farmer.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "people"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "mama",
+    "hy": "մամա",
+    "pronunciation": "мама",
+    "exception": false,
+    "ru": "мама",
+    "image": null,
+    "tags": [
+      "family"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "na",
+    "hy": "նա",
+    "pronunciation": "на",
+    "exception": false,
+    "ru": "он, она",
+    "image": null,
+    "tags": [
+      "words"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "sa",
+    "hy": "սա",
+    "pronunciation": "са",
+    "exception": false,
+    "ru": "это",
+    "image": null,
+    "tags": [
+      "words"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "anna",
+    "hy": "Աննա",
+    "pronunciation": "анна",
+    "exception": false,
+    "ru": "Анна (имя)",
+    "image": null,
+    "tags": [
+      "names"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "mat",
+    "hy": "մատ",
+    "pronunciation": "мат",
+    "exception": false,
+    "ru": "палец",
+    "image": null,
+    "tags": [
+      "body"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "im",
+    "hy": "իմ",
+    "pronunciation": "им",
+    "exception": false,
+    "ru": "мой",
+    "image": null,
+    "tags": [
+      "words"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "ani",
+    "hy": "Անի",
+    "pronunciation": "ани",
+    "exception": false,
+    "ru": "Ани (имя, древний город)",
+    "image": null,
+    "tags": [
+      "names"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "kin",
+    "hy": "կին",
+    "pronunciation": "кин",
+    "exception": false,
+    "ru": "женщина, жена",
+    "image": null,
+    "tags": [
+      "family"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "tari",
+    "hy": "տարի",
+    "pronunciation": "тари",
+    "exception": false,
+    "ru": "год",
+    "image": null,
+    "tags": [
+      "time"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "utum",
+    "hy": "ուտում",
+    "pronunciation": "утум",
+    "exception": false,
+    "ru": "ест",
+    "image": null,
+    "tags": [
+      "words"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "sur",
+    "hy": "սուր",
+    "pronunciation": "сур",
+    "exception": false,
+    "ru": "острый; меч",
+    "image": null,
+    "tags": [
+      "words"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "karmir",
+    "hy": "կարմիր",
+    "pronunciation": "кармир",
+    "exception": false,
+    "ru": "красный",
+    "image": null,
+    "tags": [
+      "colors"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "mi",
+    "hy": "մի",
+    "pronunciation": "ми",
+    "exception": false,
+    "ru": "один (артикль); не",
+    "image": null,
+    "tags": [
+      "words"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "ir",
+    "hy": "իր",
+    "pronunciation": "ир",
+    "exception": false,
+    "ru": "его, её (свой)",
+    "image": null,
+    "tags": [
+      "words"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "ka",
+    "hy": "կա",
+    "pronunciation": "ка",
+    "exception": false,
+    "ru": "есть, имеется",
+    "image": null,
+    "tags": [
+      "words"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "ur",
+    "hy": "ուր",
+    "pronunciation": "ур",
+    "exception": false,
+    "ru": "куда",
+    "image": null,
+    "tags": [
+      "words"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "voskor",
+    "hy": "ոսկոր",
+    "pronunciation": "воскор",
+    "exception": false,
+    "ru": "кость",
+    "image": null,
+    "tags": [
+      "body"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "tikin",
+    "hy": "տիկին",
+    "pronunciation": "тикин",
+    "exception": false,
+    "ru": "госпожа",
+    "image": null,
+    "tags": [
+      "people"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "lav",
+    "hy": "լավ",
+    "pronunciation": "лав",
+    "exception": false,
+    "ru": "хорошо",
+    "image": null,
+    "tags": [
+      "words"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "das",
+    "hy": "դաս",
+    "pronunciation": "дас",
+    "exception": false,
+    "ru": "урок",
+    "image": null,
+    "tags": [
+      "school"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "ban",
+    "hy": "բան",
+    "pronunciation": "бан",
+    "exception": false,
+    "ru": "вещь, что-то",
+    "image": null,
+    "tags": [
+      "words"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "du",
+    "hy": "դու",
+    "pronunciation": "ду",
+    "exception": false,
+    "ru": "ты",
+    "image": null,
+    "tags": [
+      "words"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "em",
+    "hy": "եմ",
+    "pronunciation": "эм",
+    "exception": true,
+    "ru": "(я) есть",
+    "image": null,
+    "tags": [
+      "words"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "en",
+    "hy": "են",
+    "pronunciation": "эн",
+    "exception": true,
+    "ru": "(они) есть",
+    "image": null,
+    "tags": [
+      "words"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "yerek",
+    "hy": "երեկ",
+    "pronunciation": "йерек",
+    "exception": false,
+    "ru": "вчера",
+    "image": null,
+    "tags": [
+      "time"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "mek",
+    "hy": "մեկ",
+    "pronunciation": "мек",
+    "exception": false,
+    "ru": "один",
+    "image": null,
+    "tags": [
+      "numbers"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "bari",
+    "hy": "բարի",
+    "pronunciation": "бари",
+    "exception": false,
+    "ru": "добрый",
+    "image": null,
+    "tags": [
+      "words"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "armen",
+    "hy": "Արմեն",
+    "pronunciation": "армен",
+    "exception": false,
+    "ru": "Армен (имя)",
+    "image": null,
+    "tags": [
+      "names"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "berel",
+    "hy": "բերել",
+    "pronunciation": "берел",
+    "exception": false,
+    "ru": "приносить",
+    "image": null,
+    "tags": [
+      "words"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "hay",
+    "hy": "հայ",
+    "pronunciation": "хай",
+    "exception": false,
+    "ru": "армянин",
+    "image": null,
+    "tags": [
+      "people"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "hayeren",
+    "hy": "հայերեն",
+    "pronunciation": "хайерен",
+    "exception": false,
+    "ru": "армянский язык",
+    "image": null,
+    "tags": [
+      "words"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "get",
+    "hy": "գետ",
+    "pronunciation": "гет",
+    "exception": false,
+    "ru": "река",
+    "image": null,
+    "tags": [
+      "nature"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "guyn",
+    "hy": "գույն",
+    "pronunciation": "гуйн",
+    "exception": false,
+    "ru": "цвет",
+    "image": null,
+    "tags": [
+      "colors"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "pat",
+    "hy": "պատ",
+    "pronunciation": "пат",
+    "exception": false,
+    "ru": "стена",
+    "image": null,
+    "tags": [
+      "home"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "zov",
+    "hy": "զով",
+    "pronunciation": "зов",
+    "exception": false,
+    "ru": "прохладный",
+    "image": null,
+    "tags": [
+      "nature"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "hima",
+    "hy": "հիմա",
+    "pronunciation": "хима",
+    "exception": false,
+    "ru": "сейчас",
+    "image": null,
+    "tags": [
+      "time"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "ayo",
+    "hy": "այո",
+    "pronunciation": "айо",
+    "exception": false,
+    "ru": "да",
+    "image": null,
+    "tags": [
+      "words"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "voch",
+    "hy": "ոչ",
+    "pronunciation": "вочх",
+    "exception": false,
+    "ru": "нет, не",
+    "image": null,
+    "tags": [
+      "words"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "kuyr",
+    "hy": "քույր",
+    "pronunciation": "кхуйр",
+    "exception": false,
+    "ru": "сестра",
+    "image": null,
+    "tags": [
+      "family"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "tught",
+    "hy": "թուղթ",
+    "pronunciation": "тхугхтх",
+    "exception": false,
+    "ru": "бумага",
+    "image": {
+      "file": "img/words/paper.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "school"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "pokr",
+    "hy": "փոքր",
+    "pronunciation": "пхокхыр",
+    "exception": false,
+    "ru": "маленький",
+    "image": null,
+    "tags": [
+      "words"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "shat",
+    "hy": "շատ",
+    "pronunciation": "шат",
+    "exception": false,
+    "ru": "много, очень",
+    "image": null,
+    "tags": [
+      "words"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "jerm",
+    "hy": "ջերմ",
+    "pronunciation": "джерм",
+    "exception": false,
+    "ru": "тёплый",
+    "image": null,
+    "tags": [
+      "nature"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "dzyun",
+    "hy": "ձյուն",
+    "pronunciation": "дзйун",
+    "exception": false,
+    "ru": "снег",
+    "image": {
+      "file": "img/words/snowflake.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "nature"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "lerr",
+    "hy": "լեռ",
+    "pronunciation": "лерр",
+    "exception": false,
+    "ru": "гора",
+    "image": {
+      "file": "img/words/mountain.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "nature"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "dzerrk",
+    "hy": "ձեռք",
+    "pronunciation": "дзерркх",
+    "exception": false,
+    "ru": "рука",
+    "image": {
+      "file": "img/words/hand.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "body"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "kaghak",
+    "hy": "քաղաք",
+    "pronunciation": "кхагхакх",
+    "exception": false,
+    "ru": "город",
+    "image": null,
+    "tags": [
+      "places"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "yev",
+    "hy": "և",
+    "pronunciation": "йев",
+    "exception": false,
+    "ru": "и",
+    "image": null,
+    "tags": [
+      "words"
+    ],
+    "level": 1,
+    "reviewed": false
+  },
+  {
+    "id": "hayr",
+    "hy": "հայր",
+    "pronunciation": "хайр",
+    "exception": false,
+    "ru": "отец",
+    "image": {
+      "file": "img/words/man.svg",
+      "source": "Twemoji",
+      "license": "CC BY 4.0",
+      "author": "Twitter, Inc and other contributors"
+    },
+    "tags": [
+      "family"
+    ],
+    "level": 1,
+    "reviewed": false
+  }
+]

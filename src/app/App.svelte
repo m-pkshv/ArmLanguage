@@ -8,6 +8,7 @@
   import About from "./screens/About.svelte";
   import Alphabet from "./screens/Alphabet.svelte";
   import Backup from "./screens/Backup.svelte";
+  import Credits from "./screens/Credits.svelte";
   import Home from "./screens/Home.svelte";
   import Letter from "./screens/Letter.svelte";
   import NotFound from "./screens/NotFound.svelte";
@@ -54,6 +55,8 @@
     <Backup />
   {:else if route.name === "about"}
     <About />
+  {:else if route.name === "credits"}
+    <Credits />
   {:else}
     <NotFound />
   {/if}

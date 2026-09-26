@@ -22,6 +22,7 @@
   <ListLink href="#/settings">{t("profile.settings")}</ListLink>
   <ListLink href="#/backup">{t("profile.backup")}</ListLink>
   <ListLink href="#/about">{t("profile.about")}</ListLink>
+  <ListLink href="#/credits">{t("profile.credits")}</ListLink>
 </Card>
 
 <Card padded={false}>

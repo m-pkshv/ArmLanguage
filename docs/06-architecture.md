@@ -54,15 +54,14 @@
 ├─ legacy/                     # прототип v0.1 — на сайте по адресу /old/
 ├─ content/                    # учебные данные (JSON), см. 04-content.md
 │  ├─ course.json              # разделы → уроки
+│  ├─ credits.json             # авторы и лицензии материалов
 │  ├─ alphabet/letters.json
 │  ├─ words/words.json         # общий банк армянских слов
-│  ├─ ru/words.json, ru/phrases.json
-│  └─ rules/ru-hy.json, rules/transcription.json
-├─ assets/
-│  ├─ img/words/               # картинки-примеры (SVG)
-│  ├─ handwriting/             # SVG рукописных букв: <id>-upper.svg, <id>-lower.svg
-│  ├─ audio/letters/           # звуки букв (V1)
-│  └─ fonts/                   # шрифты хранятся локально (офлайн)
+│  └─ ru/words.json             # русские слова для задания «вставь букву»
+├─ public/                     # файлы сайта как есть
+│  ├─ img/words/               # картинки-примеры (SVG, Twemoji)
+│  ├─ img/handwriting/         # рукописные буквы: <id>-upper.svg, <id>-lower.svg
+│  └─ audio/letters/           # звуки букв (V1, после записи)
 ├─ src/
 │  ├─ main.ts
 │  ├─ app/                     # маршрутизация, каркас, экраны
@@ -83,9 +82,7 @@
 │  ├─ ui/                      # общие компоненты: Keyboard, Glyph, OptionGrid, WordCard, ProgressBar
 │  ├─ platform/                # storage, audio, haptics
 │  └─ i18n/ru.json             # все тексты интерфейса
-├─ scripts/
-│  ├─ pull-content.ts          # Google-таблица → content/*.json
-│  └─ check-content.ts         # валидация контента
+├─ scripts/pull-content.ts     # Google-таблица → content/*.json (когда появится таблица)
 ├─ tests/
 ├─ docs/
 └─ .github/workflows/deploy.yml
