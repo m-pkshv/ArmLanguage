@@ -17,4 +17,4 @@ https://creativecommons.org/licenses/by-sa/4.0/deed.ru
 | Шрифты Inter и Noto Sans Armenian | SIL Open Font License 1.1 |
 | Картинки Twemoji | CC BY 4.0 |
 | Картинки OpenMoji | CC BY-SA 4.0 |
-| Рукописные буквы (Wikimedia Commons, автор — участник «そらみみ») и их производные | CC BY-SA 4.0 |
+| Рукописные буквы (Wikimedia Commons, автор — участник «そらみみ», правки — Kwamikagami) и их производные, в том числе иконка приложения | CC BY-SA 4.0 |

@@ -70,17 +70,19 @@
 │  ├─ core/
 │  │  ├─ content/              # типы контента, загрузка, производные индексы
 │  │  ├─ progress/             # интервальное повторение, модель прогресса, миграции
-│  │  ├─ session/              # движок сессии, выбор заданий
+│  │  ├─ session/              # типы занятия (сохраняются в прогрессе)
 │  │  ├─ checking/             # нормализация, сравнение, транскрипция, ошибки по буквам
 │  │  └─ text/                 # армянский текст: разбиение на буквы (ու, և), смешанное письмо
 │  ├─ exercises/
-│  │  ├─ registry.ts           # реестр типов заданий
-│  │  ├─ letter-to-sound/      # index.ts (логика) + View.svelte (вид)
-│  │  ├─ letter-type-sound/
-│  │  ├─ ru-word-insert/
-│  │  └─ …
+│  │  ├─ types.ts              # интерфейс типа задания
+│  │  ├─ logic.ts              # реестр логики: id → generate/check
+│  │  ├─ registry.ts           # реестр видов: id → компонент
+│  │  ├─ choice.ts, picture.ts, typeSound.ts, ruWordInsert.ts  # логика заданий
+│  │  └─ views/                # вид заданий (Svelte)
+│  ├─ session/                 # занятия: состав (plan), выбор задания (select), ход (run), «Продолжить» (next)
 │  ├─ ui/                      # общие компоненты: Keyboard, Glyph, OptionGrid, WordCard, ProgressBar
-│  ├─ platform/                # storage, audio, haptics
+│  ├─ platform/                # хранилище, статистика посещений, PWA (обновление)
+│  ├─ config.ts                # адреса внешних сервисов (форма обратной связи, GoatCounter)
 │  └─ i18n/ru.json             # все тексты интерфейса
 ├─ scripts/pull-content.ts     # Google-таблица → content/*.json (когда появится таблица)
 ├─ tests/
@@ -136,7 +138,8 @@ type Skill = "recognize" | "recall" | "read" | "case" | "handwriting" | "discrim
 
 ## 6.7 Типы заданий как плагины
 
-Каждый тип задания — папка в `src/exercises/` с логикой и видом, регистрируется в реестре.
+Каждый тип задания — логика (чистые функции) и вид (компонент), зарегистрированные в `src/exercises/logic.ts`
+и `src/exercises/registry.ts`.
 
 ```ts
 interface ExerciseType<Q, A> {
@@ -168,11 +171,11 @@ interface CheckResult {
 ```
 
 **Как добавить новый тип задания:**
-1. Создать папку `src/exercises/<id>/` с `index.ts` (generate/check) и `View.svelte`.
-2. Зарегистрировать в `registry.ts`.
-3. Написать тесты на `generate` и `check`.
-4. Указать тип в `exercises` нужных уроков в `course.json` (или он станет доступен в «Практике» автоматически
-   для подходящих элементов).
+1. Добавить id в `ExerciseId` (`src/core/session/types.ts`).
+2. Написать логику (`generate`, `check`, `isApplicable`) и зарегистрировать в `src/exercises/logic.ts`.
+3. Написать вид в `src/exercises/views/` и зарегистрировать в `src/exercises/registry.ts`.
+4. Добавить тип в таблицу выбора (`src/session/select.ts`) и/или в список «Своей тренировки».
+5. Тесты: `tests/exercises.test.ts` автоматически проверит новый тип на всех буквах.
 
 Остальной код (движок сессий, прогресс, экраны) не меняется.
 

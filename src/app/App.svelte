@@ -19,9 +19,14 @@
   import Practice from "./screens/Practice.svelte";
   import Profile from "./screens/Profile.svelte";
   import Settings from "./screens/Settings.svelte";
+  import { pwa } from "../platform/pwa.svelte";
+  import { trackScreen } from "../platform/analytics";
   import { app } from "./state.svelte";
 
   const route = $derived(router.current);
+
+  // Статистика экранов — только название экрана, без id букв и уроков.
+  $effect(() => trackScreen(route.name));
 
   // Тема и размер букв применяются к <html>, чтобы работали CSS-переменные (src/styles/global.css).
   $effect(() => {
@@ -40,6 +45,13 @@
     <div class="banner" role="alert">
       <Icon name="warning" size={20} />
       <span>{t("storage.unavailable")}</span>
+    </div>
+  {/if}
+
+  {#if pwa.needRefresh && route.name !== "session"}
+    <div class="banner update">
+      <span>{t("update.available")}</span>
+      <button onclick={() => pwa.apply()}>{t("update.button")}</button>
     </div>
   {/if}
 
@@ -104,6 +116,20 @@
     background: var(--warn-soft);
     color: var(--text);
     font-size: 14px;
+  }
+  .update {
+    align-items: center;
+    justify-content: space-between;
+    background: var(--accent-soft);
+  }
+  .update button {
+    min-height: 40px;
+    padding: 0 14px;
+    border: 0;
+    border-radius: 10px;
+    background: var(--accent);
+    color: var(--accent-text);
+    font-weight: 600;
   }
   .banner :global(svg) {
     flex: none;
