@@ -745,8 +745,56 @@
           "id": "describe",
           "title": "Цвета и описания",
           "emoji": "🎨",
-          "status": "coming-soon",
-          "lessons": []
+          "status": "available",
+          "lessons": [
+            {
+              "id": "describe-1",
+              "title": "Цвета",
+              "newItems": [
+                "word:guyn",
+                "word:karmir",
+                "word:spitak",
+                "word:sev",
+                "word:kapuyt",
+                "word:kanach",
+                "word:deghin",
+                "word:narnjaguyn",
+                "word:mokhraguyn",
+                "word:vardaguyn",
+                "word:shaganakaguyn",
+                "phrase:inch-guyn-e"
+              ]
+            },
+            {
+              "id": "describe-2",
+              "title": "Размер и вид",
+              "newItems": [
+                "word:mets",
+                "word:pokr",
+                "word:nor",
+                "word:hin",
+                "word:geghetsik",
+                "word:yerkar",
+                "word:karch",
+                "phrase:shat-geghetsik-e",
+                "phrase:sa-shat-mets-e"
+              ]
+            },
+            {
+              "id": "describe-3",
+              "title": "Какой? Какая?",
+              "newItems": [
+                "word:tak",
+                "word:sarry",
+                "word:arag",
+                "word:dandagh",
+                "word:urakh",
+                "word:tkhur",
+                "phrase:yes-tkhur-em",
+                "phrase:yes-urakh-em"
+              ]
+            }
+          ]
         },
         {
           "id": "nature",

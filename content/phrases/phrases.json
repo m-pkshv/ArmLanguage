@@ -1048,5 +1048,63 @@
     ],
     "situation": "Вам нужно купить лекарство, но вы не знаете, куда идти.",
     "reviewed": false
+  },
+  {
+    "id": "inch-guyn-e",
+    "hy": "Ի՞նչ գույն է։",
+    "pronunciation": "инчх гуйн э?",
+    "ru": "Какого это цвета?",
+    "themes": [
+      "describe"
+    ],
+    "situation": "Вы не знаете, как по-армянски назвать цвет рубашки, и спрашиваете.",
+    "reviewed": false
+  },
+  {
+    "id": "shat-geghetsik-e",
+    "hy": "Շատ գեղեցիկ է։",
+    "pronunciation": "шат гегхецик э",
+    "ru": "Очень красиво!",
+    "themes": [
+      "describe"
+    ],
+    "situation": "С горы вам открылся прекрасный вид на город.",
+    "reviewed": false
+  },
+  {
+    "id": "sa-shat-mets-e",
+    "hy": "Սա շատ մեծ է։",
+    "pronunciation": "са шат мец э",
+    "ru": "Это слишком большое.",
+    "themes": [
+      "describe"
+    ],
+    "situation": "Вы примеряете куртку, а она вам велика.",
+    "reviewed": false,
+    "alsoFits": [
+      "urish-chaps-ka"
+    ]
+  },
+  {
+    "id": "yes-tkhur-em",
+    "hy": "Ես տխուր եմ։",
+    "pronunciation": "йес тыхур эм",
+    "ru": "Мне грустно.",
+    "themes": [
+      "describe"
+    ],
+    "situation": "Друг спрашивает, почему вы сегодня невесёлый.",
+    "reviewed": false
+  },
+  {
+    "id": "yes-urakh-em",
+    "hy": "Ես ուրախ եմ։",
+    "pronunciation": "йес урах эм",
+    "ru": "Я рад (рада).",
+    "themes": [
+      "describe"
+    ],
+    "situation": "Вам сообщили хорошую новость.",
+    "reviewed": false
   }
 ]

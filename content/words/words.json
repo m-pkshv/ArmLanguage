@@ -1767,7 +1767,10 @@
       "words"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "describe"
+    ]
   },
   {
     "id": "pigh",
@@ -2286,7 +2289,10 @@
       "colors"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "describe"
+    ]
   },
   {
     "id": "mi",
@@ -2682,7 +2688,10 @@
       "colors"
     ],
     "level": 2,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "describe"
+    ]
   },
   {
     "id": "pat",
@@ -2841,7 +2850,10 @@
       "words"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "describe"
+    ]
   },
   {
     "id": "shat",
@@ -6683,6 +6695,426 @@
     ],
     "themes": [
       "health"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "spitak",
+    "hy": "սպիտակ",
+    "pronunciation": "спитак",
+    "exception": false,
+    "ru": "белый",
+    "image": {
+      "file": "img/words/arasaac-8043.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "colors"
+    ],
+    "themes": [
+      "describe"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "sev",
+    "hy": "սև",
+    "pronunciation": "сев",
+    "exception": false,
+    "ru": "чёрный",
+    "image": {
+      "file": "img/words/arasaac-2886.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "colors"
+    ],
+    "themes": [
+      "describe"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "kapuyt",
+    "hy": "կապույտ",
+    "pronunciation": "капуйт",
+    "exception": false,
+    "ru": "синий",
+    "image": {
+      "file": "img/words/arasaac-4869.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "colors"
+    ],
+    "themes": [
+      "describe"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "kanach",
+    "hy": "կանաչ",
+    "pronunciation": "каначх",
+    "exception": false,
+    "ru": "зелёный",
+    "image": {
+      "file": "img/words/arasaac-4887.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "colors"
+    ],
+    "themes": [
+      "describe"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "deghin",
+    "hy": "դեղին",
+    "pronunciation": "дегхин",
+    "exception": false,
+    "ru": "жёлтый",
+    "image": {
+      "file": "img/words/arasaac-2648.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "colors"
+    ],
+    "themes": [
+      "describe"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "narnjaguyn",
+    "hy": "նարնջագույն",
+    "pronunciation": "нарнджагуйн",
+    "exception": false,
+    "ru": "оранжевый",
+    "image": {
+      "file": "img/words/arasaac-2888.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "colors"
+    ],
+    "themes": [
+      "describe"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "mokhraguyn",
+    "hy": "մոխրագույն",
+    "pronunciation": "мохрагуйн",
+    "exception": false,
+    "ru": "серый",
+    "image": {
+      "file": "img/words/arasaac-3340.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "colors"
+    ],
+    "themes": [
+      "describe"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "vardaguyn",
+    "hy": "վարդագույն",
+    "pronunciation": "вардагуйн",
+    "exception": false,
+    "ru": "розовый",
+    "image": {
+      "file": "img/words/arasaac-2807.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "colors"
+    ],
+    "themes": [
+      "describe"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "shaganakaguyn",
+    "hy": "շագանակագույն",
+    "pronunciation": "шаганакагуйн",
+    "exception": false,
+    "ru": "коричневый",
+    "image": {
+      "file": "img/words/arasaac-2923.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "colors"
+    ],
+    "themes": [
+      "describe"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "mets",
+    "hy": "մեծ",
+    "pronunciation": "мец",
+    "exception": false,
+    "ru": "большой",
+    "image": {
+      "file": "img/words/arasaac-4658.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "colors"
+    ],
+    "themes": [
+      "describe"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "nor",
+    "hy": "նոր",
+    "pronunciation": "нор",
+    "exception": false,
+    "ru": "новый",
+    "image": {
+      "file": "img/words/arasaac-4705.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "colors"
+    ],
+    "themes": [
+      "describe"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "hin",
+    "hy": "հին",
+    "pronunciation": "хин",
+    "exception": false,
+    "ru": "старый",
+    "image": {
+      "file": "img/words/arasaac-4770.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "colors"
+    ],
+    "themes": [
+      "describe"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "geghetsik",
+    "hy": "գեղեցիկ",
+    "pronunciation": "гегхецик",
+    "exception": false,
+    "ru": "красивый",
+    "image": {
+      "file": "img/words/arasaac-11194.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "colors"
+    ],
+    "themes": [
+      "describe"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "yerkar",
+    "hy": "երկար",
+    "pronunciation": "йеркар",
+    "exception": false,
+    "ru": "длинный",
+    "image": {
+      "file": "img/words/arasaac-4675.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "colors"
+    ],
+    "themes": [
+      "describe"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "karch",
+    "hy": "կարճ",
+    "pronunciation": "карч",
+    "exception": false,
+    "ru": "короткий",
+    "image": {
+      "file": "img/words/arasaac-4615.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "colors"
+    ],
+    "themes": [
+      "describe"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "tak",
+    "hy": "տաք",
+    "pronunciation": "такх",
+    "exception": false,
+    "ru": "горячий; тёплый",
+    "image": {
+      "file": "img/words/arasaac-4583.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "colors"
+    ],
+    "themes": [
+      "describe"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "sarry",
+    "hy": "սառը",
+    "pronunciation": "сарры",
+    "exception": false,
+    "ru": "холодный",
+    "image": {
+      "file": "img/words/arasaac-4652.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "colors"
+    ],
+    "themes": [
+      "describe"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "arag",
+    "hy": "արագ",
+    "pronunciation": "араг",
+    "exception": false,
+    "ru": "быстрый; быстро",
+    "image": {
+      "file": "img/words/arasaac-5306.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "colors"
+    ],
+    "themes": [
+      "describe"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "dandagh",
+    "hy": "դանդաղ",
+    "pronunciation": "дандагх",
+    "exception": false,
+    "ru": "медленный; медленно",
+    "image": {
+      "file": "img/words/arasaac-4676.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "colors"
+    ],
+    "themes": [
+      "describe"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "tkhur",
+    "hy": "տխուր",
+    "pronunciation": "тыхур",
+    "exception": false,
+    "ru": "грустный",
+    "image": {
+      "file": "img/words/arasaac-2606.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "colors"
+    ],
+    "themes": [
+      "describe"
     ],
     "level": 2,
     "reviewed": false
