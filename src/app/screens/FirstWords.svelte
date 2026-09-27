@@ -1,6 +1,6 @@
 <script lang="ts">
   import { content } from "../../core/content";
-  import { firstWordsOpen, themeDone, themes } from "../../core/words";
+  import { firstWordsOpen, seenItem, themeDone, themeItems, themes } from "../../core/words";
   import { t } from "../../i18n";
   import ScreenHeader from "../../ui/ScreenHeader.svelte";
   import { startWordsReview } from "../../session/start";
@@ -13,6 +13,8 @@
   const p = $derived(app.progress);
   const open = $derived(firstWordsOpen(p, content));
   const due = $derived(wordsDue(content, p, today()));
+  // сколько слов и фраз уже встречалось — для «Моих слов»
+  const seen = $derived(new Set(list.flatMap(themeItems).filter((id) => seenItem(p, id))).size);
 </script>
 
 <ScreenHeader title={t("words.title")} backTo="#/" />
@@ -24,6 +26,9 @@
   <p class="muted intro">{t("words.intro")}</p>
   {#if due}
     <button class="review" onclick={startWordsReview}>{t("words.review", { n: due })}</button>
+  {/if}
+  {#if seen}
+    <a class="mine" href="#/words/my"><span>📖 {t("words.mine", { n: seen })}</span><span aria-hidden="true">›</span></a>
   {/if}
   <ul class="themes">
     {#each list as theme (theme.id)}
@@ -71,6 +76,20 @@
     color: var(--accent-text);
     font: inherit;
     font-weight: 600;
+  }
+  .mine {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: var(--tap);
+    margin-bottom: 12px;
+    padding: 0 16px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--surface);
+    color: var(--text);
+    font-weight: 600;
+    text-decoration: none;
   }
   .themes {
     display: grid;

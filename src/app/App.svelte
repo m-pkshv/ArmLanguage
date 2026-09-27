@@ -16,6 +16,7 @@
   import Stats from "./screens/Stats.svelte";
   import FirstWords from "./screens/FirstWords.svelte";
   import ThemeScreen from "./screens/Theme.svelte";
+  import MyWords from "./screens/MyWords.svelte";
   import Session from "./screens/Session.svelte";
   import Credits from "./screens/Credits.svelte";
   import Home from "./screens/Home.svelte";
@@ -78,6 +79,8 @@
     <Stats />
   {:else if route.name === "words"}
     <FirstWords />
+  {:else if route.name === "my-words"}
+    <MyWords />
   {:else if route.name === "theme"}
     <ThemeScreen id={route.id} />
   {:else if route.name === "alphabet"}

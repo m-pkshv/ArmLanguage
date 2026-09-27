@@ -16,6 +16,7 @@ export type Route =
   | { name: "profile" }
   | { name: "stats" }
   | { name: "words" }
+  | { name: "my-words" }
   | { name: "theme"; id: string }
   | { name: "settings" }
   | { name: "backup" }
@@ -30,6 +31,7 @@ export function tabOf(route: Route): Tab | null {
     case "lessons":
     case "lesson":
     case "words":
+    case "my-words":
     case "theme":
       return "learn";
     case "alphabet":
@@ -63,6 +65,7 @@ export function parseHash(hash: string): Route {
   if (!first) return { name: "home" };
   if (first === "alphabet") return second ? { name: "letter", id: decodeURIComponent(second) } : { name: "alphabet" };
   if (first === "lesson" && second) return { name: "lesson", id: decodeURIComponent(second) };
+  if (first === "words" && second === "my") return { name: "my-words" };
   if (first === "words") return second ? { name: "theme", id: decodeURIComponent(second) } : { name: "words" };
   if (first === "practice" && second === "custom") return { name: "custom" };
   if (first === "practice" && second === "pairs") return { name: "pairs" };
@@ -83,6 +86,8 @@ export function hrefOf(route: Route): string {
       return `#/lesson/${encodeURIComponent(route.id)}`;
     case "theme":
       return `#/words/${encodeURIComponent(route.id)}`;
+    case "my-words":
+      return "#/words/my";
     case "custom":
       return "#/practice/custom";
     case "pairs":
