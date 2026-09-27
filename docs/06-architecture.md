@@ -125,10 +125,19 @@
       ]
     },
     { "id": "reading", "title": "Чтение", "status": "coming-soon", "lessons": [] },
-    { "id": "first-words", "title": "Первые слова", "status": "coming-soon", "lessons": [] }
+    {
+      "id": "first-words", "title": "Первые слова", "status": "available", "lessons": [],
+      "themes": [                             // темы — в любом порядке, уроки внутри темы — по порядку
+        { "id": "greetings", "title": "Знакомство и вежливость", "emoji": "👋", "status": "available",
+          "lessons": [{ "id": "greetings-1", "title": "Приветствие", "newItems": ["word:barev", "phrase:barev-dzez"] }] }
+      ]
+    }
   ]
 }
 ```
+Раздел «Первые слова» — [10-first-words.md](10-first-words.md): элементы `word:…` и `phrase:…`, навыки `meaning`,
+`produce`, `spell`; код — `src/core/words.ts`, `src/exercises/words/logic.ts` (задания W02–W09),
+`src/session/wordPlan.ts` и `wordSelect.ts`, экраны `FirstWords.svelte`, `Theme.svelte`, `MyWords.svelte`.
 
 - **Раздел** — набор уроков + (при необходимости) свои типы элементов и заданий.
 - **Уровни сложности** задаются на трёх уровнях: порядок уроков, `minLevel` у заданий в уроке,
