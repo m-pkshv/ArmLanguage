@@ -680,8 +680,66 @@
           "id": "health",
           "title": "Тело и здоровье",
           "emoji": "🩺",
-          "status": "coming-soon",
-          "lessons": []
+          "status": "available",
+          "lessons": [
+            {
+              "id": "health-1",
+              "title": "Голова и лицо",
+              "newItems": [
+                "word:glukh",
+                "word:maz",
+                "word:achk",
+                "word:akanj",
+                "word:kit",
+                "word:beran",
+                "word:atam",
+                "word:kokord",
+                "phrase:glukhs-tsavum-e"
+              ]
+            },
+            {
+              "id": "health-2",
+              "title": "Тело",
+              "newItems": [
+                "word:dzerrk",
+                "word:votk",
+                "word:mat",
+                "word:por",
+                "word:sirt",
+                "word:voskor",
+                "word:mejk",
+                "word:tsav",
+                "phrase:indz-vat-em-zgum"
+              ]
+            },
+            {
+              "id": "health-3",
+              "title": "Болезнь",
+              "newItems": [
+                "word:hivand",
+                "word:arroghj",
+                "word:jermutyun",
+                "word:mrsel",
+                "word:degh",
+                "phrase:jermutyun-unem",
+                "phrase:arroghjutyun"
+              ]
+            },
+            {
+              "id": "health-4",
+              "title": "Врач и аптека",
+              "newItems": [
+                "word:bzhishk",
+                "word:atamnabuyzh",
+                "word:hivandanots",
+                "word:deghatun",
+                "word:shtapognutyun",
+                "phrase:bzhishk-kanchek",
+                "phrase:shtapognutyun-kanchek",
+                "phrase:vortegh-e-deghatuny"
+              ]
+            }
+          ]
         },
         {
           "id": "describe",

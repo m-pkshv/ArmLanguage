@@ -965,5 +965,88 @@
     ],
     "situation": "Куртка вам мала — вы хотите примерить побольше.",
     "reviewed": false
+  },
+  {
+    "id": "glukhs-tsavum-e",
+    "hy": "Գլուխս ցավում է։",
+    "pronunciation": "гылухс цхавум э",
+    "ru": "У меня болит голова.",
+    "themes": [
+      "health"
+    ],
+    "situation": "У вас сильно болит голова, и вы говорите об этом другу.",
+    "reviewed": false
+  },
+  {
+    "id": "indz-vat-em-zgum",
+    "hy": "Ինձ վատ եմ զգում։",
+    "pronunciation": "индз ват эм зыгум",
+    "ru": "Мне плохо.",
+    "themes": [
+      "health"
+    ],
+    "situation": "Вам вдруг стало нехорошо, и вы говорите об этом людям рядом.",
+    "reviewed": false
+  },
+  {
+    "id": "jermutyun-unem",
+    "hy": "Ջերմություն ունեմ։",
+    "pronunciation": "джермутхюн унем",
+    "ru": "У меня температура.",
+    "themes": [
+      "health"
+    ],
+    "situation": "Вы простудились, и у вас жар.",
+    "reviewed": false
+  },
+  {
+    "id": "arroghjutyun",
+    "hy": "Առողջություն։",
+    "pronunciation": "аррогхджутхюн",
+    "ru": "Будьте здоровы! (когда чихнули)",
+    "themes": [
+      "health"
+    ],
+    "situation": "Рядом с вами кто-то чихнул.",
+    "reviewed": false
+  },
+  {
+    "id": "bzhishk-kanchek",
+    "hy": "Բժիշկ կանչեք։",
+    "pronunciation": "быжишк канчхекх",
+    "ru": "Вызовите врача!",
+    "themes": [
+      "health"
+    ],
+    "situation": "Человеку в кафе стало плохо — нужен врач.",
+    "reviewed": false,
+    "alsoFits": [
+      "shtapognutyun-kanchek"
+    ]
+  },
+  {
+    "id": "shtapognutyun-kanchek",
+    "hy": "Շտապօգնություն կանչեք։",
+    "pronunciation": "штапогнутхюн канчхекх",
+    "ru": "Вызовите скорую!",
+    "themes": [
+      "health"
+    ],
+    "situation": "На улице произошла авария, есть пострадавший.",
+    "reviewed": false,
+    "alsoFits": [
+      "bzhishk-kanchek"
+    ]
+  },
+  {
+    "id": "vortegh-e-deghatuny",
+    "hy": "Որտե՞ղ է դեղատունը։",
+    "pronunciation": "вортегх э дегхатуны?",
+    "ru": "Где аптека?",
+    "themes": [
+      "health"
+    ],
+    "situation": "Вам нужно купить лекарство, но вы не знаете, куда идти.",
+    "reviewed": false
   }
 ]

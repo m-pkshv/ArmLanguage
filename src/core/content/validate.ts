@@ -85,6 +85,8 @@ export function validateContent(c: Content, opts: ValidateOptions): ValidationRe
   for (const w of c.words) {
     const at = `Слово ${w.hy} (${w.id})`;
     if (!w.pronunciation || !w.ru) errors.push(`${at}: не заполнены произношение или перевод`);
+    // чтение — только русскими буквами: латинская «o» вместо «о» в тексте не видна, но ломает проверку ответа
+    if (/[a-z]/i.test(w.pronunciation)) errors.push(`${at}: в чтении «${w.pronunciation}» есть латинские буквы`);
     if (lettersOf(w.hy, index).some((l) => !l)) errors.push(`${at}: содержит символы не из алфавита`);
     checkImage(w.image, at);
     if (!w.exception) {
@@ -105,6 +107,7 @@ export function validateContent(c: Content, opts: ValidateOptions): ValidationRe
   for (const p of c.phrases) {
     const at = `Фраза «${p.ru}» (${p.id})`;
     if (!p.hy || !p.pronunciation || !p.ru) errors.push(`${at}: не заполнены текст, произношение или перевод`);
+    if (/[a-z]/i.test(p.pronunciation)) errors.push(`${at}: в чтении «${p.pronunciation}» есть латинские буквы`);
     if (lettersOf(p.hy.replace(/[\s,.։՞՜՛«»!?-]/g, ""), index).some((l) => !l)) errors.push(`${at}: содержит символы не из алфавита`);
     for (const a of p.alsoFits ?? []) if (!phraseIds.has(a)) errors.push(`${at}: в alsoFits неизвестная фраза «${a}»`);
     if (opts.release && !p.reviewed) errors.push(`${at}: не проверена носителем`);

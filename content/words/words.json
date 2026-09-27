@@ -54,7 +54,10 @@
       "body"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "health"
+    ]
   },
   {
     "id": "agh",
@@ -153,7 +156,10 @@
       "body"
     ],
     "level": 2,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "health"
+    ]
   },
   {
     "id": "girk",
@@ -1316,7 +1322,8 @@
     "level": 1,
     "reviewed": false,
     "themes": [
-      "gym"
+      "gym",
+      "health"
     ]
   },
   {
@@ -1374,7 +1381,10 @@
       "body"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "health"
+    ]
   },
   {
     "id": "chghjik",
@@ -1546,7 +1556,10 @@
       "body"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "health"
+    ]
   },
   {
     "id": "sag",
@@ -1850,7 +1863,10 @@
       "body"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "health"
+    ]
   },
   {
     "id": "kami",
@@ -2135,7 +2151,10 @@
       "body"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "health"
+    ]
   },
   {
     "id": "im",
@@ -2357,7 +2376,10 @@
       "body"
     ],
     "level": 2,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "health"
+    ]
   },
   {
     "id": "tikin",
@@ -2914,7 +2936,8 @@
     "level": 1,
     "reviewed": false,
     "themes": [
-      "gym"
+      "gym",
+      "health"
     ]
   },
   {
@@ -4099,7 +4122,8 @@
       "sport"
     ],
     "themes": [
-      "gym"
+      "gym",
+      "health"
     ],
     "level": 2,
     "reviewed": false
@@ -5403,7 +5427,8 @@
       "places"
     ],
     "themes": [
-      "city"
+      "city",
+      "health"
     ],
     "level": 2,
     "reviewed": false
@@ -6343,6 +6368,321 @@
     ],
     "themes": [
       "shop"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "glukh",
+    "hy": "գլուխ",
+    "pronunciation": "гылух",
+    "exception": false,
+    "ru": "голова",
+    "image": {
+      "file": "img/words/arasaac-2673.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "body"
+    ],
+    "themes": [
+      "health"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "akanj",
+    "hy": "ականջ",
+    "pronunciation": "акандж",
+    "exception": false,
+    "ru": "ухо",
+    "image": {
+      "file": "img/words/arasaac-2871.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "body"
+    ],
+    "themes": [
+      "health"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "maz",
+    "hy": "մազ",
+    "pronunciation": "маз",
+    "exception": false,
+    "ru": "волосы",
+    "image": {
+      "file": "img/words/arasaac-2851.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "body"
+    ],
+    "themes": [
+      "health"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "por",
+    "hy": "փոր",
+    "pronunciation": "пхор",
+    "exception": false,
+    "ru": "живот",
+    "image": {
+      "file": "img/words/arasaac-2786.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "body"
+    ],
+    "themes": [
+      "health"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "kokord",
+    "hy": "կոկորդ",
+    "pronunciation": "кокорд",
+    "exception": false,
+    "ru": "горло",
+    "image": {
+      "file": "img/words/arasaac-3332.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "body"
+    ],
+    "themes": [
+      "health"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "tsav",
+    "hy": "ցավ",
+    "pronunciation": "цхав",
+    "exception": false,
+    "ru": "боль",
+    "image": {
+      "file": "img/words/arasaac-30620.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "body"
+    ],
+    "themes": [
+      "health"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "bzhishk",
+    "hy": "բժիշկ",
+    "pronunciation": "быжишк",
+    "exception": false,
+    "ru": "врач",
+    "image": {
+      "file": "img/words/arasaac-2467.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "body"
+    ],
+    "themes": [
+      "health"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "atamnabuyzh",
+    "hy": "ատամնաբույժ",
+    "pronunciation": "атамнабуйж",
+    "exception": false,
+    "ru": "стоматолог",
+    "image": {
+      "file": "img/words/arasaac-2733.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "body"
+    ],
+    "themes": [
+      "health"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "hivandanots",
+    "hy": "հիվանդանոց",
+    "pronunciation": "хиванданоцх",
+    "exception": false,
+    "ru": "больница",
+    "image": {
+      "file": "img/words/arasaac-6523.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "body"
+    ],
+    "themes": [
+      "health"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "degh",
+    "hy": "դեղ",
+    "pronunciation": "дегх",
+    "exception": false,
+    "ru": "лекарство",
+    "image": {
+      "file": "img/words/arasaac-8163.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "body"
+    ],
+    "themes": [
+      "health"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "hivand",
+    "hy": "հիվանդ",
+    "pronunciation": "хиванд",
+    "exception": false,
+    "ru": "больной",
+    "image": {
+      "file": "img/words/arasaac-28742.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "body"
+    ],
+    "themes": [
+      "health"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "arroghj",
+    "hy": "առողջ",
+    "pronunciation": "аррогхдж",
+    "exception": false,
+    "ru": "здоровый",
+    "image": {
+      "file": "img/words/arasaac-36591.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "body"
+    ],
+    "themes": [
+      "health"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "jermutyun",
+    "hy": "ջերմություն",
+    "pronunciation": "джермутхюн",
+    "exception": false,
+    "ru": "температура (жар)",
+    "image": {
+      "file": "img/words/arasaac-32530.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "body"
+    ],
+    "themes": [
+      "health"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "mrsel",
+    "hy": "մրսել",
+    "pronunciation": "мырсел",
+    "exception": false,
+    "ru": "простудиться; мёрзнуть",
+    "image": {
+      "file": "img/words/arasaac-26384.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "body"
+    ],
+    "themes": [
+      "health"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "shtapognutyun",
+    "hy": "շտապօգնություն",
+    "pronunciation": "штапогнутхюн",
+    "exception": false,
+    "ru": "скорая помощь",
+    "image": {
+      "file": "img/words/arasaac-2251.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "body"
+    ],
+    "themes": [
+      "health"
     ],
     "level": 2,
     "reviewed": false
