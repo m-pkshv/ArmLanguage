@@ -564,7 +564,10 @@
       "things"
     ],
     "level": 2,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "time"
+    ]
   },
   {
     "id": "zhpit",
@@ -600,7 +603,10 @@
       "time"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "time"
+    ]
   },
   {
     "id": "inknatirr",
@@ -1668,7 +1674,8 @@
     "level": 1,
     "reviewed": false,
     "themes": [
-      "gym"
+      "gym",
+      "time"
     ]
   },
   {
@@ -1924,7 +1931,10 @@
       "time"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "time"
+    ]
   },
   {
     "id": "ympelik",
@@ -2188,7 +2198,10 @@
       "time"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "time"
+    ]
   },
   {
     "id": "utum",
@@ -2482,7 +2495,10 @@
       "time"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "time"
+    ]
   },
   {
     "id": "mek",
@@ -2689,7 +2705,10 @@
       "time"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "time"
+    ]
   },
   {
     "id": "ayo",
@@ -3183,7 +3202,8 @@
     "level": 1,
     "reviewed": false,
     "themes": [
-      "greetings"
+      "greetings",
+      "time"
     ]
   },
   {
@@ -3204,7 +3224,8 @@
     "level": 1,
     "reviewed": false,
     "themes": [
-      "greetings"
+      "greetings",
+      "time"
     ]
   },
   {
@@ -5596,6 +5617,342 @@
     ],
     "themes": [
       "city"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "aysor",
+    "hy": "այսօր",
+    "pronunciation": "айсор",
+    "exception": false,
+    "ru": "сегодня",
+    "image": {
+      "file": "img/words/arasaac-7131.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "time"
+    ],
+    "themes": [
+      "time"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "vaghy",
+    "hy": "վաղը",
+    "pronunciation": "вагхы",
+    "exception": false,
+    "ru": "завтра",
+    "image": {
+      "file": "img/words/arasaac-7152.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "time"
+    ],
+    "themes": [
+      "time"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "yerkushabti",
+    "hy": "երկուշաբթի",
+    "pronunciation": "йеркушабтхи",
+    "exception": false,
+    "ru": "понедельник",
+    "image": {
+      "file": "img/words/arasaac-37730.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "time"
+    ],
+    "themes": [
+      "time"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "yerekshabti",
+    "hy": "երեքշաբթի",
+    "pronunciation": "йерекхшабтхи",
+    "exception": false,
+    "ru": "вторник",
+    "image": {
+      "file": "img/words/arasaac-37729.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "time"
+    ],
+    "themes": [
+      "time"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "chorekshabti",
+    "hy": "չորեքշաբթի",
+    "pronunciation": "чхорекхшабтхи",
+    "exception": false,
+    "ru": "среда",
+    "image": {
+      "file": "img/words/arasaac-37728.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "time"
+    ],
+    "themes": [
+      "time"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "hingshabti",
+    "hy": "հինգշաբթի",
+    "pronunciation": "хингшабтхи",
+    "exception": false,
+    "ru": "четверг",
+    "image": {
+      "file": "img/words/arasaac-37727.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "time"
+    ],
+    "themes": [
+      "time"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "urbat",
+    "hy": "ուրբաթ",
+    "pronunciation": "урбатх",
+    "exception": false,
+    "ru": "пятница",
+    "image": {
+      "file": "img/words/arasaac-37726.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "time"
+    ],
+    "themes": [
+      "time"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "shabat",
+    "hy": "շաբաթ",
+    "pronunciation": "шабатх",
+    "exception": false,
+    "ru": "суббота; неделя",
+    "image": {
+      "file": "img/words/arasaac-37725.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "time"
+    ],
+    "themes": [
+      "time"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "kiraki",
+    "hy": "կիրակի",
+    "pronunciation": "кираки",
+    "exception": false,
+    "ru": "воскресенье",
+    "image": {
+      "file": "img/words/arasaac-37723.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "time"
+    ],
+    "themes": [
+      "time"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "amis",
+    "hy": "ամիս",
+    "pronunciation": "амис",
+    "exception": false,
+    "ru": "месяц",
+    "image": {
+      "file": "img/words/arasaac-37724.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "time"
+    ],
+    "themes": [
+      "time"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "gisher",
+    "hy": "գիշեր",
+    "pronunciation": "гишер",
+    "exception": false,
+    "ru": "ночь",
+    "image": {
+      "file": "img/words/arasaac-26997.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "time"
+    ],
+    "themes": [
+      "time"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "kesor",
+    "hy": "կեսօր",
+    "pronunciation": "кесор",
+    "exception": false,
+    "ru": "полдень",
+    "image": {
+      "file": "img/words/arasaac-32708.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "time"
+    ],
+    "themes": [
+      "time"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "misht",
+    "hy": "միշտ",
+    "pronunciation": "мишт",
+    "exception": false,
+    "ru": "всегда",
+    "image": {
+      "file": "img/words/arasaac-17322.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "time"
+    ],
+    "themes": [
+      "time"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "yerbek",
+    "hy": "երբեք",
+    "pronunciation": "йербекх",
+    "exception": false,
+    "ru": "никогда",
+    "image": {
+      "file": "img/words/arasaac-5527.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "time"
+    ],
+    "themes": [
+      "time"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "ush",
+    "hy": "ուշ",
+    "pronunciation": "уш",
+    "exception": false,
+    "ru": "поздно",
+    "image": {
+      "file": "img/words/arasaac-37780.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "time"
+    ],
+    "themes": [
+      "time"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "shut",
+    "hy": "շուտ",
+    "pronunciation": "шут",
+    "exception": false,
+    "ru": "рано; скоро",
+    "image": {
+      "file": "img/words/arasaac-28617.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "time"
+    ],
+    "themes": [
+      "time"
     ],
     "level": 2,
     "reviewed": false

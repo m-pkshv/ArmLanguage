@@ -567,8 +567,58 @@
           "id": "time",
           "title": "Время и дни",
           "emoji": "🕒",
-          "status": "coming-soon",
-          "lessons": []
+          "status": "available",
+          "lessons": [
+            {
+              "id": "time-1",
+              "title": "Сегодня, завтра, вчера",
+              "newItems": [
+                "word:aysor",
+                "word:vaghy",
+                "word:yerek",
+                "word:hima",
+                "word:or",
+                "word:aravot",
+                "word:yereko",
+                "word:gisher",
+                "phrase:minchev-vaghy"
+              ]
+            },
+            {
+              "id": "time-2",
+              "title": "Дни недели",
+              "newItems": [
+                "word:yerkushabti",
+                "word:yerekshabti",
+                "word:chorekshabti",
+                "word:hingshabti",
+                "word:urbat",
+                "word:shabat",
+                "word:kiraki",
+                "phrase:aysor-yerkushabti-e",
+                "phrase:khandipenk-shabat-ory"
+              ]
+            },
+            {
+              "id": "time-3",
+              "title": "Время",
+              "newItems": [
+                "word:zham",
+                "word:rope",
+                "word:zhamatsuyts",
+                "word:amis",
+                "word:tari",
+                "word:kesor",
+                "word:ush",
+                "word:shut",
+                "word:misht",
+                "word:yerbek",
+                "phrase:yes-ushanum-em",
+                "phrase:zhamy-kanisin",
+                "phrase:mi-rope-spasir"
+              ]
+            }
+          ]
         },
         {
           "id": "shop",

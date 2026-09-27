@@ -809,5 +809,78 @@
     ],
     "situation": "Вы не понимаете, где находитесь, и просите прохожего о помощи.",
     "reviewed": false
+  },
+  {
+    "id": "minchev-vaghy",
+    "hy": "Մինչև վաղը։",
+    "pronunciation": "минчев вагхы",
+    "ru": "До завтра!",
+    "themes": [
+      "time"
+    ],
+    "situation": "Вы прощаетесь с коллегой, с которым увидитесь завтра.",
+    "reviewed": false
+  },
+  {
+    "id": "aysor-yerkushabti-e",
+    "hy": "Այսօր երկուշաբթի է։",
+    "pronunciation": "айсор йеркушабтхи э",
+    "ru": "Сегодня понедельник.",
+    "themes": [
+      "time"
+    ],
+    "situation": "Друг спрашивает, какой сегодня день недели. Сегодня понедельник.",
+    "reviewed": false
+  },
+  {
+    "id": "khandipenk-shabat-ory",
+    "hy": "Կհանդիպենք շաբաթ օրը։",
+    "pronunciation": "кхандипенкх шабатх оры",
+    "ru": "Увидимся в субботу.",
+    "themes": [
+      "time"
+    ],
+    "situation": "Вы договорились встретиться с другом в выходной — в субботу.",
+    "reviewed": false,
+    "alsoFits": [
+      "minchev-vaghy"
+    ]
+  },
+  {
+    "id": "yes-ushanum-em",
+    "hy": "Ես ուշանում եմ։",
+    "pronunciation": "йес ушанум эм",
+    "ru": "Я опаздываю.",
+    "themes": [
+      "time"
+    ],
+    "situation": "Вы не успеваете на встречу и предупреждаете друга.",
+    "reviewed": false
+  },
+  {
+    "id": "zhamy-kanisin",
+    "hy": "Ժամը քանիսի՞ն։",
+    "pronunciation": "жамы кханисин?",
+    "ru": "Во сколько?",
+    "themes": [
+      "time"
+    ],
+    "situation": "Друг зовёт вас в кино — вы хотите узнать время сеанса.",
+    "reviewed": false,
+    "alsoFits": [
+      "zhamy-kanisin-parapmunky",
+      "zhamy-kanisn"
+    ]
+  },
+  {
+    "id": "mi-rope-spasir",
+    "hy": "Մի րոպե սպասիր։",
+    "pronunciation": "ми ропе ыспасир",
+    "ru": "Подожди минуту.",
+    "themes": [
+      "time"
+    ],
+    "situation": "Друг торопит вас, а вам нужно ещё чуть-чуть времени.",
+    "reviewed": false
   }
 ]
