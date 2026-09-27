@@ -264,8 +264,71 @@
           "id": "food",
           "title": "Еда и напитки",
           "emoji": "🍞",
-          "status": "coming-soon",
-          "lessons": []
+          "status": "available",
+          "lessons": [
+            {
+              "id": "food-1",
+              "title": "Хлеб и напитки",
+              "newItems": [
+                "word:hats",
+                "word:lavash",
+                "word:jur",
+                "word:tey",
+                "word:surch",
+                "word:kat",
+                "word:hyut",
+                "phrase:jur-khndrum-em",
+                "phrase:mek-surch"
+              ]
+            },
+            {
+              "id": "food-2",
+              "title": "Фрукты и овощи",
+              "newItems": [
+                "word:mirg",
+                "word:banjaregen",
+                "word:khndzor",
+                "word:banan",
+                "word:lolik",
+                "word:varung",
+                "word:kartofil",
+                "word:dzmeruk"
+              ]
+            },
+            {
+              "id": "food-3",
+              "title": "Обед",
+              "newItems": [
+                "word:mis",
+                "word:apur",
+                "word:brindz",
+                "word:panir",
+                "word:dzu",
+                "word:khorovats",
+                "word:hamegh",
+                "phrase:shat-hamegh-e",
+                "phrase:yes-mis-chem-utum",
+                "phrase:sovats-em"
+              ]
+            },
+            {
+              "id": "food-4",
+              "title": "В кафе",
+              "newItems": [
+                "word:nakhachash",
+                "word:chash",
+                "word:yntrik",
+                "word:restoran",
+                "word:srcharan",
+                "word:utel",
+                "word:khmel",
+                "word:gini",
+                "phrase:menyun-tvek",
+                "phrase:hashivy",
+                "phrase:inch-kkhmek"
+              ]
+            }
+          ]
         },
         {
           "id": "gym",

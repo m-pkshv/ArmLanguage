@@ -266,3 +266,22 @@ describe("gym theme", () => {
     expect(planThemeTest(content, "gym", 1, TODAY).steps).toHaveLength(15);
   });
 });
+
+describe("all available themes", () => {
+  const available = content.course.sections.find((s) => s.id === "first-words")!.themes!.filter((t) => t.status === "available");
+
+  it("every lesson fits into ~25 tasks and every item gets a task", () => {
+    for (const t of available) {
+      t.lessons.forEach((l, i) => {
+        const s = planThemeLesson(content, t.id, i, 5 + i, TODAY);
+        const tasks = s.steps.filter((st) => st.kind === "exercise").length;
+        expect(tasks, `${t.id} урок ${i + 1}`).toBeLessThanOrEqual(26);
+        for (const id of l.newItems) {
+          const item = studyItem(content, id);
+          const type = item.kind === "word" ? "word-meaning" : "phrase-meaning";
+          expect(WORD_EXERCISES[type].isApplicable(item, { content, rng: createRng(i), pool: themeItems(t), reading: true }), `${t.id}: ${id}`).toBe(true);
+        }
+      });
+    }
+  });
+});

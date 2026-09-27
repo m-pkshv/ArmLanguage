@@ -69,7 +69,10 @@
       "food"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "food"
+    ]
   },
   {
     "id": "barev",
@@ -108,7 +111,10 @@
       "food"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "food"
+    ]
   },
   {
     "id": "bad",
@@ -513,7 +519,10 @@
       "food"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "food"
+    ]
   },
   {
     "id": "titerr",
@@ -711,7 +720,10 @@
       "food"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "food"
+    ]
   },
   {
     "id": "khaghogh",
@@ -855,7 +867,10 @@
       "food"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "food"
+    ]
   },
   {
     "id": "hats",
@@ -873,7 +888,10 @@
       "food"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "food"
+    ]
   },
   {
     "id": "hav",
@@ -945,7 +963,10 @@
       "food"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "food"
+    ]
   },
   {
     "id": "dzmeruk",
@@ -963,7 +984,10 @@
       "food"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "food"
+    ]
   },
   {
     "id": "chanch",
@@ -1242,7 +1266,10 @@
       "food"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "food"
+    ]
   },
   {
     "id": "votk",
@@ -1356,7 +1383,10 @@
       "food"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "food"
+    ]
   },
   {
     "id": "pap",
@@ -1415,6 +1445,7 @@
     "level": 1,
     "reviewed": false,
     "themes": [
+      "food",
       "gym"
     ]
   },
@@ -4387,6 +4418,447 @@
     ],
     "themes": [
       "gym"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "surch",
+    "hy": "սուրճ",
+    "pronunciation": "сурч",
+    "exception": false,
+    "ru": "кофе",
+    "image": {
+      "file": "img/words/arasaac-2296.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "food"
+    ],
+    "themes": [
+      "food"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "mis",
+    "hy": "միս",
+    "pronunciation": "мис",
+    "exception": false,
+    "ru": "мясо",
+    "image": {
+      "file": "img/words/arasaac-2316.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "food"
+    ],
+    "themes": [
+      "food"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "banjaregen",
+    "hy": "բանջարեղեն",
+    "pronunciation": "банджарегхен",
+    "exception": false,
+    "ru": "овощи",
+    "image": {
+      "file": "img/words/arasaac-28343.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "food"
+    ],
+    "themes": [
+      "food"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "mirg",
+    "hy": "միրգ",
+    "pronunciation": "мирг",
+    "exception": false,
+    "ru": "фрукты",
+    "image": {
+      "file": "img/words/arasaac-28339.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "food"
+    ],
+    "themes": [
+      "food"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "kartofil",
+    "hy": "կարտոֆիլ",
+    "pronunciation": "картофил",
+    "exception": false,
+    "ru": "картофель",
+    "image": {
+      "file": "img/words/arasaac-2503.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "food"
+    ],
+    "themes": [
+      "food"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "lolik",
+    "hy": "լոլիկ",
+    "pronunciation": "лолик",
+    "exception": false,
+    "ru": "помидор",
+    "image": {
+      "file": "img/words/arasaac-2594.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "food"
+    ],
+    "themes": [
+      "food"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "varung",
+    "hy": "վարունգ",
+    "pronunciation": "варунг",
+    "exception": false,
+    "ru": "огурец",
+    "image": {
+      "file": "img/words/arasaac-2847.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "food"
+    ],
+    "themes": [
+      "food"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "apur",
+    "hy": "ապուր",
+    "pronunciation": "апур",
+    "exception": false,
+    "ru": "суп",
+    "image": {
+      "file": "img/words/arasaac-2573.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "food"
+    ],
+    "themes": [
+      "food"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "brindz",
+    "hy": "բրինձ",
+    "pronunciation": "бриндз",
+    "exception": false,
+    "ru": "рис",
+    "image": {
+      "file": "img/words/arasaac-39387.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "food"
+    ],
+    "themes": [
+      "food"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "hyut",
+    "hy": "հյութ",
+    "pronunciation": "хйутх",
+    "exception": false,
+    "ru": "сок",
+    "image": {
+      "file": "img/words/arasaac-2625.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "food"
+    ],
+    "themes": [
+      "food"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "gini",
+    "hy": "գինի",
+    "pronunciation": "гини",
+    "exception": false,
+    "ru": "вино",
+    "image": {
+      "file": "img/words/arasaac-2614.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "food"
+    ],
+    "themes": [
+      "food"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "hamegh",
+    "hy": "համեղ",
+    "pronunciation": "хамегх",
+    "exception": false,
+    "ru": "вкусный",
+    "image": {
+      "file": "img/words/arasaac-31861.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "food"
+    ],
+    "themes": [
+      "food"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "utel",
+    "hy": "ուտել",
+    "pronunciation": "утел",
+    "exception": false,
+    "ru": "есть (кушать)",
+    "image": {
+      "file": "img/words/arasaac-6456.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "food"
+    ],
+    "themes": [
+      "food"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "khmel",
+    "hy": "խմել",
+    "pronunciation": "хымел",
+    "exception": false,
+    "ru": "пить",
+    "image": {
+      "file": "img/words/arasaac-2276.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "food"
+    ],
+    "themes": [
+      "food"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "nakhachash",
+    "hy": "նախաճաշ",
+    "pronunciation": "нахачаш",
+    "exception": false,
+    "ru": "завтрак",
+    "image": {
+      "file": "img/words/arasaac-4626.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "food"
+    ],
+    "themes": [
+      "food"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "chash",
+    "hy": "ճաշ",
+    "pronunciation": "чаш",
+    "exception": false,
+    "ru": "обед",
+    "image": {
+      "file": "img/words/arasaac-4611.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "food"
+    ],
+    "themes": [
+      "food"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "yntrik",
+    "hy": "ընթրիք",
+    "pronunciation": "ынтхрикх",
+    "exception": false,
+    "ru": "ужин",
+    "image": {
+      "file": "img/words/arasaac-4592.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "food"
+    ],
+    "themes": [
+      "food"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "restoran",
+    "hy": "ռեստորան",
+    "pronunciation": "рресторан",
+    "exception": false,
+    "ru": "ресторан",
+    "image": {
+      "file": "img/words/arasaac-32408.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "food"
+    ],
+    "themes": [
+      "food"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "srcharan",
+    "hy": "սրճարան",
+    "pronunciation": "сырчаран",
+    "exception": false,
+    "ru": "кафе",
+    "image": {
+      "file": "img/words/arasaac-32400.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "food"
+    ],
+    "themes": [
+      "food"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "lavash",
+    "hy": "լավաշ",
+    "pronunciation": "лаваш",
+    "exception": false,
+    "ru": "лаваш",
+    "image": {
+      "file": "img/words/arasaac-38358.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "food"
+    ],
+    "themes": [
+      "food"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "khorovats",
+    "hy": "խորոված",
+    "pronunciation": "хоровац",
+    "exception": false,
+    "ru": "хоровац (шашлык)",
+    "image": {
+      "file": "img/words/arasaac-5393.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "food"
+    ],
+    "themes": [
+      "food"
     ],
     "level": 2,
     "reviewed": false

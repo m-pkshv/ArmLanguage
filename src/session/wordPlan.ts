@@ -43,12 +43,14 @@ export function planThemeLesson(c: Content, themeId: string, lessonIndex: number
   } else if (previous.length) steps.push(...spread(rng, rng.shuffle(previous).slice(0, 3), 3));
 
   const introduced: string[] = [];
+  // по заданию на каждое новое, одно лишнее и одно смешанное — так урок укладывается в 20–25 заданий;
+  // в больших уроках (10+ слов и фраз) лишних заданий нет, иначе урок растягивается до 30
+  const big = items.length > 9;
   for (let i = 0; i < items.length; i += 2) {
     const chunk = items.slice(i, i + 2);
     for (const id of chunk) steps.push({ kind: "intro", letter: id });
-    // по заданию на каждое новое и одно лишнее — так урок укладывается в 20–25 заданий
-    steps.push(...spread(rng, chunk, chunk.length + 1));
-    if (introduced.length) steps.push(...spread(rng, [...chunk, ...rng.shuffle(introduced).slice(0, 2)], 1));
+    steps.push(...spread(rng, chunk, chunk.length + (big ? 0 : 1)));
+    if (introduced.length && !big) steps.push(...spread(rng, [...chunk, ...rng.shuffle(introduced).slice(0, 2)], 1));
     introduced.push(...chunk);
   }
   // закрепление: всё новое ещё раз, уже вперемешку
