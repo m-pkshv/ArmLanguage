@@ -13,6 +13,7 @@
   import Lessons from "./screens/Lessons.svelte";
   import Match from "./screens/Match.svelte";
   import Pairs from "./screens/Pairs.svelte";
+  import Stats from "./screens/Stats.svelte";
   import Session from "./screens/Session.svelte";
   import Credits from "./screens/Credits.svelte";
   import Home from "./screens/Home.svelte";
@@ -71,6 +72,8 @@
     <Pairs />
   {:else if route.name === "match"}
     <Match />
+  {:else if route.name === "stats"}
+    <Stats />
   {:else if route.name === "alphabet"}
     <Alphabet />
   {:else if route.name === "letter"}

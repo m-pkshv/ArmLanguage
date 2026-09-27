@@ -74,6 +74,28 @@
     "resetDone": "Прогресс сброшен",
     "credits": "Авторы и лицензии"
   },
+  "stats": {
+    "title": "Статистика",
+    "learned": "выучено из {total}",
+    "learning": "изучается",
+    "days": "дней с занятиями",
+    "streak": "подряд: {n}",
+    "accuracy": "верных ответов (всего {n})",
+    "mapTitle": "Карта алфавита",
+    "viewMain": "Основное",
+    "viewRead": "Чтение",
+    "viewHandwriting": "Рукописные",
+    "viewCase": "Заглавные",
+    "legendNew": "не встречалась",
+    "legendStarted": "начали",
+    "legendLearned": "выучена",
+    "confusionsTitle": "Частые путаницы",
+    "errors": "ошибок: {n}",
+    "train": "Потренировать",
+    "noConfusions": "Путаниц пока нет 👍",
+    "activityTitle": "Активность за 12 недель",
+    "thisWeek": "На этой неделе заданий: {n}"
+  },
   "settings": {
     "title": "Настройки",
     "theme": "Тема",

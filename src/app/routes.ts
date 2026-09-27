@@ -14,6 +14,7 @@ export type Route =
   | { name: "pairs" }
   | { name: "match" }
   | { name: "profile" }
+  | { name: "stats" }
   | { name: "settings" }
   | { name: "backup" }
   | { name: "about" }
@@ -36,6 +37,7 @@ export function tabOf(route: Route): Tab | null {
     case "match":
       return "practice";
     case "profile":
+    case "stats":
     case "settings":
     case "backup":
     case "about":
@@ -46,7 +48,7 @@ export function tabOf(route: Route): Tab | null {
   }
 }
 
-const SIMPLE = ["lessons", "session", "practice", "profile", "settings", "backup", "about", "credits"] as const;
+const SIMPLE = ["lessons", "session", "practice", "profile", "stats", "settings", "backup", "about", "credits"] as const;
 
 /** "#/alphabet/tho" → { name: "letter", id: "tho" } */
 export function parseHash(hash: string): Route {

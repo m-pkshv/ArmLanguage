@@ -18,7 +18,7 @@
 <ScreenHeader title={t("profile.title")} />
 
 <Card padded={false}>
-  <ListLink disabled hint={t("common.soon")}>{t("profile.stats")}</ListLink>
+  <ListLink href="#/stats">{t("profile.stats")}</ListLink>
   <ListLink href="#/settings">{t("profile.settings")}</ListLink>
   <ListLink href="#/backup">{t("profile.backup")}</ListLink>
   <ListLink href="#/about">{t("profile.about")}</ListLink>
