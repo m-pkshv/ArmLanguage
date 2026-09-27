@@ -271,8 +271,124 @@
           "id": "gym",
           "title": "Спортзал",
           "emoji": "🏋️",
-          "status": "coming-soon",
-          "lessons": []
+          "status": "available",
+          "lessons": [
+            {
+              "id": "gym-1",
+              "title": "Зал и вещи",
+              "newItems": [
+                "word:marzasrah",
+                "word:marzasark",
+                "word:hantel",
+                "word:tsanradzogh",
+                "word:gorg",
+                "word:handerdzaran",
+                "word:tsntsugh",
+                "phrase:vortegh-handerdzarany",
+                "phrase:vortegh-tsntsughy"
+              ]
+            },
+            {
+              "id": "gym-2",
+              "title": "Тренировка",
+              "newItems": [
+                "word:marzum",
+                "word:varzhutyun",
+                "word:motetsum",
+                "word:krknutyun",
+                "word:kash",
+                "word:tsanr",
+                "word:hesht",
+                "phrase:kani-motetsum",
+                "phrase:sa-kani-kilogram"
+              ]
+            },
+            {
+              "id": "gym-3",
+              "title": "Тело",
+              "newItems": [
+                "word:mkan",
+                "word:mejk",
+                "word:kurtsk",
+                "word:us",
+                "word:dzerrk",
+                "word:votk",
+                "word:takatsum",
+                "word:dzgum"
+              ]
+            },
+            {
+              "id": "gym-4",
+              "title": "Кардио-зона",
+              "newItems": [
+                "word:kardio",
+                "word:vazkughi",
+                "word:aragutyun",
+                "word:tekutyun",
+                "word:rope",
+                "phrase:yes-hajordn-em",
+                "phrase:eli-kani-rope",
+                "phrase:kareli-aragutyuny-ijetsnel"
+              ]
+            },
+            {
+              "id": "gym-5",
+              "title": "Групповые занятия",
+              "newItems": [
+                "word:parapmunk",
+                "word:zhamanakatsuyts",
+                "word:yoga",
+                "word:tegh",
+                "word:grantsvel",
+                "phrase:zhamy-kanisin-parapmunky",
+                "phrase:kareli-e-grantsvel",
+                "phrase:azat-tegh-ka",
+                "phrase:yogan-vortegh-e"
+              ]
+            },
+            {
+              "id": "gym-6",
+              "title": "Тренер",
+              "newItems": [
+                "word:marzich",
+                "word:anhatakan",
+                "phrase:uzum-em-grantsvel-marzchi-mot",
+                "phrase:marzichy-yerb-e-azat",
+                "phrase:marzumn-inch-arzhe"
+              ]
+            },
+            {
+              "id": "gym-7",
+              "title": "Ресепшн",
+              "newItems": [
+                "word:yndunaran",
+                "word:abonement",
+                "word:banali",
+                "word:paharan",
+                "word:srbich",
+                "word:jur",
+                "phrase:abonementn-inch-arzhe",
+                "phrase:abonements-avartvel-e",
+                "phrase:paharani-banalin",
+                "phrase:vortegh-jur-lytsnel"
+              ]
+            },
+            {
+              "id": "gym-8",
+              "title": "Разговор в зале",
+              "newItems": [
+                "word:azat",
+                "word:zbaghvats",
+                "phrase:aystegh-azat-e",
+                "phrase:derr-ogtagortsum-ek",
+                "phrase:hertov-anenk",
+                "phrase:yes-verjatsri",
+                "phrase:kognek-indz",
+                "phrase:apahovek",
+                "phrase:lav-marzum"
+              ]
+            }
+          ]
         },
         {
           "id": "home",

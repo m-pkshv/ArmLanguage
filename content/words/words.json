@@ -1260,7 +1260,10 @@
       "body"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "gym"
+    ]
   },
   {
     "id": "voski",
@@ -1410,7 +1413,10 @@
       "food"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "gym"
+    ]
   },
   {
     "id": "jutak",
@@ -1611,7 +1617,10 @@
       "time"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "gym"
+    ]
   },
   {
     "id": "tskhavel",
@@ -2817,7 +2826,10 @@
       "body"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "gym"
+    ]
   },
   {
     "id": "kaghak",
@@ -3580,5 +3592,803 @@
     "themes": [
       "family"
     ]
+  },
+  {
+    "id": "marzasrah",
+    "hy": "մարզասրահ",
+    "pronunciation": "марзасрах",
+    "exception": false,
+    "ru": "спортзал",
+    "image": {
+      "file": "img/words/arasaac-30952.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "sport"
+    ],
+    "themes": [
+      "gym"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "marzich",
+    "hy": "մարզիչ",
+    "pronunciation": "марзич",
+    "exception": false,
+    "ru": "тренер",
+    "image": {
+      "file": "img/words/arasaac-5991.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "sport"
+    ],
+    "themes": [
+      "gym"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "marzum",
+    "hy": "մարզում",
+    "pronunciation": "марзум",
+    "exception": false,
+    "ru": "тренировка",
+    "image": {
+      "file": "img/words/arasaac-13040.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "sport"
+    ],
+    "themes": [
+      "gym"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "varzhutyun",
+    "hy": "վարժություն",
+    "pronunciation": "варжутхюн",
+    "exception": false,
+    "ru": "упражнение",
+    "image": {
+      "file": "img/words/arasaac-38628.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "sport"
+    ],
+    "themes": [
+      "gym"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "marzasark",
+    "hy": "մարզասարք",
+    "pronunciation": "марзасаркх",
+    "exception": false,
+    "ru": "тренажёр",
+    "image": {
+      "file": "img/words/arasaac-32986.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "sport"
+    ],
+    "themes": [
+      "gym"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "hantel",
+    "hy": "հանտել",
+    "pronunciation": "хантел",
+    "exception": false,
+    "ru": "гантель",
+    "image": {
+      "file": "img/words/arasaac-24785.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "sport"
+    ],
+    "themes": [
+      "gym"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "tsanradzogh",
+    "hy": "ծանրաձող",
+    "pronunciation": "цанрадзогх",
+    "exception": false,
+    "ru": "штанга",
+    "image": {
+      "file": "img/words/arasaac-38980.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "sport"
+    ],
+    "themes": [
+      "gym"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "vazkughi",
+    "hy": "վազքուղի",
+    "pronunciation": "вазкхугхи",
+    "exception": false,
+    "ru": "беговая дорожка",
+    "image": {
+      "file": "img/words/arasaac-30981.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "sport"
+    ],
+    "themes": [
+      "gym"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "gorg",
+    "hy": "գորգ",
+    "pronunciation": "горг",
+    "exception": false,
+    "ru": "коврик",
+    "image": {
+      "file": "img/words/arasaac-4793.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "sport"
+    ],
+    "themes": [
+      "gym"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "handerdzaran",
+    "hy": "հանդերձարան",
+    "pronunciation": "хандердзаран",
+    "exception": false,
+    "ru": "раздевалка",
+    "image": {
+      "file": "img/words/arasaac-33948.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "sport"
+    ],
+    "themes": [
+      "gym"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "tsntsugh",
+    "hy": "ցնցուղ",
+    "pronunciation": "цхынцхугх",
+    "exception": false,
+    "ru": "душ",
+    "image": {
+      "file": "img/words/arasaac-2370.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "sport"
+    ],
+    "themes": [
+      "gym"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "paharan",
+    "hy": "պահարան",
+    "pronunciation": "пахаран",
+    "exception": false,
+    "ru": "шкафчик",
+    "image": {
+      "file": "img/words/arasaac-8705.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "sport"
+    ],
+    "themes": [
+      "gym"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "srbich",
+    "hy": "սրբիչ",
+    "pronunciation": "сырбич",
+    "exception": false,
+    "ru": "полотенце",
+    "image": {
+      "file": "img/words/arasaac-2593.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "sport"
+    ],
+    "themes": [
+      "gym"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "motetsum",
+    "hy": "մոտեցում",
+    "pronunciation": "мотецхум",
+    "exception": false,
+    "ru": "подход (в упражнении)",
+    "image": {
+      "file": "img/words/arasaac-19548.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "sport"
+    ],
+    "themes": [
+      "gym"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "krknutyun",
+    "hy": "կրկնություն",
+    "pronunciation": "кыркнутхюн",
+    "exception": false,
+    "ru": "повторение",
+    "image": {
+      "file": "img/words/arasaac-36797.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "sport"
+    ],
+    "themes": [
+      "gym"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "kash",
+    "hy": "քաշ",
+    "pronunciation": "кхаш",
+    "exception": false,
+    "ru": "вес",
+    "image": {
+      "file": "img/words/arasaac-38909.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "sport"
+    ],
+    "themes": [
+      "gym"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "takatsum",
+    "hy": "տաքացում",
+    "pronunciation": "такацхум",
+    "exception": false,
+    "ru": "разминка",
+    "image": {
+      "file": "img/words/arasaac-36506.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "sport"
+    ],
+    "themes": [
+      "gym"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "dzgum",
+    "hy": "ձգում",
+    "pronunciation": "дзыгум",
+    "exception": false,
+    "ru": "растяжка",
+    "image": {
+      "file": "img/words/arasaac-8574.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "sport"
+    ],
+    "themes": [
+      "gym"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "mkan",
+    "hy": "մկան",
+    "pronunciation": "мыкан",
+    "exception": false,
+    "ru": "мышца",
+    "image": {
+      "file": "img/words/arasaac-25514.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "sport"
+    ],
+    "themes": [
+      "gym"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "mejk",
+    "hy": "մեջք",
+    "pronunciation": "меджкх",
+    "exception": false,
+    "ru": "спина",
+    "image": {
+      "file": "img/words/arasaac-2748.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "sport"
+    ],
+    "themes": [
+      "gym"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "kurtsk",
+    "hy": "կուրծք",
+    "pronunciation": "курцкх",
+    "exception": false,
+    "ru": "грудь",
+    "image": {
+      "file": "img/words/arasaac-37164.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "sport"
+    ],
+    "themes": [
+      "gym"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "us",
+    "hy": "ուս",
+    "pronunciation": "ус",
+    "exception": false,
+    "ru": "плечо",
+    "image": {
+      "file": "img/words/arasaac-2977.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "sport"
+    ],
+    "themes": [
+      "gym"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "tsanr",
+    "hy": "ծանր",
+    "pronunciation": "цанр",
+    "exception": false,
+    "ru": "тяжёлый",
+    "image": {
+      "file": "img/words/arasaac-27025.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "sport"
+    ],
+    "themes": [
+      "gym"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "hesht",
+    "hy": "հեշտ",
+    "pronunciation": "хешт",
+    "exception": false,
+    "ru": "лёгкий",
+    "image": {
+      "file": "img/words/arasaac-26889.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "sport"
+    ],
+    "themes": [
+      "gym"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "azat",
+    "hy": "ազատ",
+    "pronunciation": "азат",
+    "exception": false,
+    "ru": "свободный",
+    "image": {
+      "file": "img/words/arasaac-11474.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "sport"
+    ],
+    "themes": [
+      "gym"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "zbaghvats",
+    "hy": "զբաղված",
+    "pronunciation": "зыбагхвац",
+    "exception": false,
+    "ru": "занятый",
+    "image": {
+      "file": "img/words/arasaac-9819.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "sport"
+    ],
+    "themes": [
+      "gym"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "kardio",
+    "hy": "կարդիո",
+    "pronunciation": "кардио",
+    "exception": false,
+    "ru": "кардио (тренажёры)",
+    "image": {
+      "file": "img/words/arasaac-30983.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "sport"
+    ],
+    "themes": [
+      "gym"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "aragutyun",
+    "hy": "արագություն",
+    "pronunciation": "арагутхюн",
+    "exception": false,
+    "ru": "скорость",
+    "image": {
+      "file": "img/words/arasaac-37850.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "sport"
+    ],
+    "themes": [
+      "gym"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "tekutyun",
+    "hy": "թեքություն",
+    "pronunciation": "тхекхутхюн",
+    "exception": false,
+    "ru": "наклон",
+    "image": {
+      "file": "img/words/arasaac-39053.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "sport"
+    ],
+    "themes": [
+      "gym"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "parapmunk",
+    "hy": "պարապմունք",
+    "pronunciation": "парапмункх",
+    "exception": false,
+    "ru": "занятие",
+    "image": {
+      "file": "img/words/arasaac-38914.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "sport"
+    ],
+    "themes": [
+      "gym"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "zhamanakatsuyts",
+    "hy": "ժամանակացույց",
+    "pronunciation": "жаманакацхуйцх",
+    "exception": false,
+    "ru": "расписание",
+    "image": {
+      "file": "img/words/arasaac-6012.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "sport"
+    ],
+    "themes": [
+      "gym"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "yoga",
+    "hy": "յոգա",
+    "pronunciation": "йога",
+    "exception": false,
+    "ru": "йога",
+    "image": {
+      "file": "img/words/arasaac-37882.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "sport"
+    ],
+    "themes": [
+      "gym"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "tegh",
+    "hy": "տեղ",
+    "pronunciation": "тегх",
+    "exception": false,
+    "ru": "место",
+    "image": {
+      "file": "img/words/arasaac-36505.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "sport"
+    ],
+    "themes": [
+      "gym"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "grantsvel",
+    "hy": "գրանցվել",
+    "pronunciation": "гранцхвел",
+    "exception": false,
+    "ru": "записаться",
+    "image": {
+      "file": "img/words/arasaac-9902.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "sport"
+    ],
+    "themes": [
+      "gym"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "abonement",
+    "hy": "աբոնեմենտ",
+    "pronunciation": "абонемент",
+    "exception": false,
+    "ru": "абонемент",
+    "image": {
+      "file": "img/words/arasaac-39495.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "sport"
+    ],
+    "themes": [
+      "gym"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "yndunaran",
+    "hy": "ընդունարան",
+    "pronunciation": "ындунаран",
+    "exception": false,
+    "ru": "ресепшн",
+    "image": {
+      "file": "img/words/arasaac-31328.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "sport"
+    ],
+    "themes": [
+      "gym"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "banali",
+    "hy": "բանալի",
+    "pronunciation": "банали",
+    "exception": false,
+    "ru": "ключ",
+    "image": {
+      "file": "img/words/arasaac-8153.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "sport"
+    ],
+    "themes": [
+      "gym"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "anhatakan",
+    "hy": "անհատական",
+    "pronunciation": "анхатакан",
+    "exception": false,
+    "ru": "персональный",
+    "image": {
+      "file": "img/words/arasaac-38542.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "sport"
+    ],
+    "themes": [
+      "gym"
+    ],
+    "level": 2,
+    "reviewed": false
   }
 ]

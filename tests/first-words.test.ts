@@ -245,3 +245,24 @@ describe("situations (W09)", () => {
     }
   });
 });
+
+describe("gym theme", () => {
+  const gym = themeById(content, "gym")!;
+
+  it("has 8 lessons with cardio, group classes, trainer and reception", () => {
+    expect(gym.status).toBe("available");
+    expect(gym.lessons.map((l) => l.title)).toEqual(["Зал и вещи", "Тренировка", "Тело", "Кардио-зона", "Групповые занятия", "Тренер", "Ресепшн", "Разговор в зале"]);
+    expect(themeItems(gym).filter((x) => x.startsWith("phrase:")).length).toBeGreaterThanOrEqual(25);
+  });
+
+  it("plans every lesson and a theme test", () => {
+    gym.lessons.forEach((_, i) => {
+      const s = planThemeLesson(content, "gym", i, 10 + i, TODAY);
+      // задания без экранов знакомства: урок укладывается в ~25 заданий
+      const tasks = s.steps.filter((st) => st.kind === "exercise").length;
+      expect(tasks, `урок ${i + 1}`).toBeGreaterThanOrEqual(8);
+      expect(tasks, `урок ${i + 1}`).toBeLessThanOrEqual(26);
+    });
+    expect(planThemeTest(content, "gym", 1, TODAY).steps).toHaveLength(15);
+  });
+});

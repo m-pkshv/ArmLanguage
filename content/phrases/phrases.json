@@ -249,5 +249,314 @@
     ],
     "reviewed": false,
     "situation": "Вы знакомите родителей со своим другом."
+  },
+  {
+    "id": "vortegh-handerdzarany",
+    "hy": "Որտե՞ղ է հանդերձարանը։",
+    "pronunciation": "вортегх э хандердзараны?",
+    "ru": "Где раздевалка?",
+    "themes": [
+      "gym"
+    ],
+    "situation": "Вы впервые пришли в зал и хотите переодеться.",
+    "reviewed": false
+  },
+  {
+    "id": "vortegh-tsntsughy",
+    "hy": "Որտե՞ղ է ցնցուղը։",
+    "pronunciation": "вортегх э цхынцхугхы?",
+    "ru": "Где душ?",
+    "themes": [
+      "gym"
+    ],
+    "situation": "После тренировки вы хотите помыться.",
+    "reviewed": false
+  },
+  {
+    "id": "kani-motetsum",
+    "hy": "Քանի՞ մոտեցում է մնացել։",
+    "pronunciation": "кхани мотецхум э мнацхел?",
+    "ru": "Сколько подходов осталось?",
+    "themes": [
+      "gym"
+    ],
+    "situation": "Вы ждёте штангу и хотите понять, долго ли ещё ждать.",
+    "reviewed": false,
+    "alsoFits": [
+      "derr-ogtagortsum-ek",
+      "eli-kani-rope"
+    ]
+  },
+  {
+    "id": "sa-kani-kilogram",
+    "hy": "Սա քանի՞ կիլոգրամ է։",
+    "pronunciation": "са кхани килограм э?",
+    "ru": "Какой здесь вес?",
+    "themes": [
+      "gym"
+    ],
+    "situation": "Вы не видите, сколько весит штанга, и спрашиваете у соседа.",
+    "reviewed": false
+  },
+  {
+    "id": "yes-hajordn-em",
+    "hy": "Ես հաջորդն եմ։",
+    "pronunciation": "йес хаджордн эм",
+    "ru": "Я следующий (-ая).",
+    "themes": [
+      "gym"
+    ],
+    "situation": "В кардио-зоне вы хотите занять беговую дорожку после человека, который на ней бежит.",
+    "reviewed": false
+  },
+  {
+    "id": "eli-kani-rope",
+    "hy": "Էլի քանի՞ րոպե եք մնալու։",
+    "pronunciation": "эли кхани ропе екх мналу?",
+    "ru": "Сколько вам ещё минут?",
+    "themes": [
+      "gym"
+    ],
+    "situation": "Все дорожки заняты — вы хотите узнать, скоро ли освободится одна.",
+    "reviewed": false,
+    "alsoFits": [
+      "derr-ogtagortsum-ek",
+      "kani-motetsum"
+    ]
+  },
+  {
+    "id": "kareli-aragutyuny-ijetsnel",
+    "hy": "Կարելի՞ է արագությունը իջեցնել։",
+    "pronunciation": "карели э арагутхюны иджецхнел?",
+    "ru": "Можно сделать скорость меньше?",
+    "themes": [
+      "gym"
+    ],
+    "situation": "Тренер поставил на дорожке слишком высокую скорость.",
+    "reviewed": false
+  },
+  {
+    "id": "zhamy-kanisin-parapmunky",
+    "hy": "Ժամը քանիսի՞ն է սկսվում պարապմունքը։",
+    "pronunciation": "жамы кханисин э ыскысвум парапмункхы?",
+    "ru": "Во сколько начинается занятие?",
+    "themes": [
+      "gym"
+    ],
+    "situation": "Вы хотите пойти на групповое занятие и уточняете время.",
+    "reviewed": false
+  },
+  {
+    "id": "kareli-e-grantsvel",
+    "hy": "Կարելի՞ է գրանցվել։",
+    "pronunciation": "карели э гранцхвел?",
+    "ru": "Можно записаться?",
+    "themes": [
+      "gym"
+    ],
+    "situation": "На ресепшне вы хотите записаться на йогу.",
+    "reviewed": false,
+    "alsoFits": [
+      "azat-tegh-ka"
+    ]
+  },
+  {
+    "id": "azat-tegh-ka",
+    "hy": "Ազատ տեղ կա՞։",
+    "pronunciation": "азат тегх ка?",
+    "ru": "Есть свободные места?",
+    "themes": [
+      "gym"
+    ],
+    "situation": "Вы хотите попасть на занятие, но не знаете, есть ли ещё места.",
+    "reviewed": false,
+    "alsoFits": [
+      "kareli-e-grantsvel"
+    ]
+  },
+  {
+    "id": "yogan-vortegh-e",
+    "hy": "Յոգան որտե՞ղ է։",
+    "pronunciation": "йоган вортегх э?",
+    "ru": "Где проходит йога?",
+    "themes": [
+      "gym"
+    ],
+    "situation": "Вы пришли на йогу, но не знаете, в каком зале она проходит.",
+    "reviewed": false
+  },
+  {
+    "id": "uzum-em-grantsvel-marzchi-mot",
+    "hy": "Ուզում եմ գրանցվել մարզչի մոտ։",
+    "pronunciation": "узум эм гранцхвел марзчи мот",
+    "ru": "Хочу записаться к тренеру.",
+    "themes": [
+      "gym"
+    ],
+    "situation": "Вы хотите заниматься с персональным тренером.",
+    "reviewed": false
+  },
+  {
+    "id": "marzichy-yerb-e-azat",
+    "hy": "Մարզիչը ե՞րբ է ազատ։",
+    "pronunciation": "марзичы йерб э азат?",
+    "ru": "Когда тренер свободен?",
+    "themes": [
+      "gym"
+    ],
+    "situation": "Вы хотите узнать, в какое время тренер может с вами позаниматься.",
+    "reviewed": false
+  },
+  {
+    "id": "marzumn-inch-arzhe",
+    "hy": "Մարզումն ինչ արժե՞։",
+    "pronunciation": "марзумн инчх арже?",
+    "ru": "Сколько стоит тренировка?",
+    "themes": [
+      "gym"
+    ],
+    "situation": "Вы узнаёте цену персональной тренировки.",
+    "reviewed": false,
+    "alsoFits": [
+      "inch-arzhe"
+    ]
+  },
+  {
+    "id": "abonementn-inch-arzhe",
+    "hy": "Աբոնեմենտն ինչ արժե՞։",
+    "pronunciation": "абонементн инчх арже?",
+    "ru": "Сколько стоит абонемент?",
+    "themes": [
+      "gym"
+    ],
+    "situation": "Вы хотите купить абонемент и спрашиваете цену.",
+    "reviewed": false,
+    "alsoFits": [
+      "inch-arzhe"
+    ]
+  },
+  {
+    "id": "abonements-avartvel-e",
+    "hy": "Աբոնեմենտս ավարտվել է։",
+    "pronunciation": "абонементс авартвел э",
+    "ru": "Мой абонемент закончился.",
+    "themes": [
+      "gym"
+    ],
+    "situation": "Вас не пропускают в зал: срок вашего абонемента истёк.",
+    "reviewed": false
+  },
+  {
+    "id": "paharani-banalin",
+    "hy": "Պահարանի բանալին տվեք, խնդրում եմ։",
+    "pronunciation": "пахарани баналин тывекх, хындрум эм",
+    "ru": "Дайте, пожалуйста, ключ от шкафчика.",
+    "themes": [
+      "gym"
+    ],
+    "situation": "На ресепшне вы просите ключ, чтобы оставить вещи.",
+    "reviewed": false
+  },
+  {
+    "id": "vortegh-jur-lytsnel",
+    "hy": "Որտե՞ղ կարելի է ջուր լցնել։",
+    "pronunciation": "вортегх карели э джур лыцхнел?",
+    "ru": "Где можно набрать воду?",
+    "themes": [
+      "gym"
+    ],
+    "situation": "Ваша бутылка пуста, и вы хотите налить воды.",
+    "reviewed": false
+  },
+  {
+    "id": "aystegh-azat-e",
+    "hy": "Այստեղ ազա՞տ է։",
+    "pronunciation": "айстегх азат э?",
+    "ru": "Здесь свободно?",
+    "themes": [
+      "gym"
+    ],
+    "situation": "Вы хотите занять тренажёр, но рядом лежит чьё-то полотенце.",
+    "reviewed": false,
+    "alsoFits": [
+      "derr-ogtagortsum-ek"
+    ]
+  },
+  {
+    "id": "derr-ogtagortsum-ek",
+    "hy": "Դեռ օգտագործո՞ւմ եք։",
+    "pronunciation": "дерр огтагорцум екх?",
+    "ru": "Вы ещё пользуетесь?",
+    "themes": [
+      "gym"
+    ],
+    "situation": "У тренажёра стоит человек и отдыхает — непонятно, закончил ли он.",
+    "reviewed": false,
+    "alsoFits": [
+      "aystegh-azat-e",
+      "kani-motetsum",
+      "eli-kani-rope"
+    ]
+  },
+  {
+    "id": "hertov-anenk",
+    "hy": "Հերթով անե՞նք։",
+    "pronunciation": "хертхов аненкх?",
+    "ru": "Давайте по очереди?",
+    "themes": [
+      "gym"
+    ],
+    "situation": "Вы и другой посетитель хотите заниматься на одном тренажёре.",
+    "reviewed": false
+  },
+  {
+    "id": "yes-verjatsri",
+    "hy": "Ես վերջացրի։",
+    "pronunciation": "йес верджацхри",
+    "ru": "Я закончил(а).",
+    "themes": [
+      "gym"
+    ],
+    "situation": "Вы закончили упражнение и освобождаете тренажёр для того, кто ждёт.",
+    "reviewed": false
+  },
+  {
+    "id": "kognek-indz",
+    "hy": "Կօգնե՞ք ինձ։",
+    "pronunciation": "когнекх индз?",
+    "ru": "Поможете мне?",
+    "themes": [
+      "gym"
+    ],
+    "situation": "Вам нужно, чтобы кто-то помог снять тяжёлые блины со штанги.",
+    "reviewed": false,
+    "alsoFits": [
+      "apahovek"
+    ]
+  },
+  {
+    "id": "apahovek",
+    "hy": "Ապահովեք, խնդրում եմ։",
+    "pronunciation": "апаховекх, хындрум эм",
+    "ru": "Подстрахуйте, пожалуйста.",
+    "themes": [
+      "gym"
+    ],
+    "situation": "Вы собираетесь жать тяжёлую штангу лёжа и просите соседа подстраховать.",
+    "reviewed": false,
+    "alsoFits": [
+      "kognek-indz"
+    ]
+  },
+  {
+    "id": "lav-marzum",
+    "hy": "Լավ մարզում։",
+    "pronunciation": "лав марзум",
+    "ru": "Хорошей тренировки!",
+    "themes": [
+      "gym"
+    ],
+    "situation": "Вы уходите из зала и прощаетесь со знакомым, который только начинает тренироваться.",
+    "reviewed": false
   }
 ]

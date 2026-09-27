@@ -106,6 +106,7 @@ export function validateContent(c: Content, opts: ValidateOptions): ValidationRe
     const at = `Фраза «${p.ru}» (${p.id})`;
     if (!p.hy || !p.pronunciation || !p.ru) errors.push(`${at}: не заполнены текст, произношение или перевод`);
     if (lettersOf(p.hy.replace(/[\s,.։՞՜՛«»!?-]/g, ""), index).some((l) => !l)) errors.push(`${at}: содержит символы не из алфавита`);
+    for (const a of p.alsoFits ?? []) if (!phraseIds.has(a)) errors.push(`${at}: в alsoFits неизвестная фраза «${a}»`);
     if (opts.release && !p.reviewed) errors.push(`${at}: не проверена носителем`);
   }
   const firstWords = c.course.sections.find((s) => s.id === "first-words");
