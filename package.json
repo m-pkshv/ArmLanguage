@@ -1,7 +1,7 @@
 {
   "name": "armlanguage",
   "private": true,
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "Армянский язык для русскоговорящих: алфавит, чтение, слова",
   "license": "MIT",
   "author": "Maksim Pekshev",

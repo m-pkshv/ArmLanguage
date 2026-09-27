@@ -28,8 +28,34 @@
   import { pwa } from "../platform/pwa.svelte";
   import { trackScreen } from "../platform/analytics";
   import { app } from "./state.svelte";
+  import { isFirstRun } from "../session/next";
+  import { releaseToShow, SEEN_KEY, shortVersion } from "./whatsNew";
+  import WhatsNew from "./screens/WhatsNew.svelte";
 
   const route = $derived(router.current);
+
+  // «Что нового» — один раз после обновления, только тем, кто уже занимался (docs/09-navigation.md, 9.16).
+  const readSeen = () => {
+    try {
+      return localStorage.getItem(SEEN_KEY);
+    } catch {
+      return null;
+    }
+  };
+  const markSeen = () => {
+    try {
+      localStorage.setItem(SEEN_KEY, shortVersion(__APP_VERSION__));
+    } catch {
+      /* ignore */
+    }
+  };
+  const initial = releaseToShow(readSeen(), __APP_VERSION__, !isFirstRun(app.progress));
+  if (!initial) markSeen();
+  let release = $state(initial);
+  function closeNew() {
+    release = undefined;
+    markSeen();
+  }
 
   // Статистика экранов — только название экрана, без id букв и уроков.
   $effect(() => trackScreen(route.name));
@@ -45,6 +71,7 @@
 </script>
 
 {#if route.name !== "session"}<NavBar active={tabOf(route)} />{/if}
+{#if release && route.name !== "session"}<WhatsNew {release} onclose={closeNew} />{/if}
 
 <main class:session={route.name === "session"}>
   {#if !app.storagePersistent}

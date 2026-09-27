@@ -1,6 +1,7 @@
 import { svelte } from "@sveltejs/vite-plugin-svelte";
 import { VitePWA } from "vite-plugin-pwa";
 import { defineConfig } from "vitest/config";
+import pkg from "./package.json";
 
 // Адрес, по которому приложение открывается на GitHub Pages (/ArmLanguage/).
 // Задаётся при сборке переменной BASE_PATH (см. .github/workflows/deploy.yml).
@@ -40,7 +41,7 @@ export default defineConfig({
     }),
   ],
   define: {
-    __APP_VERSION__: JSON.stringify(process.env.npm_package_version ?? "dev"),
+    __APP_VERSION__: JSON.stringify(pkg.version),
   },
   test: {
     environment: "jsdom",

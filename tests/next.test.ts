@@ -6,6 +6,9 @@ import type { ProgressData } from "../src/core/progress/types";
 import { dueStudyItems, isStudyItem, themes } from "../src/core/words";
 import { nextAction } from "../src/session/next";
 import { planReview, REVIEW_MAX } from "../src/session/plan";
+import { RELEASES, releaseToShow, shortVersion } from "../src/app/whatsNew";
+import { t } from "../src/i18n";
+import pkg from "../package.json";
 
 // Кнопка «Продолжить» на главном экране (docs/09-navigation.md, 9.4).
 
@@ -102,5 +105,25 @@ describe("common review of letters and words", () => {
     const s = planReview(p, content.letters.map((l) => l.id), 1, TODAY);
     expect(s.steps).toHaveLength(5);
     expect(s.steps.every((st) => !isStudyItem(st.letter))).toBe(true);
+  });
+});
+
+describe("what's new", () => {
+  it("shows the release notes once, only to those who already studied", () => {
+    expect(shortVersion("1.0.0")).toBe("1.0");
+    expect(shortVersion("1.2.3")).toBe("1.2.3");
+    expect(releaseToShow(null, "1.0.0", true)?.version).toBe("1.0");
+    expect(releaseToShow("0.2.0", "1.0.0", true)?.version).toBe("1.0");
+    expect(releaseToShow("1.0", "1.0.0", true)).toBeUndefined();
+    expect(releaseToShow(null, "1.0.0", false)).toBeUndefined();
+    expect(releaseToShow(null, "1.0.1", true)).toBeUndefined();
+  });
+
+  it("has texts for every release item", () => {
+    for (const r of RELEASES) for (const item of r.items) expect(t(`whatsNew.${r.key}.${item}`)).not.toContain("whatsNew");
+  });
+
+  it("has release notes for the version in package.json", () => {
+    expect(RELEASES.map((r) => r.version)).toContain(shortVersion(pkg.version));
   });
 });
