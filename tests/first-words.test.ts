@@ -162,3 +162,43 @@ describe("numbers and family themes", () => {
     }
   });
 });
+
+describe("spelling tasks (W05, W06)", () => {
+  it("splits words into letters with ու as one letter", async () => {
+    const { wordLetters } = await import("../src/exercises/words/logic");
+    expect(wordLetters("ձուկ")).toEqual(["ձ", "ու", "կ"]);
+    expect(wordLetters("Հայաստան")[0]).toBe("հ");
+  });
+
+  it("builds tiles with the word letters and a similar extra letter", () => {
+    for (const [i, id] of pool.entries()) {
+      const item = studyItem(content, id);
+      if (item.kind !== "word") continue;
+      const q = WORD_EXERCISES["word-build"].generate(item, ctx(i + 1)) as import("../src/exercises/words/logic").WordSpellQuestion;
+      expect(q.tiles.length, id).toBeGreaterThan(q.letters.length);
+      for (const l of q.letters) expect(q.tiles).toContain(l);
+    }
+  });
+
+  it("points at the first wrong letter", () => {
+    const item = studyItem(content, "word:barev");
+    const q = WORD_EXERCISES["word-write"].generate(item, ctx(1)) as import("../src/exercises/words/logic").WordSpellQuestion;
+    expect(q.letters).toEqual(["բ", "ա", "ր", "և"]);
+    expect(WORD_EXERCISES["word-write"].check(q, ["բ", "ա", "ր", "և"], check).verdict).toBe("correct");
+    const bad = WORD_EXERCISES["word-write"].check(q, ["բ", "ա", "ռ", "և"], check);
+    expect(bad.verdict).toBe("wrong");
+    expect(bad.effects[0]!.skill).toBe("spell");
+    expect(bad.explanation.lines.join(" ")).toMatch(/На 3-м месте нужна буква ր, а не ռ/);
+    expect(WORD_EXERCISES["word-write"].check(q, ["բ", "ա"], check).explanation.lines.join(" ")).toMatch(/Не хватает букв: 2/);
+  });
+
+  it("offers spelling once the word is recalled", () => {
+    const p = createEmptyProgress(new Date());
+    const item = studyItem(content, "word:barev");
+    for (const s of ["meaning", "produce"]) p.items[`word:barev#${s}`] = { box: 2, due: TODAY, ok: 2, bad: 0, last: TODAY };
+    expect(chooseWordExercise({ kind: "exercise", letter: item.id }, item, p, ctx(1), createRng(1), [])).toBe("word-build");
+    p.items["word:barev#spell"] = { box: 2, due: TODAY, ok: 2, bad: 0, last: TODAY };
+    p.items["word:barev#produce"]!.box = 3;
+    expect(chooseWordExercise({ kind: "exercise", letter: item.id }, item, p, ctx(1), createRng(1), [])).toBe("word-write");
+  });
+});

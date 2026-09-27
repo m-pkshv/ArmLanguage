@@ -12,7 +12,9 @@ export type Script = "print" | "handwriting";
 /** Навыки (docs/03-exercises.md, «Навыки»). Основные — recognize и recall. */
 export type Skill = "recognize" | "recall" | "read" | "case" | "handwriting" | "discriminate" | "listen" | "write"
   // слова и фразы (docs/10-first-words.md): понимание (армянское → смысл) и вспоминание (смысл → армянское)
-  | "meaning" | "produce";
+  | "meaning" | "produce"
+  // написание слова по буквам (задания W05, W06)
+  | "spell";
 
 export interface Settings {
   theme: Theme;

@@ -28,8 +28,18 @@ export function chooseWordExercise(
 
   const meaning = boxOfItem(p, item.id, "meaning");
   const produce = boxOfItem(p, item.id, "produce");
-  let order: WordExerciseId[] = meaning === 0 ? [own.meaning] : produce < meaning ? [own.produce, own.meaning] : [own.meaning, own.produce];
-  if (meaning > 0 && produce >= meaning && rng.next() < 0.5) order = order.reverse();
+  const spell = boxOfItem(p, item.id, "spell");
+  // написание — когда слово уже вспоминают: сначала из карточек (W05), потом на клавиатуре (W06)
+  const spellType: WordExerciseId = spell >= 2 ? "word-write" : "word-build";
+  let order: WordExerciseId[] =
+    meaning === 0
+      ? [own.meaning]
+      : produce < meaning
+        ? [own.produce, own.meaning]
+        : item.kind === "word" && produce >= 1 && spell < produce
+          ? [spellType, own.produce, own.meaning]
+          : [own.meaning, own.produce];
+  if (meaning > 0 && produce >= meaning && spell >= produce && rng.next() < 0.5) order = order.reverse();
   const [a, b] = recent.slice(-2);
   if (a && a === b) order = [...order.filter((x) => x !== a), ...order.filter((x) => x === a)];
   return order.find(applicable) ?? own.meaning;

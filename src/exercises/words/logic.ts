@@ -2,6 +2,7 @@ import type { Content } from "../../core/content/types";
 import type { Skill } from "../../core/progress/types";
 import type { Rng } from "../../core/random";
 import type { WordExerciseId } from "../../core/session/types";
+import { tokensOf } from "../../core/text/armenian";
 import { studyItem, type StudyItem } from "../../core/words";
 import { t } from "../../i18n";
 import type { CheckContext, CheckResult } from "../types";
@@ -134,9 +135,81 @@ export const phraseBuild: WordExerciseLogic<PhraseBuildQuestion, string[]> = {
   },
 };
 
+/** W05 / W06: написать слово по буквам — из перемешанных карточек или на армянской клавиатуре. */
+export interface WordSpellQuestion {
+  item: string;
+  /** Буквы слова в нижнем регистре: «ձուկ» → ["ձ", "ու", "կ"]. */
+  letters: string[];
+  /** Карточки (для «собери слово»): буквы слова и 1–2 похожие, перемешаны. Для клавиатуры — пусто. */
+  tiles: string[];
+  reading: boolean;
+}
+
+/** Буквы слова в нижнем регистре (ու — одна буква). */
+export const wordLetters = (hy: string): string[] => tokensOf(hy.toLocaleLowerCase("hy")).filter((x) => x.trim());
+
+/** Где ошибка: первая буква, которая не совпала, — для объяснения «на 2-м месте нужна ձ». */
+function spellMistake(expected: string[], given: string[]): string | null {
+  if (!given.length) return null;
+  const i = expected.findIndex((l, k) => given[k] !== l);
+  if (i < 0) return given.length > expected.length ? t("ex.spellExtra") : null;
+  if (i >= given.length) return t("ex.spellShort", { n: expected.length - given.length });
+  return t("ex.spellAt", { n: i + 1, expected: expected[i]!, given: given[i]! });
+}
+
+function spellCheck(q: WordSpellQuestion, a: string[], c: CheckContext): CheckResult {
+  const item = studyItem(c.content, q.item);
+  const ok = a.join("") === q.letters.join("");
+  const mistake = ok ? null : spellMistake(q.letters, a);
+  return {
+    verdict: ok ? "correct" : "wrong",
+    effects: [{ letter: "", item: q.item, skill: "spell", verdict: ok ? "correct" : "wrong" }],
+    confusions: [],
+    explanation: {
+      title: t(ok ? "ex.correct" : "ex.rightAnswer", { what: itemLine(item) }),
+      lines: [...(a.length && !ok ? [t("ex.youWrote", { what: a.join("") })] : []), ...(mistake ? [mistake] : [])],
+    },
+    letter: "",
+  };
+}
+
+const spellable = (item: StudyItem) => item.kind === "word" && wordLetters(item.hy).length >= 2;
+
+export const wordBuild: WordExerciseLogic<WordSpellQuestion, string[]> = {
+  id: "word-build",
+  skill: "spell",
+  kind: "word",
+  isApplicable: spellable,
+  generate(item, ctx) {
+    const letters = wordLetters(item.hy);
+    // лишние карточки — буквы, похожие на буквы слова по звуку или виду (Տ/Թ, ո/ս)
+    const lowerOf = (id: string) => ctx.content.letters.find((l) => l.id === id)!.lower;
+    const partners = ctx.content.letters
+      .filter((l) => letters.includes(l.lower))
+      .flatMap((l) => [...l.confusable.sound, ...l.confusable.shape].map(lowerOf))
+      .filter((x) => !letters.includes(x));
+    // если похожих нет (լավ) — любые другие буквы
+    const others = ctx.rng.shuffle(ctx.content.letters.map((l) => l.lower).filter((x) => !letters.includes(x) && !partners.includes(x)));
+    const extra = [...ctx.rng.shuffle([...new Set(partners)]), ...others].slice(0, letters.length > 4 ? 2 : 1);
+    return { item: item.id, letters, tiles: ctx.rng.shuffle([...letters, ...extra]), reading: ctx.reading };
+  },
+  check: spellCheck,
+};
+
+export const wordWrite: WordExerciseLogic<WordSpellQuestion, string[]> = {
+  id: "word-write",
+  skill: "spell",
+  kind: "word",
+  isApplicable: spellable,
+  generate: (item, ctx) => ({ item: item.id, letters: wordLetters(item.hy), tiles: [], reading: ctx.reading }),
+  check: spellCheck,
+};
+
 export const WORD_EXERCISES: Record<WordExerciseId, WordExerciseLogic<any, any>> = {
   "word-meaning": wordMeaning,
   "word-produce": wordProduce,
   "phrase-meaning": phraseMeaning,
   "phrase-build": phraseBuild,
+  "word-build": wordBuild,
+  "word-write": wordWrite,
 };

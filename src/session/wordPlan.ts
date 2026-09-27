@@ -60,7 +60,10 @@ export function planThemeTest(c: Content, themeId: string, seed: number, today: 
   const items = themeItems(themeById(c, themeId)!);
   // вспоминание важнее: в тесте в основном «смысл → армянское»
   const steps = spread(rng, items, THEME_TEST_SIZE).map((s, i) =>
-    ({ ...s, types: i % 3 === 0 ? ["word-meaning", "phrase-meaning"] : ["word-produce", "phrase-build"] }) as Step,
+    ({
+      ...s,
+      types: i % 3 === 0 ? ["word-meaning", "phrase-meaning"] : i % 3 === 1 ? ["word-produce", "phrase-build"] : ["word-build", "phrase-build"],
+    }) as Step,
   );
   return newSession("theme-test", steps, seed, today, { themeId }, { retries: false });
 }

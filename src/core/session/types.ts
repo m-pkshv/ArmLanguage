@@ -20,7 +20,9 @@ export type WordExerciseId =
   | "word-meaning" // W02: слово → смысл
   | "word-produce" // W03: смысл → слово
   | "phrase-meaning" // W08: фраза → смысл
-  | "phrase-build"; // W07: собери фразу
+  | "phrase-build" // W07: собери фразу
+  | "word-build" // W05: собери слово из букв
+  | "word-write"; // W06: напиши слово на армянской клавиатуре
 
 /** Вид пар в мини-игре «Найди пары» (E05). */
 export type MatchKind = "sound" | "case" | "handwriting";
