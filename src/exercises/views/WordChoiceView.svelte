@@ -15,6 +15,7 @@
   const item = $derived(studyItem(content, question.item));
   const phrase = $derived(item.kind === "phrase");
   const showPron = $derived(question.reading || revealed || !!result);
+  const situation = $derived(content.phrases.find((p) => `phrase:${p.id}` === question.item)?.situation ?? "");
 </script>
 
 <div class="prompt">
@@ -26,6 +27,10 @@
       <button class="reveal" onclick={() => (revealed = true)}>{t("session.showReading")}</button>
     {/if}
     <p class="q">{phrase ? t("session.qPhraseMeaning") : t("session.qWordMeaning")}</p>
+  {:else if question.mode === "situation"}
+    <!-- W09: ситуация — что вы скажете? -->
+    <div class="situation">{situation}</div>
+    <p class="q">{t("session.qSituation")}</p>
   {:else}
     {#if item.image}<img class="word-pic" src={assetUrl(item.image.file)} alt="" width="96" height="96" />{/if}
     <div class="ru">{item.ru}</div>
@@ -33,7 +38,7 @@
   {/if}
 </div>
 
-<div class="options" class:single={phrase}>
+<div class="options" class:single={phrase} class:sit={question.mode === "situation"}>
   <OptionGrid
     options={question.options}
     correct={(id) => id === question.item}
@@ -93,6 +98,17 @@
     color: var(--muted);
     font: inherit;
     font-size: 14px;
+  }
+  .situation {
+    padding: 14px 16px;
+    border-radius: var(--radius);
+    background: var(--surface-2);
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: left;
+  }
+  .sit .opt-hy {
+    font-size: calc(20px * var(--glyph-scale));
   }
   .ru {
     margin-top: 8px;

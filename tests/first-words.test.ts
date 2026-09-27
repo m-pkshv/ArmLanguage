@@ -230,3 +230,18 @@ describe("word match (W04)", () => {
     expect(first.kind === "exercise" && first.types).toEqual(["word-match"]);
   });
 });
+
+describe("situations (W09)", () => {
+  it("every phrase has a situation and 3 different options without phrases that also fit", () => {
+    for (const p of content.phrases) {
+      expect(p.situation, p.id).toBeTruthy();
+      const t = themeById(content, p.themes[0]!)!;
+      for (let seed = 1; seed < 15; seed++) {
+        const q = WORD_EXERCISES["phrase-situation"].generate(studyItem(content, `phrase:${p.id}`), { content, rng: createRng(seed), pool: themeItems(t), reading: true }) as WordChoiceQuestion;
+        expect(q.mode).toBe("situation");
+        expect(new Set(q.options).size, p.id).toBe(3);
+        for (const also of p.alsoFits ?? []) expect(q.options).not.toContain(`phrase:${also}`);
+      }
+    }
+  });
+});

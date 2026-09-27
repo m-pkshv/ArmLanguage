@@ -46,4 +46,5 @@ export const WORD_VIEWS: Record<WordExerciseId, Component<any>> = {
   "word-build": WordSpellView,
   "word-write": WordSpellView,
   "word-match": WordMatchView,
+  "phrase-situation": WordChoiceView,
 };

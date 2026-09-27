@@ -59,6 +59,10 @@ export interface Phrase {
   pronunciation: string;
   ru: string;
   themes: string[];
+  /** Ситуация для задания W09: «Вам что-то сказали, но вы не поняли». */
+  situation?: string;
+  /** Фразы, которые тоже подходят к этой ситуации, — не показываются неправильным вариантом. */
+  alsoFits?: string[];
   reviewed: boolean;
 }
 

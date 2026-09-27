@@ -67,7 +67,7 @@ export function planThemeTest(c: Content, themeId: string, seed: number, today: 
   const steps = spread(rng, items, THEME_TEST_SIZE).map((s, i) =>
     ({
       ...s,
-      types: i % 3 === 0 ? ["word-meaning", "phrase-meaning"] : i % 3 === 1 ? ["word-produce", "phrase-build"] : ["word-build", "phrase-build"],
+      types: i % 3 === 0 ? ["word-meaning", "phrase-situation"] : i % 3 === 1 ? ["word-produce", "phrase-build"] : ["word-build", "phrase-situation"],
     }) as Step,
   );
   return newSession("theme-test", steps, seed, today, { themeId }, { retries: false });

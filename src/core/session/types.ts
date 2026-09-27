@@ -23,7 +23,8 @@ export type WordExerciseId =
   | "phrase-build" // W07: собери фразу
   | "word-build" // W05: собери слово из букв
   | "word-write" // W06: напиши слово на армянской клавиатуре
-  | "word-match"; // W04: найди пары — слова ↔ картинки
+  | "word-match" // W04: найди пары — слова ↔ картинки
+  | "phrase-situation"; // W09: ситуация → что сказать
 
 /** Вид пар в мини-игре «Найди пары» (E05). */
 export type MatchKind = "sound" | "case" | "handwriting";

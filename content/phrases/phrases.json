@@ -7,7 +7,8 @@
     "themes": [
       "greetings"
     ],
-    "reviewed": false
+    "reviewed": false,
+    "situation": "Днём вы заходите в магазин и здороваетесь с продавцом."
   },
   {
     "id": "inchpes-es",
@@ -17,7 +18,8 @@
     "themes": [
       "greetings"
     ],
-    "reviewed": false
+    "reviewed": false,
+    "situation": "Вы встретили знакомого и хотите спросить, как у него дела."
   },
   {
     "id": "lav-em",
@@ -27,7 +29,8 @@
     "themes": [
       "greetings"
     ],
-    "reviewed": false
+    "reviewed": false,
+    "situation": "Друг спросил, как у вас дела. У вас всё хорошо."
   },
   {
     "id": "bari-luys",
@@ -37,7 +40,11 @@
     "themes": [
       "greetings"
     ],
-    "reviewed": false
+    "reviewed": false,
+    "situation": "Утро. Вы входите в офис и здороваетесь с коллегами.",
+    "alsoFits": [
+      "barev-dzez"
+    ]
   },
   {
     "id": "bari-yereko",
@@ -47,7 +54,11 @@
     "themes": [
       "greetings"
     ],
-    "reviewed": false
+    "reviewed": false,
+    "situation": "Вечером вы пришли в гости и здороваетесь с хозяевами.",
+    "alsoFits": [
+      "barev-dzez"
+    ]
   },
   {
     "id": "anund-inch-e",
@@ -57,7 +68,8 @@
     "themes": [
       "greetings"
     ],
-    "reviewed": false
+    "reviewed": false,
+    "situation": "Вы знакомитесь с ребёнком и хотите узнать, как его зовут."
   },
   {
     "id": "im-anuny",
@@ -67,7 +79,8 @@
     "themes": [
       "greetings"
     ],
-    "reviewed": false
+    "reviewed": false,
+    "situation": "Вас спросили, как вас зовут. Вас зовут Анна."
   },
   {
     "id": "shat-hacheli",
@@ -77,7 +90,8 @@
     "themes": [
       "greetings"
     ],
-    "reviewed": false
+    "reviewed": false,
+    "situation": "Вам только что представили нового человека."
   },
   {
     "id": "chem-haskanum",
@@ -87,7 +101,11 @@
     "themes": [
       "greetings"
     ],
-    "reviewed": false
+    "reviewed": false,
+    "situation": "Вам что-то сказали по-армянски, но вы не поняли.",
+    "alsoFits": [
+      "aveli-dandagh"
+    ]
   },
   {
     "id": "aveli-dandagh",
@@ -97,7 +115,8 @@
     "themes": [
       "greetings"
     ],
-    "reviewed": false
+    "reviewed": false,
+    "situation": "Собеседник говорит слишком быстро — вы хотите, чтобы он говорил медленнее."
   },
   {
     "id": "mek-yerku-yerekh",
@@ -107,7 +126,8 @@
     "themes": [
       "numbers"
     ],
-    "reviewed": false
+    "reviewed": false,
+    "situation": "Вы с другом поднимаете тяжёлый шкаф и считаете вслух, чтобы поднять вместе."
   },
   {
     "id": "kani-hat",
@@ -117,7 +137,8 @@
     "themes": [
       "numbers"
     ],
-    "reviewed": false
+    "reviewed": false,
+    "situation": "Продавец предлагает пакет с пирожками — вы хотите узнать, сколько их там."
   },
   {
     "id": "inch-arzhe",
@@ -127,7 +148,8 @@
     "themes": [
       "numbers"
     ],
-    "reviewed": false
+    "reviewed": false,
+    "situation": "Вы хотите узнать цену товара в магазине."
   },
   {
     "id": "kani-tarekan",
@@ -137,7 +159,8 @@
     "themes": [
       "numbers"
     ],
-    "reviewed": false
+    "reviewed": false,
+    "situation": "Вы хотите узнать возраст нового знакомого."
   },
   {
     "id": "yes-ksan-tarekan",
@@ -147,7 +170,8 @@
     "themes": [
       "numbers"
     ],
-    "reviewed": false
+    "reviewed": false,
+    "situation": "Вас спросили, сколько вам лет. Вам двадцать."
   },
   {
     "id": "zhamy-kanisn",
@@ -157,7 +181,8 @@
     "themes": [
       "numbers"
     ],
-    "reviewed": false
+    "reviewed": false,
+    "situation": "У вас нет часов, и вы хотите узнать время у прохожего."
   },
   {
     "id": "sa-im-mayrn",
@@ -167,7 +192,8 @@
     "themes": [
       "family"
     ],
-    "reviewed": false
+    "reviewed": false,
+    "situation": "Вы показываете другу фотографию мамы."
   },
   {
     "id": "yes-yeghbayr-unem",
@@ -177,7 +203,8 @@
     "themes": [
       "family"
     ],
-    "reviewed": false
+    "reviewed": false,
+    "situation": "Вас спросили про братьев и сестёр. У вас есть брат."
   },
   {
     "id": "im-yntaniky-mets",
@@ -187,7 +214,8 @@
     "themes": [
       "family"
     ],
-    "reviewed": false
+    "reviewed": false,
+    "situation": "Вы рассказываете, что у вас много родственников."
   },
   {
     "id": "amusnatsats-es",
@@ -197,7 +225,8 @@
     "themes": [
       "family"
     ],
-    "reviewed": false
+    "reviewed": false,
+    "situation": "Вы хотите узнать, есть ли у собеседника муж или жена."
   },
   {
     "id": "yerekhaner-unes",
@@ -207,7 +236,8 @@
     "themes": [
       "family"
     ],
-    "reviewed": false
+    "reviewed": false,
+    "situation": "Вы хотите узнать, есть ли у знакомого дети."
   },
   {
     "id": "sa-im-ynkern",
@@ -217,6 +247,7 @@
     "themes": [
       "family"
     ],
-    "reviewed": false
+    "reviewed": false,
+    "situation": "Вы знакомите родителей со своим другом."
   }
 ]

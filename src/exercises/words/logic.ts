@@ -33,8 +33,9 @@ export interface WordExerciseLogic<Q = unknown, A = unknown> {
 /** W02 / W03 / W08: выбор из вариантов. */
 export interface WordChoiceQuestion {
   item: string;
-  /** meaning — показано армянское, выбрать смысл; produce — показан смысл, выбрать армянское. */
-  mode: "meaning" | "produce";
+  /** meaning — показано армянское, выбрать смысл; produce — показан смысл, выбрать армянское;
+   *  situation — описана ситуация, выбрать, что сказать (W09). */
+  mode: "meaning" | "produce" | "situation";
   options: string[];
   reading: boolean;
 }
@@ -53,7 +54,7 @@ export interface PhraseBuildQuestion {
 export const phraseTokens = (hy: string): string[] => hy.split(/\s+/).map((w) => w.replace(/[,։.!?]+$/u, "")).filter(Boolean);
 
 /** Неправильные варианты: элементы того же вида с другим переводом — сначала из пула, потом любые с темой. */
-function distractors(item: StudyItem, ctx: WordContext, n: number, key: (x: StudyItem) => string): string[] {
+function distractors(item: StudyItem, ctx: WordContext, n: number, key: (x: StudyItem) => string, exclude: string[] = []): string[] {
   const c = ctx.content;
   const sameKind = (id: string) => id.startsWith(`${item.kind}:`) && id !== item.id;
   const rest =
@@ -66,7 +67,7 @@ function distractors(item: StudyItem, ctx: WordContext, n: number, key: (x: Stud
     if (out.length >= n) break;
     const x = studyItem(c, id);
     // одинаковый текст или то же значение (մամա / մայր) — тогда правильных ответов было бы два
-    if (keys.has(key(x)) || item.same.includes(x.id) || x.same.includes(item.id)) continue;
+    if (keys.has(key(x)) || item.same.includes(x.id) || x.same.includes(item.id) || exclude.includes(x.id)) continue;
     keys.add(key(x));
     out.push(x);
   }
@@ -90,7 +91,7 @@ function choiceCheck(q: WordChoiceQuestion, answer: string, c: CheckContext, ski
   };
 }
 
-const choice = (id: WordExerciseId, kind: StudyItem["kind"], mode: WordChoiceQuestion["mode"], count: number): WordExerciseLogic<WordChoiceQuestion, string> => ({
+const choice = (id: WordExerciseId, kind: StudyItem["kind"], mode: "meaning" | "produce", count: number): WordExerciseLogic<WordChoiceQuestion, string> => ({
   id,
   skill: mode,
   kind,
@@ -106,6 +107,22 @@ const choice = (id: WordExerciseId, kind: StudyItem["kind"], mode: WordChoiceQue
 export const wordMeaning = choice("word-meaning", "word", "meaning", 4);
 export const wordProduce = choice("word-produce", "word", "produce", 4);
 export const phraseMeaning = choice("phrase-meaning", "phrase", "meaning", 3);
+
+/** W09: ситуация → выбрать фразу. Фразы, которые тоже подходят (alsoFits), в варианты не попадают. */
+export const phraseSituation: WordExerciseLogic<WordChoiceQuestion, string> = {
+  id: "phrase-situation",
+  skill: "produce",
+  kind: "phrase",
+  isApplicable: (item, ctx) => item.kind === "phrase" && !!phraseOf(ctx.content, item.id)?.situation,
+  generate(item, ctx) {
+    const also = (phraseOf(ctx.content, item.id)?.alsoFits ?? []).map((x) => `phrase:${x}`);
+    const wrong = distractors(item, ctx, 2, (x) => x.hy, also);
+    return { item: item.id, mode: "situation", options: ctx.rng.shuffle([item.id, ...wrong]), reading: ctx.reading };
+  },
+  check: (q, a, c) => choiceCheck(q, a, c, "produce"),
+};
+
+const phraseOf = (c: Content, id: string) => c.phrases.find((p) => `phrase:${p.id}` === id);
 
 export const phraseBuild: WordExerciseLogic<PhraseBuildQuestion, string[]> = {
   id: "phrase-build",
@@ -272,4 +289,5 @@ export const WORD_EXERCISES: Record<WordExerciseId, WordExerciseLogic<any, any>>
   "word-build": wordBuild,
   "word-write": wordWrite,
   "word-match": wordMatch,
+  "phrase-situation": phraseSituation,
 };
