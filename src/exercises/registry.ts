@@ -6,6 +6,7 @@ import MatchView from "./views/MatchView.svelte";
 import MixedView from "./views/MixedView.svelte";
 import PictureView from "./views/PictureView.svelte";
 import RuInsertView from "./views/RuInsertView.svelte";
+import TimedView from "./views/TimedView.svelte";
 import TypeSoundView from "./views/TypeSoundView.svelte";
 import WordReadingView from "./views/WordReadingView.svelte";
 
@@ -29,4 +30,5 @@ export const VIEWS: Record<Exclude<ExerciseId, "letter-intro">, Component<any>> 
   "word-type-reading": WordReadingView,
   "match-pairs": MatchView,
   "handwriting-match": ChoiceView,
+  "timed-reading": TimedView,
 };

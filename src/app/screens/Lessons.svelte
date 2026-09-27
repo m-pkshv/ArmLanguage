@@ -52,7 +52,7 @@
       <span class="body">
         <span class="title">{t("lessons.final")}</span>
         <span class="meta">
-          {#if p.finalTest}{t("lessons.finalBest", { n: Math.round(p.finalTest.bestScore * 100) })}{:else if allDone}{t("lessons.finalReady")}{:else}{t("lessons.finalLocked")}{/if}
+          {#if p.finalTest}{t("lessons.finalBest", { n: Math.round(p.finalTest.bestScore * 100) })}{#if p.finalTest.bestReading}{" · "}{t("lessons.finalBestReading", { correct: p.finalTest.bestReading.correct, s: (p.finalTest.bestReading.avgMs / 1000).toFixed(1).replace(".", ",") })}{/if}{:else if allDone}{t("lessons.finalReady")}{:else}{t("lessons.finalLocked")}{/if}
         </span>
       </span>
     </button>

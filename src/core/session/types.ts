@@ -12,7 +12,8 @@ export type ExerciseId =
   | "mixed-reading" // E09
   | "word-type-reading" // E07
   | "match-pairs" // E05
-  | "handwriting-match"; // E11
+  | "handwriting-match" // E11
+  | "timed-reading"; // чтение слов на время в итоговом тесте
 
 /** Вид пар в мини-игре «Найди пары» (E05). */
 export type MatchKind = "sound" | "case" | "handwriting";
@@ -33,7 +34,15 @@ export type Step =
       /** «Найди пары»: буквы для поля (иначе — знакомые) и вид пар. */
       group?: string[];
       match?: MatchKind;
+      /** Итоговый тест, часть 2: какое слово читать и его номер. */
+      reading?: ReadingStep;
     };
+
+export interface ReadingStep {
+  word: string;
+  n: number; // номер слова, с 1
+  total: number;
+}
 
 export interface SessionResult {
   correct: number;
@@ -60,4 +69,6 @@ export interface SavedSession {
   startedAt: string; // YYYY-MM-DD
   /** Типы последних заданий — чтобы не давать один тип много раз подряд и повторить тот же выбор после перезагрузки. */
   recent?: ExerciseId[];
+  /** Итоговый тест, часть 2: сколько слов прочитано верно и сколько всего ушло времени. */
+  reading?: { correct: number; total: number; ms: number };
 }

@@ -1,7 +1,10 @@
 import { alphabetLessons, lessonLetters } from "../core/course";
 import type { Content } from "../core/content/types";
 import { mixableLetters } from "../core/text/mixed";
+import { readingTestWords } from "../exercises/timedReading";
 import { wordsToRead } from "../exercises/wordReading";
+import { indexLetters, lettersOf } from "../core/text/armenian";
+import { READING_WORDS } from "./run";
 import type { Day } from "../core/dates";
 import { boxOf, dueLetters } from "../core/progress/knowledge";
 import type { ProgressData } from "../core/progress/types";
@@ -169,8 +172,15 @@ export function planFinalTest(c: Content, seed: number, today: Day): SavedSessio
   const rng = createRng(seed);
   const letters = rng.shuffle(c.letters.map((l) => l.id));
   letters.push(rng.pick(letters));
-  const steps = letters.map((id, i) => ex(id, [FINAL_TEST_TYPES[i % FINAL_TEST_TYPES.length]!]));
-  return newSession("final", rng.shuffle(steps), seed, today, {}, { retries: false });
+  const steps = rng.shuffle(letters.map((id, i) => ex(id, [FINAL_TEST_TYPES[i % FINAL_TEST_TYPES.length]!])));
+  // Часть 2 (V2): чтение незнакомых слов на время — каждый раз другие слова
+  const index = indexLetters(c.letters);
+  const words = rng.shuffle(readingTestWords(c)).slice(0, READING_WORDS);
+  words.forEach((w, i) => {
+    const letter = lettersOf(w.hy, index)[0]!.id;
+    steps.push({ kind: "exercise", letter, types: ["timed-reading"], reading: { word: w.id, n: i + 1, total: words.length } });
+  });
+  return newSession("final", steps, seed, today, {}, { retries: false });
 }
 
 /** Перемешать шаги, стараясь не ставить одну букву два раза подряд. */

@@ -3,7 +3,7 @@
   import { alphabetLessons, knownLetters, lessonLetters, lessonsDoneOn, nextLessonIndex, readableWords } from "../../core/course";
   import type { SavedSession } from "../../core/session/types";
   import { t } from "../../i18n";
-  import { score } from "../../session/run";
+  import { finalPassed, READING_MAX_AVG_MS, READING_MIN_CORRECT, readingResult, score } from "../../session/run";
   import { startFinalTest, startLesson, startPractice } from "../../session/start";
   import { app, FINAL_PASS, today } from "../state.svelte";
   import ConfusionHint from "./ConfusionHint.svelte";
@@ -26,7 +26,9 @@
   const nextIndex = $derived(nextLessonIndex(app.progress, lessons));
   // После двух уроков за день советуем закрепить завтра, но не запрещаем.
   const tired = $derived(lessonsDoneOn(app.progress, today()) >= 2);
-  const passed = $derived(session.kind === "final" && score(session) >= FINAL_PASS);
+  const passed = $derived(session.kind === "final" && finalPassed(session));
+  const reading = $derived(readingResult(session));
+  const secs = (ms: number) => (ms / 1000).toFixed(1).replace(".", ",");
 
   const title = $derived(
     session.kind === "lesson"
@@ -70,7 +72,19 @@
 
   {#if session.kind === "final"}
     <p class="big">{pct}%</p>
-    <p class="muted">{passed ? t("results.finalPassedText") : t("results.finalFailedText", { need: Math.round(FINAL_PASS * 100) })}</p>
+    <p class="stat">{t("results.finalTasks", { correct: r.correct + r.partial, total: answered, pct })}</p>
+    {#if reading}
+      <p class="stat">{t("results.finalReading", { correct: reading.correct, total: reading.total, s: secs(reading.avgMs) })}</p>
+    {/if}
+    {#if passed}
+      <p class="muted">{t("results.finalPassedText")}</p>
+    {:else}
+      <!-- Чего не хватило для зачёта (docs/02-features.md, 2.5) -->
+      {#if score(session) < FINAL_PASS}<p class="muted">{t("results.finalNeedTasks", { need: Math.round(FINAL_PASS * 100) })}</p>{/if}
+      {#if reading && reading.correct < READING_MIN_CORRECT}<p class="muted">{t("results.finalNeedCorrect", { need: READING_MIN_CORRECT })}</p>{/if}
+      {#if reading && reading.avgMs > READING_MAX_AVG_MS}<p class="muted">{t("results.finalNeedSpeed", { s: READING_MAX_AVG_MS / 1000 })}</p>{/if}
+      <p class="muted">{t("results.finalFailedText")}</p>
+    {/if}
   {:else}
     <p class="stat">{t("results.score", { correct: r.correct + r.partial, total: answered })}</p>
   {/if}
@@ -87,7 +101,7 @@
       <p>{t("results.hard")}</p>
       <p class="hard">
         {#each hard as h (h.letter.id)}
-          <a href="#/alphabet/{h.letter.id}"><span class="hy" lang="hy">{h.letter.upper}</span> <span class="muted">×{h.n}</span></a>
+          <a href="#/alphabet/{h.letter.id}"><span class="hy" lang="hy">{h.letter.id === "yev" ? h.letter.lower : h.letter.upper}</span> <span class="muted">×{h.n}</span></a>
         {/each}
       </p>
     </section>

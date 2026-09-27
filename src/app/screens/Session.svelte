@@ -56,7 +56,7 @@
     const focus = s.lessonId ? lessonLetters(alphabetLessons(content)[lessonIndex]!) : [...new Set(s.steps.map((st) => st.letter))];
     const scriptOpt = s.options.script ?? app.progress.settings.script;
     const script = scriptOpt === "mixed" ? rng.pick(["print", "handwriting"] as const) : scriptOpt;
-    const base = { content, rng, known, focus, script, simpleKeyboard: (lessonIndex >= 0 && lessonIndex < 3) || known.length < 15, pair: step.pair, group: step.group, match: step.match };
+    const base = { content, rng, known, focus, script, simpleKeyboard: (lessonIndex >= 0 && lessonIndex < 3) || known.length < 15, pair: step.pair, group: step.group, match: step.match, reading: step.reading };
     const choice = chooseExercise(step, letter, app.progress, base, rng, s.recent ?? []);
     const question = EXERCISES[choice.type].generate(letter, { ...base, level: choice.level });
     current = { kind: "exercise", index: s.index, letter: step.letter, type: choice.type, question };

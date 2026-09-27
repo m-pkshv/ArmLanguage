@@ -2,7 +2,7 @@
 // При любом изменении формата: увеличить SCHEMA_VERSION и добавить миграцию в schema.ts.
 import type { SavedSession } from "../session/types";
 
-export const SCHEMA_VERSION = 3;
+export const SCHEMA_VERSION = 4;
 
 export type Theme = "system" | "light" | "dark";
 export type LetterSize = "normal" | "large";
@@ -44,6 +44,8 @@ export interface LessonProgress {
 export interface FinalTestProgress {
   bestScore: number; // доля верных ответов 0–1
   passedAt: string | null; // YYYY-MM-DD, когда впервые сдан на ≥ 90%
+  /** Лучшее чтение на время (часть 2, V2): верно прочитано слов и среднее время на слово. */
+  bestReading: { correct: number; avgMs: number } | null;
 }
 
 /** Рекорд мини-игры «Найди пары»: лучшее время раунда без ошибок. */

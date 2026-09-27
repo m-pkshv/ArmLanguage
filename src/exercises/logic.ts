@@ -6,6 +6,7 @@ import { mixedReading } from "./mixedReading";
 import { pictureToLetter } from "./picture";
 import { ruWordInsert } from "./ruWordInsert";
 import type { ExerciseLogic } from "./types";
+import { timedReading } from "./timedReading";
 import { typeSound } from "./typeSound";
 import { wordReading } from "./wordReading";
 
@@ -22,4 +23,5 @@ export const EXERCISES: Record<Exclude<ExerciseId, "letter-intro">, ExerciseLogi
   "word-type-reading": wordReading,
   "match-pairs": matchPairs,
   "handwriting-match": handwritingMatch,
+  "timed-reading": timedReading,
 };

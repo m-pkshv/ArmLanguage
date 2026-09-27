@@ -9,7 +9,7 @@ import type { ExerciseId, SavedSession } from "../core/session/types";
 import type { CheckResult } from "../exercises/types";
 import { track } from "../platform/analytics";
 import { createBrowserStorage, requestPersistentStorage } from "../platform/storage";
-import { recordAnswer, score } from "../session/run";
+import { finalPassed, readingResult, recordAnswer, score } from "../session/run";
 
 const now = () => new Date();
 export const today = () => toDay(now());
@@ -17,7 +17,7 @@ const { storage, persistent } = createBrowserStorage();
 const store = createProgressStore(storage, now);
 
 /** Итоговый тест сдан, если верно ≥ 90% (docs/02-features.md, 2.5). */
-export const FINAL_PASS = 0.9;
+export { FINAL_PASS } from "../session/run";
 
 /** Общее состояние приложения: прогресс пользователя и доступность хранилища. */
 class AppState {
@@ -73,7 +73,7 @@ class AppState {
     if (!s) return;
     s.recent = [...(s.recent ?? []).slice(-3), type];
     applyAnswer(this.progress, check, today());
-    recordAnswer(s, check.verdict, stepLetter);
+    recordAnswer(s, check.verdict, stepLetter, check.timing);
     this.commit();
   }
 
@@ -89,12 +89,18 @@ class AppState {
     }
     if (s.kind === "final") {
       const sc = score(finished);
+      const passed = finalPassed(finished);
+      const reading = readingResult(finished);
       const prev = this.progress.finalTest;
+      // лучшее чтение: больше верных слов, при равенстве — быстрее
+      const prevR = prev?.bestReading ?? null;
+      const better = reading && (!prevR || reading.correct > prevR.correct || (reading.correct === prevR.correct && reading.avgMs < prevR.avgMs));
       this.progress.finalTest = {
         bestScore: Math.max(sc, prev?.bestScore ?? 0),
-        passedAt: prev?.passedAt ?? (sc >= FINAL_PASS ? day : null),
+        passedAt: prev?.passedAt ?? (passed ? day : null),
+        bestReading: better ? { correct: reading.correct, avgMs: Math.round(reading.avgMs) } : prevR,
       };
-      track(sc >= FINAL_PASS ? "final-test-passed" : "final-test-failed");
+      track(passed ? "final-test-passed" : "final-test-failed");
     }
     this.progress.session = null;
     this.commit();

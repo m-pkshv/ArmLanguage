@@ -27,7 +27,7 @@ const checkCtx = { content, strictness: "soft" as const };
 describe("exercise logic", () => {
   for (const [id, ex] of Object.entries(EXERCISES)) {
     // у этих заданий ответ — не буква (номер варианта, клетки, текст прочтения); они проверяются отдельно
-    if (id === "confusable-pair" || id === "mixed-reading" || id === "word-type-reading" || id === "match-pairs") continue;
+    if (id === "confusable-pair" || id === "mixed-reading" || id === "word-type-reading" || id === "match-pairs" || id === "timed-reading") continue;
     it(`${id}: every applicable letter gets a valid question`, () => {
       let applicable = 0;
       for (const [i, letter] of content.letters.entries()) {
@@ -179,9 +179,10 @@ describe("session plans", () => {
     expect(s.steps.every((st) => st.kind === "exercise" && st.types?.[0] === "confusable-pair" && ["tyun", "tho"].includes(st.letter))).toBe(true);
   });
 
-  it("final test has 40 exercises of fixed types without retries", () => {
+  it("final test has 40 exercises of fixed types, then 20 words to read, without retries", () => {
     const s = planFinalTest(content, 1, TODAY);
-    expect(s.steps).toHaveLength(40);
+    expect(s.steps).toHaveLength(60);
+    expect(s.steps.slice(40).every((st) => st.kind === "exercise" && st.types?.[0] === "timed-reading")).toBe(true);
     expect(s.options.retries).toBe(false);
     expect(s.steps.every((st) => st.kind === "exercise" && st.types?.length === 1)).toBe(true);
   });

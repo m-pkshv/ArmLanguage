@@ -41,6 +41,8 @@ const MIGRATIONS: Record<number, Migration> = {
   1: (d) => ({ ...d, schemaVersion: 2, session: null, finalTest: null }),
   // v3: рекорды мини-игры «Найди пары» (V2)
   2: (d) => ({ ...d, schemaVersion: 3, games: {} }),
+  // v4: лучшее чтение на время в итоговом тесте (V2) — поле finalTest.bestReading, заполняется при чтении
+  3: (d) => ({ ...d, schemaVersion: 4 }),
 };
 
 const isObject = (v: unknown): v is Record<string, unknown> =>
@@ -61,6 +63,10 @@ function normalizeSettings(raw: unknown): Settings {
     showIpa: typeof s.showIpa === "boolean" ? s.showIpa : d.showIpa,
     script: pick(s.script, ["print", "handwriting"], d.script),
   };
+}
+
+function readingOf(v: unknown): { correct: number; avgMs: number } | null {
+  return isObject(v) && typeof v.correct === "number" && typeof v.avgMs === "number" ? { correct: v.correct, avgMs: v.avgMs } : null;
 }
 
 const record = (v: unknown): Record<string, never> => (isObject(v) ? (v as Record<string, never>) : {});
@@ -95,7 +101,11 @@ export function migrate(raw: unknown, now: Date): ProgressData {
     session: isObject(data.session) && Array.isArray(data.session.steps) ? (data.session as unknown as ProgressData["session"]) : null,
     finalTest:
       isObject(data.finalTest) && typeof data.finalTest.bestScore === "number"
-        ? { bestScore: data.finalTest.bestScore, passedAt: typeof data.finalTest.passedAt === "string" ? data.finalTest.passedAt : null }
+        ? {
+            bestScore: data.finalTest.bestScore,
+            passedAt: typeof data.finalTest.passedAt === "string" ? data.finalTest.passedAt : null,
+            bestReading: readingOf(data.finalTest.bestReading),
+          }
         : null,
     games: Object.fromEntries(
       Object.entries(record(data.games)).filter(
