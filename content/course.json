@@ -913,6 +913,57 @@
               ]
             }
           ]
+        },
+        {
+          "id": "feelings",
+          "title": "Чувства и настроение",
+          "emoji": "😊",
+          "status": "available",
+          "lessons": [
+            {
+              "id": "feelings-1",
+              "title": "Как я себя чувствую",
+              "newItems": [
+                "word:yerjanik",
+                "word:hangist",
+                "word:hognats",
+                "word:barkatsats",
+                "word:zarmatsats",
+                "word:dzandzrali",
+                "word:hetakrkir",
+                "phrase:yes-hognel-em",
+                "phrase:inchpes-e-tramadrutyund"
+              ]
+            },
+            {
+              "id": "feelings-2",
+              "title": "Чувства",
+              "newItems": [
+                "word:ser",
+                "word:vakh",
+                "word:zhpit",
+                "word:tsitsagh",
+                "word:artsunk",
+                "word:tramadrutyun",
+                "word:sireli",
+                "phrase:karotel-em-kez",
+                "phrase:yes-kez-sirum-em"
+              ]
+            },
+            {
+              "id": "feelings-3",
+              "title": "Разговорные слова",
+              "newItems": [
+                "word:urra",
+                "word:apsos",
+                "word:vochinch",
+                "word:iharke",
+                "word:gutse",
+                "phrase:mi-anhangstatsir",
+                "phrase:amen-inch-lav-e"
+              ]
+            }
+          ]
         }
       ]
     },

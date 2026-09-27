@@ -621,7 +621,10 @@
       "body"
     ],
     "level": 2,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "feelings"
+    ]
   },
   {
     "id": "zham",
@@ -7588,6 +7591,374 @@
     "reviewed": false,
     "themes": [
       "animals"
+    ]
+  },
+  {
+    "id": "yerjanik",
+    "hy": "երջանիկ",
+    "pronunciation": "йерджаник",
+    "exception": false,
+    "ru": "счастливый",
+    "image": {
+      "file": "img/words/arasaac-31849.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "feelings"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "feelings"
+    ]
+  },
+  {
+    "id": "hangist",
+    "hy": "հանգիստ",
+    "pronunciation": "хангист",
+    "exception": false,
+    "ru": "спокойный",
+    "image": {
+      "file": "img/words/arasaac-38932.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "feelings"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "feelings"
+    ]
+  },
+  {
+    "id": "hognats",
+    "hy": "հոգնած",
+    "pronunciation": "хогнац",
+    "exception": false,
+    "ru": "усталый",
+    "image": {
+      "file": "img/words/arasaac-31925.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "feelings"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "feelings"
+    ]
+  },
+  {
+    "id": "barkatsats",
+    "hy": "բարկացած",
+    "pronunciation": "баркацхац",
+    "exception": false,
+    "ru": "сердитый",
+    "image": {
+      "file": "img/words/arasaac-31884.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "feelings"
+    ],
+    "level": 2,
+    "reviewed": false,
+    "themes": [
+      "feelings"
+    ]
+  },
+  {
+    "id": "zarmatsats",
+    "hy": "զարմացած",
+    "pronunciation": "зармацхац",
+    "exception": false,
+    "ru": "удивлённый",
+    "image": {
+      "file": "img/words/arasaac-32170.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "feelings"
+    ],
+    "level": 2,
+    "reviewed": false,
+    "themes": [
+      "feelings"
+    ]
+  },
+  {
+    "id": "dzandzrali",
+    "hy": "ձանձրալի",
+    "pronunciation": "дзандзрали",
+    "exception": false,
+    "ru": "скучный; скучно",
+    "image": {
+      "file": "img/words/arasaac-31744.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "feelings"
+    ],
+    "level": 2,
+    "reviewed": false,
+    "themes": [
+      "feelings"
+    ]
+  },
+  {
+    "id": "hetakrkir",
+    "hy": "հետաքրքիր",
+    "pronunciation": "хетакхыркхир",
+    "exception": false,
+    "ru": "интересный; интересно",
+    "image": {
+      "file": "img/words/arasaac-27705.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "feelings"
+    ],
+    "level": 2,
+    "reviewed": false,
+    "themes": [
+      "feelings"
+    ]
+  },
+  {
+    "id": "ser",
+    "hy": "սեր",
+    "pronunciation": "сер",
+    "exception": false,
+    "ru": "любовь",
+    "image": {
+      "file": "img/words/arasaac-38799.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "feelings"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "feelings"
+    ]
+  },
+  {
+    "id": "vakh",
+    "hy": "վախ",
+    "pronunciation": "вах",
+    "exception": false,
+    "ru": "страх",
+    "image": {
+      "file": "img/words/arasaac-37772.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "feelings"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "feelings"
+    ]
+  },
+  {
+    "id": "tsitsagh",
+    "hy": "ծիծաղ",
+    "pronunciation": "цицагх",
+    "exception": false,
+    "ru": "смех",
+    "image": {
+      "file": "img/words/arasaac-31430.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "feelings"
+    ],
+    "level": 2,
+    "reviewed": false,
+    "themes": [
+      "feelings"
+    ]
+  },
+  {
+    "id": "artsunk",
+    "hy": "արցունք",
+    "pronunciation": "арцхункх",
+    "exception": false,
+    "ru": "слеза; слёзы",
+    "image": {
+      "file": "img/words/arasaac-14252.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "feelings"
+    ],
+    "level": 2,
+    "reviewed": false,
+    "themes": [
+      "feelings"
+    ]
+  },
+  {
+    "id": "tramadrutyun",
+    "hy": "տրամադրություն",
+    "pronunciation": "тырамадрутхюн",
+    "exception": false,
+    "ru": "настроение",
+    "image": {
+      "file": "img/words/arasaac-37998.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "feelings"
+    ],
+    "level": 2,
+    "reviewed": false,
+    "themes": [
+      "feelings"
+    ]
+  },
+  {
+    "id": "sireli",
+    "hy": "սիրելի",
+    "pronunciation": "сирели",
+    "exception": false,
+    "ru": "дорогой, милый (о человеке)",
+    "image": {
+      "file": "img/words/arasaac-11178.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "feelings"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "feelings"
+    ]
+  },
+  {
+    "id": "urra",
+    "hy": "ուռա",
+    "pronunciation": "урра",
+    "exception": false,
+    "ru": "ура!",
+    "image": {
+      "file": "img/words/arasaac-36047.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "feelings"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "feelings"
+    ]
+  },
+  {
+    "id": "apsos",
+    "hy": "ափսոս",
+    "pronunciation": "апхсос",
+    "exception": false,
+    "ru": "жаль",
+    "image": {
+      "file": "img/words/arasaac-38361.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "feelings"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "feelings"
+    ]
+  },
+  {
+    "id": "vochinch",
+    "hy": "ոչինչ",
+    "pronunciation": "вочхинчх",
+    "exception": false,
+    "ru": "ничего (страшного)",
+    "image": null,
+    "tags": [
+      "feelings"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "feelings"
+    ]
+  },
+  {
+    "id": "iharke",
+    "hy": "իհարկե",
+    "pronunciation": "ихарке",
+    "exception": false,
+    "ru": "конечно",
+    "image": {
+      "file": "img/words/arasaac-5584.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "feelings"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "feelings"
+    ]
+  },
+  {
+    "id": "gutse",
+    "hy": "գուցե",
+    "pronunciation": "гуцхе",
+    "exception": false,
+    "ru": "может быть",
+    "image": null,
+    "tags": [
+      "feelings"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "feelings"
     ]
   }
 ]
