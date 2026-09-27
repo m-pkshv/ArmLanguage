@@ -624,8 +624,57 @@
           "id": "shop",
           "title": "Магазин и деньги",
           "emoji": "🛒",
-          "status": "coming-soon",
-          "lessons": []
+          "status": "available",
+          "lessons": [
+            {
+              "id": "shop-1",
+              "title": "Цены",
+              "newItems": [
+                "word:pogh",
+                "word:dram",
+                "word:gin",
+                "word:tank",
+                "word:ezhan",
+                "word:zeghch",
+                "word:gnel",
+                "word:vacharrel",
+                "phrase:sa-shat-tank-e",
+                "phrase:kareli-aveli-ezhan"
+              ]
+            },
+            {
+              "id": "shop-2",
+              "title": "Оплата",
+              "newItems": [
+                "word:kart",
+                "word:kankhik",
+                "word:toprak",
+                "word:vacharrogh",
+                "word:gnord",
+                "word:khanut",
+                "word:shuka",
+                "phrase:kareli-e-kartov",
+                "phrase:toprak-tvek",
+                "phrase:sa-kvertsnem"
+              ]
+            },
+            {
+              "id": "shop-3",
+              "title": "Одежда",
+              "newItems": [
+                "word:hagust",
+                "word:koshik",
+                "word:tabat",
+                "word:verarku",
+                "word:gulpa",
+                "word:shapik",
+                "word:glkhark",
+                "word:chaps",
+                "phrase:yes-parzapes-nayum-em",
+                "phrase:urish-chaps-ka"
+              ]
+            }
+          ]
         },
         {
           "id": "health",

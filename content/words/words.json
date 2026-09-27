@@ -207,7 +207,10 @@
       "clothes"
     ],
     "level": 2,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "shop"
+    ]
   },
   {
     "id": "durr",
@@ -1269,7 +1272,10 @@
       "clothes"
     ],
     "level": 2,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "shop"
+    ]
   },
   {
     "id": "shakar",
@@ -1784,7 +1790,13 @@
       "things"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "shop"
+    ],
+    "same": [
+      "dram"
+    ]
   },
   {
     "id": "petur",
@@ -5369,7 +5381,8 @@
       "places"
     ],
     "themes": [
-      "city"
+      "city",
+      "shop"
     ],
     "level": 2,
     "reviewed": false
@@ -5474,7 +5487,8 @@
       "places"
     ],
     "themes": [
-      "city"
+      "city",
+      "shop"
     ],
     "level": 2,
     "reviewed": false
@@ -5953,6 +5967,382 @@
     ],
     "themes": [
       "time"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "gin",
+    "hy": "գին",
+    "pronunciation": "гин",
+    "exception": false,
+    "ru": "цена",
+    "image": {
+      "file": "img/words/arasaac-9874.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "things"
+    ],
+    "themes": [
+      "shop"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "tank",
+    "hy": "թանկ",
+    "pronunciation": "тханк",
+    "exception": false,
+    "ru": "дорогой; дорого",
+    "image": {
+      "file": "img/words/arasaac-4589.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "things"
+    ],
+    "themes": [
+      "shop"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "ezhan",
+    "hy": "էժան",
+    "pronunciation": "эжан",
+    "exception": false,
+    "ru": "дешёвый; дёшево",
+    "image": {
+      "file": "img/words/arasaac-4574.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "things"
+    ],
+    "themes": [
+      "shop"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "gnel",
+    "hy": "գնել",
+    "pronunciation": "гынел",
+    "exception": false,
+    "ru": "покупать",
+    "image": {
+      "file": "img/words/arasaac-6457.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "things"
+    ],
+    "themes": [
+      "shop"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "vacharrel",
+    "hy": "վաճառել",
+    "pronunciation": "вачаррел",
+    "exception": false,
+    "ru": "продавать",
+    "image": {
+      "file": "img/words/arasaac-6652.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "things"
+    ],
+    "themes": [
+      "shop"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "dram",
+    "hy": "դրամ",
+    "pronunciation": "дырам",
+    "exception": false,
+    "ru": "драм (деньги Армении)",
+    "image": {
+      "file": "img/words/arasaac-4776.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "things"
+    ],
+    "themes": [
+      "shop"
+    ],
+    "level": 2,
+    "reviewed": false,
+    "same": [
+      "pogh"
+    ]
+  },
+  {
+    "id": "zeghch",
+    "hy": "զեղչ",
+    "pronunciation": "зегхчх",
+    "exception": false,
+    "ru": "скидка",
+    "image": null,
+    "tags": [
+      "things"
+    ],
+    "themes": [
+      "shop"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "kart",
+    "hy": "քարտ",
+    "pronunciation": "кхарт",
+    "exception": false,
+    "ru": "карта (банковская)",
+    "image": {
+      "file": "img/words/arasaac-38781.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "things"
+    ],
+    "themes": [
+      "shop"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "kankhik",
+    "hy": "կանխիկ",
+    "pronunciation": "канхик",
+    "exception": false,
+    "ru": "наличные",
+    "image": {
+      "file": "img/words/arasaac-4782.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "things"
+    ],
+    "themes": [
+      "shop"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "toprak",
+    "hy": "տոպրակ",
+    "pronunciation": "топрак",
+    "exception": false,
+    "ru": "пакет",
+    "image": {
+      "file": "img/words/arasaac-27616.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "things"
+    ],
+    "themes": [
+      "shop"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "chaps",
+    "hy": "չափս",
+    "pronunciation": "чхапхс",
+    "exception": false,
+    "ru": "размер",
+    "image": {
+      "file": "img/words/arasaac-9923.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "things"
+    ],
+    "themes": [
+      "shop"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "vacharrogh",
+    "hy": "վաճառող",
+    "pronunciation": "вачаррогх",
+    "exception": false,
+    "ru": "продавец",
+    "image": {
+      "file": "img/words/arasaac-34878.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "things"
+    ],
+    "themes": [
+      "shop"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "gnord",
+    "hy": "գնորդ",
+    "pronunciation": "гынорд",
+    "exception": false,
+    "ru": "покупатель",
+    "image": {
+      "file": "img/words/arasaac-8985.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "things"
+    ],
+    "themes": [
+      "shop"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "hagust",
+    "hy": "հագուստ",
+    "pronunciation": "хагуст",
+    "exception": false,
+    "ru": "одежда",
+    "image": {
+      "file": "img/words/arasaac-7233.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "things"
+    ],
+    "themes": [
+      "shop"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "koshik",
+    "hy": "կոշիկ",
+    "pronunciation": "кошик",
+    "exception": false,
+    "ru": "обувь; ботинок",
+    "image": {
+      "file": "img/words/arasaac-24801.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "things"
+    ],
+    "themes": [
+      "shop"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "tabat",
+    "hy": "տաբատ",
+    "pronunciation": "табат",
+    "exception": false,
+    "ru": "брюки",
+    "image": {
+      "file": "img/words/arasaac-2565.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "things"
+    ],
+    "themes": [
+      "shop"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "verarku",
+    "hy": "վերարկու",
+    "pronunciation": "верарку",
+    "exception": false,
+    "ru": "пальто",
+    "image": {
+      "file": "img/words/arasaac-2242.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "things"
+    ],
+    "themes": [
+      "shop"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "gulpa",
+    "hy": "գուլպա",
+    "pronunciation": "гулпа",
+    "exception": false,
+    "ru": "носки",
+    "image": {
+      "file": "img/words/arasaac-2298.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "things"
+    ],
+    "themes": [
+      "shop"
     ],
     "level": 2,
     "reviewed": false

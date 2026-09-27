@@ -882,5 +882,88 @@
     ],
     "situation": "Друг торопит вас, а вам нужно ещё чуть-чуть времени.",
     "reviewed": false
+  },
+  {
+    "id": "sa-shat-tank-e",
+    "hy": "Սա շատ թանկ է։",
+    "pronunciation": "са шат тханк э",
+    "ru": "Это очень дорого.",
+    "themes": [
+      "shop"
+    ],
+    "situation": "Продавец называет цену, которая вам кажется слишком высокой.",
+    "reviewed": false,
+    "alsoFits": [
+      "kareli-aveli-ezhan"
+    ]
+  },
+  {
+    "id": "kareli-aveli-ezhan",
+    "hy": "Կարելի՞ է ավելի էժան։",
+    "pronunciation": "карели э авели эжан?",
+    "ru": "Можно дешевле?",
+    "themes": [
+      "shop"
+    ],
+    "situation": "На рынке вы хотите поторговаться.",
+    "reviewed": false,
+    "alsoFits": [
+      "sa-shat-tank-e"
+    ]
+  },
+  {
+    "id": "kareli-e-kartov",
+    "hy": "Կարելի՞ է քարտով։",
+    "pronunciation": "карели э кхартов?",
+    "ru": "Можно картой?",
+    "themes": [
+      "shop"
+    ],
+    "situation": "На кассе вы хотите расплатиться не наличными.",
+    "reviewed": false
+  },
+  {
+    "id": "toprak-tvek",
+    "hy": "Տոպրակ տվեք, խնդրում եմ։",
+    "pronunciation": "топрак тывекх, хындрум эм",
+    "ru": "Дайте пакет, пожалуйста.",
+    "themes": [
+      "shop"
+    ],
+    "situation": "Вы купили много продуктов, и их не во что сложить.",
+    "reviewed": false
+  },
+  {
+    "id": "sa-kvertsnem",
+    "hy": "Սա կվերցնեմ։",
+    "pronunciation": "са кверцхнем",
+    "ru": "Я возьму это.",
+    "themes": [
+      "shop"
+    ],
+    "situation": "Вы выбрали вещь и говорите продавцу, что покупаете её.",
+    "reviewed": false
+  },
+  {
+    "id": "yes-parzapes-nayum-em",
+    "hy": "Ես պարզապես նայում եմ։",
+    "pronunciation": "йес парзапес найум эм",
+    "ru": "Я просто смотрю.",
+    "themes": [
+      "shop"
+    ],
+    "situation": "Продавец спрашивает, чем помочь, а вы пока ничего не выбрали.",
+    "reviewed": false
+  },
+  {
+    "id": "urish-chaps-ka",
+    "hy": "Ուրիշ չափս կա՞։",
+    "pronunciation": "уриш чхапхс ка?",
+    "ru": "Есть другой размер?",
+    "themes": [
+      "shop"
+    ],
+    "situation": "Куртка вам мала — вы хотите примерить побольше.",
+    "reviewed": false
   }
 ]
