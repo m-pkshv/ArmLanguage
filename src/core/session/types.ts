@@ -15,18 +15,26 @@ export type ExerciseId =
   | "handwriting-match" // E11
   | "timed-reading"; // чтение слов на время в итоговом тесте
 
+/** Задания раздела «Первые слова» (docs/10-first-words.md, 10.5). */
+export type WordExerciseId =
+  | "word-meaning" // W02: слово → смысл
+  | "word-produce" // W03: смысл → слово
+  | "phrase-meaning" // W08: фраза → смысл
+  | "phrase-build"; // W07: собери фразу
+
 /** Вид пар в мини-игре «Найди пары» (E05). */
 export type MatchKind = "sound" | "case" | "handwriting";
 
-export type SessionKind = "lesson" | "review" | "practice" | "final" | "letter" | "pairs" | "mixed" | "words" | "match" | "handwriting";
+export type SessionKind = "lesson" | "review" | "practice" | "final" | "letter" | "pairs" | "mixed" | "words" | "match" | "handwriting" | "theme-lesson" | "theme-test" | "words-review";
 
 export type Step =
+  // letter — id буквы («tho») или элемента «Первых слов» («word:barev», «phrase:barev-dzez»)
   | { kind: "intro"; letter: string }
   | {
       kind: "exercise";
       letter: string;
       /** Ограничить выбор типов (тренировка, итоговый тест). Иначе тип выбирает движок по уровню знания. */
-      types?: ExerciseId[];
+      types?: (ExerciseId | WordExerciseId)[];
       /** Повтор задания после ошибки. */
       retry?: boolean;
       /** Тренажёр пар-ловушек: с какими буквами сравнивать (иначе — любая знакомая «пара»). */
@@ -68,7 +76,9 @@ export interface SavedSession {
   options: SessionOptions;
   startedAt: string; // YYYY-MM-DD
   /** Типы последних заданий — чтобы не давать один тип много раз подряд и повторить тот же выбор после перезагрузки. */
-  recent?: ExerciseId[];
+  recent?: (ExerciseId | WordExerciseId)[];
+  /** Тема «Первых слов» (итоговое задание темы). */
+  themeId?: string;
   /** Итоговый тест, часть 2: сколько слов прочитано верно и сколько всего ушло времени. */
   reading?: { correct: number; total: number; ms: number };
 }

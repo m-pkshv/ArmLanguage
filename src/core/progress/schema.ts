@@ -21,6 +21,7 @@ export function createEmptyProgress(now: Date): ProgressData {
     session: null,
     finalTest: null,
     games: {},
+    themeTests: {},
     meta: { lastBackupAt: null },
   };
 }
@@ -43,6 +44,8 @@ const MIGRATIONS: Record<number, Migration> = {
   2: (d) => ({ ...d, schemaVersion: 3, games: {} }),
   // v4: лучшее чтение на время в итоговом тесте (V2) — поле finalTest.bestReading, заполняется при чтении
   3: (d) => ({ ...d, schemaVersion: 4 }),
+  // v5: раздел «Первые слова» — итоговые задания тем
+  4: (d) => ({ ...d, schemaVersion: 5, themeTests: {} }),
 };
 
 const isObject = (v: unknown): v is Record<string, unknown> =>
@@ -111,6 +114,13 @@ export function migrate(raw: unknown, now: Date): ProgressData {
       Object.entries(record(data.games)).filter(
         ([, g]) => isObject(g) && typeof (g as Record<string, unknown>).bestMs === "number" && typeof (g as Record<string, unknown>).at === "string",
       ),
+    ),
+    themeTests: Object.fromEntries(
+      Object.entries(record(data.themeTests)).flatMap(([id, v]) => {
+        const tt = v as unknown;
+        if (!isObject(tt) || typeof tt.bestScore !== "number") return [];
+        return [[id, { bestScore: tt.bestScore, passedAt: typeof tt.passedAt === "string" ? tt.passedAt : null }]];
+      }),
     ),
     meta: { lastBackupAt: typeof meta.lastBackupAt === "string" ? meta.lastBackupAt : null },
   };

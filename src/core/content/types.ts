@@ -44,7 +44,19 @@ export interface Word {
   ru: string;
   image: ImageRef | null;
   tags: string[];
+  /** Темы раздела «Первые слова» (docs/10-first-words.md). */
+  themes?: string[];
   level: number;
+  reviewed: boolean;
+}
+
+/** Армянская фраза раздела «Первые слова» (docs/10-first-words.md, 10.7). */
+export interface Phrase {
+  id: string;
+  hy: string; // с армянскими знаками препинания: «Ինչպե՞ս ես։»
+  pronunciation: string;
+  ru: string;
+  themes: string[];
   reviewed: boolean;
 }
 
@@ -67,11 +79,21 @@ export interface Lesson {
   newItems: string[]; // "letter:ayb"
 }
 
+/** Тема раздела «Первые слова»: уроки идут по порядку, темы — в любом. */
+export interface Theme {
+  id: string;
+  title: string;
+  emoji: string;
+  status: "available" | "coming-soon";
+  lessons: Lesson[];
+}
+
 export interface Section {
   id: string;
   title: string;
   status: "available" | "coming-soon";
   lessons: Lesson[];
+  themes?: Theme[];
 }
 
 export interface Course {
@@ -86,6 +108,7 @@ export interface Content {
   words: Word[];
   ruWords: RuWord[];
   ruPhrases: RuPhrase[];
+  phrases: Phrase[];
   course: Course;
   ruHy: RuHyRules;
 }

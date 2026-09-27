@@ -2,7 +2,7 @@ import type { Content, Letter } from "../core/content/types";
 import { boxOf } from "../core/progress/knowledge";
 import type { ProgressData } from "../core/progress/types";
 import type { Rng } from "../core/random";
-import type { ExerciseId, Step } from "../core/session/types";
+import type { ExerciseId, Step, WordExerciseId } from "../core/session/types";
 import { EXERCISES } from "../exercises/logic";
 import type { ExerciseContext } from "../exercises/types";
 
@@ -33,7 +33,7 @@ export function chooseExercise(
   p: ProgressData,
   ctx: Omit<ExerciseContext, "level">,
   rng: Rng,
-  recent: ExerciseId[],
+  recent: (ExerciseId | WordExerciseId)[],
 ): Choice {
   const applicable = (id: ExId) => EXERCISES[id].isApplicable(letter, { ...ctx, level: 0, pair: step.pair });
   const rec = boxOf(p, letter.id, "recognize");

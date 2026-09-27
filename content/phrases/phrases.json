@@ -1,0 +1,102 @@
+[
+  {
+    "id": "barev-dzez",
+    "hy": "Բարև ձեզ։",
+    "pronunciation": "барев дзез",
+    "ru": "Здравствуйте!",
+    "themes": [
+      "greetings"
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "inchpes-es",
+    "hy": "Ինչպե՞ս ես։",
+    "pronunciation": "инчпес йес?",
+    "ru": "Как дела?",
+    "themes": [
+      "greetings"
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "lav-em",
+    "hy": "Լավ եմ, շնորհակալություն։",
+    "pronunciation": "лав эм, шнорхакалутхюн",
+    "ru": "Хорошо, спасибо.",
+    "themes": [
+      "greetings"
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "bari-luys",
+    "hy": "Բարի լույս։",
+    "pronunciation": "бари луйс",
+    "ru": "Доброе утро!",
+    "themes": [
+      "greetings"
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "bari-yereko",
+    "hy": "Բարի երեկո։",
+    "pronunciation": "бари йереко",
+    "ru": "Добрый вечер!",
+    "themes": [
+      "greetings"
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "anund-inch-e",
+    "hy": "Անունդ ի՞նչ է։",
+    "pronunciation": "анунд инчх э?",
+    "ru": "Как тебя зовут?",
+    "themes": [
+      "greetings"
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "im-anuny",
+    "hy": "Իմ անունը Աննա է։",
+    "pronunciation": "им ануны анна э",
+    "ru": "Меня зовут Анна.",
+    "themes": [
+      "greetings"
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "shat-hacheli",
+    "hy": "Շատ հաճելի է։",
+    "pronunciation": "шат хачели э",
+    "ru": "Очень приятно.",
+    "themes": [
+      "greetings"
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "chem-haskanum",
+    "hy": "Չեմ հասկանում։",
+    "pronunciation": "чхем хасканум",
+    "ru": "Я не понимаю.",
+    "themes": [
+      "greetings"
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "aveli-dandagh",
+    "hy": "Խնդրում եմ, ավելի դանդաղ խոսեք։",
+    "pronunciation": "хындрум эм, авели дандагх хосекх",
+    "ru": "Говорите медленнее, пожалуйста.",
+    "themes": [
+      "greetings"
+    ],
+    "reviewed": false
+  }
+]

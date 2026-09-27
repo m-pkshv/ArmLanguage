@@ -5,11 +5,12 @@ import { applyAnswer, scheduleForReview } from "../core/progress/knowledge";
 import { createEmptyProgress } from "../core/progress/schema";
 import { createProgressStore } from "../core/progress/store";
 import type { ProgressData, Settings } from "../core/progress/types";
-import type { ExerciseId, SavedSession } from "../core/session/types";
+import type { ExerciseId, SavedSession, WordExerciseId } from "../core/session/types";
 import type { CheckResult } from "../exercises/types";
 import { track } from "../platform/analytics";
 import { createBrowserStorage, requestPersistentStorage } from "../platform/storage";
 import { finalPassed, readingResult, recordAnswer, score } from "../session/run";
+import { THEME_PASS } from "../session/wordPlan";
 
 const now = () => new Date();
 export const today = () => toDay(now());
@@ -68,7 +69,7 @@ class AppState {
   }
 
   /** Ответ на задание: обновляет знания и ход занятия, сохраняет сразу (docs/09-navigation.md, 9.1). */
-  answer(stepLetter: string, check: CheckResult, type: ExerciseId) {
+  answer(stepLetter: string, check: CheckResult, type: ExerciseId | WordExerciseId) {
     const s = this.progress.session;
     if (!s) return;
     s.recent = [...(s.recent ?? []).slice(-3), type];
@@ -83,9 +84,18 @@ class AppState {
     if (!s) return null;
     const finished = $state.snapshot(s) as SavedSession;
     const day = today();
-    if (s.kind === "lesson" && s.lessonId) {
+    if ((s.kind === "lesson" || s.kind === "theme-lesson") && s.lessonId) {
       this.progress.lessons[s.lessonId] = { completedAt: day };
       track(`done-lesson-${s.lessonId}`);
+    }
+    // итоговое задание темы «Первых слов» (docs/10-first-words.md, 10.6)
+    if (s.kind === "theme-test" && s.themeId) {
+      const sc = score(finished);
+      const prev = this.progress.themeTests[s.themeId];
+      this.progress.themeTests[s.themeId] = {
+        bestScore: Math.max(sc, prev?.bestScore ?? 0),
+        passedAt: prev?.passedAt ?? (sc >= THEME_PASS ? day : null),
+      };
     }
     if (s.kind === "final") {
       const sc = score(finished);

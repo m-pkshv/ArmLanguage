@@ -87,7 +87,10 @@
       "phrases"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "greetings"
+    ]
   },
   {
     "id": "banan",
@@ -447,7 +450,10 @@
       "family"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "greetings"
+    ]
   },
   {
     "id": "yntanik",
@@ -1959,7 +1965,10 @@
       "words"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "greetings"
+    ]
   },
   {
     "id": "sa",
@@ -2265,7 +2274,10 @@
       "words"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "greetings"
+    ]
   },
   {
     "id": "das",
@@ -2319,7 +2331,10 @@
       "words"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "greetings"
+    ]
   },
   {
     "id": "em",
@@ -2409,7 +2424,10 @@
       "words"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "greetings"
+    ]
   },
   {
     "id": "armen",
@@ -2589,7 +2607,10 @@
       "words"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "greetings"
+    ]
   },
   {
     "id": "voch",
@@ -2607,7 +2628,10 @@
       "words"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "greetings"
+    ]
   },
   {
     "id": "kuyr",
@@ -2806,5 +2830,257 @@
     ],
     "level": 1,
     "reviewed": false
+  },
+  {
+    "id": "vat",
+    "hy": "վատ",
+    "pronunciation": "ват",
+    "exception": false,
+    "ru": "плохо",
+    "image": {
+      "file": "img/words/arasaac-5504.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "words"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "greetings"
+    ]
+  },
+  {
+    "id": "shnorhakalutyun",
+    "hy": "շնորհակալություն",
+    "pronunciation": "шнорхакалутхюн",
+    "exception": false,
+    "ru": "спасибо",
+    "image": {
+      "file": "img/words/arasaac-8128.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "phrases"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "greetings"
+    ]
+  },
+  {
+    "id": "mersi",
+    "hy": "մերսի",
+    "pronunciation": "мерси",
+    "exception": false,
+    "ru": "спасибо (разговорное)",
+    "image": {
+      "file": "img/words/arasaac-31206.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "phrases"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "greetings"
+    ]
+  },
+  {
+    "id": "khndrem",
+    "hy": "խնդրեմ",
+    "pronunciation": "хындрем",
+    "exception": false,
+    "ru": "пожалуйста; не за что",
+    "image": {
+      "file": "img/words/arasaac-38907.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "phrases"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "greetings"
+    ]
+  },
+  {
+    "id": "neretsek",
+    "hy": "ներեցեք",
+    "pronunciation": "нерецхекх",
+    "exception": false,
+    "ru": "извините",
+    "image": {
+      "file": "img/words/arasaac-38361.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "phrases"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "greetings"
+    ]
+  },
+  {
+    "id": "tstesutyun",
+    "hy": "ցտեսություն",
+    "pronunciation": "цхтесутхюн",
+    "exception": false,
+    "ru": "до свидания",
+    "image": {
+      "file": "img/words/arasaac-5896.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "phrases"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "greetings"
+    ]
+  },
+  {
+    "id": "anun",
+    "hy": "անուն",
+    "pronunciation": "анун",
+    "exception": false,
+    "ru": "имя",
+    "image": {
+      "file": "img/words/arasaac-38570.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "people"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "greetings"
+    ]
+  },
+  {
+    "id": "yes",
+    "hy": "ես",
+    "pronunciation": "йес",
+    "exception": false,
+    "ru": "я",
+    "image": {
+      "file": "img/words/arasaac-2617.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "words"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "greetings"
+    ]
+  },
+  {
+    "id": "duk",
+    "hy": "դուք",
+    "pronunciation": "дукх",
+    "exception": false,
+    "ru": "вы",
+    "image": {
+      "file": "img/words/arasaac-2608.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "words"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "greetings"
+    ]
+  },
+  {
+    "id": "mard",
+    "hy": "մարդ",
+    "pronunciation": "мард",
+    "exception": false,
+    "ru": "человек",
+    "image": {
+      "file": "img/words/arasaac-34557.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "people"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "greetings"
+    ]
+  },
+  {
+    "id": "aravot",
+    "hy": "առավոտ",
+    "pronunciation": "арравот",
+    "exception": false,
+    "ru": "утро",
+    "image": {
+      "file": "img/words/arasaac-25704.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "time"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "greetings"
+    ]
+  },
+  {
+    "id": "yereko",
+    "hy": "երեկո",
+    "pronunciation": "йереко",
+    "exception": false,
+    "ru": "вечер",
+    "image": {
+      "file": "img/words/arasaac-7268.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "time"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "greetings"
+    ]
   }
 ]

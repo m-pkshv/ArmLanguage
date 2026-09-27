@@ -1,9 +1,11 @@
 import type { Component } from "svelte";
-import type { ExerciseId } from "../core/session/types";
+import type { ExerciseId, WordExerciseId } from "../core/session/types";
 import ChoiceView from "./views/ChoiceView.svelte";
 import ConfusableView from "./views/ConfusableView.svelte";
 import MatchView from "./views/MatchView.svelte";
 import MixedView from "./views/MixedView.svelte";
+import PhraseBuildView from "./views/PhraseBuildView.svelte";
+import WordChoiceView from "./views/WordChoiceView.svelte";
 import PictureView from "./views/PictureView.svelte";
 import RuInsertView from "./views/RuInsertView.svelte";
 import TimedView from "./views/TimedView.svelte";
@@ -31,4 +33,12 @@ export const VIEWS: Record<Exclude<ExerciseId, "letter-intro">, Component<any>> 
   "match-pairs": MatchView,
   "handwriting-match": ChoiceView,
   "timed-reading": TimedView,
+};
+
+// Вид заданий раздела «Первые слова» (логика — words/logic.ts).
+export const WORD_VIEWS: Record<WordExerciseId, Component<any>> = {
+  "word-meaning": WordChoiceView,
+  "word-produce": WordChoiceView,
+  "phrase-meaning": WordChoiceView,
+  "phrase-build": PhraseBuildView,
 };

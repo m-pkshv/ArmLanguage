@@ -79,6 +79,7 @@
 │  │  ├─ course.ts             # уроки: порядок, открытие, изученные буквы, читаемые слова
 │  │  ├─ pairs.ts              # пары-ловушки: группы, путаницы, уверенность
 │  │  ├─ stats.ts              # экран «Статистика»: итоги, карта алфавита, путаницы, активность
+│  │  ├─ words.ts              # «Первые слова»: слова и фразы как элементы, темы, повторение
 │  │  ├─ dates.ts, random.ts   # местные даты, предсказуемый генератор случайных чисел
 │  ├─ exercises/
 │  │  ├─ types.ts              # интерфейс типа задания
@@ -205,7 +206,7 @@ interface CheckResult {
 ```jsonc
 // localStorage["hy:progress"]
 {
-  "schemaVersion": 3,
+  "schemaVersion": 5,
   "items": {
     "letter:tho#recognize": { "box": 3, "due": "2026-10-02", "ok": 9, "bad": 2, "last": "2026-09-25" }
   },
@@ -215,7 +216,8 @@ interface CheckResult {
   "settings": { "theme": "system", "strictness": "soft", "script": "print" },
   "session": null,           // незаконченное занятие (v2)
   "finalTest": null,         // лучший результат итогового теста (v2)
-  "games": { "sound": { "bestMs": 12400, "at": "2026-09-27" } }  // рекорды «Найди пары» (v3)
+  "games": { "sound": { "bestMs": 12400, "at": "2026-09-27" } },  // рекорды «Найди пары» (v3)
+  "themeTests": { "greetings": { "bestScore": 0.93, "passedAt": "2026-09-28" } }  // итоговые задания тем (v5)
 }
 ```
 

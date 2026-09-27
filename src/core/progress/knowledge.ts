@@ -49,7 +49,13 @@ export interface Effect {
   letter: string;
   skill: Skill;
   verdict: Verdict;
+  /** Элемент не-буква («word:barev», «phrase:barev-dzez») — тогда letter не используется. */
+  item?: string;
 }
+
+/** Прогресс по любому элементу знания: «word:barev#meaning» (docs/06-architecture.md, 6.6). */
+export const boxOfItem = (p: ProgressData, item: string, skill: Skill): number => p.items[`${item}#${skill}`]?.box ?? 0;
+export const itemProgress = (p: ProgressData, item: string, skill: Skill): ItemProgress | undefined => p.items[`${item}#${skill}`];
 
 /** Применяет результат ответа к прогрессу (изменяет объект). */
 export function applyAnswer(
@@ -63,7 +69,7 @@ export function applyAnswer(
     if (!prev || answer.record.ms < prev.bestMs) p.games[answer.record.game] = { bestMs: answer.record.ms, at: today };
   }
   for (const e of answer.effects) {
-    const key = itemKey(e.letter, e.skill);
+    const key = e.item ? `${e.item}#${e.skill}` : itemKey(e.letter, e.skill);
     p.items[key] = review(p.items[key], e.verdict, today);
   }
   const d = (p.daily[today] ??= { answers: 0, correct: 0 });

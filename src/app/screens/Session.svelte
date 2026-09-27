@@ -3,10 +3,13 @@
   import { content, letterById } from "../../core/content";
   import { alphabetLessons, knownLetters, lessonLetters } from "../../core/course";
   import { createRng, stepSeed } from "../../core/random";
-  import type { ExerciseId, SavedSession } from "../../core/session/types";
+  import type { ExerciseId, SavedSession, WordExerciseId } from "../../core/session/types";
+  import { isStudyItem, showReading, studyItem, themeItems, themes } from "../../core/words";
   import { feedbackUrl } from "../../config";
   import { EXERCISES } from "../../exercises/logic";
-  import { VIEWS } from "../../exercises/registry";
+  import { VIEWS, WORD_VIEWS } from "../../exercises/registry";
+  import { WORD_EXERCISES } from "../../exercises/words/logic";
+  import ItemIntroView from "../../exercises/views/ItemIntroView.svelte";
   import type { CheckResult } from "../../exercises/types";
   import IntroView from "../../exercises/views/IntroView.svelte";
   import { t } from "../../i18n";
@@ -14,14 +17,17 @@
   import ResultPanel from "../../ui/ResultPanel.svelte";
   import { currentStep, exerciseCount, exercisesDone, isFinished } from "../../session/run";
   import { chooseExercise } from "../../session/select";
+  import { chooseWordExercise } from "../../session/wordSelect";
   import { app } from "../state.svelte";
   import SessionResults from "./SessionResults.svelte";
 
   // Экран занятия (docs/09-navigation.md, 9.6–9.8): задания по одному, панель результата, выход с подтверждением.
 
+  // letter — буква («tho») или элемент «Первых слов» («word:barev»); задания для них — из разных реестров.
   type Current =
     | { kind: "intro"; index: number; letter: string }
-    | { kind: "exercise"; index: number; letter: string; type: Exclude<ExerciseId, "letter-intro">; question: unknown };
+    | { kind: "exercise"; index: number; letter: string; type: Exclude<ExerciseId, "letter-intro">; question: unknown }
+    | { kind: "word"; index: number; letter: string; type: WordExerciseId; question: unknown };
 
   let current = $state<Current | null>(null);
   let result = $state<CheckResult | null>(null);
@@ -50,6 +56,15 @@
       return;
     }
     const rng = createRng(stepSeed(s.seed, s.index));
+    if (isStudyItem(step.letter)) {
+      // слово или фраза: неправильные варианты — из той же темы (docs/10-first-words.md, 10.5)
+      const item = studyItem(content, step.letter);
+      const pool = themes(content).map(themeItems).find((ids) => ids.includes(item.id)) ?? [];
+      const ctx = { content, rng, pool, reading: showReading(app.progress, item.id) };
+      const type = chooseWordExercise(step, item, app.progress, ctx, rng, s.recent ?? []);
+      current = { kind: "word", index: s.index, letter: step.letter, type, question: WORD_EXERCISES[type].generate(item, ctx) };
+      return;
+    }
     const letter = letterById(step.letter)!;
     const lessonIndex = s.lessonId ? alphabetLessons(content).findIndex((l) => l.id === s.lessonId) : -1;
     const known = knownLetters(app.progress, content);
@@ -84,8 +99,9 @@
   }
 
   function onanswer(answer: unknown) {
-    if (!current || current.kind !== "exercise" || result) return;
-    const check = EXERCISES[current.type].check(current.question, answer, { content, strictness: app.progress.settings.strictness });
+    if (!current || current.kind === "intro" || result) return;
+    const ctx = { content, strictness: app.progress.settings.strictness };
+    const check = current.kind === "word" ? WORD_EXERCISES[current.type].check(current.question, answer, ctx) : EXERCISES[current.type].check(current.question, answer, ctx);
     result = check;
     app.answer(current.letter, check, current.type);
     if (check.verdict === "correct" && app.progress.settings.autoAdvance) timer = setTimeout(next, 1100);
@@ -109,7 +125,7 @@
   }
 
   // Выход: урок и повторение можно продолжить позже; тренировка и тест заканчиваются.
-  const resumable = $derived(session?.kind === "lesson" || session?.kind === "review");
+  const resumable = $derived(session?.kind === "lesson" || session?.kind === "review" || session?.kind === "theme-lesson");
   function exit() {
     clearTimeout(timer);
     exitDialog?.showModal();
@@ -134,8 +150,13 @@
 
   <div class="stage" class:with-panel={!!result}>
     {#key current.index}
-      {#if current.kind === "intro"}
+      {#if current.kind === "intro" && isStudyItem(current.letter)}
+        <ItemIntroView item={studyItem(content, current.letter)} onnext={introDone} />
+      {:else if current.kind === "intro"}
         <IntroView letter={letterById(current.letter)!} showIpa={app.progress.settings.showIpa} onnext={introDone} />
+      {:else if current.kind === "word"}
+        {@const View = WORD_VIEWS[current.type]}
+        <View type={current.type} question={current.question} {result} {onanswer} />
       {:else}
         {@const View = VIEWS[current.type]}
         <View type={current.type} question={current.question} {result} {onanswer} />
@@ -148,8 +169,8 @@
       verdict={result.verdict}
       explanation={result.explanation}
       onnext={next}
-      oncard={() => openCard(result!.letter)}
-      reportHref={current.kind === "exercise" ? feedbackUrl(`${current.type} · ${current.letter}`) : null}
+      oncard={result.letter ? () => openCard(result!.letter) : undefined}
+      reportHref={current.kind !== "intro" ? feedbackUrl(`${current.type} · ${current.letter}`) : null}
     />
   {/if}
 {:else}

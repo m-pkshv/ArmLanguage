@@ -98,6 +98,31 @@ export function validateContent(c: Content, opts: ValidateOptions): ValidationRe
 
   for (const w of c.ruWords) checkImage(w.image, `Русское слово «${w.ru}»`);
 
+  // --- фразы и темы раздела «Первые слова» (docs/10-first-words.md) ---
+  const phraseIds = new Set(c.phrases.map((p) => p.id));
+  dupes(c.phrases.map((p) => p.id), "Id фраз");
+  for (const p of c.phrases) {
+    const at = `Фраза «${p.ru}» (${p.id})`;
+    if (!p.hy || !p.pronunciation || !p.ru) errors.push(`${at}: не заполнены текст, произношение или перевод`);
+    if (lettersOf(p.hy.replace(/[\s,.։՞՜՛«»!?-]/g, ""), index).some((l) => !l)) errors.push(`${at}: содержит символы не из алфавита`);
+    if (opts.release && !p.reviewed) errors.push(`${at}: не проверена носителем`);
+  }
+  const firstWords = c.course.sections.find((s) => s.id === "first-words");
+  for (const theme of firstWords?.themes ?? []) {
+    if (theme.status === "available" && !theme.lessons.length) errors.push(`Тема ${theme.id}: доступна, но в ней нет уроков`);
+    const seen = new Set<string>();
+    for (const lesson of theme.lessons) {
+      for (const item of lesson.newItems) {
+        const [kind, id] = item.split(":");
+        const ok = kind === "word" ? wordIds.has(id!) : kind === "phrase" ? phraseIds.has(id!) : false;
+        if (!ok) errors.push(`Тема ${theme.id}, урок ${lesson.id}: неизвестный элемент «${item}»`);
+        if (seen.has(item)) errors.push(`Тема ${theme.id}: «${item}» встречается в уроках дважды`);
+        seen.add(item);
+        if (kind === "word" && ok && !wordIds.get(id!)!.themes?.includes(theme.id)) warnings.push(`Слово ${id}: в уроке темы ${theme.id}, но тема не указана в поле themes`);
+      }
+    }
+  }
+
   // --- уроки ---
   const alphabet = c.course.sections.find((s) => s.id === "alphabet");
   const readableAfterLesson: ValidationReport["readableAfterLesson"] = [];

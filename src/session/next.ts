@@ -19,8 +19,8 @@ export const REVIEW_FIRST = 10;
 
 export function nextAction(p: ProgressData, c: Content, today: Day): NextAction {
   const s = p.session;
-  if (s && (s.kind === "lesson" || s.kind === "review")) {
-    return { kind: "resume", done: exercisesDone(s), total: exerciseCount(s), lesson: s.kind === "lesson" };
+  if (s && (s.kind === "lesson" || s.kind === "review" || s.kind === "theme-lesson")) {
+    return { kind: "resume", done: exercisesDone(s), total: exerciseCount(s), lesson: s.kind !== "review" };
   }
   const due = dueLetters(p, today, knownLetters(p, c)).length;
   if (due >= REVIEW_FIRST) return { kind: "review", count: due };

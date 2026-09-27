@@ -15,7 +15,8 @@
     verdict: Verdict;
     explanation: Explanation;
     onnext: () => void;
-    oncard: () => void;
+    /** Ссылка «Карточка буквы»; в заданиях на слова её нет. */
+    oncard?: () => void;
     reportHref: string | null;
   } = $props();
 
@@ -40,7 +41,7 @@
     </p>
     {#each explanation.lines as line (line)}<p class="line">{line}</p>{/each}
     <div class="links">
-      <button class="link" onclick={oncard}>{t("session.letterCard")}</button>
+      {#if oncard}<button class="link" onclick={oncard}>{t("session.letterCard")}</button>{/if}
       {#if reportHref}<a class="link" href={reportHref} target="_blank" rel="noopener">{t("session.report")}</a>{/if}
     </div>
     <button bind:this={button} class="next" onclick={onnext}>

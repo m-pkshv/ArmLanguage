@@ -103,8 +103,143 @@
     {
       "id": "first-words",
       "title": "Первые слова",
-      "status": "coming-soon",
-      "lessons": []
+      "status": "available",
+      "lessons": [],
+      "themes": [
+        {
+          "id": "greetings",
+          "title": "Знакомство и вежливость",
+          "emoji": "👋",
+          "status": "available",
+          "lessons": [
+            {
+              "id": "greetings-1",
+              "title": "Приветствие",
+              "newItems": [
+                "word:barev",
+                "word:ayo",
+                "word:voch",
+                "word:lav",
+                "word:vat",
+                "word:shnorhakalutyun",
+                "phrase:barev-dzez",
+                "phrase:inchpes-es",
+                "phrase:lav-em"
+              ]
+            },
+            {
+              "id": "greetings-2",
+              "title": "Вежливость",
+              "newItems": [
+                "word:mersi",
+                "word:khndrem",
+                "word:neretsek",
+                "word:tstesutyun",
+                "word:bari",
+                "word:aravot",
+                "word:yereko",
+                "phrase:bari-luys",
+                "phrase:bari-yereko"
+              ]
+            },
+            {
+              "id": "greetings-3",
+              "title": "Знакомство",
+              "newItems": [
+                "word:anun",
+                "word:yes",
+                "word:du",
+                "word:duk",
+                "word:na",
+                "word:mard",
+                "word:ynker",
+                "phrase:anund-inch-e",
+                "phrase:im-anuny",
+                "phrase:shat-hacheli",
+                "phrase:chem-haskanum",
+                "phrase:aveli-dandagh"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "family",
+          "title": "Семья и люди",
+          "emoji": "👨‍👩‍👧",
+          "status": "coming-soon",
+          "lessons": []
+        },
+        {
+          "id": "numbers",
+          "title": "Числа",
+          "emoji": "🔢",
+          "status": "coming-soon",
+          "lessons": []
+        },
+        {
+          "id": "food",
+          "title": "Еда и напитки",
+          "emoji": "🍞",
+          "status": "coming-soon",
+          "lessons": []
+        },
+        {
+          "id": "gym",
+          "title": "Спортзал",
+          "emoji": "🏋️",
+          "status": "coming-soon",
+          "lessons": []
+        },
+        {
+          "id": "home",
+          "title": "Дом",
+          "emoji": "🏠",
+          "status": "coming-soon",
+          "lessons": []
+        },
+        {
+          "id": "city",
+          "title": "Город и транспорт",
+          "emoji": "🚌",
+          "status": "coming-soon",
+          "lessons": []
+        },
+        {
+          "id": "time",
+          "title": "Время и дни",
+          "emoji": "🕒",
+          "status": "coming-soon",
+          "lessons": []
+        },
+        {
+          "id": "shop",
+          "title": "Магазин и деньги",
+          "emoji": "🛒",
+          "status": "coming-soon",
+          "lessons": []
+        },
+        {
+          "id": "health",
+          "title": "Тело и здоровье",
+          "emoji": "🩺",
+          "status": "coming-soon",
+          "lessons": []
+        },
+        {
+          "id": "describe",
+          "title": "Цвета и описания",
+          "emoji": "🎨",
+          "status": "coming-soon",
+          "lessons": []
+        },
+        {
+          "id": "nature",
+          "title": "Природа и погода",
+          "emoji": "🌦️",
+          "status": "coming-soon",
+          "lessons": []
+        }
+      ]
     },
     {
       "id": "phrases",

@@ -14,6 +14,8 @@
   import Match from "./screens/Match.svelte";
   import Pairs from "./screens/Pairs.svelte";
   import Stats from "./screens/Stats.svelte";
+  import FirstWords from "./screens/FirstWords.svelte";
+  import ThemeScreen from "./screens/Theme.svelte";
   import Session from "./screens/Session.svelte";
   import Credits from "./screens/Credits.svelte";
   import Home from "./screens/Home.svelte";
@@ -74,6 +76,10 @@
     <Match />
   {:else if route.name === "stats"}
     <Stats />
+  {:else if route.name === "words"}
+    <FirstWords />
+  {:else if route.name === "theme"}
+    <ThemeScreen id={route.id} />
   {:else if route.name === "alphabet"}
     <Alphabet />
   {:else if route.name === "letter"}

@@ -4,7 +4,9 @@
   import type { SavedSession } from "../../core/session/types";
   import { t } from "../../i18n";
   import { finalPassed, READING_MAX_AVG_MS, READING_MIN_CORRECT, readingResult, score } from "../../session/run";
-  import { startFinalTest, startLesson, startPractice } from "../../session/start";
+  import { isStudyItem, lessonOfTheme, studyItem, themeById, themeDone } from "../../core/words";
+  import { THEME_PASS } from "../../session/wordPlan";
+  import { startFinalTest, startLesson, startPractice, startThemeLesson, startThemeTest } from "../../session/start";
   import { app, FINAL_PASS, today } from "../state.svelte";
   import ConfusionHint from "./ConfusionHint.svelte";
 
@@ -16,11 +18,16 @@
   const r = $derived(session.result);
   const answered = $derived(r.correct + r.partial + r.wrong);
   const pct = $derived(Math.round(score(session) * 100));
-  const hard = $derived(
-    Object.entries(r.wrongByLetter)
-      .sort((a, b) => b[1] - a[1])
-      .map(([id, n]) => ({ letter: letterById(id)!, n })),
+  // ошибки по буквам и отдельно — по словам и фразам «Первых слов»
+  const wrong = $derived(Object.entries(r.wrongByLetter).sort((a, b) => b[1] - a[1]));
+  const hard = $derived(wrong.filter(([id]) => !isStudyItem(id)).map(([id, n]) => ({ letter: letterById(id)!, n })));
+  const hardWords = $derived(wrong.filter(([id]) => isStudyItem(id)).map(([id, n]) => ({ item: studyItem(content, id), n })));
+  const themeInfo = $derived(session.lessonId ? lessonOfTheme(content, session.lessonId) : undefined);
+  const themeOfTest = $derived(session.themeId ? themeById(content, session.themeId) : undefined);
+  const nextThemeLesson = $derived(
+    themeInfo && themeInfo.index + 1 < themeInfo.theme.lessons.length ? themeInfo.index + 1 : undefined,
   );
+  const themePassed = $derived(session.kind === "theme-test" && score(session) >= THEME_PASS);
   const readable = $derived(readableWords(content, knownLetters(app.progress, content)));
   const sample = $derived(readable.slice(-4).map((id) => wordById(id)!));
   const nextIndex = $derived(nextLessonIndex(app.progress, lessons));
@@ -31,7 +38,15 @@
   const secs = (ms: number) => (ms / 1000).toFixed(1).replace(".", ",");
 
   const title = $derived(
-    session.kind === "lesson"
+    session.kind === "theme-lesson"
+      ? t("words.lessonDone")
+      : session.kind === "theme-test"
+        ? themePassed
+          ? t("words.testPassed")
+          : t("words.testFailed")
+        : session.kind === "words-review"
+          ? t("words.reviewDone")
+          : session.kind === "lesson"
       ? t("results.lessonDone", { n: lessonIndex + 1 })
       : session.kind === "final"
         ? passed
@@ -51,6 +66,7 @@
                     ? t("results.handwritingDone")
                     : t("results.practiceDone"),
   );
+  const themeHref = $derived(`#/words/${themeInfo?.theme.id ?? session.themeId ?? ""}`);
 
   function practiceHard() {
     startPractice(
@@ -63,14 +79,17 @@
 </script>
 
 <div class="results">
-  <div class="emoji" aria-hidden="true">{session.kind === "final" && !passed ? "💪" : "🎉"}</div>
+  <div class="emoji" aria-hidden="true">{(session.kind === "final" && !passed) || (session.kind === "theme-test" && !themePassed) ? "💪" : "🎉"}</div>
   <h1>{title}</h1>
 
   {#if session.kind === "lesson" && lessonIndex >= 0}
     <div class="letters hy" lang="hy">{lessonLetters(lessons[lessonIndex]!).map((id) => letterById(id)!.upper).join(" ")}</div>
   {/if}
 
-  {#if session.kind === "final"}
+  {#if session.kind === "theme-test"}
+    <p class="big">{pct}%</p>
+    {#if !themePassed}<p class="muted">{t("words.testFailedText", { pct: THEME_PASS * 100 })}</p>{/if}
+  {:else if session.kind === "final"}
     <p class="big">{pct}%</p>
     <p class="stat">{t("results.finalTasks", { correct: r.correct + r.partial, total: answered, pct })}</p>
     {#if reading}
@@ -96,6 +115,15 @@
     </section>
   {/if}
 
+  {#if hardWords.length}
+    <section class="box">
+      <p>{t("words.hard")}</p>
+      <p class="hard">
+        {#each hardWords as h (h.item.id)}<span><span class="hy" lang="hy">{h.item.hy}</span> <span class="muted">— {h.item.ru}</span></span>{/each}
+      </p>
+    </section>
+  {/if}
+
   {#if hard.length}
     <section class="box">
       <p>{t("results.hard")}</p>
@@ -112,7 +140,21 @@
   {/if}
 
   <div class="actions">
-    {#if session.kind === "lesson" && nextIndex !== undefined && !tired}
+    {#if session.kind === "theme-lesson" && themeInfo}
+      {#if nextThemeLesson !== undefined && !app.progress.lessons[themeInfo.theme.lessons[nextThemeLesson]!.id]}
+        <button class="btn primary" onclick={() => startThemeLesson(themeInfo.theme.id, nextThemeLesson!)}>
+          {t("words.nextLesson", { n: nextThemeLesson + 1, title: themeInfo.theme.lessons[nextThemeLesson]!.title })}
+        </button>
+      {:else if themeDone(app.progress, themeInfo.theme) && !app.progress.themeTests[themeInfo.theme.id]?.passedAt}
+        <button class="btn primary" onclick={() => startThemeTest(themeInfo.theme.id)}>{t("words.toTest")}</button>
+      {/if}
+      <a class="btn" href={themeHref}>{t("words.toTheme")}</a>
+    {:else if session.kind === "theme-test" && themeOfTest}
+      {#if !themePassed}<button class="btn primary" onclick={() => startThemeTest(themeOfTest.id)}>{t("results.retryFinal")}</button>{/if}
+      <a class="btn" class:primary={themePassed} href={themeHref}>{t("words.toTheme")}</a>
+    {:else if session.kind === "words-review"}
+      <a class="btn primary" href="#/words">{t("words.title")}</a>
+    {:else if session.kind === "lesson" && nextIndex !== undefined && !tired}
       <button class="btn primary" onclick={() => startLesson(nextIndex)}>
         {t("results.nextLesson", { n: nextIndex + 1, letters: lessonLetters(lessons[nextIndex]!).map((id) => letterById(id)!.upper).join(" ") })}
       </button>

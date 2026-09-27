@@ -2,7 +2,7 @@
 // При любом изменении формата: увеличить SCHEMA_VERSION и добавить миграцию в schema.ts.
 import type { SavedSession } from "../session/types";
 
-export const SCHEMA_VERSION = 4;
+export const SCHEMA_VERSION = 5;
 
 export type Theme = "system" | "light" | "dark";
 export type LetterSize = "normal" | "large";
@@ -10,7 +10,9 @@ export type Strictness = "soft" | "strict";
 export type Script = "print" | "handwriting";
 
 /** Навыки (docs/03-exercises.md, «Навыки»). Основные — recognize и recall. */
-export type Skill = "recognize" | "recall" | "read" | "case" | "handwriting" | "discriminate" | "listen" | "write";
+export type Skill = "recognize" | "recall" | "read" | "case" | "handwriting" | "discriminate" | "listen" | "write"
+  // слова и фразы (docs/10-first-words.md): понимание (армянское → смысл) и вспоминание (смысл → армянское)
+  | "meaning" | "produce";
 
 export interface Settings {
   theme: Theme;
@@ -54,6 +56,11 @@ export interface GameRecord {
   at: string; // YYYY-MM-DD
 }
 
+export interface ThemeTestProgress {
+  bestScore: number; // 0–1
+  passedAt: string | null; // YYYY-MM-DD, когда впервые сдано на ≥ 80%
+}
+
 export interface ProgressData {
   schemaVersion: typeof SCHEMA_VERSION;
   createdAt: string; // ISO-время
@@ -67,6 +74,8 @@ export interface ProgressData {
   finalTest: FinalTestProgress | null;
   /** Рекорды «Найди пары», ключ — вид пар (sound, case, handwriting). */
   games: Record<string, GameRecord>;
+  /** Итоговые задания тем «Первых слов», ключ — id темы. */
+  themeTests: Record<string, ThemeTestProgress>;
   meta: {
     lastBackupAt: string | null; // когда в последний раз сохраняли резервную копию
   };

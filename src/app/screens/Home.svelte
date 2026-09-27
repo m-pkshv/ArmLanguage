@@ -6,6 +6,7 @@
   import { t } from "../../i18n";
   import Card from "../../ui/Card.svelte";
   import { isFirstRun, nextAction } from "../../session/next";
+  import { firstWordsOpen } from "../../core/words";
   import { startFinalTest, startLesson, startMatch, startReview } from "../../session/start";
   import { app, today } from "../state.svelte";
   import ConfusionHint from "./ConfusionHint.svelte";
@@ -28,6 +29,7 @@
     doneLessons >= 1 && (!p.meta.lastBackupAt || daysBetween(toDay(new Date(p.meta.lastBackupAt)), day) >= 7),
   );
   const sections = content.course.sections;
+  const wordsOpen = $derived(firstWordsOpen(p, content));
 
   const lettersOf = (i: number) => lessonLetters(lessons[i]!).map((id) => letterById(id)!.upper).join(" ");
 
@@ -124,10 +126,20 @@
   <Card title={t("home.sections")} padded={false}>
     <ul class="sections">
       {#each sections as s (s.id)}
-        <li class:soon={s.status !== "available"}>
-          <span>{s.title}</span>
-          <span class="small">{s.status === "available" ? t("home.lessonsCount", { n: s.lessons.length }) : t("common.soon")}</span>
-        </li>
+        {#if s.id === "first-words" && s.status === "available"}
+          <!-- «Первые слова» — после 8-го урока алфавита (docs/10-first-words.md, 10.2) -->
+          <li class="link-row">
+            <a href="#/words">
+              <span>{s.title}</span>
+              <span class="small">{wordsOpen ? t("home.themesCount", { n: (s.themes ?? []).filter((x) => x.status === "available").length }) : t("home.afterLesson8")} ›</span>
+            </a>
+          </li>
+        {:else}
+          <li class:soon={s.status !== "available"}>
+            <span>{s.title}</span>
+            <span class="small">{s.status === "available" ? t("home.lessonsCount", { n: s.lessons.length }) : t("common.soon")}</span>
+          </li>
+        {/if}
       {/each}
     </ul>
   </Card>
@@ -246,6 +258,19 @@
     min-height: 52px;
     padding: 0 16px;
     border-bottom: 1px solid var(--line);
+  }
+  .sections li.link-row {
+    padding: 0;
+  }
+  .link-row a {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 52px;
+    padding: 0 16px;
+    color: var(--text);
+    text-decoration: none;
   }
   .sections li:last-child {
     border-bottom: 0;

@@ -4,6 +4,8 @@ import type { ExerciseId, MatchKind, SessionOptions } from "../core/session/type
 import { app, today } from "../app/state.svelte";
 import { planFinalTest, planLesson, planLetter, planMixed, planPairs, planPractice, planHandwriting, planMatch, planReview, planWords } from "./plan";
 
+import { planThemeLesson, planThemeTest, planWordsReview } from "./wordPlan";
+
 // Запуск занятий из экранов приложения.
 
 const seed = () => (Date.now() ^ Math.floor(Math.random() * 0x7fffffff)) >>> 0;
@@ -46,4 +48,17 @@ export function startPairs(groups: { letters: string[] }[]) {
 
 export function startFinalTest() {
   app.startSession(planFinalTest(content, seed(), today()));
+}
+
+// Раздел «Первые слова» (docs/10-first-words.md)
+export function startThemeLesson(themeId: string, index: number) {
+  app.startSession(planThemeLesson(content, themeId, index, seed(), today()));
+}
+
+export function startThemeTest(themeId: string) {
+  app.startSession(planThemeTest(content, themeId, seed(), today()));
+}
+
+export function startWordsReview() {
+  app.startSession(planWordsReview(content, app.progress, seed(), today()));
 }
