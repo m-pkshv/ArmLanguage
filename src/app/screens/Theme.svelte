@@ -54,6 +54,8 @@
       </button>
     </li>
   </ol>
+  <!-- Заглушка: в темы будут добавляться новые слова (docs/10-first-words.md, 10.3) -->
+  <p class="more">🆕 {t("words.moreWords")}</p>
 {/if}
 
 <style>
@@ -122,5 +124,14 @@
   .meta {
     color: var(--muted);
     font-size: 14px;
+  }
+  .more {
+    margin: 16px 0 0;
+    padding: 14px;
+    border: 1px dashed var(--line);
+    border-radius: var(--radius-lg);
+    color: var(--muted);
+    font-size: 14px;
+    text-align: center;
   }
 </style>
