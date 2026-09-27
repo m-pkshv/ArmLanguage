@@ -70,6 +70,10 @@ export function dueItems(p: ProgressData, today: Day, ids: string[]): string[] {
   return due.sort((a, b) => a.due.localeCompare(b.due)).map((d) => d.id);
 }
 
+/** Встречавшиеся слова и фразы всех тем с наступившим сроком повторения. */
+export const dueStudyItems = (c: Content, p: ProgressData, today: Day): string[] =>
+  dueItems(p, today, themes(c).flatMap(themeItems).filter((id) => seenItem(p, id)));
+
 /** Уровень знания слова: пока понимание ниже 2, под словом показываем чтение (решение владельца). */
 export const showReading = (p: ProgressData, id: string): boolean => boxOfItem(p, id, "meaning") < 2;
 

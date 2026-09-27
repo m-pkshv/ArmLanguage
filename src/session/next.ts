@@ -3,7 +3,7 @@ import type { Content } from "../core/content/types";
 import type { Day } from "../core/dates";
 import { dueLetters } from "../core/progress/knowledge";
 import type { ProgressData } from "../core/progress/types";
-import { firstWordsOpen, themeDone, themes } from "../core/words";
+import { dueStudyItems, firstWordsOpen, themeDone, themes } from "../core/words";
 import { exerciseCount, exercisesDone } from "./run";
 
 // Что делает кнопка «Продолжить» на главном экране (docs/09-navigation.md, 9.4).
@@ -17,7 +17,7 @@ export type NextAction =
   | { kind: "theme-test"; themeId: string }
   | { kind: "practice" };
 
-/** С какого числа букв к повторению сначала повторяем, а потом даём новый урок. */
+/** С какого числа букв и слов к повторению сначала повторяем, а потом даём новый урок. */
 export const REVIEW_FIRST = 10;
 
 export function nextAction(p: ProgressData, c: Content, today: Day): NextAction {
@@ -25,7 +25,8 @@ export function nextAction(p: ProgressData, c: Content, today: Day): NextAction 
   if (s && (s.kind === "lesson" || s.kind === "review" || s.kind === "theme-lesson")) {
     return { kind: "resume", done: exercisesDone(s), total: exerciseCount(s), lesson: s.kind !== "review" };
   }
-  const due = dueLetters(p, today, knownLetters(p, c)).length;
+  // к повторению — буквы и слова вместе (общее повторение, docs/10-first-words.md, 10.6)
+  const due = dueLetters(p, today, knownLetters(p, c)).length + dueStudyItems(c, p, today).length;
   if (due >= REVIEW_FIRST) return { kind: "review", count: due };
   const lesson = nextLessonIndex(p, alphabetLessons(c));
   if (lesson !== undefined) return { kind: "lesson", index: lesson };

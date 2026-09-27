@@ -1,6 +1,7 @@
 import { content } from "../core/content";
 import { knownLetters } from "../core/course";
 import type { ExerciseId, MatchKind, SessionOptions } from "../core/session/types";
+import { dueStudyItems } from "../core/words";
 import { app, today } from "../app/state.svelte";
 import { planFinalTest, planLesson, planLetter, planMixed, planPairs, planPractice, planHandwriting, planMatch, planReview, planWords } from "./plan";
 
@@ -15,7 +16,7 @@ export function startLesson(index: number) {
 }
 
 export function startReview() {
-  app.startSession(planReview(app.progress, knownLetters(app.progress, content), seed(), today()));
+  app.startSession(planReview(app.progress, knownLetters(app.progress, content), seed(), today(), dueStudyItems(content, app.progress, today())));
 }
 
 export function startPractice(letters: string[], types: ExerciseId[], length: number, script: SessionOptions["script"]) {

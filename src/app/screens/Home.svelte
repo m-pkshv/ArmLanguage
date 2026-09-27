@@ -6,7 +6,7 @@
   import { t } from "../../i18n";
   import Card from "../../ui/Card.svelte";
   import { isFirstRun, nextAction } from "../../session/next";
-  import { firstWordsOpen, seenItem, themeById, themeDone, themes } from "../../core/words";
+  import { dueStudyItems, firstWordsOpen, seenItem, studyItem, themeById, themeDone, themes } from "../../core/words";
   import { startFinalTest, startLesson, startMatch, startReview, startThemeLesson, startThemeTest } from "../../session/start";
   import { app, today } from "../state.svelte";
   import ConfusionHint from "./ConfusionHint.svelte";
@@ -23,6 +23,9 @@
   const known = $derived(knownLetters(p, content));
   const readable = $derived(readableWords(content, known).length);
   const due = $derived(dueLetters(p, day, known));
+  // общее повторение букв и слов (docs/10-first-words.md, 10.6)
+  const dueWords = $derived(dueStudyItems(content, p, day));
+  const dueTotal = $derived(due.length + dueWords.length);
   const doneLessons = $derived(lessons.filter((l) => p.lessons[l.id]).length);
   // Подсказка про резервную копию — раз в неделю, когда уже есть что терять (docs/09-navigation.md, 9.13).
   const backupHint = $derived(
@@ -131,11 +134,16 @@
 
   <ConfusionHint />
 
-  {#if due.length}
-    <Card title={t("home.dueTitle", { n: due.length })}>
-      <p class="due hy" lang="hy">{due.slice(0, 12).map((id) => letterById(id)!.upper).join(" ")}{due.length > 12 ? " …" : ""}</p>
+  {#if dueTotal}
+    <Card title={t("home.dueTitle", { n: dueTotal })}>
+      {#if due.length}
+        <p class="due hy" lang="hy">{due.slice(0, 12).map((id) => letterById(id)!.upper).join(" ")}{due.length > 12 ? " …" : ""}</p>
+      {/if}
+      {#if dueWords.length}
+        <p class="due-words hy" lang="hy">{dueWords.slice(0, 4).map((id) => studyItem(content, id).hy).join(" · ")}{dueWords.length > 4 ? " …" : ""}</p>
+      {/if}
       {#if action.kind !== "review"}
-        <button class="secondary" onclick={startReview}>{t("home.reviewNow")}</button>
+        <button class="secondary" onclick={startReview}>{t("home.review", { n: dueTotal })}</button>
       {/if}
     </Card>
   {:else if doneLessons >= 1 && action.kind !== "resume"}
@@ -265,6 +273,9 @@
   .due {
     font-size: 24px;
     letter-spacing: 0.08em;
+  }
+  .due-words {
+    font-size: 18px;
   }
   .row {
     display: flex;

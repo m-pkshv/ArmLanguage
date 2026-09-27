@@ -2,6 +2,7 @@
   import { content } from "../../core/content";
   import { knownLetters } from "../../core/course";
   import { dueLetters } from "../../core/progress/knowledge";
+  import { dueStudyItems } from "../../core/words";
   import { formatTime } from "../../exercises/matchPairs";
   import { t } from "../../i18n";
   import ScreenHeader from "../../ui/ScreenHeader.svelte";
@@ -10,7 +11,8 @@
 
   // Практика (docs/09-navigation.md, 9.11). В V1 — повторение и своя тренировка.
   const known = $derived(knownLetters(app.progress, content));
-  const due = $derived(dueLetters(app.progress, today(), known).length);
+  // общее повторение: буквы и слова (docs/10-first-words.md, 10.6)
+  const due = $derived(dueLetters(app.progress, today(), known).length + dueStudyItems(content, app.progress, today()).length);
   const enough = $derived(known.length >= 4);
   const best = $derived(app.progress.games.sound?.bestMs ?? null); // на плитке — рекорд «буква ↔ звук»
 </script>

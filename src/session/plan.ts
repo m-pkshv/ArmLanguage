@@ -6,8 +6,8 @@ import { wordsToRead } from "../exercises/wordReading";
 import { indexLetters, lettersOf } from "../core/text/armenian";
 import { READING_WORDS } from "./run";
 import type { Day } from "../core/dates";
-import { boxOf, dueLetters } from "../core/progress/knowledge";
-import type { ProgressData } from "../core/progress/types";
+import { boxOf, dueLetters, MAIN_SKILLS } from "../core/progress/knowledge";
+import type { ProgressData, Skill } from "../core/progress/types";
 import { createRng, type Rng } from "../core/random";
 import type { ExerciseId, MatchKind, SavedSession, SessionKind, SessionOptions, Step } from "../core/session/types";
 
@@ -83,17 +83,33 @@ export function planLesson(c: Content, p: ProgressData, lessonIndex: number, see
   return newSession("lesson", steps, seed, today, { lessonId: lesson.id });
 }
 
-/** Повторение: буквы с наступившим сроком, до 30 заданий (docs/02-features.md, 2.8). */
-export function planReview(p: ProgressData, known: string[], seed: number, today: Day): SavedSession {
+export const REVIEW_MAX = 30;
+
+/** Самый ранний срок повторения элемента по его навыкам. */
+const earliestDue = (p: ProgressData, id: string, skills: Skill[]): string =>
+  skills.map((s) => p.items[`${id}#${s}`]?.due).filter((d): d is string => !!d).sort()[0] ?? "";
+
+/**
+ * Повторение: буквы, слова и фразы с наступившим сроком вперемешку, до 30 заданий (docs/02-features.md, 2.8;
+ * docs/10-first-words.md, 10.6). Сначала самые «просроченные»; слабая буква — два задания, слово — одно.
+ * words — слова и фразы к повторению (dueStudyItems), самые «просроченные» первыми.
+ */
+export function planReview(p: ProgressData, known: string[], seed: number, today: Day, words: string[] = []): SavedSession {
   const rng = createRng(seed);
-  const due = dueLetters(p, today, known).slice(0, 15);
+  const queue = [
+    ...dueLetters(p, today, known).slice(0, 15).map((id) => ({
+      id,
+      due: earliestDue(p, `letter:${id}`, MAIN_SKILLS),
+      n: Math.min(boxOf(p, id, "recognize"), boxOf(p, id, "recall")) < 2 ? 2 : 1,
+    })),
+    ...words.slice(0, 20).map((id) => ({ id, due: earliestDue(p, id, ["meaning", "produce"]), n: 1 })),
+  ].sort((a, b) => a.due.localeCompare(b.due));
   const steps: Step[] = [];
-  for (const id of due) {
-    const weak = Math.min(boxOf(p, id, "recognize"), boxOf(p, id, "recall")) < 2;
-    steps.push(ex(id));
-    if (weak) steps.push(ex(id));
+  for (const q of queue) {
+    if (steps.length + q.n > REVIEW_MAX) continue;
+    for (let i = 0; i < q.n; i++) steps.push(ex(q.id));
   }
-  return newSession("review", spreadSteps(rng, steps).slice(0, 30), seed, today);
+  return newSession("review", spreadSteps(rng, steps), seed, today);
 }
 
 /** Своя тренировка: выбранные буквы и типы заданий; слабые буквы выпадают чаще. */

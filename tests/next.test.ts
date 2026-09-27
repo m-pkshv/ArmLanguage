@@ -3,8 +3,9 @@ import { content } from "../src/core/content";
 import { alphabetLessons } from "../src/core/course";
 import { createEmptyProgress } from "../src/core/progress/schema";
 import type { ProgressData } from "../src/core/progress/types";
-import { themes } from "../src/core/words";
+import { dueStudyItems, isStudyItem, themes } from "../src/core/words";
 import { nextAction } from "../src/session/next";
+import { planReview, REVIEW_MAX } from "../src/session/plan";
 
 // Кнопка «Продолжить» на главном экране (docs/09-navigation.md, 9.4).
 
@@ -58,5 +59,48 @@ describe("next action", () => {
       p.themeTests[t.id] = { bestScore: 1, passedAt: TODAY };
     }
     expect(nextAction(p, content, TODAY)).toEqual({ kind: "practice" });
+  });
+});
+
+describe("common review of letters and words", () => {
+  const item = (due: string, box = 1) => ({ box, due, ok: 1, bad: 0, last: "2026-09-20" });
+
+  function withDue(letters: number, words: number): ProgressData {
+    const p = afterAlphabet();
+    p.finalTest = { bestScore: 1, passedAt: TODAY, bestReading: null };
+    for (const l of content.letters.slice(0, letters)) {
+      p.items[`letter:${l.id}#recognize`] = item("2026-09-25", 3);
+      p.items[`letter:${l.id}#recall`] = item("2026-09-25", 3);
+    }
+    for (const id of list.flatMap((t) => t.lessons.flatMap((l) => l.newItems)).slice(0, words)) {
+      p.items[`${id}#meaning`] = item("2026-09-20");
+    }
+    return p;
+  }
+
+  it("counts letters and words together for the main button", () => {
+    const p = withDue(4, 6);
+    expect(dueStudyItems(content, p, TODAY)).toHaveLength(6);
+    expect(nextAction(p, content, TODAY)).toEqual({ kind: "review", count: 10 });
+    expect(nextAction(withDue(4, 5), content, TODAY).kind).toBe("theme-lesson");
+  });
+
+  it("mixes letters and words in one review, the most overdue first, up to 30 tasks", () => {
+    const p = withDue(15, 25);
+    const known = content.letters.map((l) => l.id);
+    const s = planReview(p, known, 1, TODAY, dueStudyItems(content, p, TODAY));
+    const ids = s.steps.map((st) => st.letter);
+    expect(s.kind).toBe("review");
+    expect(ids.length).toBeLessThanOrEqual(REVIEW_MAX);
+    // слова просрочены сильнее — берутся первыми (20 слов), остальное место — буквы
+    expect(ids.filter(isStudyItem)).toHaveLength(20);
+    expect(ids.filter((id) => !isStudyItem(id))).toHaveLength(10);
+  });
+
+  it("keeps the letters-only review when there are no words", () => {
+    const p = withDue(5, 0);
+    const s = planReview(p, content.letters.map((l) => l.id), 1, TODAY);
+    expect(s.steps).toHaveLength(5);
+    expect(s.steps.every((st) => !isStudyItem(st.letter))).toBe(true);
   });
 });

@@ -3,7 +3,7 @@ import type { Day } from "../core/dates";
 import type { ProgressData } from "../core/progress/types";
 import { createRng, type Rng } from "../core/random";
 import type { SavedSession, Step, WordExerciseId } from "../core/session/types";
-import { dueItems, seenItem, themeById, themeItems, themes } from "../core/words";
+import { dueStudyItems, themeById, themeItems, themes } from "../core/words";
 import { newSession } from "./plan";
 
 // Занятия раздела «Первые слова» (docs/10-first-words.md, 10.6): урок темы, итоговое задание темы, повторение.
@@ -78,10 +78,8 @@ export function planThemeTest(c: Content, themeId: string, seed: number, today: 
 /** Повторение слов: элементы с наступившим сроком, до 20 заданий. */
 export function planWordsReview(c: Content, p: ProgressData, seed: number, today: Day): SavedSession {
   const rng = createRng(seed);
-  const all = themes(c).flatMap(themeItems).filter((id) => seenItem(p, id));
-  const due = dueItems(p, today, all).slice(0, 20);
+  const due = dueStudyItems(c, p, today).slice(0, 20);
   return newSession("words-review", spread(rng, due, due.length), seed, today);
 }
 
-export const wordsDue = (c: Content, p: ProgressData, today: Day): number =>
-  dueItems(p, today, themes(c).flatMap(themeItems).filter((id) => seenItem(p, id))).length;
+export const wordsDue = (c: Content, p: ProgressData, today: Day): number => dueStudyItems(c, p, today).length;
