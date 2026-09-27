@@ -964,6 +964,61 @@
               ]
             }
           ]
+        },
+        {
+          "id": "work",
+          "title": "Работа и учёба",
+          "emoji": "💼",
+          "status": "available",
+          "lessons": [
+            {
+              "id": "work-1",
+              "title": "Учёба",
+              "newItems": [
+                "word:dprots",
+                "word:das",
+                "word:usutsich",
+                "word:usanogh",
+                "word:girk",
+                "word:ej",
+                "word:tetr",
+                "word:grich",
+                "word:matit",
+                "word:tught"
+              ]
+            },
+            {
+              "id": "work-2",
+              "title": "Работа",
+              "newItems": [
+                "word:ashkhatank",
+                "word:grasenyak",
+                "word:gortsynker",
+                "word:ghekavar",
+                "word:hamakargich",
+                "word:herrakhos",
+                "word:payusak",
+                "word:handipum",
+                "phrase:vortegh-es-ashkhatum",
+                "phrase:yes-ashkhatum-em-grasenyakum",
+                "phrase:handipum-unem"
+              ]
+            },
+            {
+              "id": "work-3",
+              "title": "Язык",
+              "newItems": [
+                "word:hayeren",
+                "word:barr",
+                "word:harts",
+                "word:pataskhan",
+                "word:sovorel",
+                "phrase:hayeren-em-sovorum",
+                "phrase:krknek",
+                "phrase:inchpes-e-sa-hayeren"
+              ]
+            }
+          ]
         }
       ]
     },

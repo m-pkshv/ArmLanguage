@@ -183,7 +183,10 @@
       "school"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "work"
+    ]
   },
   {
     "id": "gayl",
@@ -282,7 +285,10 @@
       "school"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "work"
+    ]
   },
   {
     "id": "yerekha",
@@ -438,7 +444,10 @@
       "school"
     ],
     "level": 2,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "work"
+    ]
   },
   {
     "id": "esh",
@@ -1176,7 +1185,10 @@
       "school"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "work"
+    ]
   },
   {
     "id": "mayr",
@@ -1543,7 +1555,10 @@
       "school"
     ],
     "level": 2,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "work"
+    ]
   },
   {
     "id": "jur",
@@ -2544,7 +2559,10 @@
       "school"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "work"
+    ]
   },
   {
     "id": "ban",
@@ -2754,7 +2772,10 @@
       "words"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "work"
+    ]
   },
   {
     "id": "get",
@@ -2940,7 +2961,10 @@
       "school"
     ],
     "level": 2,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "work"
+    ]
   },
   {
     "id": "pokr",
@@ -7959,6 +7983,311 @@
     "reviewed": false,
     "themes": [
       "feelings"
+    ]
+  },
+  {
+    "id": "usutsich",
+    "hy": "ուսուցիչ",
+    "pronunciation": "усуцхичх",
+    "exception": false,
+    "ru": "учитель",
+    "image": {
+      "file": "img/words/arasaac-2457.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "work"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "work"
+    ]
+  },
+  {
+    "id": "usanogh",
+    "hy": "ուսանող",
+    "pronunciation": "усаногх",
+    "exception": false,
+    "ru": "студент",
+    "image": {
+      "file": "img/words/arasaac-32666.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "work"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "work"
+    ]
+  },
+  {
+    "id": "tetr",
+    "hy": "տետր",
+    "pronunciation": "тетыр",
+    "exception": false,
+    "ru": "тетрадь",
+    "image": {
+      "file": "img/words/arasaac-2359.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "work"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "work"
+    ]
+  },
+  {
+    "id": "grich",
+    "hy": "գրիչ",
+    "pronunciation": "гыричх",
+    "exception": false,
+    "ru": "ручка",
+    "image": {
+      "file": "img/words/arasaac-2282.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "work"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "work"
+    ]
+  },
+  {
+    "id": "ashkhatank",
+    "hy": "աշխատանք",
+    "pronunciation": "ашхатанкх",
+    "exception": false,
+    "ru": "работа",
+    "image": {
+      "file": "img/words/arasaac-2599.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "work"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "work"
+    ]
+  },
+  {
+    "id": "grasenyak",
+    "hy": "գրասենյակ",
+    "pronunciation": "гырасенйак",
+    "exception": false,
+    "ru": "офис",
+    "image": {
+      "file": "img/words/arasaac-36089.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "work"
+    ],
+    "level": 2,
+    "reviewed": false,
+    "themes": [
+      "work"
+    ]
+  },
+  {
+    "id": "gortsynker",
+    "hy": "գործընկեր",
+    "pronunciation": "горцынкер",
+    "exception": false,
+    "ru": "коллега",
+    "image": null,
+    "tags": [
+      "work"
+    ],
+    "level": 2,
+    "reviewed": false,
+    "themes": [
+      "work"
+    ]
+  },
+  {
+    "id": "ghekavar",
+    "hy": "ղեկավար",
+    "pronunciation": "гхекавар",
+    "exception": false,
+    "ru": "начальник, руководитель",
+    "image": {
+      "file": "img/words/arasaac-16039.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "work"
+    ],
+    "level": 2,
+    "reviewed": false,
+    "themes": [
+      "work"
+    ]
+  },
+  {
+    "id": "hamakargich",
+    "hy": "համակարգիչ",
+    "pronunciation": "хамакаргичх",
+    "exception": false,
+    "ru": "компьютер",
+    "image": {
+      "file": "img/words/arasaac-7190.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "work"
+    ],
+    "level": 2,
+    "reviewed": false,
+    "themes": [
+      "work"
+    ]
+  },
+  {
+    "id": "herrakhos",
+    "hy": "հեռախոս",
+    "pronunciation": "херрахос",
+    "exception": false,
+    "ru": "телефон",
+    "image": {
+      "file": "img/words/arasaac-2586.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "work"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "work"
+    ]
+  },
+  {
+    "id": "handipum",
+    "hy": "հանդիպում",
+    "pronunciation": "хандипум",
+    "exception": false,
+    "ru": "встреча",
+    "image": {
+      "file": "img/words/arasaac-39230.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "work"
+    ],
+    "level": 2,
+    "reviewed": false,
+    "themes": [
+      "work"
+    ]
+  },
+  {
+    "id": "barr",
+    "hy": "բառ",
+    "pronunciation": "барр",
+    "exception": false,
+    "ru": "слово",
+    "image": null,
+    "tags": [
+      "work"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "work"
+    ]
+  },
+  {
+    "id": "harts",
+    "hy": "հարց",
+    "pronunciation": "харцх",
+    "exception": false,
+    "ru": "вопрос",
+    "image": {
+      "file": "img/words/arasaac-7217.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "work"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "work"
+    ]
+  },
+  {
+    "id": "pataskhan",
+    "hy": "պատասխան",
+    "pronunciation": "патасхан",
+    "exception": false,
+    "ru": "ответ",
+    "image": {
+      "file": "img/words/arasaac-9030.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "work"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "work"
+    ]
+  },
+  {
+    "id": "sovorel",
+    "hy": "սովորել",
+    "pronunciation": "соворел",
+    "exception": false,
+    "ru": "учить, учиться",
+    "image": {
+      "file": "img/words/arasaac-2387.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "work"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "work"
     ]
   }
 ]
