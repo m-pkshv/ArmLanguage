@@ -1,5 +1,5 @@
 import type { ExerciseId } from "../core/session/types";
-import { caseMatch, letterToSound, soundToLetter } from "./choice";
+import { caseMatch, handwritingMatch, letterToSound, soundToLetter } from "./choice";
 import { confusablePair } from "./confusable";
 import { matchPairs } from "./matchPairs";
 import { mixedReading } from "./mixedReading";
@@ -21,4 +21,5 @@ export const EXERCISES: Record<Exclude<ExerciseId, "letter-intro">, ExerciseLogi
   "mixed-reading": mixedReading,
   "word-type-reading": wordReading,
   "match-pairs": matchPairs,
+  "handwriting-match": handwritingMatch,
 };

@@ -4,7 +4,8 @@ import { t } from "../i18n";
 import { byId, describe, distractors, effectsFor, pickForm, withOptions, type Form } from "./helpers";
 import type { CheckResult, ExerciseLogic } from "./types";
 
-// Задания с выбором из 4 вариантов: E02 буква → звук, E03 звук → буква, E15 заглавная ↔ строчная.
+// Задания с выбором из 4 вариантов: E02 буква → звук, E03 звук → буква, E15 заглавная ↔ строчная,
+// E11 рукописная ↔ печатная.
 
 export interface LetterChoiceQuestion {
   letter: string;
@@ -13,7 +14,7 @@ export interface LetterChoiceQuestion {
   handwriting: boolean;
 }
 
-function choiceResult(q: LetterChoiceQuestion, answer: string, skill: "recognize" | "case", c: Parameters<ExerciseLogic["check"]>[2]): CheckResult {
+function choiceResult(q: LetterChoiceQuestion, answer: string, skill: "recognize" | "case" | "handwriting", c: Parameters<ExerciseLogic["check"]>[2]): CheckResult {
   const target = byId(c.content, q.letter);
   if (answer === q.letter) {
     return {
@@ -84,4 +85,31 @@ export const caseMatch: ExerciseLogic<CaseQuestion, string> = {
     };
   },
   check: (q, a, c) => choiceResult(q, a, "case", c),
+};
+
+export interface HandwritingQuestion extends LetterChoiceQuestion {
+  /** Что показано в вопросе: рукописная буква (выбрать печатную) или печатная (выбрать рукописную). */
+  from: "handwriting" | "print";
+  form: "upper" | "lower";
+}
+
+/** E11: рукописная ↔ печатная. Буква одной формы (заглавная или строчная); у և — только строчная. */
+export const handwritingMatch: ExerciseLogic<HandwritingQuestion, string> = {
+  id: "handwriting-match",
+  skills: ["handwriting"],
+  isApplicable: (letter) => !!letter.handwriting,
+  generate(letter, ctx) {
+    const form = letter.handwriting?.upper && hasCasePair(letter) ? ctx.rng.pick(["upper", "lower"] as const) : "lower";
+    // для заглавных нужна рукописная заглавная — у և её нет
+    const exclude = ctx.content.letters.filter((l) => !l.handwriting || (form === "upper" && (!l.handwriting.upper || !hasCasePair(l)))).map((l) => l.id);
+    const wrong = distractors(letter, ctx, 3, { by: "shape", exclude });
+    return {
+      letter: letter.id,
+      form,
+      from: ctx.rng.pick(["handwriting", "print"] as const),
+      options: withOptions(letter, wrong, ctx),
+      handwriting: false,
+    };
+  },
+  check: (q, a, c) => choiceResult(q, a, "handwriting", c),
 };

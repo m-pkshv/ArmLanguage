@@ -5,7 +5,7 @@
   import { formatTime } from "../../exercises/matchPairs";
   import { t } from "../../i18n";
   import ScreenHeader from "../../ui/ScreenHeader.svelte";
-  import { startMixed, startReview, startWords } from "../../session/start";
+  import { startHandwriting, startMixed, startReview, startWords } from "../../session/start";
   import { app, today } from "../state.svelte";
 
   // Практика (docs/09-navigation.md, 9.11). В V1 — повторение и своя тренировка.
@@ -41,6 +41,10 @@
     <button class="tile" onclick={startWords}>
       <span class="tt">{t("practice.words")}</span>
       <span class="sub hy" lang="hy">{t("practice.wordsSub")}</span>
+    </button>
+    <button class="tile" onclick={startHandwriting}>
+      <span class="tt">{t("practice.handwriting")}</span>
+      <span class="sub">{t("practice.handwritingSub")}</span>
     </button>
     <a class="tile" href="#/practice/custom">
       <span class="tt">{t("practice.custom")}</span>

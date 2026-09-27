@@ -11,12 +11,13 @@ export type ExerciseId =
   | "confusable-pair" // E10
   | "mixed-reading" // E09
   | "word-type-reading" // E07
-  | "match-pairs"; // E05
+  | "match-pairs" // E05
+  | "handwriting-match"; // E11
 
 /** Вид пар в мини-игре «Найди пары» (E05). */
 export type MatchKind = "sound" | "case" | "handwriting";
 
-export type SessionKind = "lesson" | "review" | "practice" | "final" | "letter" | "pairs" | "mixed" | "words" | "match";
+export type SessionKind = "lesson" | "review" | "practice" | "final" | "letter" | "pairs" | "mixed" | "words" | "match" | "handwriting";
 
 export type Step =
   | { kind: "intro"; letter: string }

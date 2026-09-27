@@ -143,6 +143,13 @@ export function planMatch(p: ProgressData, known: string[], kind: MatchKind, see
   return newSession("match", steps, seed, today);
 }
 
+/** Рукописные буквы: 10 заданий «рукописная ↔ печатная» по знакомым буквам, слабые — чаще. */
+export function planHandwriting(p: ProgressData, known: string[], seed: number, today: Day): SavedSession {
+  const rng = createRng(seed);
+  const weighted = known.flatMap((id) => Array(boxOf(p, id, "handwriting") >= 2 ? 1 : 2).fill(id) as string[]);
+  return newSession("handwriting", spread(rng, weighted, 10, ["handwriting-match"]), seed, today);
+}
+
 /** Тренажёр пар-ловушек: 10 заданий на выбранные пары (docs/02-features.md, 2.8). */
 export function planPairs(groups: { letters: string[] }[], seed: number, today: Day): SavedSession {
   const rng = createRng(seed);

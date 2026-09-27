@@ -83,7 +83,7 @@
 │  │  ├─ types.ts              # интерфейс типа задания
 │  │  ├─ logic.ts              # реестр логики: id → generate/check
 │  │  ├─ registry.ts           # реестр видов: id → компонент
-│  │  ├─ choice.ts (E02, E03, E15), picture.ts (E04), typeSound.ts (E06), ruWordInsert.ts (E08),
+│  │  ├─ choice.ts (E02, E03, E15, E11), picture.ts (E04), typeSound.ts (E06), ruWordInsert.ts (E08),
 │  │  │  confusable.ts (E10), mixedReading.ts (E09), wordReading.ts (E07), matchPairs.ts (E05)
 │  │  └─ views/                # вид заданий (Svelte)
 │  ├─ session/                 # занятия: состав (plan), выбор задания (select), ход (run), «Продолжить» (next)

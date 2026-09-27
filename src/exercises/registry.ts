@@ -28,4 +28,5 @@ export const VIEWS: Record<Exclude<ExerciseId, "letter-intro">, Component<any>> 
   "mixed-reading": MixedView,
   "word-type-reading": WordReadingView,
   "match-pairs": MatchView,
+  "handwriting-match": ChoiceView,
 };
