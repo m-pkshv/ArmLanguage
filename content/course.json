@@ -800,8 +800,59 @@
           "id": "nature",
           "title": "Природа и погода",
           "emoji": "🌦️",
-          "status": "coming-soon",
-          "lessons": []
+          "status": "available",
+          "lessons": [
+            {
+              "id": "nature-1",
+              "title": "Погода",
+              "newItems": [
+                "word:yeghanak",
+                "word:arev",
+                "word:andzrev",
+                "word:dzyun",
+                "word:amp",
+                "word:kami",
+                "word:shog",
+                "word:tsurt",
+                "phrase:inchpisi-yeghanak-e",
+                "phrase:aysor-shog-e",
+                "phrase:aysor-tsurt-e"
+              ]
+            },
+            {
+              "id": "nature-2",
+              "title": "Времена года",
+              "newItems": [
+                "word:dzmerr",
+                "word:garun",
+                "word:amarr",
+                "word:ashun",
+                "word:jerm",
+                "word:zov",
+                "phrase:andzrev-e-galis",
+                "phrase:dzyun-e-galis"
+              ]
+            },
+            {
+              "id": "nature-3",
+              "title": "Природа",
+              "newItems": [
+                "word:lerr",
+                "word:get",
+                "word:lich",
+                "word:tsov",
+                "word:antarr",
+                "word:dasht",
+                "word:tsarr",
+                "word:terev",
+                "word:tsaghik",
+                "word:yerkink",
+                "word:astgh",
+                "word:lusin",
+                "phrase:inch-geghetsik-tesaran"
+              ]
+            }
+          ]
         }
       ]
     },

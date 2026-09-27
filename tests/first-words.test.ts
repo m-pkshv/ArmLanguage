@@ -270,6 +270,18 @@ describe("gym theme", () => {
 describe("all available themes", () => {
   const available = content.course.sections.find((s) => s.id === "first-words")!.themes!.filter((t) => t.status === "available");
 
+  it("no two words of a theme share a picture (otherwise «Найди пары» is ambiguous)", () => {
+    for (const t of available) {
+      const seen = new Map<string, string>();
+      for (const id of themeItems(t).filter((x) => x.startsWith("word:"))) {
+        const file = studyItem(content, id).image?.file;
+        if (!file) continue;
+        expect(seen.get(file), `${t.id}: ${id} и ${seen.get(file)} — одна картинка`).toBeUndefined();
+        seen.set(file, id);
+      }
+    }
+  });
+
   it("every lesson fits into ~25 tasks and every item gets a task", () => {
     for (const t of available) {
       t.lessons.forEach((l, i) => {

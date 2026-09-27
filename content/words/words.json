@@ -15,7 +15,10 @@
       "nature"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "nature"
+    ]
   },
   {
     "id": "atorr",
@@ -690,7 +693,10 @@
       "nature"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "nature"
+    ]
   },
   {
     "id": "limon",
@@ -804,7 +810,10 @@
       "nature"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "nature"
+    ]
   },
   {
     "id": "tsarr",
@@ -822,7 +831,10 @@
       "nature"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "nature"
+    ]
   },
   {
     "id": "tsaghik",
@@ -840,7 +852,10 @@
       "nature"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "nature"
+    ]
   },
   {
     "id": "katu",
@@ -1731,7 +1746,10 @@
       "nature"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "nature"
+    ]
   },
   {
     "id": "ught",
@@ -1887,7 +1905,10 @@
       "nature"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "nature"
+    ]
   },
   {
     "id": "yerevan",
@@ -2670,7 +2691,10 @@
       "nature"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "nature"
+    ]
   },
   {
     "id": "guyn",
@@ -2730,7 +2754,10 @@
       "nature"
     ],
     "level": 2,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "nature"
+    ]
   },
   {
     "id": "hima",
@@ -2883,7 +2910,7 @@
     "exception": false,
     "ru": "тёплый",
     "image": {
-      "file": "img/words/arasaac-31845.webp",
+      "file": "img/words/arasaac-35597.webp",
       "source": "ARASAAC",
       "license": "CC BY-NC-SA 4.0",
       "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
@@ -2892,7 +2919,10 @@
       "nature"
     ],
     "level": 2,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "nature"
+    ]
   },
   {
     "id": "dzyun",
@@ -2910,7 +2940,10 @@
       "nature"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "nature"
+    ]
   },
   {
     "id": "lerr",
@@ -2928,7 +2961,10 @@
       "nature"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "nature"
+    ]
   },
   {
     "id": "dzerrk",
@@ -7115,6 +7151,300 @@
     ],
     "themes": [
       "describe"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "yeghanak",
+    "hy": "եղանակ",
+    "pronunciation": "йегханак",
+    "exception": false,
+    "ru": "погода",
+    "image": {
+      "file": "img/words/arasaac-7223.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "nature"
+    ],
+    "themes": [
+      "nature"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "andzrev",
+    "hy": "անձրև",
+    "pronunciation": "андзрев",
+    "exception": false,
+    "ru": "дождь",
+    "image": {
+      "file": "img/words/arasaac-3123.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "nature"
+    ],
+    "themes": [
+      "nature"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "amp",
+    "hy": "ամպ",
+    "pronunciation": "амп",
+    "exception": false,
+    "ru": "облако",
+    "image": {
+      "file": "img/words/arasaac-2883.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "nature"
+    ],
+    "themes": [
+      "nature"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "shog",
+    "hy": "շոգ",
+    "pronunciation": "шог",
+    "exception": false,
+    "ru": "жара; жарко",
+    "image": {
+      "file": "img/words/arasaac-31845.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "nature"
+    ],
+    "themes": [
+      "nature"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "astgh",
+    "hy": "աստղ",
+    "pronunciation": "астгх",
+    "exception": false,
+    "ru": "звезда",
+    "image": {
+      "file": "img/words/arasaac-4644.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "nature"
+    ],
+    "themes": [
+      "nature"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "yerkink",
+    "hy": "երկինք",
+    "pronunciation": "йеркинкх",
+    "exception": false,
+    "ru": "небо",
+    "image": {
+      "file": "img/words/arasaac-38270.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "nature"
+    ],
+    "themes": [
+      "nature"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "lich",
+    "hy": "լիճ",
+    "pronunciation": "лич",
+    "exception": false,
+    "ru": "озеро",
+    "image": {
+      "file": "img/words/arasaac-6022.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "nature"
+    ],
+    "themes": [
+      "nature"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "antarr",
+    "hy": "անտառ",
+    "pronunciation": "антарр",
+    "exception": false,
+    "ru": "лес",
+    "image": {
+      "file": "img/words/arasaac-2666.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "nature"
+    ],
+    "themes": [
+      "nature"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "dasht",
+    "hy": "դաշտ",
+    "pronunciation": "дашт",
+    "exception": false,
+    "ru": "поле",
+    "image": {
+      "file": "img/words/arasaac-2683.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "nature"
+    ],
+    "themes": [
+      "nature"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "terev",
+    "hy": "տերև",
+    "pronunciation": "терев",
+    "exception": false,
+    "ru": "лист (дерева)",
+    "image": {
+      "file": "img/words/arasaac-5077.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "nature"
+    ],
+    "themes": [
+      "nature"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "dzmerr",
+    "hy": "ձմեռ",
+    "pronunciation": "дзмерр",
+    "exception": false,
+    "ru": "зима",
+    "image": {
+      "file": "img/words/arasaac-5493.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "nature"
+    ],
+    "themes": [
+      "nature"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "garun",
+    "hy": "գարուն",
+    "pronunciation": "гарун",
+    "exception": false,
+    "ru": "весна",
+    "image": {
+      "file": "img/words/arasaac-5553.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "nature"
+    ],
+    "themes": [
+      "nature"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "amarr",
+    "hy": "ամառ",
+    "pronunciation": "амарр",
+    "exception": false,
+    "ru": "лето",
+    "image": {
+      "file": "img/words/arasaac-5604.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "nature"
+    ],
+    "themes": [
+      "nature"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "ashun",
+    "hy": "աշուն",
+    "pronunciation": "ашун",
+    "exception": false,
+    "ru": "осень",
+    "image": {
+      "file": "img/words/arasaac-5531.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "nature"
+    ],
+    "themes": [
+      "nature"
     ],
     "level": 2,
     "reviewed": false

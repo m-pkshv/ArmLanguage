@@ -1106,5 +1106,74 @@
     ],
     "situation": "Вам сообщили хорошую новость.",
     "reviewed": false
+  },
+  {
+    "id": "inchpisi-yeghanak-e",
+    "hy": "Այսօր ինչպիսի՞ եղանակ է։",
+    "pronunciation": "айсор инчписи йегханак э?",
+    "ru": "Какая сегодня погода?",
+    "themes": [
+      "nature"
+    ],
+    "situation": "Вы собираетесь на прогулку и спрашиваете друга о погоде.",
+    "reviewed": false
+  },
+  {
+    "id": "aysor-shog-e",
+    "hy": "Այսօր շոգ է։",
+    "pronunciation": "айсор шог э",
+    "ru": "Сегодня жарко.",
+    "themes": [
+      "nature"
+    ],
+    "situation": "Летом в Ереване +38 — вы говорите об этом другу.",
+    "reviewed": false
+  },
+  {
+    "id": "aysor-tsurt-e",
+    "hy": "Այսօր ցուրտ է։",
+    "pronunciation": "айсор цхурт э",
+    "ru": "Сегодня холодно.",
+    "themes": [
+      "nature"
+    ],
+    "situation": "Зимой вы выходите на улицу, и дует ледяной ветер.",
+    "reviewed": false
+  },
+  {
+    "id": "andzrev-e-galis",
+    "hy": "Անձրև է գալիս։",
+    "pronunciation": "андзрев э галис",
+    "ru": "Идёт дождь.",
+    "themes": [
+      "nature"
+    ],
+    "situation": "Вы смотрите в окно: на улице мокро, у людей зонты.",
+    "reviewed": false
+  },
+  {
+    "id": "dzyun-e-galis",
+    "hy": "Ձյուն է գալիս։",
+    "pronunciation": "дзйун э галис",
+    "ru": "Идёт снег.",
+    "themes": [
+      "nature"
+    ],
+    "situation": "Всё за окном стало белым, с неба падают хлопья.",
+    "reviewed": false
+  },
+  {
+    "id": "inch-geghetsik-tesaran",
+    "hy": "Ի՜նչ գեղեցիկ տեսարան է։",
+    "pronunciation": "инчх гегхецик тесаран э",
+    "ru": "Какой красивый вид!",
+    "themes": [
+      "nature"
+    ],
+    "situation": "Вы поднялись на гору и видите Арарат.",
+    "reviewed": false,
+    "alsoFits": [
+      "shat-geghetsik-e"
+    ]
   }
 ]
