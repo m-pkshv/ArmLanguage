@@ -511,8 +511,57 @@
           "id": "city",
           "title": "Город и транспорт",
           "emoji": "🚌",
-          "status": "coming-soon",
-          "lessons": []
+          "status": "available",
+          "lessons": [
+            {
+              "id": "city-1",
+              "title": "Город",
+              "newItems": [
+                "word:kaghak",
+                "word:yerevan",
+                "word:poghots",
+                "word:khanut",
+                "word:shuka",
+                "word:aygi",
+                "word:bank",
+                "word:deghatun",
+                "phrase:herru-e"
+              ]
+            },
+            {
+              "id": "city-2",
+              "title": "Транспорт",
+              "newItems": [
+                "word:avtobus",
+                "word:taksi",
+                "word:metro",
+                "word:mekena",
+                "word:kangarr",
+                "word:kayaran",
+                "word:odanavakayan",
+                "word:inknatirr",
+                "phrase:vortegh-e-kangarry",
+                "phrase:aystegh-kangnek",
+                "phrase:kentron-inchkan-e"
+              ]
+            },
+            {
+              "id": "city-3",
+              "title": "Дорога",
+              "newItems": [
+                "word:aj",
+                "word:dzakh",
+                "word:ughigh",
+                "word:mot",
+                "word:herru",
+                "word:chanaparh",
+                "word:kartez",
+                "phrase:inchpes-gnam-metro",
+                "phrase:ughigh-gnatsek",
+                "phrase:yes-molorvel-em"
+              ]
+            }
+          ]
         },
         {
           "id": "time",

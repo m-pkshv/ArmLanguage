@@ -618,7 +618,10 @@
       "transport"
     ],
     "level": 2,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "city"
+    ]
   },
   {
     "id": "dzi",
@@ -1050,7 +1053,10 @@
       "places"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "city"
+    ]
   },
   {
     "id": "muk",
@@ -1861,7 +1867,10 @@
       "places"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "city"
+    ]
   },
   {
     "id": "odz",
@@ -2893,7 +2902,10 @@
       "places"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "city"
+    ]
   },
   {
     "id": "yev",
@@ -5190,6 +5202,400 @@
     ],
     "themes": [
       "home"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "poghots",
+    "hy": "փողոց",
+    "pronunciation": "пхогхоцх",
+    "exception": false,
+    "ru": "улица",
+    "image": {
+      "file": "img/words/arasaac-2299.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "places"
+    ],
+    "themes": [
+      "city"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "avtobus",
+    "hy": "ավտոբուս",
+    "pronunciation": "автобус",
+    "exception": false,
+    "ru": "автобус",
+    "image": {
+      "file": "img/words/arasaac-2262.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "places"
+    ],
+    "themes": [
+      "city"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "taksi",
+    "hy": "տաքսի",
+    "pronunciation": "такхси",
+    "exception": false,
+    "ru": "такси",
+    "image": {
+      "file": "img/words/arasaac-2580.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "places"
+    ],
+    "themes": [
+      "city"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "metro",
+    "hy": "մետրո",
+    "pronunciation": "метро",
+    "exception": false,
+    "ru": "метро",
+    "image": {
+      "file": "img/words/arasaac-26925.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "places"
+    ],
+    "themes": [
+      "city"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "mekena",
+    "hy": "մեքենա",
+    "pronunciation": "мекхена",
+    "exception": false,
+    "ru": "машина",
+    "image": {
+      "file": "img/words/arasaac-2339.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "places"
+    ],
+    "themes": [
+      "city"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "kangarr",
+    "hy": "կանգառ",
+    "pronunciation": "кангарр",
+    "exception": false,
+    "ru": "остановка",
+    "image": {
+      "file": "img/words/arasaac-2499.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "places"
+    ],
+    "themes": [
+      "city"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "khanut",
+    "hy": "խանութ",
+    "pronunciation": "ханутх",
+    "exception": false,
+    "ru": "магазин",
+    "image": {
+      "file": "img/words/arasaac-35695.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "places"
+    ],
+    "themes": [
+      "city"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "deghatun",
+    "hy": "դեղատուն",
+    "pronunciation": "дегхатун",
+    "exception": false,
+    "ru": "аптека",
+    "image": {
+      "file": "img/words/arasaac-6497.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "places"
+    ],
+    "themes": [
+      "city"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "bank",
+    "hy": "բանկ",
+    "pronunciation": "банк",
+    "exception": false,
+    "ru": "банк",
+    "image": {
+      "file": "img/words/arasaac-3062.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "places"
+    ],
+    "themes": [
+      "city"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "kayaran",
+    "hy": "կայարան",
+    "pronunciation": "кайаран",
+    "exception": false,
+    "ru": "вокзал",
+    "image": {
+      "file": "img/words/arasaac-3099.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "places"
+    ],
+    "themes": [
+      "city"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "odanavakayan",
+    "hy": "օդանավակայան",
+    "pronunciation": "оданавакайан",
+    "exception": false,
+    "ru": "аэропорт",
+    "image": {
+      "file": "img/words/arasaac-6031.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "places"
+    ],
+    "themes": [
+      "city"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "shuka",
+    "hy": "շուկա",
+    "pronunciation": "шука",
+    "exception": false,
+    "ru": "рынок",
+    "image": {
+      "file": "img/words/arasaac-32942.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "places"
+    ],
+    "themes": [
+      "city"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "aygi",
+    "hy": "այգի",
+    "pronunciation": "айги",
+    "exception": false,
+    "ru": "парк; сад",
+    "image": {
+      "file": "img/words/arasaac-30609.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "places"
+    ],
+    "themes": [
+      "city"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "aj",
+    "hy": "աջ",
+    "pronunciation": "адж",
+    "exception": false,
+    "ru": "направо; правый",
+    "image": {
+      "file": "img/words/arasaac-9202.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "places"
+    ],
+    "themes": [
+      "city"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "dzakh",
+    "hy": "ձախ",
+    "pronunciation": "дзах",
+    "exception": false,
+    "ru": "налево; левый",
+    "image": {
+      "file": "img/words/arasaac-9203.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "places"
+    ],
+    "themes": [
+      "city"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "ughigh",
+    "hy": "ուղիղ",
+    "pronunciation": "угхигх",
+    "exception": false,
+    "ru": "прямо",
+    "image": null,
+    "tags": [
+      "places"
+    ],
+    "themes": [
+      "city"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "mot",
+    "hy": "մոտ",
+    "pronunciation": "мот",
+    "exception": false,
+    "ru": "близко",
+    "image": {
+      "file": "img/words/arasaac-36758.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "places"
+    ],
+    "themes": [
+      "city"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "herru",
+    "hy": "հեռու",
+    "pronunciation": "херру",
+    "exception": false,
+    "ru": "далеко",
+    "image": {
+      "file": "img/words/arasaac-36759.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "places"
+    ],
+    "themes": [
+      "city"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "kartez",
+    "hy": "քարտեզ",
+    "pronunciation": "кхартез",
+    "exception": false,
+    "ru": "карта",
+    "image": {
+      "file": "img/words/arasaac-5505.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "places"
+    ],
+    "themes": [
+      "city"
     ],
     "level": 2,
     "reviewed": false
