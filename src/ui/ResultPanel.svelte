@@ -55,9 +55,8 @@
     position: fixed;
     inset: auto 0 0 0;
     z-index: 15;
-    padding: 16px 16px calc(16px + env(safe-area-inset-bottom));
-    border-top: 3px solid;
-    border-radius: 20px 20px 0 0;
+    padding: 20px 20px calc(20px + env(safe-area-inset-bottom));
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
     box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.18);
     animation: up 0.2s ease-out;
   }
@@ -70,33 +69,39 @@
       transform: translateY(100%);
     }
   }
+  /* Цвет статуса — в --st; значок — залитый кружок с ✓ ≈ ✗ цветом --on-status (docs/11-design.md) */
   .correct {
-    border-color: var(--good);
+    --st: var(--good);
     background: var(--good-soft);
   }
   .partial {
-    border-color: var(--warn);
+    --st: var(--warn);
     background: var(--warn-soft);
   }
   .wrong {
-    border-color: var(--bad);
+    --st: var(--bad);
     background: var(--bad-soft);
   }
   .title {
     display: flex;
-    gap: 8px;
-    margin: 0 0 6px;
-    font-size: 18px;
-    font-weight: 600;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 8px;
+    color: var(--st);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
   }
-  .correct .icon {
-    color: var(--good);
-  }
-  .partial .icon {
-    color: var(--warn);
-  }
-  .wrong .icon {
-    color: var(--bad);
+  .icon {
+    display: grid;
+    flex: none;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--st);
+    color: var(--on-status);
+    font-size: 17px;
   }
   .line {
     margin: 0 0 4px;
@@ -119,16 +124,15 @@
   }
   .next {
     width: 100%;
-    min-height: 54px;
+    min-height: 56px;
     border: 0;
     border-radius: var(--radius);
-    background: var(--text);
-    color: var(--bg);
+    background: var(--accent);
+    color: var(--accent-text);
     font-size: 17px;
     font-weight: 600;
   }
-  .correct .next {
-    background: var(--good);
-    color: var(--bg);
+  .next:active {
+    background: var(--accent-pressed);
   }
 </style>

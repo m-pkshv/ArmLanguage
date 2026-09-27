@@ -3,12 +3,14 @@
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import sharp from "sharp";
 
-const BG = "#c2410c";
+// Цвета темы по умолчанию «Матенадаран» (docs/11-design.md): «чернильный» фон и светлая «бумажная» буква.
+const BG = "#1f1f24";
+const FG = "#fafaf7";
 const src = readFileSync("public/img/handwriting/ayb-upper.svg", "utf8");
 const ink = src.match(/<g class="ink"[^>]*>(.*?)<\/g>/s)[1];
 const GLYPH = { x: 55, y: 40, w: 210, h: 290 }; // рамка буквы в координатах исходного файла
 
-/** SVG 512×512: фон (скруглённый или во весь квадрат) и белая буква высотой glyphH. */
+/** SVG 512×512: фон (скруглённый или во весь квадрат) и светлая буква высотой glyphH. */
 function svg({ rounded, glyphH }) {
   const w = (GLYPH.w / GLYPH.h) * glyphH;
   const x = (512 - w) / 2;
@@ -17,7 +19,7 @@ function svg({ rounded, glyphH }) {
   return (
     `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">${bg}` +
     `<svg x="${x}" y="${y}" width="${w}" height="${glyphH}" viewBox="${GLYPH.x} ${GLYPH.y} ${GLYPH.w} ${GLYPH.h}">` +
-    `<g fill="none" stroke="#fff" stroke-width="18" stroke-linecap="round" stroke-linejoin="round">${ink}</g></svg></svg>`
+    `<g fill="none" stroke="${FG}" stroke-width="18" stroke-linecap="round" stroke-linejoin="round">${ink}</g></svg></svg>`
   );
 }
 

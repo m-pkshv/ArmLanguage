@@ -66,11 +66,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 64px;
+    min-height: 72px;
     padding: 8px;
     border: 2px solid var(--line);
     border-radius: var(--radius);
     background: var(--surface);
+    box-shadow: var(--shadow);
     font-size: 22px;
     font-weight: 500;
     transition:
@@ -100,17 +101,27 @@
   }
   .dim {
     opacity: 0.45;
+    box-shadow: none;
   }
+  /* Значок — залитый кружок цвета статуса со знаком цветом --on-status (docs/11-design.md) */
   .mark {
     position: absolute;
-    top: 4px;
+    top: 8px;
     right: 8px;
-    font-size: 16px;
+    display: grid;
+    place-items: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    color: var(--on-status);
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1;
   }
   .right .mark {
-    color: var(--good);
+    background: var(--good);
   }
   .wrong .mark {
-    color: var(--bad);
+    background: var(--bad);
   }
 </style>

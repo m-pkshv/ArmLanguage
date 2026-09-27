@@ -65,4 +65,15 @@
     font: inherit;
     font-weight: 600;
   }
+  /* Главная кнопка: нажата и неактивна — явными цветами, без прозрачности (docs/11-design.md) */
+  .btn:active:not(:disabled) {
+    border-color: var(--accent-pressed);
+    background: var(--accent-pressed);
+  }
+  .btn:disabled {
+    border-color: transparent;
+    background: var(--surface-2);
+    color: var(--muted);
+    opacity: 1;
+  }
 </style>

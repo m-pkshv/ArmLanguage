@@ -1,0 +1,303 @@
+/* Цветовые темы (палитры): «Матенадаран» (ink, по умолчанию), «Севан» (sevan), «Хвоя на бумаге» (pine).
+   Палитра — атрибут data-palette на <html>, светлый/тёмный вид — data-theme (docs/05-ui-mobile.md, 5.5;
+   цвета и правила — docs/11-design.md).
+   В каждой палитре три блока: светлый, тёмный по выбору (data-theme="dark") и тёмный по системе
+   (@media) — последние два совпадают строка в строку. Новая переменная добавляется во все девять блоков
+   (это проверяет тест src/app/palettes.test.ts).
+   Сверх описания: --lvl-5-text — текст на 5-м уровне карты алфавита (в светлом виде — обычный текст,
+   в тёмном — --lvl-text-strong, как требует описание).
+   Порядок блоков важен: блоки «Севана» и «Хвои» идут после блоков «Матенадарана» и перекрывают их. */
+
+/* ── «Матенадаран» (ink) — почти монохром, по умолчанию ── */
+:root {
+  --bg: #f6f5f2;
+  --surface: #ffffff;
+  --surface-2: #eeede9;
+  --text: #19191c;
+  --muted: #5a5a61;
+  --line: #e2e1dc;
+  --accent: #1f1f24;
+  --accent-text: #fafaf7;
+  --accent-soft: #e9e8e3;
+  --accent-pressed: #3a3a42;
+  --good: #15803d;
+  --good-soft: #dcfce7;
+  --warn: #855a00;
+  --warn-soft: #fbefc5;
+  --bad: #b0263e;
+  --bad-soft: #fde3e6;
+  --on-status: #ffffff;
+  --plate: #ffffff;
+  --lvl-1: #dcfce7;
+  --lvl-2: #bbf7d0;
+  --lvl-3: #86efac;
+  --lvl-4: #4ade80;
+  --lvl-5: #16a34a;
+  --lvl-6: #15803d;
+  --lvl-text-strong: #ffffff;
+  --lvl-5-text: #19191c;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 4px 12px rgba(0, 0, 0, 0.05);
+  --radius: 10px;
+  --radius-lg: 16px;
+  --font-head: var(--font-ui);
+  --link-decoration: underline; /* акцент почти совпадает с текстом — ссылки подчёркнуты */
+  color-scheme: light;
+}
+:root[data-theme="dark"] {
+  --bg: #101012;
+  --surface: #19191c;
+  --surface-2: #222226;
+  --text: #ececee;
+  --muted: #9d9da6;
+  --line: #2d2d32;
+  --accent: #ececee;
+  --accent-text: #111113;
+  --accent-soft: #2a2a30;
+  --accent-pressed: #d4d4d8;
+  --good: #4ade80;
+  --good-soft: #14301d;
+  --warn: #facc15;
+  --warn-soft: #352c0c;
+  --bad: #f87171;
+  --bad-soft: #3b1717;
+  --on-status: #101012;
+  --plate: #ffffff;
+  --lvl-1: #14301d;
+  --lvl-2: #1a4428;
+  --lvl-3: #1f5c34;
+  --lvl-4: #24703d;
+  --lvl-5: #34a85a;
+  --lvl-6: #4ade80;
+  --lvl-text-strong: #101012;
+  --lvl-5-text: #101012;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.5), 0 6px 18px rgba(0, 0, 0, 0.35);
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #101012;
+    --surface: #19191c;
+    --surface-2: #222226;
+    --text: #ececee;
+    --muted: #9d9da6;
+    --line: #2d2d32;
+    --accent: #ececee;
+    --accent-text: #111113;
+    --accent-soft: #2a2a30;
+    --accent-pressed: #d4d4d8;
+    --good: #4ade80;
+    --good-soft: #14301d;
+    --warn: #facc15;
+    --warn-soft: #352c0c;
+    --bad: #f87171;
+    --bad-soft: #3b1717;
+    --on-status: #101012;
+    --plate: #ffffff;
+    --lvl-1: #14301d;
+    --lvl-2: #1a4428;
+    --lvl-3: #1f5c34;
+    --lvl-4: #24703d;
+    --lvl-5: #34a85a;
+    --lvl-6: #4ade80;
+    --lvl-text-strong: #101012;
+    --lvl-5-text: #101012;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.5), 0 6px 18px rgba(0, 0, 0, 0.35);
+    color-scheme: dark;
+  }
+}
+
+/* ── «Севан» (sevan) — синий для действий, зелёный для успеха ── */
+:root[data-palette="sevan"] {
+  --bg: #f3f6f7;
+  --surface: #ffffff;
+  --surface-2: #e9eff2;
+  --text: #14212b;
+  --muted: #526170;
+  --line: #d9e2e8;
+  --accent: #1d5fa6;
+  --accent-text: #ffffff;
+  --accent-soft: #e2edf8;
+  --accent-pressed: #184f8b;
+  --good: #15803d;
+  --good-soft: #dcfce7;
+  --warn: #855a00;
+  --warn-soft: #fbefc5;
+  --bad: #b42318;
+  --bad-soft: #fde4e1;
+  --on-status: #ffffff;
+  --plate: #ffffff;
+  --lvl-1: #dcfce7;
+  --lvl-2: #bbf7d0;
+  --lvl-3: #86efac;
+  --lvl-4: #4ade80;
+  --lvl-5: #16a34a;
+  --lvl-6: #15803d;
+  --lvl-text-strong: #ffffff;
+  --lvl-5-text: #14212b;
+  --shadow: 0 1px 2px rgba(20, 40, 60, 0.06), 0 6px 16px rgba(20, 40, 60, 0.06);
+  --radius: 12px;
+  --radius-lg: 18px;
+  --font-head: var(--font-ui);
+  --link-decoration: none;
+  color-scheme: light;
+}
+:root[data-palette="sevan"][data-theme="dark"] {
+  --bg: #0e1519;
+  --surface: #162027;
+  --surface-2: #1e2a32;
+  --text: #e5edf2;
+  --muted: #97a7b3;
+  --line: #2a3842;
+  --accent: #7db3f0;
+  --accent-text: #0a1a2b;
+  --accent-soft: #172c44;
+  --accent-pressed: #6aa3e3;
+  --good: #4ade80;
+  --good-soft: #14301d;
+  --warn: #facc15;
+  --warn-soft: #352c0c;
+  --bad: #f87171;
+  --bad-soft: #3b1717;
+  --on-status: #0e1519;
+  --plate: #ffffff;
+  --lvl-1: #14301d;
+  --lvl-2: #1a4428;
+  --lvl-3: #1f5c34;
+  --lvl-4: #24703d;
+  --lvl-5: #34a85a;
+  --lvl-6: #4ade80;
+  --lvl-text-strong: #0e1519;
+  --lvl-5-text: #0e1519;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 6px 18px rgba(0, 0, 0, 0.3);
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root[data-palette="sevan"]:not([data-theme="light"]) {
+    --bg: #0e1519;
+    --surface: #162027;
+    --surface-2: #1e2a32;
+    --text: #e5edf2;
+    --muted: #97a7b3;
+    --line: #2a3842;
+    --accent: #7db3f0;
+    --accent-text: #0a1a2b;
+    --accent-soft: #172c44;
+    --accent-pressed: #6aa3e3;
+    --good: #4ade80;
+    --good-soft: #14301d;
+    --warn: #facc15;
+    --warn-soft: #352c0c;
+    --bad: #f87171;
+    --bad-soft: #3b1717;
+    --on-status: #0e1519;
+    --plate: #ffffff;
+    --lvl-1: #14301d;
+    --lvl-2: #1a4428;
+    --lvl-3: #1f5c34;
+    --lvl-4: #24703d;
+    --lvl-5: #34a85a;
+    --lvl-6: #4ade80;
+    --lvl-text-strong: #0e1519;
+    --lvl-5-text: #0e1519;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 6px 18px rgba(0, 0, 0, 0.3);
+    color-scheme: dark;
+  }
+}
+
+/* ── «Хвоя на бумаге» (pine) — песочная бумага, хвойная зелень, заголовки Lora ── */
+:root[data-palette="pine"] {
+  --bg: #f5f0e6;
+  --surface: #fffcf5;
+  --surface-2: #ede5d6;
+  --text: #26221c;
+  --muted: #665c4f;
+  --line: #e0d5c2;
+  --accent: #1f5a3d;
+  --accent-text: #ffffff;
+  --accent-soft: #e6eadf;
+  --accent-pressed: #174a31;
+  --good: #15803d;
+  --good-soft: #dcfce7;
+  --warn: #855a00;
+  --warn-soft: #fbefc5;
+  --bad: #b42318;
+  --bad-soft: #fde4e1;
+  --on-status: #ffffff;
+  --plate: #ffffff;
+  --lvl-1: #dcfce7;
+  --lvl-2: #bbf7d0;
+  --lvl-3: #86efac;
+  --lvl-4: #4ade80;
+  --lvl-5: #16a34a;
+  --lvl-6: #15803d;
+  --lvl-text-strong: #ffffff;
+  --lvl-5-text: #26221c;
+  --shadow: 0 1px 2px rgba(60, 45, 20, 0.06), 0 6px 16px rgba(60, 45, 20, 0.07);
+  --radius: 14px;
+  --radius-lg: 22px;
+  --font-head: "Lora", Georgia, serif;
+  --link-decoration: none;
+  color-scheme: light;
+}
+:root[data-palette="pine"][data-theme="dark"] {
+  --bg: #191712;
+  --surface: #221f19;
+  --surface-2: #2c2820;
+  --text: #efe7d8;
+  --muted: #a99d8a;
+  --line: #3a3429;
+  --accent: #8cc7a1;
+  --accent-text: #10241a;
+  --accent-soft: #263029;
+  --accent-pressed: #7ab790;
+  --good: #4ade80;
+  --good-soft: #14301d;
+  --warn: #f2c94c;
+  --warn-soft: #3a2f10;
+  --bad: #f47a6e;
+  --bad-soft: #3d1b17;
+  --on-status: #191712;
+  --plate: #ffffff;
+  --lvl-1: #14301d;
+  --lvl-2: #1a4428;
+  --lvl-3: #1f5c34;
+  --lvl-4: #24703d;
+  --lvl-5: #34a85a;
+  --lvl-6: #4ade80;
+  --lvl-text-strong: #191712;
+  --lvl-5-text: #191712;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 6px 18px rgba(0, 0, 0, 0.3);
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root[data-palette="pine"]:not([data-theme="light"]) {
+    --bg: #191712;
+    --surface: #221f19;
+    --surface-2: #2c2820;
+    --text: #efe7d8;
+    --muted: #a99d8a;
+    --line: #3a3429;
+    --accent: #8cc7a1;
+    --accent-text: #10241a;
+    --accent-soft: #263029;
+    --accent-pressed: #7ab790;
+    --good: #4ade80;
+    --good-soft: #14301d;
+    --warn: #f2c94c;
+    --warn-soft: #3a2f10;
+    --bad: #f47a6e;
+    --bad-soft: #3d1b17;
+    --on-status: #191712;
+    --plate: #ffffff;
+    --lvl-1: #14301d;
+    --lvl-2: #1a4428;
+    --lvl-3: #1f5c34;
+    --lvl-4: #24703d;
+    --lvl-5: #34a85a;
+    --lvl-6: #4ade80;
+    --lvl-text-strong: #191712;
+    --lvl-5-text: #191712;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 6px 18px rgba(0, 0, 0, 0.3);
+    color-scheme: dark;
+  }
+}

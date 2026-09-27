@@ -215,14 +215,14 @@ interface CheckResult {
 ```jsonc
 // localStorage["hy:progress"]
 {
-  "schemaVersion": 5,
+  "schemaVersion": 6,
   "items": {
     "letter:tho#recognize": { "box": 3, "due": "2026-10-02", "ok": 9, "bad": 2, "last": "2026-09-25" }
   },
   "lessons": { "alphabet-1": { "completedAt": "2026-09-25" } },
   "confusions": { "letter:tho>letter:tyun": 4 },
   "daily": { "2026-09-25": { "answers": 42, "correct": 37 } },
-  "settings": { "theme": "system", "strictness": "soft", "script": "print" },
+  "settings": { "theme": "system", "palette": "ink", "strictness": "soft", "script": "print" },  // palette — цветовая тема (v6)
   "session": null,           // незаконченное занятие (v2)
   "finalTest": null,         // лучший результат итогового теста (v2)
   "games": { "sound": { "bestMs": 12400, "at": "2026-09-27" } },  // рекорды «Найди пары» (v3)

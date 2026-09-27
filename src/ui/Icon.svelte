@@ -1,6 +1,6 @@
 <script lang="ts">
   // Простые линейные иконки (24×24), цвет наследуется от текста.
-  export type IconName = "learn" | "alphabet" | "practice" | "profile" | "back" | "chevron" | "warning";
+  export type IconName = "learn" | "alphabet" | "practice" | "profile" | "back" | "chevron" | "warning" | "check";
 
   let { name, size = 24 }: { name: IconName; size?: number } = $props();
 
@@ -12,6 +12,7 @@
     back: "M15 5l-7 7 7 7",
     chevron: "M9 5l7 7-7 7",
     warning: "M12 4 2.5 20h19L12 4Zm0 6v4m0 3h.01",
+    check: "M5 12.5l4.5 4.5L19 7",
   };
 </script>
 

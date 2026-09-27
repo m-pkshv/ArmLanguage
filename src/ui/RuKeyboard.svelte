@@ -147,7 +147,7 @@
     border: 0;
     border-radius: 8px;
     background: var(--surface);
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.18);
+    box-shadow: 0 1px 0 var(--line);
     font-size: 20px;
   }
   .simple .key {
@@ -157,8 +157,11 @@
   }
   .key:active {
     background: var(--accent-soft);
+    box-shadow: none;
   }
+  /* служебная клавиша — фон цвета линий (docs/11-design.md, «Состояния компонентов») */
   .erase {
+    background: var(--line);
     flex-grow: 1.4;
     max-width: 64px;
     font-size: 18px;
@@ -168,5 +171,16 @@
       margin: 0;
       border-radius: var(--radius-lg);
     }
+  }
+  /* Главная кнопка: нажата и неактивна — явными цветами, без прозрачности (docs/11-design.md) */
+  .btn.primary:active:not(:disabled) {
+    border-color: var(--accent-pressed);
+    background: var(--accent-pressed);
+  }
+  .btn.primary:disabled {
+    border-color: transparent;
+    background: var(--surface-2);
+    color: var(--muted);
+    opacity: 1;
   }
 </style>

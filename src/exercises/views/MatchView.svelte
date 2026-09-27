@@ -178,6 +178,7 @@
   .card.ok {
     border-color: var(--good);
     background: var(--good-soft);
+    box-shadow: none;
     opacity: 0.35;
   }
   .done {

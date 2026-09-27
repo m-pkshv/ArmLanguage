@@ -9,7 +9,10 @@ export interface Release {
   items: string[];
 }
 
-export const RELEASES: Release[] = [{ version: "1.0", key: "r1_0", items: ["words", "continue", "review", "mine"] }];
+export const RELEASES: Release[] = [
+  { version: "1.0", key: "r1_0", items: ["words", "continue", "review", "mine"] },
+  { version: "1.1", key: "r1_1", items: ["palettes", "choose", "themes"] },
+];
 
 /** «1.0.0» → «1.0», «1.2.3» → «1.2.3». */
 export const shortVersion = (v: string): string => v.replace(/^(\d+\.\d+)\.0$/, "$1");

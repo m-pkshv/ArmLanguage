@@ -50,8 +50,12 @@
     border: 2px solid transparent;
     border-radius: 10px;
     background: var(--surface);
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.18);
+    box-shadow: 0 1px 0 var(--line);
     font-size: calc(24px * var(--glyph-scale));
+  }
+  .key:not(:disabled):active {
+    background: var(--accent-soft);
+    box-shadow: none;
   }
   .key:disabled {
     cursor: default;

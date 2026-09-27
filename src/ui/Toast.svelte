@@ -37,7 +37,7 @@
   }
   .error {
     background: var(--bad);
-    color: #fff;
+    color: var(--on-status);
   }
   @media (min-width: 1024px) {
     .toast {

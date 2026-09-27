@@ -51,6 +51,19 @@ describe("migrate", () => {
     expect(migrate({ schemaVersion: 3, games }, NOW).games).toEqual({ sound: { bestMs: 14000, at: "2026-09-27" } });
   });
 
+  it("migrates v5 data to the default color theme, keeping other settings", () => {
+    const data = migrate({ schemaVersion: 5, settings: { theme: "dark", letterSize: "large" } }, NOW);
+    expect(data.settings).toEqual({ ...DEFAULT_SETTINGS, theme: "dark", letterSize: "large", palette: "ink" });
+    // v5 без настроек вовсе — тоже тема по умолчанию
+    expect(migrate({ schemaVersion: 5 }, NOW).settings.palette).toBe("ink");
+  });
+
+  it("keeps a chosen color theme and drops unknown ones", () => {
+    expect(migrate({ schemaVersion: 6, settings: { palette: "pine" } }, NOW).settings.palette).toBe("pine");
+    expect(migrate({ schemaVersion: 6, settings: { palette: "sevan" } }, NOW).settings.palette).toBe("sevan");
+    expect(migrate({ schemaVersion: 6, settings: { palette: "apricot" } }, NOW).settings.palette).toBe("ink");
+  });
+
   it("rejects data from a newer app version", () => {
     try {
       migrate({ schemaVersion: SCHEMA_VERSION + 1 }, NOW);

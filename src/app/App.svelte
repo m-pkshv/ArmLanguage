@@ -29,6 +29,7 @@
   import { trackScreen } from "../platform/analytics";
   import { app } from "./state.svelte";
   import { isFirstRun } from "../session/next";
+  import { themeColor } from "./palettes";
   import { releaseToShow, SEEN_KEY, shortVersion } from "./whatsNew";
   import WhatsNew from "./screens/WhatsNew.svelte";
 
@@ -60,13 +61,19 @@
   // Статистика экранов — только название экрана, без id букв и уроков.
   $effect(() => trackScreen(route.name));
 
-  // Тема и размер букв применяются к <html>, чтобы работали CSS-переменные (src/styles/global.css).
+  // Цветовая тема, светлый/тёмный вид и размер букв применяются к <html>, чтобы работали CSS-переменные
+  // (src/styles/palettes.css, global.css). Цвет панели браузера — фон темы (docs/05-ui-mobile.md, 5.5).
   $effect(() => {
     const root = document.documentElement;
-    const { theme, letterSize } = app.progress.settings;
+    const { theme, palette, letterSize } = app.progress.settings;
     if (theme === "system") delete root.dataset.theme;
     else root.dataset.theme = theme;
+    root.dataset.palette = palette;
     root.dataset.letterSize = letterSize;
+    for (const meta of document.querySelectorAll<HTMLMetaElement>('meta[name="theme-color"]')) {
+      const dark = theme === "system" ? meta.media.includes("dark") : theme === "dark";
+      meta.content = themeColor(palette, dark);
+    }
   });
 </script>
 
@@ -158,7 +165,7 @@
     margin-bottom: 16px;
     padding: 12px 14px;
     border-radius: var(--radius);
-    background: var(--warn-soft);
+    background: var(--accent-soft); /* янтарный (--warn) означает только «почти» — docs/11-design.md */
     color: var(--text);
     font-size: 14px;
   }
@@ -178,6 +185,17 @@
   }
   .banner :global(svg) {
     flex: none;
-    color: var(--warn);
+    color: var(--bad);
+  }
+  /* Главная кнопка: нажата и неактивна — явными цветами, без прозрачности (docs/11-design.md) */
+  .update button:active:not(:disabled) {
+    border-color: var(--accent-pressed);
+    background: var(--accent-pressed);
+  }
+  .update button:disabled {
+    border-color: transparent;
+    background: var(--surface-2);
+    color: var(--muted);
+    opacity: 1;
   }
 </style>

@@ -52,6 +52,15 @@ export function letterLevel(p: ProgressData, letterId: string, view: MapView): n
   return itemOf(p, letterId, skill) ? boxOf(p, letterId, skill) : null;
 }
 
+/**
+ * Уровень клетки карты алфавита 1–6 (цвета --lvl-1…6, docs/11-design.md) по уровню знания 0–5
+ * (он бывает дробным — среднее двух навыков); null — буква ещё не встречалась.
+ */
+export function mapLevel(level: number | null): number | null {
+  if (level === null) return null;
+  return Math.min(6, Math.max(1, Math.floor(level) + 1));
+}
+
 export interface ConfusionPair {
   a: string;
   b: string;

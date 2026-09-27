@@ -44,4 +44,15 @@
     font-weight: 600;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
   }
+  /* Главная кнопка: нажата и неактивна — явными цветами, без прозрачности (docs/11-design.md) */
+  .next:active:not(:disabled) {
+    border-color: var(--accent-pressed);
+    background: var(--accent-pressed);
+  }
+  .next:disabled {
+    border-color: transparent;
+    background: var(--surface-2);
+    color: var(--muted);
+    opacity: 1;
+  }
 </style>

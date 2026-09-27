@@ -97,8 +97,8 @@
   }
   .chip.on {
     border-color: var(--accent);
-    background: var(--accent-soft);
-    color: var(--accent);
+    background: var(--accent);
+    color: var(--accent-text);
     font-weight: 600;
   }
   .small {

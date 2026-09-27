@@ -217,7 +217,7 @@
     margin-bottom: 16px;
     padding: 12px 14px;
     border-radius: var(--radius);
-    background: var(--warn-soft);
+    background: var(--accent-soft);
     color: var(--text);
     font-size: 14px;
     text-decoration: none;
@@ -320,5 +320,16 @@
   }
   .soon {
     color: var(--muted);
+  }
+  /* Главная кнопка: нажата и неактивна — явными цветами, без прозрачности (docs/11-design.md) */
+  .primary:active:not(:disabled) {
+    border-color: var(--accent-pressed);
+    background: var(--accent-pressed);
+  }
+  .primary:disabled {
+    border-color: transparent;
+    background: var(--surface-2);
+    color: var(--muted);
+    opacity: 1;
   }
 </style>

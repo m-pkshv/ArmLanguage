@@ -1,7 +1,7 @@
 <script lang="ts">
   import { content, LETTERS, letterById } from "../../core/content";
   import type { ExerciseId } from "../../core/session/types";
-  import { activity, letterLevel, summary, topConfusions, type MapView } from "../../core/stats";
+  import { activity, letterLevel, mapLevel, summary, topConfusions, type MapView } from "../../core/stats";
   import { t } from "../../i18n";
   import Card from "../../ui/Card.svelte";
   import ScreenHeader from "../../ui/ScreenHeader.svelte";
@@ -53,13 +53,12 @@
   </div>
   <div class="map">
     {#each LETTERS as letter (letter.id)}
-      {@const level = letterLevel(app.progress, letter.id, view)}
+      {@const level = mapLevel(letterLevel(app.progress, letter.id, view))}
       <a
         class="cell hy"
         lang="hy"
         class:new={level === null}
-        class:strong={level !== null && level >= 3}
-        style:--mix="{level === null ? 0 : 18 + level * 15}%"
+        data-lvl={level}
         href={hrefOf({ name: "letter", id: letter.id })}
         aria-label={letter.name.ru}>{letter.upper === letter.lower || letter.id === "yev" ? letter.lower : letter.upper}</a
       >
@@ -67,8 +66,8 @@
   </div>
   <div class="legend">
     <span><i class="cell new"></i>{t("stats.legendNew")}</span>
-    <span><i class="cell" style:--mix="33%"></i>{t("stats.legendStarted")}</span>
-    <span><i class="cell strong" style:--mix="93%"></i>{t("stats.legendLearned")}</span>
+    <span><i class="cell" data-lvl="2"></i>{t("stats.legendStarted")}</span>
+    <span><i class="cell" data-lvl="6"></i>{t("stats.legendLearned")}</span>
   </div>
 </Card>
 
@@ -146,8 +145,8 @@
   }
   .chip.on {
     border-color: var(--accent);
-    background: var(--accent-soft);
-    color: var(--accent);
+    background: var(--accent);
+    color: var(--accent-text);
     font-weight: 600;
   }
   .map {
@@ -161,17 +160,35 @@
     justify-content: center;
     aspect-ratio: 1;
     border-radius: 8px;
-    background: color-mix(in srgb, var(--good) var(--mix), var(--surface-2));
     color: var(--text);
     font-size: calc(20px * var(--glyph-scale));
+    font-weight: 500;
     text-decoration: none;
   }
+  /* Шкала уровней — одна зелёная для всех тем (docs/11-design.md, «Шкала уровней карты алфавита») */
   .cell.new {
-    background: var(--surface-2);
+    border: 1px dashed var(--line);
     color: var(--muted);
   }
-  .cell.strong {
-    color: var(--bg);
+  .cell[data-lvl="1"] {
+    background: var(--lvl-1);
+  }
+  .cell[data-lvl="2"] {
+    background: var(--lvl-2);
+  }
+  .cell[data-lvl="3"] {
+    background: var(--lvl-3);
+  }
+  .cell[data-lvl="4"] {
+    background: var(--lvl-4);
+  }
+  .cell[data-lvl="5"] {
+    background: var(--lvl-5);
+    color: var(--lvl-5-text);
+  }
+  .cell[data-lvl="6"] {
+    background: var(--lvl-6);
+    color: var(--lvl-text-strong);
   }
   .legend {
     display: flex;

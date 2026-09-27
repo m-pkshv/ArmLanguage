@@ -113,8 +113,8 @@
     display: none;
     padding: 0 6px;
     border-radius: 6px;
-    background: var(--text);
-    color: var(--bg);
+    background: var(--accent-soft); /* подсказка над буквой — docs/11-design.md */
+    color: var(--accent);
     font-family: var(--font-ui);
     font-size: 14px;
     line-height: 1.6;

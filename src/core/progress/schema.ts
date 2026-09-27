@@ -1,7 +1,8 @@
-import { SCHEMA_VERSION, type ProgressData, type Settings } from "./types";
+import { PALETTE_IDS, SCHEMA_VERSION, type ProgressData, type Settings } from "./types";
 
 export const DEFAULT_SETTINGS: Settings = {
   theme: "system",
+  palette: "ink",
   letterSize: "normal",
   autoAdvance: true,
   strictness: "soft",
@@ -46,6 +47,8 @@ const MIGRATIONS: Record<number, Migration> = {
   3: (d) => ({ ...d, schemaVersion: 4 }),
   // v5: раздел «Первые слова» — итоговые задания тем
   4: (d) => ({ ...d, schemaVersion: 5, themeTests: {} }),
+  // v6: цветовая тема (выпуск 1.1). Прежней абрикосовой темы больше нет — все получают тему по умолчанию.
+  5: (d) => ({ ...d, schemaVersion: 6, settings: { ...(isObject(d.settings) ? d.settings : {}), palette: DEFAULT_SETTINGS.palette } }),
 };
 
 const isObject = (v: unknown): v is Record<string, unknown> =>
@@ -60,6 +63,7 @@ function normalizeSettings(raw: unknown): Settings {
   const d = DEFAULT_SETTINGS;
   return {
     theme: pick(s.theme, ["system", "light", "dark"], d.theme),
+    palette: pick(s.palette, PALETTE_IDS, d.palette),
     letterSize: pick(s.letterSize, ["normal", "large"], d.letterSize),
     autoAdvance: typeof s.autoAdvance === "boolean" ? s.autoAdvance : d.autoAdvance,
     strictness: pick(s.strictness, ["soft", "strict"], d.strictness),

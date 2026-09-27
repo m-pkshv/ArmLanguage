@@ -1,6 +1,7 @@
 <script lang="ts">
   import { t } from "../../i18n";
   import Card from "../../ui/Card.svelte";
+  import PalettePicker from "../../ui/PalettePicker.svelte";
   import ScreenHeader from "../../ui/ScreenHeader.svelte";
   import Segmented from "../../ui/Segmented.svelte";
   import Toggle from "../../ui/Toggle.svelte";
@@ -11,7 +12,8 @@
 
 <ScreenHeader title={t("settings.title")} backTo="#/profile" />
 
-<Card padded={false}>
+<Card padded={false} title={t("settings.appearance")}>
+  <PalettePicker value={s.palette} theme={s.theme} onchange={(palette) => app.updateSettings({ palette })} />
   <Segmented
     label={t("settings.theme")}
     value={s.theme}
@@ -42,7 +44,7 @@
   />
 </Card>
 
-<Card padded={false}>
+<Card padded={false} title={t("settings.lessons")}>
   <Segmented
     label={t("settings.strictness")}
     hint={t("settings.strictnessHint")}

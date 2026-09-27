@@ -87,8 +87,13 @@
     font-size: 15px;
     font-variant-numeric: tabular-nums;
   }
+  /* «медленно» — акцент на мягкой плашке, не янтарный (он только для «почти») */
   .clock.slow {
-    color: var(--warn);
+    margin: -2px -8px;
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: var(--accent-soft);
+    color: var(--accent);
   }
   .word {
     margin: 40px 0 8px;
@@ -107,5 +112,16 @@
   .opt {
     font-size: 20px;
     font-weight: 500;
+  }
+  /* Главная кнопка: нажата и неактивна — явными цветами, без прозрачности (docs/11-design.md) */
+  .start:active:not(:disabled) {
+    border-color: var(--accent-pressed);
+    background: var(--accent-pressed);
+  }
+  .start:disabled {
+    border-color: transparent;
+    background: var(--surface-2);
+    color: var(--muted);
+    opacity: 1;
   }
 </style>

@@ -20,7 +20,7 @@
     {#each tabs as tab (tab.id)}
       <li>
         <a href={tab.href} class:active={active === tab.id} aria-current={active === tab.id ? "page" : undefined}>
-          <Icon name={tab.id} />
+          <span class="pill"><Icon name={tab.id} size={22} /></span>
           <span>{t(`tabs.${tab.id}`)}</span>
         </a>
       </li>
@@ -62,6 +62,18 @@
   }
   li a.active {
     color: var(--accent);
+    font-weight: 600;
+  }
+  /* «Таблетка» под иконкой активной вкладки (docs/11-design.md) */
+  .pill {
+    display: grid;
+    place-items: center;
+    width: 56px;
+    height: 30px;
+    border-radius: 999px;
+  }
+  .active .pill {
+    background: var(--accent-soft);
   }
 
   @media (min-width: 1024px) {
@@ -96,6 +108,12 @@
     }
     li a.active {
       box-shadow: inset 0 -3px 0 var(--accent);
+    }
+    .pill,
+    .active .pill {
+      width: auto;
+      height: auto;
+      background: none;
     }
   }
 </style>
