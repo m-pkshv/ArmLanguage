@@ -60,7 +60,7 @@
       // слово или фраза: неправильные варианты — из той же темы (docs/10-first-words.md, 10.5)
       const item = studyItem(content, step.letter);
       const pool = themes(content).map(themeItems).find((ids) => ids.includes(item.id)) ?? [];
-      const ctx = { content, rng, pool, reading: showReading(app.progress, item.id) };
+      const ctx = { content, rng, pool, reading: showReading(app.progress, item.id), group: step.group };
       const type = chooseWordExercise(step, item, app.progress, ctx, rng, s.recent ?? []);
       current = { kind: "word", index: s.index, letter: step.letter, type, question: WORD_EXERCISES[type].generate(item, ctx) };
       return;

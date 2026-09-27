@@ -6,6 +6,7 @@ import MatchView from "./views/MatchView.svelte";
 import MixedView from "./views/MixedView.svelte";
 import PhraseBuildView from "./views/PhraseBuildView.svelte";
 import WordChoiceView from "./views/WordChoiceView.svelte";
+import WordMatchView from "./views/WordMatchView.svelte";
 import WordSpellView from "./views/WordSpellView.svelte";
 import PictureView from "./views/PictureView.svelte";
 import RuInsertView from "./views/RuInsertView.svelte";
@@ -44,4 +45,5 @@ export const WORD_VIEWS: Record<WordExerciseId, Component<any>> = {
   "phrase-build": PhraseBuildView,
   "word-build": WordSpellView,
   "word-write": WordSpellView,
+  "word-match": WordMatchView,
 };

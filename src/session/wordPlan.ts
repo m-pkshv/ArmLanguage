@@ -35,7 +35,12 @@ export function planThemeLesson(c: Content, themeId: string, lessonIndex: number
   const previous = theme.lessons.slice(0, lessonIndex).flatMap((l) => l.newItems);
   const steps: Step[] = [];
 
-  if (previous.length) steps.push(...spread(rng, rng.shuffle(previous).slice(0, 3), 3));
+  // разминка по прошлым урокам темы — «Найди пары» (W04), как в алфавите (docs/10-first-words.md, 10.6)
+  const previousWords = previous.filter((id) => id.startsWith("word:"));
+  if (previousWords.length >= 3) {
+    const group = rng.shuffle(previousWords);
+    steps.push({ kind: "exercise", letter: group[0]!, types: ["word-match"], group });
+  } else if (previous.length) steps.push(...spread(rng, rng.shuffle(previous).slice(0, 3), 3));
 
   const introduced: string[] = [];
   for (let i = 0; i < items.length; i += 2) {

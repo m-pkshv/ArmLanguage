@@ -17,6 +17,8 @@ export interface WordContext {
   pool: string[];
   /** Показывать чтение русскими буквами (слово ещё новое). */
   reading: boolean;
+  /** «Найди пары»: из каких элементов собирать поле. */
+  group?: string[];
 }
 
 export interface WordExerciseLogic<Q = unknown, A = unknown> {
@@ -205,6 +207,63 @@ export const wordWrite: WordExerciseLogic<WordSpellQuestion, string[]> = {
   check: spellCheck,
 };
 
+/** W04: найди пары — армянские слова ↔ картинки с переводом (как E05 для букв). */
+export interface WordMatchQuestion {
+  left: string[];
+  right: string[];
+}
+
+export interface WordMatchAnswer {
+  ms: number;
+  /** Ошибочные пары: [слово слева, слово справа]. */
+  mistakes: [string, string][];
+}
+
+const MATCH_SIZE = 5;
+
+function matchItems(item: StudyItem, ctx: WordContext): StudyItem[] {
+  const out = [item];
+  const ids = [...ctx.rng.shuffle((ctx.group ?? ctx.pool).filter((id) => id !== item.id && id.startsWith("word:")))];
+  for (const id of ids) {
+    if (out.length >= MATCH_SIZE) break;
+    const x = studyItem(ctx.content, id);
+    // разные переводы и не синонимы — иначе пары неоднозначны
+    if (out.some((o) => o.ru === x.ru || o.same.includes(x.id) || x.same.includes(o.id))) continue;
+    out.push(x);
+  }
+  return out;
+}
+
+export const wordMatch: WordExerciseLogic<WordMatchQuestion, WordMatchAnswer> = {
+  id: "word-match",
+  skill: "meaning",
+  kind: "word",
+  isApplicable: (item, ctx) => item.kind === "word" && matchItems(item, ctx).length >= 3,
+  generate(item, ctx) {
+    const ids = matchItems(item, ctx).map((x) => x.id);
+    const left = ctx.rng.shuffle(ids);
+    // ни одна пара не стоит напротив друг друга
+    let right = ctx.rng.shuffle(ids);
+    for (let i = 0; i < 50 && right.some((id, k) => id === left[k]); i++) right = ctx.rng.shuffle(ids);
+    return { left, right };
+  },
+  check(q, a, c) {
+    const missed = new Set(a.mistakes.map(([l]) => l));
+    const secs = Math.round(a.ms / 1000);
+    const time = `${Math.floor(secs / 60)}:${String(secs % 60).padStart(2, "0")}`;
+    return {
+      verdict: a.mistakes.length ? "partial" : "correct",
+      effects: q.left.map((id) => ({ letter: "", item: id, skill: "meaning" as const, verdict: missed.has(id) ? ("wrong" as const) : ("correct" as const) })),
+      confusions: [],
+      explanation: {
+        title: a.mistakes.length ? t("ex.matchErrors", { time, n: a.mistakes.length }) : t("ex.matchDone", { time }),
+        lines: [...missed].map((id) => t("ex.matchRemember", { what: itemLine(studyItem(c.content, id)) })),
+      },
+      letter: "",
+    };
+  },
+};
+
 export const WORD_EXERCISES: Record<WordExerciseId, WordExerciseLogic<any, any>> = {
   "word-meaning": wordMeaning,
   "word-produce": wordProduce,
@@ -212,4 +271,5 @@ export const WORD_EXERCISES: Record<WordExerciseId, WordExerciseLogic<any, any>>
   "phrase-build": phraseBuild,
   "word-build": wordBuild,
   "word-write": wordWrite,
+  "word-match": wordMatch,
 };

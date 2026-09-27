@@ -202,3 +202,31 @@ describe("spelling tasks (W05, W06)", () => {
     expect(chooseWordExercise({ kind: "exercise", letter: item.id }, item, p, ctx(1), createRng(1), [])).toBe("word-write");
   });
 });
+
+describe("word match (W04)", () => {
+  it("builds a board of different words from the group, none opposite its pair", () => {
+    const group = theme.lessons[0]!.newItems.filter((x) => x.startsWith("word:"));
+    for (let seed = 1; seed < 30; seed++) {
+      const item = studyItem(content, group[seed % group.length]!);
+      const q = WORD_EXERCISES["word-match"].generate(item, { ...ctx(seed), group }) as import("../src/exercises/words/logic").WordMatchQuestion;
+      expect(q.left).toContain(item.id);
+      expect(q.left.length).toBeGreaterThanOrEqual(3);
+      expect(q.left.every((id) => group.includes(id))).toBe(true);
+      expect(q.right.some((id, k) => id === q.left[k])).toBe(false);
+    }
+  });
+
+  it("counts every word and blames the mistaken one", () => {
+    const q = { left: ["word:barev", "word:ayo", "word:voch"], right: ["word:voch", "word:barev", "word:ayo"] };
+    const r = WORD_EXERCISES["word-match"].check(q, { ms: 9000, mistakes: [["word:ayo", "word:voch"]] }, check);
+    expect(r.verdict).toBe("partial");
+    expect(r.effects.find((e) => e.item === "word:ayo")!.verdict).toBe("wrong");
+    expect(r.effects.find((e) => e.item === "word:barev")!.verdict).toBe("correct");
+  });
+
+  it("warms up the second lesson of a theme with a word board", () => {
+    const s = planThemeLesson(content, "greetings", 1, 3, TODAY);
+    const first = s.steps[0]!;
+    expect(first.kind === "exercise" && first.types).toEqual(["word-match"]);
+  });
+});
