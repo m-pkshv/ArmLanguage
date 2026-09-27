@@ -36,7 +36,7 @@
 
 {#if question.mode === "spelling" && word}
   <div class="prompt">
-    {#if word.image}<img src={assetUrl(word.image.file)} alt="" width="88" height="88" />{/if}
+    {#if word.image}<img class="word-pic" src={assetUrl(word.image.file)} alt="" width="88" height="88" />{/if}
     <p class="reading">
       [{#each question.reading as part, i (i)}{#if i === question.blank}<mark>{part}</mark>{:else}{part}{/if}{/each}] — {word.ru}
     </p>

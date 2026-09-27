@@ -34,7 +34,7 @@ export default defineConfig({
       },
       workbox: {
         // Всё нужное для занятий — в кэш при первом открытии: код, картинки, рукописные буквы, шрифты.
-        globPatterns: ["**/*.{js,css,html,svg,png,woff2}"],
+        globPatterns: ["**/*.{js,css,html,svg,png,webp,woff2}"],
         maximumFileSizeToCacheInBytes: 3 * 1024 * 1024,
       },
     }),

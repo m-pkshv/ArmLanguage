@@ -16,7 +16,7 @@
 </script>
 
 <div class="prompt">
-  {#if word.image}<img src={assetUrl(word.image.file)} alt="" width="96" height="96" />{/if}
+  {#if word.image}<img class="word-pic" src={assetUrl(word.image.file)} alt="" width="96" height="96" />{/if}
   <div class="word hy" lang="hy">
     {#each question.tokens as tok, i (i)}
       {#if i === question.blank}

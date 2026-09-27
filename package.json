@@ -16,6 +16,7 @@
     "check": "svelte-check --tsconfig ./tsconfig.json --fail-on-warnings",
     "test": "vitest run",
     "check:content": "vitest run tests/content.test.ts",
+    "images": "node scripts/arasaac.mjs",
     "test:watch": "vitest"
   },
   "devDependencies": {

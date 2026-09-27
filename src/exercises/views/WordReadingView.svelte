@@ -26,7 +26,7 @@
 <div class="prompt">
   {#if question.hint || result}
     <div class="pic">
-      {#if word.image}<img src={assetUrl(word.image.file)} alt="" width="72" height="72" />{/if}
+      {#if word.image}<img class="word-pic" src={assetUrl(word.image.file)} alt="" width="72" height="72" />{/if}
       <span class="ru">{word.ru}</span>
     </div>
   {/if}

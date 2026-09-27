@@ -1,12 +1,12 @@
 [
   {
     "what": "Картинки к словам",
-    "source": "Twemoji",
-    "url": "https://github.com/jdecked/twemoji",
-    "author": "Twitter, Inc and other contributors",
-    "license": "CC BY 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/deed.ru",
-    "changes": null
+    "source": "ARASAAC — пиктограммы Арагонского центра альтернативной коммуникации",
+    "url": "https://arasaac.org",
+    "author": "Sergio Palao; владелец — Правительство Арагона (Испания)",
+    "license": "CC BY-NC-SA 4.0 (только некоммерческое использование)",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ru",
+    "changes": "уменьшены до 256×256 и сохранены в формате WebP"
   },
   {
     "what": "Рукописные буквы",

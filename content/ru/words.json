@@ -3,450 +3,450 @@
     "id": "mashina",
     "ru": "машина",
     "image": {
-      "file": "img/words/car.svg",
-      "source": "Twemoji",
-      "license": "CC BY 4.0",
-      "author": "Twitter, Inc and other contributors"
+      "file": "img/words/arasaac-2339.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
     }
   },
   {
     "id": "mama",
     "ru": "мама",
     "image": {
-      "file": "img/words/woman.svg",
-      "source": "Twemoji",
-      "license": "CC BY 4.0",
-      "author": "Twitter, Inc and other contributors"
+      "file": "img/words/arasaac-2458.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
     }
   },
   {
     "id": "kot",
     "ru": "кот",
     "image": {
-      "file": "img/words/cat.svg",
-      "source": "Twemoji",
-      "license": "CC BY 4.0",
-      "author": "Twitter, Inc and other contributors"
+      "file": "img/words/arasaac-7114.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
     }
   },
   {
     "id": "dom",
     "ru": "дом",
     "image": {
-      "file": "img/words/house.svg",
-      "source": "Twemoji",
-      "license": "CC BY 4.0",
-      "author": "Twitter, Inc and other contributors"
+      "file": "img/words/arasaac-2317.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
     }
   },
   {
     "id": "shar",
     "ru": "шар",
     "image": {
-      "file": "img/words/balloon.svg",
-      "source": "Twemoji",
-      "license": "CC BY 4.0",
-      "author": "Twitter, Inc and other contributors"
+      "file": "img/words/arasaac-8313.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
     }
   },
   {
     "id": "ryba",
     "ru": "рыба",
     "image": {
-      "file": "img/words/fish.svg",
-      "source": "Twemoji",
-      "license": "CC BY 4.0",
-      "author": "Twitter, Inc and other contributors"
+      "file": "img/words/arasaac-2520.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
     }
   },
   {
     "id": "lisa",
     "ru": "лиса",
     "image": {
-      "file": "img/words/fox.svg",
-      "source": "Twemoji",
-      "license": "CC BY 4.0",
-      "author": "Twitter, Inc and other contributors"
+      "file": "img/words/arasaac-2623.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
     }
   },
   {
     "id": "sok",
     "ru": "сок",
     "image": {
-      "file": "img/words/juice.svg",
-      "source": "Twemoji",
-      "license": "CC BY 4.0",
-      "author": "Twitter, Inc and other contributors"
+      "file": "img/words/arasaac-11461.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
     }
   },
   {
     "id": "tort",
     "ru": "торт",
     "image": {
-      "file": "img/words/cake.svg",
-      "source": "Twemoji",
-      "license": "CC BY 4.0",
-      "author": "Twitter, Inc and other contributors"
+      "file": "img/words/arasaac-2579.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
     }
   },
   {
     "id": "luna",
     "ru": "луна",
     "image": {
-      "file": "img/words/moon.svg",
-      "source": "Twemoji",
-      "license": "CC BY 4.0",
-      "author": "Twitter, Inc and other contributors"
+      "file": "img/words/arasaac-2933.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
     }
   },
   {
     "id": "sova",
     "ru": "сова",
     "image": {
-      "file": "img/words/owl.svg",
-      "source": "Twemoji",
-      "license": "CC BY 4.0",
-      "author": "Twitter, Inc and other contributors"
+      "file": "img/words/arasaac-2945.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
     }
   },
   {
     "id": "zebra",
     "ru": "зебра",
     "image": {
-      "file": "img/words/zebra.svg",
-      "source": "Twemoji",
-      "license": "CC BY 4.0",
-      "author": "Twitter, Inc and other contributors"
+      "file": "img/words/arasaac-2324.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
     }
   },
   {
     "id": "zhuk",
     "ru": "жук",
     "image": {
-      "file": "img/words/beetle.svg",
-      "source": "Twemoji",
-      "license": "CC BY 4.0",
-      "author": "Twitter, Inc and other contributors"
+      "file": "img/words/arasaac-38422.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
     }
   },
   {
     "id": "chay",
     "ru": "чай",
     "image": {
-      "file": "img/words/tea.svg",
-      "source": "Twemoji",
-      "license": "CC BY 4.0",
-      "author": "Twitter, Inc and other contributors"
+      "file": "img/words/arasaac-2429.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
     }
   },
   {
     "id": "luk",
     "ru": "лук",
     "image": {
-      "file": "img/words/onion.svg",
-      "source": "Twemoji",
-      "license": "CC BY 4.0",
-      "author": "Twitter, Inc and other contributors"
+      "file": "img/words/arasaac-2323.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
     }
   },
   {
     "id": "nos",
     "ru": "нос",
     "image": {
-      "file": "img/words/nose.svg",
-      "source": "Twemoji",
-      "license": "CC BY 4.0",
-      "author": "Twitter, Inc and other contributors"
+      "file": "img/words/arasaac-2887.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
     }
   },
   {
     "id": "sup",
     "ru": "суп",
     "image": {
-      "file": "img/words/soup.svg",
-      "source": "Twemoji",
-      "license": "CC BY 4.0",
-      "author": "Twitter, Inc and other contributors"
+      "file": "img/words/arasaac-2573.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
     }
   },
   {
     "id": "most",
     "ru": "мост",
     "image": {
-      "file": "img/words/bridge.svg",
-      "source": "Twemoji",
-      "license": "CC BY 4.0",
-      "author": "Twitter, Inc and other contributors"
+      "file": "img/words/arasaac-6194.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
     }
   },
   {
     "id": "sharf",
     "ru": "шарф",
     "image": {
-      "file": "img/words/scarf.svg",
-      "source": "Twemoji",
-      "license": "CC BY 4.0",
-      "author": "Twitter, Inc and other contributors"
+      "file": "img/words/arasaac-2290.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
     }
   },
   {
     "id": "kniga",
     "ru": "книга",
     "image": {
-      "file": "img/words/book.svg",
-      "source": "Twemoji",
-      "license": "CC BY 4.0",
-      "author": "Twitter, Inc and other contributors"
+      "file": "img/words/arasaac-25191.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
     }
   },
   {
     "id": "lampa",
     "ru": "лампа",
     "image": {
-      "file": "img/words/lamp.svg",
-      "source": "Twemoji",
-      "license": "CC BY 4.0",
-      "author": "Twitter, Inc and other contributors"
+      "file": "img/words/arasaac-4936.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
     }
   },
   {
     "id": "grib",
     "ru": "гриб",
     "image": {
-      "file": "img/words/mushroom.svg",
-      "source": "Twemoji",
-      "license": "CC BY 4.0",
-      "author": "Twitter, Inc and other contributors"
+      "file": "img/words/arasaac-3386.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
     }
   },
   {
     "id": "banan",
     "ru": "банан",
     "image": {
-      "file": "img/words/banana.svg",
-      "source": "Twemoji",
-      "license": "CC BY 4.0",
-      "author": "Twitter, Inc and other contributors"
+      "file": "img/words/arasaac-2530.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
     }
   },
   {
     "id": "arbuz",
     "ru": "арбуз",
     "image": {
-      "file": "img/words/watermelon.svg",
-      "source": "Twemoji",
-      "license": "CC BY 4.0",
-      "author": "Twitter, Inc and other contributors"
+      "file": "img/words/arasaac-2557.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
     }
   },
   {
     "id": "limon",
     "ru": "лимон",
     "image": {
-      "file": "img/words/lemon.svg",
-      "source": "Twemoji",
-      "license": "CC BY 4.0",
-      "author": "Twitter, Inc and other contributors"
+      "file": "img/words/arasaac-3022.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
     }
   },
   {
     "id": "myach",
     "ru": "мяч",
     "image": {
-      "file": "img/words/ball.svg",
-      "source": "Twemoji",
-      "license": "CC BY 4.0",
-      "author": "Twitter, Inc and other contributors"
+      "file": "img/words/arasaac-3241.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
     }
   },
   {
     "id": "dzhinsy",
     "ru": "джинсы",
     "image": {
-      "file": "img/words/jeans.svg",
-      "source": "Twemoji",
-      "license": "CC BY 4.0",
-      "author": "Twitter, Inc and other contributors"
+      "file": "img/words/arasaac-24222.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
     }
   },
   {
     "id": "zvezda",
     "ru": "звезда",
     "image": {
-      "file": "img/words/star.svg",
-      "source": "Twemoji",
-      "license": "CC BY 4.0",
-      "author": "Twitter, Inc and other contributors"
+      "file": "img/words/arasaac-4644.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
     }
   },
   {
     "id": "raketa",
     "ru": "ракета",
     "image": {
-      "file": "img/words/rocket.svg",
-      "source": "Twemoji",
-      "license": "CC BY 4.0",
-      "author": "Twitter, Inc and other contributors"
+      "file": "img/words/arasaac-2344.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
     }
   },
   {
     "id": "avtobus",
     "ru": "автобус",
     "image": {
-      "file": "img/words/bus.svg",
-      "source": "Twemoji",
-      "license": "CC BY 4.0",
-      "author": "Twitter, Inc and other contributors"
+      "file": "img/words/arasaac-2263.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
     }
   },
   {
     "id": "raduga",
     "ru": "радуга",
     "image": {
-      "file": "img/words/rainbow.svg",
-      "source": "Twemoji",
-      "license": "CC BY 4.0",
-      "author": "Twitter, Inc and other contributors"
+      "file": "img/words/arasaac-2986.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
     }
   },
   {
     "id": "kivi",
     "ru": "киви",
     "image": {
-      "file": "img/words/kiwi.svg",
-      "source": "Twemoji",
-      "license": "CC BY 4.0",
-      "author": "Twitter, Inc and other contributors"
+      "file": "img/words/arasaac-2955.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
     }
   },
   {
     "id": "panda",
     "ru": "панда",
     "image": {
-      "file": "img/words/panda.svg",
-      "source": "Twemoji",
-      "license": "CC BY 4.0",
-      "author": "Twitter, Inc and other contributors"
+      "file": "img/words/arasaac-2869.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
     }
   },
   {
     "id": "gitara",
     "ru": "гитара",
     "image": {
-      "file": "img/words/guitar.svg",
-      "source": "Twemoji",
-      "license": "CC BY 4.0",
-      "author": "Twitter, Inc and other contributors"
+      "file": "img/words/arasaac-2417.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
     }
   },
   {
     "id": "ochki",
     "ru": "очки",
     "image": {
-      "file": "img/words/glasses.svg",
-      "source": "Twemoji",
-      "license": "CC BY 4.0",
-      "author": "Twitter, Inc and other contributors"
+      "file": "img/words/arasaac-3329.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
     }
   },
   {
     "id": "palma",
     "ru": "пальма",
     "image": {
-      "file": "img/words/palm.svg",
-      "source": "Twemoji",
-      "license": "CC BY 4.0",
-      "author": "Twitter, Inc and other contributors"
+      "file": "img/words/arasaac-3138.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
     }
   },
   {
     "id": "karta",
     "ru": "карта",
     "image": {
-      "file": "img/words/map.svg",
-      "source": "Twemoji",
-      "license": "CC BY 4.0",
-      "author": "Twitter, Inc and other contributors"
+      "file": "img/words/arasaac-24161.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
     }
   },
   {
     "id": "kurica",
     "ru": "курица",
     "image": {
-      "file": "img/words/hen.svg",
-      "source": "Twemoji",
-      "license": "CC BY 4.0",
-      "author": "Twitter, Inc and other contributors"
+      "file": "img/words/arasaac-2403.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
     }
   },
   {
     "id": "palatka",
     "ru": "палатка",
     "image": {
-      "file": "img/words/tent.svg",
-      "source": "Twemoji",
-      "license": "CC BY 4.0",
-      "author": "Twitter, Inc and other contributors"
+      "file": "img/words/arasaac-4756.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
     }
   },
   {
     "id": "nosok",
     "ru": "носок",
     "image": {
-      "file": "img/words/sock.svg",
-      "source": "Twemoji",
-      "license": "CC BY 4.0",
-      "author": "Twitter, Inc and other contributors"
+      "file": "img/words/arasaac-8339.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
     }
   },
   {
     "id": "slon",
     "ru": "слон",
     "image": {
-      "file": "img/words/elephant.svg",
-      "source": "Twemoji",
-      "license": "CC BY 4.0",
-      "author": "Twitter, Inc and other contributors"
+      "file": "img/words/arasaac-2372.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
     }
   },
   {
     "id": "zamok",
     "ru": "замок",
     "image": {
-      "file": "img/words/lock.svg",
-      "source": "Twemoji",
-      "license": "CC BY 4.0",
-      "author": "Twitter, Inc and other contributors"
+      "file": "img/words/arasaac-3261.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
     }
   },
   {
     "id": "ptica",
     "ru": "птица",
     "image": {
-      "file": "img/words/bird.svg",
-      "source": "Twemoji",
-      "license": "CC BY 4.0",
-      "author": "Twitter, Inc and other contributors"
+      "file": "img/words/arasaac-2490.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
     }
   },
   {
     "id": "roza",
     "ru": "роза",
     "image": {
-      "file": "img/words/rose.svg",
-      "source": "Twemoji",
-      "license": "CC BY 4.0",
-      "author": "Twitter, Inc and other contributors"
+      "file": "img/words/arasaac-3151.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
     }
   },
   {
     "id": "sobaka",
     "ru": "собака",
     "image": {
-      "file": "img/words/dog.svg",
-      "source": "Twemoji",
-      "license": "CC BY 4.0",
-      "author": "Twitter, Inc and other contributors"
+      "file": "img/words/arasaac-7202.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
     }
   }
 ]

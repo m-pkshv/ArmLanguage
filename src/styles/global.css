@@ -130,3 +130,12 @@ a {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Картинки к словам (пиктограммы ARASAAC): чёрный контур на прозрачном фоне — на светлой плашке,
+   иначе в тёмной теме контур пропадает. */
+.word-pic {
+  box-sizing: border-box;
+  padding: 4px;
+  border-radius: 12px;
+  background: #fff;
+}

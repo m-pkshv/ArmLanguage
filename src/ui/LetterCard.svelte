@@ -59,7 +59,7 @@
   {#each examples as word (word.id)}
     <li class="word">
       <div class="pic">
-        {#if word.image}<img src={assetUrl(word.image.file)} alt="" loading="lazy" width="44" height="44" />{/if}
+        {#if word.image}<img class="word-pic" src={assetUrl(word.image.file)} alt="" loading="lazy" width="44" height="44" />{/if}
       </div>
       <div class="text">
         <div class="hy big" lang="hy">

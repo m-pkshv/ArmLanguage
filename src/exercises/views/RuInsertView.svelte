@@ -25,7 +25,7 @@
 </script>
 
 <div class="prompt">
-  {#if word.image}<img src={assetUrl(word.image.file)} alt="" width="88" height="88" />{/if}
+  {#if word.image}<img class="word-pic" src={assetUrl(word.image.file)} alt="" width="88" height="88" />{/if}
   <div class="word">
     {before}<span class="blank" class:filled={!!shown}>{#if shown}<span class="hy" lang="hy">{shown.lower}</span>{:else}?{/if}</span>{after}
   </div>

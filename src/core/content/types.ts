@@ -15,7 +15,7 @@ export interface LetterSound extends ReadingRule {
 }
 
 export interface ImageRef {
-  file: string; // путь относительно корня сайта: img/words/fish.svg
+  file: string; // путь относительно корня сайта: img/words/arasaac-2520.webp
   source: string;
   license: string;
   author?: string;
