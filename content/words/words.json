@@ -1020,7 +1020,10 @@
       "places"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "travel"
+    ]
   },
   {
     "id": "dzuk",
@@ -1290,7 +1293,10 @@
       "transport"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "travel"
+    ]
   },
   {
     "id": "napastak",
@@ -8288,6 +8294,379 @@
     "reviewed": false,
     "themes": [
       "work"
+    ]
+  },
+  {
+    "id": "chanaparhordutyun",
+    "hy": "ճանապարհորդություն",
+    "pronunciation": "чанапархордутхюн",
+    "exception": false,
+    "ru": "путешествие",
+    "image": {
+      "file": "img/words/arasaac-11393.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "travel"
+    ],
+    "level": 2,
+    "reviewed": false,
+    "themes": [
+      "travel"
+    ]
+  },
+  {
+    "id": "andznagir",
+    "hy": "անձնագիր",
+    "pronunciation": "андзнагир",
+    "exception": false,
+    "ru": "паспорт",
+    "image": {
+      "file": "img/words/arasaac-6171.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "travel"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "travel"
+    ]
+  },
+  {
+    "id": "toms",
+    "hy": "տոմս",
+    "pronunciation": "томс",
+    "exception": false,
+    "ru": "билет",
+    "image": {
+      "file": "img/words/arasaac-29208.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "travel"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "travel"
+    ]
+  },
+  {
+    "id": "champruk",
+    "hy": "ճամպրուկ",
+    "pronunciation": "чампрук",
+    "exception": false,
+    "ru": "чемодан",
+    "image": {
+      "file": "img/words/arasaac-2931.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "travel"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "travel"
+    ]
+  },
+  {
+    "id": "gnatsk",
+    "hy": "գնացք",
+    "pronunciation": "гынацхкх",
+    "exception": false,
+    "ru": "поезд",
+    "image": {
+      "file": "img/words/arasaac-2603.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "travel"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "travel"
+    ]
+  },
+  {
+    "id": "zbosashrjik",
+    "hy": "զբոսաշրջիկ",
+    "pronunciation": "зыбосашырджик",
+    "exception": false,
+    "ru": "турист",
+    "image": {
+      "file": "img/words/arasaac-6236.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "travel"
+    ],
+    "level": 2,
+    "reviewed": false,
+    "themes": [
+      "travel"
+    ]
+  },
+  {
+    "id": "yerkir",
+    "hy": "երկիր",
+    "pronunciation": "йеркир",
+    "exception": false,
+    "ru": "страна",
+    "image": {
+      "file": "img/words/arasaac-35431.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "travel"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "travel"
+    ]
+  },
+  {
+    "id": "hyuranots",
+    "hy": "հյուրանոց",
+    "pronunciation": "хюраноцх",
+    "exception": false,
+    "ru": "гостиница",
+    "image": {
+      "file": "img/words/arasaac-15730.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "travel"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "travel"
+    ]
+  },
+  {
+    "id": "hark",
+    "hy": "հարկ",
+    "pronunciation": "харк",
+    "exception": false,
+    "ru": "этаж",
+    "image": {
+      "file": "img/words/arasaac-11343.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "travel"
+    ],
+    "level": 2,
+    "reviewed": false,
+    "themes": [
+      "travel"
+    ]
+  },
+  {
+    "id": "amragrum",
+    "hy": "ամրագրում",
+    "pronunciation": "амрагырум",
+    "exception": false,
+    "ru": "бронь, бронирование",
+    "image": null,
+    "tags": [
+      "travel"
+    ],
+    "level": 2,
+    "reviewed": false,
+    "themes": [
+      "travel"
+    ]
+  },
+  {
+    "id": "hastse",
+    "hy": "հասցե",
+    "pronunciation": "хасцхе",
+    "exception": false,
+    "ru": "адрес",
+    "image": {
+      "file": "img/words/arasaac-30231.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "travel"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "travel"
+    ]
+  },
+  {
+    "id": "ardzakurd",
+    "hy": "արձակուրդ",
+    "pronunciation": "ардзакурд",
+    "exception": false,
+    "ru": "отпуск",
+    "image": {
+      "file": "img/words/arasaac-39447.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "travel"
+    ],
+    "level": 2,
+    "reviewed": false,
+    "themes": [
+      "travel"
+    ]
+  },
+  {
+    "id": "tangaran",
+    "hy": "թանգարան",
+    "pronunciation": "тхангаран",
+    "exception": false,
+    "ru": "музей",
+    "image": {
+      "file": "img/words/arasaac-3132.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "travel"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "travel"
+    ]
+  },
+  {
+    "id": "yekeghetsi",
+    "hy": "եկեղեցի",
+    "pronunciation": "йекегхецхи",
+    "exception": false,
+    "ru": "церковь",
+    "image": {
+      "file": "img/words/arasaac-3118.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "travel"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "travel"
+    ]
+  },
+  {
+    "id": "vank",
+    "hy": "վանք",
+    "pronunciation": "ванкх",
+    "exception": false,
+    "ru": "монастырь",
+    "image": {
+      "file": "img/words/arasaac-32790.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "travel"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "travel"
+    ]
+  },
+  {
+    "id": "amrots",
+    "hy": "ամրոց",
+    "pronunciation": "амроцх",
+    "exception": false,
+    "ru": "крепость",
+    "image": {
+      "file": "img/words/arasaac-25411.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "travel"
+    ],
+    "level": 2,
+    "reviewed": false,
+    "themes": [
+      "travel"
+    ]
+  },
+  {
+    "id": "lusankar",
+    "hy": "լուսանկար",
+    "pronunciation": "лусанкар",
+    "exception": false,
+    "ru": "фотография",
+    "image": {
+      "file": "img/words/arasaac-28271.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "travel"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "travel"
+    ]
+  },
+  {
+    "id": "ekskursia",
+    "hy": "էքսկուրսիա",
+    "pronunciation": "экхскурсиа",
+    "exception": false,
+    "ru": "экскурсия",
+    "image": {
+      "file": "img/words/arasaac-4670.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "travel"
+    ],
+    "level": 2,
+    "reviewed": false,
+    "themes": [
+      "travel"
     ]
   }
 ]

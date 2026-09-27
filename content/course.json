@@ -1019,6 +1019,59 @@
               ]
             }
           ]
+        },
+        {
+          "id": "travel",
+          "title": "Путешествия",
+          "emoji": "✈️",
+          "status": "available",
+          "lessons": [
+            {
+              "id": "travel-1",
+              "title": "В дороге",
+              "newItems": [
+                "word:chanaparhordutyun",
+                "word:andznagir",
+                "word:toms",
+                "word:champruk",
+                "word:gnatsk",
+                "word:nav",
+                "word:zbosashrjik",
+                "word:yerkir",
+                "word:hayastan",
+                "phrase:mek-toms",
+                "phrase:vorteghits-ek",
+                "phrase:yes-rrusastanits-em"
+              ]
+            },
+            {
+              "id": "travel-2",
+              "title": "Гостиница",
+              "newItems": [
+                "word:hyuranots",
+                "word:hark",
+                "word:amragrum",
+                "word:hastse",
+                "word:ardzakurd",
+                "phrase:vortegh-e-hyuranotsy",
+                "phrase:amragrum-unem"
+              ]
+            },
+            {
+              "id": "travel-3",
+              "title": "Что посмотреть",
+              "newItems": [
+                "word:tangaran",
+                "word:yekeghetsi",
+                "word:vank",
+                "word:amrots",
+                "word:lusankar",
+                "word:ekskursia",
+                "phrase:kareli-e-lusankarel",
+                "phrase:arrajin-angam"
+              ]
+            }
+          ]
         }
       ]
     },
