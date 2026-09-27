@@ -141,7 +141,10 @@
       "animals"
     ],
     "level": 2,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "animals"
+    ]
   },
   {
     "id": "beran",
@@ -198,7 +201,10 @@
       "animals"
     ],
     "level": 2,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "animals"
+    ]
   },
   {
     "id": "glkhark",
@@ -351,7 +357,10 @@
       "animals"
     ],
     "level": 2,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "animals"
+    ]
   },
   {
     "id": "zang",
@@ -387,7 +396,10 @@
       "animals"
     ],
     "level": 2,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "animals"
+    ]
   },
   {
     "id": "vozni",
@@ -405,7 +417,10 @@
       "animals"
     ],
     "level": 2,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "animals"
+    ]
   },
   {
     "id": "ej",
@@ -441,7 +456,10 @@
       "animals"
     ],
     "level": 2,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "animals"
+    ]
   },
   {
     "id": "ekran",
@@ -519,7 +537,10 @@
       "animals"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "animals"
+    ]
   },
   {
     "id": "tey",
@@ -558,7 +579,10 @@
       "animals"
     ],
     "level": 2,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "animals"
+    ]
   },
   {
     "id": "zhamatsuyts",
@@ -657,7 +681,10 @@
       "animals"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "animals"
+    ]
   },
   {
     "id": "inch",
@@ -792,7 +819,10 @@
       "animals"
     ],
     "level": 2,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "animals"
+    ]
   },
   {
     "id": "tsov",
@@ -873,7 +903,10 @@
       "animals"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "animals"
+    ]
   },
   {
     "id": "kov",
@@ -891,7 +924,10 @@
       "animals"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "animals"
+    ]
   },
   {
     "id": "kat",
@@ -951,7 +987,10 @@
       "animals"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "animals"
+    ]
   },
   {
     "id": "hayastan",
@@ -987,7 +1026,10 @@
       "animals"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "animals"
+    ]
   },
   {
     "id": "dzu",
@@ -1047,7 +1089,10 @@
       "animals"
     ],
     "level": 2,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "animals"
+    ]
   },
   {
     "id": "chut",
@@ -1065,7 +1110,10 @@
       "animals"
     ],
     "level": 2,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "animals"
+    ]
   },
   {
     "id": "chanaparh",
@@ -1104,7 +1152,10 @@
       "animals"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "animals"
+    ]
   },
   {
     "id": "matit",
@@ -1182,7 +1233,10 @@
       "animals"
     ],
     "level": 2,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "animals"
+    ]
   },
   {
     "id": "yot",
@@ -1239,7 +1293,10 @@
       "animals"
     ],
     "level": 2,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "animals"
+    ]
   },
   {
     "id": "nurr",
@@ -1275,7 +1332,10 @@
       "animals"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "animals"
+    ]
   },
   {
     "id": "shapik",
@@ -1417,7 +1477,10 @@
       "animals"
     ],
     "level": 2,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "animals"
+    ]
   },
   {
     "id": "panir",
@@ -1592,7 +1655,10 @@
       "animals"
     ],
     "level": 2,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "animals"
+    ]
   },
   {
     "id": "vard",
@@ -1628,7 +1694,10 @@
       "animals"
     ],
     "level": 2,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "animals"
+    ]
   },
   {
     "id": "tun",
@@ -1767,7 +1836,10 @@
       "animals"
     ],
     "level": 2,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "animals"
+    ]
   },
   {
     "id": "urakh",
@@ -1806,7 +1878,10 @@
       "animals"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "animals"
+    ]
   },
   {
     "id": "pogh",
@@ -1947,7 +2022,10 @@
       "animals"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "animals"
+    ]
   },
   {
     "id": "odaparik",
@@ -7448,5 +7526,68 @@
     ],
     "level": 2,
     "reviewed": false
+  },
+  {
+    "id": "kendani",
+    "hy": "կենդանի",
+    "pronunciation": "кендани",
+    "exception": false,
+    "ru": "животное",
+    "image": {
+      "file": "img/words/arasaac-6901.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "animals"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "animals"
+    ]
+  },
+  {
+    "id": "arj",
+    "hy": "արջ",
+    "pronunciation": "ардж",
+    "exception": false,
+    "ru": "медведь",
+    "image": {
+      "file": "img/words/arasaac-2488.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "animals"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "animals"
+    ]
+  },
+  {
+    "id": "aghves",
+    "hy": "աղվես",
+    "pronunciation": "агхвес",
+    "exception": false,
+    "ru": "лиса",
+    "image": {
+      "file": "img/words/arasaac-2623.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "animals"
+    ],
+    "level": 2,
+    "reviewed": false,
+    "themes": [
+      "animals"
+    ]
   }
 ]

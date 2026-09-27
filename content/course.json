@@ -853,6 +853,66 @@
               ]
             }
           ]
+        },
+        {
+          "id": "animals",
+          "title": "Животные",
+          "emoji": "🐾",
+          "status": "available",
+          "lessons": [
+            {
+              "id": "animals-1",
+              "title": "Дома и во дворе",
+              "newItems": [
+                "word:katu",
+                "word:shun",
+                "word:dzi",
+                "word:kov",
+                "word:khoz",
+                "word:aytz",
+                "word:hav",
+                "word:chut",
+                "word:bad",
+                "word:sag",
+                "word:esh",
+                "phrase:yes-shun-unem",
+                "phrase:sa-im-katun-e"
+              ]
+            },
+            {
+              "id": "animals-2",
+              "title": "В лесу и в поле",
+              "newItems": [
+                "word:kendani",
+                "word:gayl",
+                "word:arj",
+                "word:aghves",
+                "word:napastak",
+                "word:vozni",
+                "word:muk",
+                "word:odz",
+                "word:trrchun",
+                "phrase:shuny-ktsum-e",
+                "phrase:vakhenum-em-shnerits"
+              ]
+            },
+            {
+              "id": "animals-3",
+              "title": "Насекомые и далёкие звери",
+              "newItems": [
+                "word:meghu",
+                "word:titerr",
+                "word:chanch",
+                "word:zatik",
+                "word:dzuk",
+                "word:vagr",
+                "word:pigh",
+                "word:ught",
+                "word:chghjik",
+                "phrase:kareli-e-shoyel"
+              ]
+            }
+          ]
         }
       ]
     },
