@@ -6,8 +6,8 @@
   import { t } from "../../i18n";
   import Card from "../../ui/Card.svelte";
   import { isFirstRun, nextAction } from "../../session/next";
-  import { firstWordsOpen } from "../../core/words";
-  import { startFinalTest, startLesson, startMatch, startReview } from "../../session/start";
+  import { firstWordsOpen, seenItem, themeById, themeDone, themes } from "../../core/words";
+  import { startFinalTest, startLesson, startMatch, startReview, startThemeLesson, startThemeTest } from "../../session/start";
   import { app, today } from "../state.svelte";
   import ConfusionHint from "./ConfusionHint.svelte";
   import InstallHint from "./InstallHint.svelte";
@@ -30,6 +30,13 @@
   );
   const sections = content.course.sections;
   const wordsOpen = $derived(firstWordsOpen(p, content));
+  // После алфавита (8 уроков и попытка итогового теста) главная карточка — «Первые слова» (docs/09-navigation.md, 9.4)
+  const themeList = themes(content).filter((x) => x.status === "available");
+  const themeWords = themeList.flatMap((x) => x.lessons.flatMap((l) => l.newItems)).filter((id) => id.startsWith("word:"));
+  const wordsMode = $derived(wordsOpen && !!p.finalTest);
+  const wordsSeen = $derived(wordsMode ? themeWords.filter((id) => seenItem(p, id)).length : 0);
+  const themeNo = $derived(Math.min(themeList.filter((x) => themeDone(p, x) && p.themeTests[x.id]).length + 1, themeList.length));
+  const themeTitle = (id: string) => themeById(content, id)!.title;
 
   const lettersOf = (i: number) => lessonLetters(lessons[i]!).map((id) => letterById(id)!.upper).join(" ");
 
@@ -47,6 +54,12 @@
       case "final":
         startFinalTest();
         break;
+      case "theme-lesson":
+        startThemeLesson(action.themeId, action.index);
+        break;
+      case "theme-test":
+        startThemeTest(action.themeId);
+        break;
       case "practice":
         location.hash = "#/practice";
     }
@@ -62,6 +75,10 @@
         return t("home.lesson", { n: action.index + 1, letters: lettersOf(action.index) });
       case "final":
         return t("home.final");
+      case "theme-lesson":
+        return t("home.themeLesson", { theme: themeTitle(action.themeId), n: action.index + 1 });
+      case "theme-test":
+        return t("home.themeTest", { theme: themeTitle(action.themeId) });
       default:
         return t("home.practice");
     }
@@ -94,12 +111,21 @@
   {/if}
 
   <Card>
-    <div class="section-head">
-      <h2>{t("home.sectionAlphabet")}</h2>
-      <span class="muted small">{t("home.lessonOf", { n: Math.min(doneLessons + 1, lessons.length), total: lessons.length })}</span>
-    </div>
-    <div class="bar" aria-hidden="true"><div style:width="{(learned / content.letters.length) * 100}%"></div></div>
-    <p class="muted small">{t("home.lettersLearned", { n: learned })} · {t("home.canRead", { n: readable })}</p>
+    {#if wordsMode}
+      <div class="section-head">
+        <h2>{t("home.sectionWords")}</h2>
+        <span class="muted small">{t("home.themeOf", { n: themeNo, total: themeList.length })}</span>
+      </div>
+      <div class="bar" aria-hidden="true"><div style:width="{(wordsSeen / themeWords.length) * 100}%"></div></div>
+      <p class="muted small">{t("home.wordsSeen", { n: wordsSeen, total: themeWords.length })}</p>
+    {:else}
+      <div class="section-head">
+        <h2>{t("home.sectionAlphabet")}</h2>
+        <span class="muted small">{t("home.lessonOf", { n: Math.min(doneLessons + 1, lessons.length), total: lessons.length })}</span>
+      </div>
+      <div class="bar" aria-hidden="true"><div style:width="{(learned / content.letters.length) * 100}%"></div></div>
+      <p class="muted small">{t("home.lettersLearned", { n: learned })} · {t("home.canRead", { n: readable })}</p>
+    {/if}
     <button class="primary" onclick={go}>{label}</button>
   </Card>
 
@@ -120,7 +146,10 @@
   {/if}
 
   <Card padded={false}>
-    <a class="row" href="#/lessons"><span>{t("home.lessonsMap")}</span><span aria-hidden="true">›</span></a>
+    {#if wordsMode}
+      <a class="row" href="#/words"><span>{t("home.allThemes")}</span><span aria-hidden="true">›</span></a>
+    {/if}
+    <a class="row" class:line={wordsMode} href="#/lessons"><span>{wordsMode ? t("home.alphabetMap") : t("home.lessonsMap")}</span><span aria-hidden="true">›</span></a>
   </Card>
 
   <Card title={t("home.sections")} padded={false}>
@@ -245,6 +274,9 @@
     padding: 0 16px;
     color: var(--text);
     text-decoration: none;
+  }
+  .row.line {
+    border-top: 1px solid var(--line);
   }
   .sections {
     margin: 0;

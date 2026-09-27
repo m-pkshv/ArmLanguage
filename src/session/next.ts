@@ -3,6 +3,7 @@ import type { Content } from "../core/content/types";
 import type { Day } from "../core/dates";
 import { dueLetters } from "../core/progress/knowledge";
 import type { ProgressData } from "../core/progress/types";
+import { firstWordsOpen, themeDone, themes } from "../core/words";
 import { exerciseCount, exercisesDone } from "./run";
 
 // Что делает кнопка «Продолжить» на главном экране (docs/09-navigation.md, 9.4).
@@ -12,6 +13,8 @@ export type NextAction =
   | { kind: "review"; count: number }
   | { kind: "lesson"; index: number }
   | { kind: "final" }
+  | { kind: "theme-lesson"; themeId: string; index: number }
+  | { kind: "theme-test"; themeId: string }
   | { kind: "practice" };
 
 /** С какого числа букв к повторению сначала повторяем, а потом даём новый урок. */
@@ -26,9 +29,28 @@ export function nextAction(p: ProgressData, c: Content, today: Day): NextAction 
   if (due >= REVIEW_FIRST) return { kind: "review", count: due };
   const lesson = nextLessonIndex(p, alphabetLessons(c));
   if (lesson !== undefined) return { kind: "lesson", index: lesson };
-  if (!p.finalTest?.passedAt) return { kind: "final" };
+  // Итоговый тест алфавита кнопка предлагает, пока его ни разу не проходили; не сдан — идём к словам,
+  // пересдать можно на карте уроков (решение владельца, 2026-09-28).
+  if (!p.finalTest) return { kind: "final" };
+  const words = nextWordsStep(p, c);
+  if (words) return words;
   if (due > 0) return { kind: "review", count: due };
   return { kind: "practice" };
+}
+
+/**
+ * Следующий шаг в «Первых словах»: следующий урок первой незаконченной темы или её итоговое задание.
+ * Итоговое задание предлагается, пока его ни разу не проходили; не сдано — переходим к следующей теме
+ * (пересдать можно на экране темы).
+ */
+export function nextWordsStep(p: ProgressData, c: Content): Extract<NextAction, { kind: "theme-lesson" | "theme-test" }> | undefined {
+  if (!firstWordsOpen(p, c)) return undefined;
+  for (const theme of themes(c)) {
+    if (theme.status !== "available" || !theme.lessons.length) continue;
+    if (!themeDone(p, theme)) return { kind: "theme-lesson", themeId: theme.id, index: theme.lessons.findIndex((l) => !p.lessons[l.id]) };
+    if (!p.themeTests[theme.id]) return { kind: "theme-test", themeId: theme.id };
+  }
+  return undefined;
 }
 
 /** Первый запуск: ещё ничего не начато. */
