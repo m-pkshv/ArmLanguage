@@ -62,7 +62,8 @@ function distractors(item: StudyItem, ctx: WordContext, n: number, key: (x: Stud
   for (const id of [...ctx.rng.shuffle(ctx.pool.filter(sameKind)), ...ctx.rng.shuffle(rest.filter(sameKind))]) {
     if (out.length >= n) break;
     const x = studyItem(c, id);
-    if (keys.has(key(x))) continue;
+    // одинаковый текст или то же значение (մամա / մայր) — тогда правильных ответов было бы два
+    if (keys.has(key(x)) || item.same.includes(x.id) || x.same.includes(item.id)) continue;
     keys.add(key(x));
     out.push(x);
   }

@@ -46,6 +46,8 @@ export interface Word {
   tags: string[];
   /** Темы раздела «Первые слова» (docs/10-first-words.md). */
   themes?: string[];
+  /** Слова с тем же значением (мама — մամա и մայր): не показываются друг другу неправильным вариантом. */
+  same?: string[];
   level: number;
   reviewed: boolean;
 }

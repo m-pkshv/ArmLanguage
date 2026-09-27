@@ -270,7 +270,10 @@
       "family"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "family"
+    ]
   },
   {
     "id": "yez",
@@ -471,7 +474,10 @@
       "family"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "family"
+    ]
   },
   {
     "id": "trrchun",
@@ -1065,7 +1071,13 @@
       "family"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "family"
+    ],
+    "same": [
+      "mama"
+    ]
   },
   {
     "id": "yugh",
@@ -1119,7 +1131,10 @@
       "numbers"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "numbers"
+    ]
   },
   {
     "id": "nav",
@@ -1281,7 +1296,10 @@
       "numbers"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "numbers"
+    ]
   },
   {
     "id": "achk",
@@ -1353,7 +1371,10 @@
       "family"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "family"
+    ]
   },
   {
     "id": "payusak",
@@ -1551,7 +1572,10 @@
       "family"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "family"
+    ]
   },
   {
     "id": "tandz",
@@ -1947,7 +1971,13 @@
       "family"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "family"
+    ],
+    "same": [
+      "mayr"
+    ]
   },
   {
     "id": "na",
@@ -2076,7 +2106,10 @@
       "family"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "family"
+    ]
   },
   {
     "id": "tari",
@@ -2406,7 +2439,10 @@
       "numbers"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "numbers"
+    ]
   },
   {
     "id": "bari",
@@ -2649,7 +2685,10 @@
       "family"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "family"
+    ]
   },
   {
     "id": "tught",
@@ -2703,7 +2742,10 @@
       "words"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "numbers"
+    ]
   },
   {
     "id": "jerm",
@@ -2829,7 +2871,13 @@
       "family"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "family"
+    ],
+    "same": [
+      "papa"
+    ]
   },
   {
     "id": "vat",
@@ -2871,6 +2919,9 @@
     "reviewed": false,
     "themes": [
       "greetings"
+    ],
+    "same": [
+      "mersi"
     ]
   },
   {
@@ -2892,6 +2943,9 @@
     "reviewed": false,
     "themes": [
       "greetings"
+    ],
+    "same": [
+      "shnorhakalutyun"
     ]
   },
   {
@@ -3081,6 +3135,450 @@
     "reviewed": false,
     "themes": [
       "greetings"
+    ]
+  },
+  {
+    "id": "yerku",
+    "hy": "երկու",
+    "pronunciation": "йерку",
+    "exception": false,
+    "ru": "два",
+    "image": {
+      "file": "img/words/arasaac-2628.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "numbers"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "numbers"
+    ]
+  },
+  {
+    "id": "yerekh",
+    "hy": "երեք",
+    "pronunciation": "йерекх",
+    "exception": false,
+    "ru": "три",
+    "image": {
+      "file": "img/words/arasaac-2629.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "numbers"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "numbers"
+    ]
+  },
+  {
+    "id": "hing",
+    "hy": "հինգ",
+    "pronunciation": "хинг",
+    "exception": false,
+    "ru": "пять",
+    "image": {
+      "file": "img/words/arasaac-2631.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "numbers"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "numbers"
+    ]
+  },
+  {
+    "id": "vets",
+    "hy": "վեց",
+    "pronunciation": "вецх",
+    "exception": false,
+    "ru": "шесть",
+    "image": {
+      "file": "img/words/arasaac-2632.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "numbers"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "numbers"
+    ]
+  },
+  {
+    "id": "ut",
+    "hy": "ութ",
+    "pronunciation": "утх",
+    "exception": false,
+    "ru": "восемь",
+    "image": {
+      "file": "img/words/arasaac-2634.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "numbers"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "numbers"
+    ]
+  },
+  {
+    "id": "iny",
+    "hy": "ինը",
+    "pronunciation": "ины",
+    "exception": false,
+    "ru": "девять",
+    "image": {
+      "file": "img/words/arasaac-2635.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "numbers"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "numbers"
+    ]
+  },
+  {
+    "id": "tasy",
+    "hy": "տասը",
+    "pronunciation": "тасы",
+    "exception": false,
+    "ru": "десять",
+    "image": {
+      "file": "img/words/arasaac-29254.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "numbers"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "numbers"
+    ]
+  },
+  {
+    "id": "ksan",
+    "hy": "քսան",
+    "pronunciation": "кхысан",
+    "exception": false,
+    "ru": "двадцать",
+    "image": {
+      "file": "img/words/arasaac-29550.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "numbers"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "numbers"
+    ]
+  },
+  {
+    "id": "haryur",
+    "hy": "հարյուր",
+    "pronunciation": "харйур",
+    "exception": false,
+    "ru": "сто",
+    "image": {
+      "file": "img/words/arasaac-29256.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "numbers"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "numbers"
+    ]
+  },
+  {
+    "id": "hazar",
+    "hy": "հազար",
+    "pronunciation": "хазар",
+    "exception": false,
+    "ru": "тысяча",
+    "image": {
+      "file": "img/words/arasaac-29258.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "numbers"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "numbers"
+    ]
+  },
+  {
+    "id": "zro",
+    "hy": "զրո",
+    "pronunciation": "зыро",
+    "exception": false,
+    "ru": "ноль",
+    "image": {
+      "file": "img/words/arasaac-2626.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "numbers"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "numbers"
+    ]
+  },
+  {
+    "id": "kani",
+    "hy": "քանի",
+    "pronunciation": "кхани",
+    "exception": false,
+    "ru": "сколько",
+    "image": {
+      "file": "img/words/arasaac-7073.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "numbers"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "numbers"
+    ]
+  },
+  {
+    "id": "kich",
+    "hy": "քիչ",
+    "pronunciation": "кхичх",
+    "exception": false,
+    "ru": "мало",
+    "image": {
+      "file": "img/words/arasaac-5546.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "words"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "numbers"
+    ]
+  },
+  {
+    "id": "tiv",
+    "hy": "թիվ",
+    "pronunciation": "тхив",
+    "exception": false,
+    "ru": "число",
+    "image": {
+      "file": "img/words/arasaac-2879.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "numbers"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "numbers"
+    ]
+  },
+  {
+    "id": "papa",
+    "hy": "պապա",
+    "pronunciation": "папа",
+    "exception": false,
+    "ru": "папа",
+    "image": {
+      "file": "img/words/arasaac-31146.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "family"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "family"
+    ],
+    "same": [
+      "hayr"
+    ]
+  },
+  {
+    "id": "yeghbayr",
+    "hy": "եղբայր",
+    "pronunciation": "йегхбайр",
+    "exception": false,
+    "ru": "брат",
+    "image": {
+      "file": "img/words/arasaac-2423.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "family"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "family"
+    ]
+  },
+  {
+    "id": "tgha",
+    "hy": "տղա",
+    "pronunciation": "тыгха",
+    "exception": false,
+    "ru": "мальчик; парень",
+    "image": {
+      "file": "img/words/arasaac-2485.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "people"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "family"
+    ]
+  },
+  {
+    "id": "aghjik",
+    "hy": "աղջիկ",
+    "pronunciation": "агхджик",
+    "exception": false,
+    "ru": "девочка; дочь",
+    "image": {
+      "file": "img/words/arasaac-2484.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "people"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "family"
+    ]
+  },
+  {
+    "id": "amusin",
+    "hy": "ամուսին",
+    "pronunciation": "амусин",
+    "exception": false,
+    "ru": "муж",
+    "image": {
+      "file": "img/words/arasaac-11550.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "family"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "family"
+    ]
+  },
+  {
+    "id": "vordi",
+    "hy": "որդի",
+    "pronunciation": "ворди",
+    "exception": false,
+    "ru": "сын",
+    "image": {
+      "file": "img/words/arasaac-10341.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "family"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "family"
+    ]
+  },
+  {
+    "id": "tghamard",
+    "hy": "տղամարդ",
+    "pronunciation": "тыгхамард",
+    "exception": false,
+    "ru": "мужчина",
+    "image": {
+      "file": "img/words/arasaac-4665.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "people"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "family"
     ]
   }
 ]

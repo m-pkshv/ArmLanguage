@@ -98,5 +98,125 @@
       "greetings"
     ],
     "reviewed": false
+  },
+  {
+    "id": "mek-yerku-yerekh",
+    "hy": "Մեկ, երկու, երեք։",
+    "pronunciation": "мек, йерку, йерекх",
+    "ru": "Раз, два, три!",
+    "themes": [
+      "numbers"
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "kani-hat",
+    "hy": "Քանի՞ հատ։",
+    "pronunciation": "кхани хат?",
+    "ru": "Сколько штук?",
+    "themes": [
+      "numbers"
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "inch-arzhe",
+    "hy": "Ինչ արժե՞։",
+    "pronunciation": "инчх арже?",
+    "ru": "Сколько стоит?",
+    "themes": [
+      "numbers"
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "kani-tarekan",
+    "hy": "Քանի՞ տարեկան ես։",
+    "pronunciation": "кхани тарекан йес?",
+    "ru": "Сколько тебе лет?",
+    "themes": [
+      "numbers"
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "yes-ksan-tarekan",
+    "hy": "Ես քսան տարեկան եմ։",
+    "pronunciation": "йес кхысан тарекан эм",
+    "ru": "Мне двадцать лет.",
+    "themes": [
+      "numbers"
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "zhamy-kanisn",
+    "hy": "Ժամը քանի՞սն է։",
+    "pronunciation": "жамы кханисн э?",
+    "ru": "Который час?",
+    "themes": [
+      "numbers"
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "sa-im-mayrn",
+    "hy": "Սա իմ մայրն է։",
+    "pronunciation": "са им майрн э",
+    "ru": "Это моя мама.",
+    "themes": [
+      "family"
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "yes-yeghbayr-unem",
+    "hy": "Ես եղբայր ունեմ։",
+    "pronunciation": "йес йегхбайр унем",
+    "ru": "У меня есть брат.",
+    "themes": [
+      "family"
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "im-yntaniky-mets",
+    "hy": "Իմ ընտանիքը մեծ է։",
+    "pronunciation": "им ынтаникхы мец э",
+    "ru": "У меня большая семья.",
+    "themes": [
+      "family"
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "amusnatsats-es",
+    "hy": "Ամուսնացա՞ծ ես։",
+    "pronunciation": "амуснацхац йес?",
+    "ru": "Ты женат? (Ты замужем?)",
+    "themes": [
+      "family"
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "yerekhaner-unes",
+    "hy": "Երեխաներ ունե՞ս։",
+    "pronunciation": "йереханер унес?",
+    "ru": "У тебя есть дети?",
+    "themes": [
+      "family"
+    ],
+    "reviewed": false
+  },
+  {
+    "id": "sa-im-ynkern",
+    "hy": "Սա իմ ընկերն է։",
+    "pronunciation": "са им ынкерн э",
+    "ru": "Это мой друг.",
+    "themes": [
+      "family"
+    ],
+    "reviewed": false
   }
 ]

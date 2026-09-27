@@ -128,3 +128,37 @@ describe("first words sessions", () => {
     });
   });
 });
+
+describe("numbers and family themes", () => {
+  it("puts numbers right after greetings", () => {
+    const order = content.course.sections.find((s) => s.id === "first-words")!.themes!.map((t) => t.id);
+    expect(order.slice(0, 3)).toEqual(["greetings", "numbers", "family"]);
+    expect(themeById(content, "numbers")!.status).toBe("available");
+    expect(themeById(content, "family")!.status).toBe("available");
+  });
+
+  it("never offers a synonym as a wrong answer (мама — մամա / մայր)", () => {
+    const pool = themeItems(themeById(content, "family")!);
+    for (let seed = 1; seed < 60; seed++) {
+      for (const id of ["word:mama", "word:mayr", "word:papa", "word:hayr"]) {
+        const q = WORD_EXERCISES["word-produce"].generate(studyItem(content, id), { content, rng: createRng(seed), pool, reading: true }) as WordChoiceQuestion;
+        const other = { "word:mama": "word:mayr", "word:mayr": "word:mama", "word:papa": "word:hayr", "word:hayr": "word:papa" }[id]!;
+        expect(q.options).not.toContain(other);
+      }
+    }
+  });
+
+  it("builds valid tasks for every item of the new themes", () => {
+    for (const themeId of ["numbers", "family"]) {
+      const t = themeById(content, themeId)!;
+      const pool = themeItems(t);
+      for (const [i, id] of pool.entries()) {
+        const item = studyItem(content, id);
+        const type = item.kind === "word" ? "word-produce" : "phrase-build";
+        const logic = WORD_EXERCISES[type];
+        expect(logic.isApplicable(item, { content, rng: createRng(i), pool, reading: true }), id).toBe(true);
+      }
+      expect(planThemeLesson(content, themeId, 2, 1, TODAY).steps.length).toBeGreaterThanOrEqual(15);
+    }
+  });
+});

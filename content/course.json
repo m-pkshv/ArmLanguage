@@ -163,18 +163,102 @@
           ]
         },
         {
-          "id": "family",
-          "title": "Семья и люди",
-          "emoji": "👨‍👩‍👧",
-          "status": "coming-soon",
-          "lessons": []
-        },
-        {
           "id": "numbers",
           "title": "Числа",
           "emoji": "🔢",
-          "status": "coming-soon",
-          "lessons": []
+          "status": "available",
+          "lessons": [
+            {
+              "id": "numbers-1",
+              "title": "От нуля до пяти",
+              "newItems": [
+                "word:zro",
+                "word:mek",
+                "word:yerku",
+                "word:yerekh",
+                "word:chors",
+                "word:hing",
+                "phrase:mek-yerku-yerekh"
+              ]
+            },
+            {
+              "id": "numbers-2",
+              "title": "От шести до десяти",
+              "newItems": [
+                "word:vets",
+                "word:yot",
+                "word:ut",
+                "word:iny",
+                "word:tasy",
+                "word:kani",
+                "phrase:kani-hat"
+              ]
+            },
+            {
+              "id": "numbers-3",
+              "title": "Большие числа",
+              "newItems": [
+                "word:ksan",
+                "word:haryur",
+                "word:hazar",
+                "word:shat",
+                "word:kich",
+                "word:tiv",
+                "phrase:inch-arzhe",
+                "phrase:kani-tarekan",
+                "phrase:yes-ksan-tarekan",
+                "phrase:zhamy-kanisn"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "family",
+          "title": "Семья и люди",
+          "emoji": "👨‍👩‍👧",
+          "status": "available",
+          "lessons": [
+            {
+              "id": "family-1",
+              "title": "Родители",
+              "newItems": [
+                "word:mama",
+                "word:papa",
+                "word:mayr",
+                "word:hayr",
+                "word:yntanik",
+                "word:yerekha",
+                "phrase:sa-im-mayrn"
+              ]
+            },
+            {
+              "id": "family-2",
+              "title": "Братья и сёстры",
+              "newItems": [
+                "word:yeghbayr",
+                "word:kuyr",
+                "word:tgha",
+                "word:aghjik",
+                "word:tat",
+                "word:pap",
+                "phrase:yes-yeghbayr-unem",
+                "phrase:im-yntaniky-mets"
+              ]
+            },
+            {
+              "id": "family-3",
+              "title": "Муж, жена, дети",
+              "newItems": [
+                "word:amusin",
+                "word:kin",
+                "word:vordi",
+                "word:tghamard",
+                "phrase:amusnatsats-es",
+                "phrase:yerekhaner-unes",
+                "phrase:sa-im-ynkern"
+              ]
+            }
+          ]
         },
         {
           "id": "food",

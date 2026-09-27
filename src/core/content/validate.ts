@@ -99,6 +99,7 @@ export function validateContent(c: Content, opts: ValidateOptions): ValidationRe
   for (const w of c.ruWords) checkImage(w.image, `Русское слово «${w.ru}»`);
 
   // --- фразы и темы раздела «Первые слова» (docs/10-first-words.md) ---
+  for (const w of c.words) for (const s of w.same ?? []) if (!wordIds.get(s)?.same?.includes(w.id)) errors.push(`Слово ${w.id}: синоним «${s}» не найден или не ссылается обратно`);
   const phraseIds = new Set(c.phrases.map((p) => p.id));
   dupes(c.phrases.map((p) => p.id), "Id фраз");
   for (const p of c.phrases) {

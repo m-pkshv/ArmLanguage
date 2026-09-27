@@ -14,6 +14,8 @@ export interface StudyItem {
   pronunciation: string;
   ru: string;
   image: ImageRef | null;
+  /** Элементы с тем же значением («word:mayr» для «word:mama»). */
+  same: string[];
 }
 
 export const isStudyItem = (id: string): boolean => id.startsWith("word:") || id.startsWith("phrase:");
@@ -22,10 +24,10 @@ export function studyItem(c: Content, id: string): StudyItem {
   const [kind, key] = id.split(":") as ["word" | "phrase", string];
   if (kind === "word") {
     const w = c.words.find((x) => x.id === key);
-    if (w) return { id, kind, hy: w.hy, pronunciation: w.pronunciation, ru: w.ru, image: w.image };
+    if (w) return { id, kind, hy: w.hy, pronunciation: w.pronunciation, ru: w.ru, image: w.image, same: (w.same ?? []).map((x) => `word:${x}`) };
   } else {
     const p = c.phrases.find((x) => x.id === key);
-    if (p) return { id, kind, hy: p.hy, pronunciation: p.pronunciation, ru: p.ru, image: null };
+    if (p) return { id, kind, hy: p.hy, pronunciation: p.pronunciation, ru: p.ru, image: null, same: [] };
   }
   throw new Error(`Нет элемента «${id}»`);
 }
