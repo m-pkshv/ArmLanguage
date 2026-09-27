@@ -457,8 +457,55 @@
           "id": "home",
           "title": "Дом",
           "emoji": "🏠",
-          "status": "coming-soon",
-          "lessons": []
+          "status": "available",
+          "lessons": [
+            {
+              "id": "home-1",
+              "title": "Дом и комнаты",
+              "newItems": [
+                "word:tun",
+                "word:bnakaran",
+                "word:senyak",
+                "word:khohanots",
+                "word:logaran",
+                "word:zugaran",
+                "word:durr",
+                "word:patuhan",
+                "phrase:vortegh-e-zugarany"
+              ]
+            },
+            {
+              "id": "home-2",
+              "title": "Мебель и вещи",
+              "newItems": [
+                "word:segan",
+                "word:mahchakal",
+                "word:bazmots",
+                "word:atorr",
+                "word:sarrnaran",
+                "word:herrustatsuyts",
+                "word:luys",
+                "phrase:patuhany-bats-ara",
+                "phrase:durry-pakir"
+              ]
+            },
+            {
+              "id": "home-3",
+              "title": "Гости и соседи",
+              "newItems": [
+                "word:harevan",
+                "word:verelak",
+                "word:astichan",
+                "word:hatak",
+                "word:pat",
+                "word:banali",
+                "phrase:bari-galust",
+                "phrase:hametsek",
+                "phrase:yes-aprum-em-yerevanum",
+                "phrase:vortegh-es-aprum"
+              ]
+            }
+          ]
         },
         {
           "id": "city",

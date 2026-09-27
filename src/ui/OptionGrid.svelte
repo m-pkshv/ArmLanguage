@@ -57,7 +57,8 @@
 <style>
   .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* колонки поровну, даже если вариант длинный */
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 10px;
   }
   .opt {

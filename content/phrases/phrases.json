@@ -646,5 +646,88 @@
     ],
     "situation": "Вам предлагают хоровац, но вы не едите мясо.",
     "reviewed": false
+  },
+  {
+    "id": "vortegh-e-zugarany",
+    "hy": "Որտե՞ղ է զուգարանը։",
+    "pronunciation": "вортегх э зугараны?",
+    "ru": "Где туалет?",
+    "themes": [
+      "home"
+    ],
+    "situation": "Вы в гостях, и вам нужно в туалет.",
+    "reviewed": false
+  },
+  {
+    "id": "bari-galust",
+    "hy": "Բարի գալուստ։",
+    "pronunciation": "бари галуст",
+    "ru": "Добро пожаловать!",
+    "themes": [
+      "home"
+    ],
+    "situation": "К вам впервые пришли гости — вы встречаете их у двери.",
+    "reviewed": false,
+    "alsoFits": [
+      "hametsek"
+    ]
+  },
+  {
+    "id": "hametsek",
+    "hy": "Համեցեք։",
+    "pronunciation": "хамецхекх",
+    "ru": "Заходите! (Проходите!)",
+    "themes": [
+      "home"
+    ],
+    "situation": "Гости стоят на пороге — вы приглашаете их войти.",
+    "reviewed": false,
+    "alsoFits": [
+      "bari-galust"
+    ]
+  },
+  {
+    "id": "patuhany-bats-ara",
+    "hy": "Պատուհանը բաց արա, խնդրում եմ։",
+    "pronunciation": "патуханы бацх ара, хындрум эм",
+    "ru": "Открой окно, пожалуйста.",
+    "themes": [
+      "home"
+    ],
+    "situation": "В комнате душно, и вы просите друга впустить воздух.",
+    "reviewed": false
+  },
+  {
+    "id": "durry-pakir",
+    "hy": "Դուռը փակիր, խնդրում եմ։",
+    "pronunciation": "дурры пхакир, хындрум эм",
+    "ru": "Закрой дверь, пожалуйста.",
+    "themes": [
+      "home"
+    ],
+    "situation": "Из подъезда дует холодом — вы просите закрыть вход.",
+    "reviewed": false
+  },
+  {
+    "id": "yes-aprum-em-yerevanum",
+    "hy": "Ես ապրում եմ Երևանում։",
+    "pronunciation": "йес апрум эм йереванум",
+    "ru": "Я живу в Ереване.",
+    "themes": [
+      "home"
+    ],
+    "situation": "Вас спросили, где вы живёте. Вы живёте в Ереване.",
+    "reviewed": false
+  },
+  {
+    "id": "vortegh-es-aprum",
+    "hy": "Որտե՞ղ ես ապրում։",
+    "pronunciation": "вортегх йес апрум?",
+    "ru": "Где ты живёшь?",
+    "themes": [
+      "home"
+    ],
+    "situation": "Вы хотите узнать, где живёт новый знакомый.",
+    "reviewed": false
   }
 ]

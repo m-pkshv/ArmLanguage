@@ -57,7 +57,8 @@
           {o.ru}
         </span>
       {:else}
-        <span class="opt-hy">
+        <!-- длинные слова (պատուհան, շնորհակալություն) мельче, чтобы не выходили за карточку -->
+        <span class="opt-hy" class:long={o.hy.length > 6} class:xlong={o.hy.length > 10}>
           <span lang="hy">{o.hy}</span>
           {#if question.reading || result}<small>[{o.pronunciation}]</small>{/if}
         </span>
@@ -136,6 +137,16 @@
     flex-direction: column;
     align-items: center;
     font-family: var(--font-hy);
+  }
+  .opt-hy.long {
+    font-size: calc(24px * var(--glyph-scale));
+  }
+  .opt-hy.xlong {
+    font-size: calc(17px * var(--glyph-scale));
+  }
+  .opt-hy {
+    max-width: 100%;
+    overflow-wrap: anywhere;
   }
   .opt-hy small {
     color: var(--muted);

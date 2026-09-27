@@ -33,7 +33,10 @@
       "home"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "home"
+    ]
   },
   {
     "id": "atam",
@@ -222,7 +225,10 @@
       "home"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "home"
+    ]
   },
   {
     "id": "ddum",
@@ -702,7 +708,10 @@
       "home"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "home"
+    ]
   },
   {
     "id": "khndzor",
@@ -1591,7 +1600,10 @@
       "home"
     ],
     "level": 1,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "home"
+    ]
   },
   {
     "id": "tat",
@@ -2629,7 +2641,10 @@
       "home"
     ],
     "level": 2,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "home"
+    ]
   },
   {
     "id": "zov",
@@ -4396,7 +4411,8 @@
       "sport"
     ],
     "themes": [
-      "gym"
+      "gym",
+      "home"
     ],
     "level": 2,
     "reviewed": false
@@ -4859,6 +4875,321 @@
     ],
     "themes": [
       "food"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "patuhan",
+    "hy": "պատուհան",
+    "pronunciation": "патухан",
+    "exception": false,
+    "ru": "окно",
+    "image": {
+      "file": "img/words/arasaac-2611.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "home"
+    ],
+    "themes": [
+      "home"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "segan",
+    "hy": "սեղան",
+    "pronunciation": "сегхан",
+    "exception": false,
+    "ru": "стол",
+    "image": {
+      "file": "img/words/arasaac-3129.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "home"
+    ],
+    "themes": [
+      "home"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "mahchakal",
+    "hy": "մահճակալ",
+    "pronunciation": "махчакал",
+    "exception": false,
+    "ru": "кровать",
+    "image": {
+      "file": "img/words/arasaac-2304.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "home"
+    ],
+    "themes": [
+      "home"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "senyak",
+    "hy": "սենյակ",
+    "pronunciation": "сенйак",
+    "exception": false,
+    "ru": "комната",
+    "image": {
+      "file": "img/words/arasaac-38377.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "home"
+    ],
+    "themes": [
+      "home"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "khohanots",
+    "hy": "խոհանոց",
+    "pronunciation": "хоханоцх",
+    "exception": false,
+    "ru": "кухня",
+    "image": {
+      "file": "img/words/arasaac-33070.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "home"
+    ],
+    "themes": [
+      "home"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "logaran",
+    "hy": "լոգարան",
+    "pronunciation": "логаран",
+    "exception": false,
+    "ru": "ванная",
+    "image": {
+      "file": "img/words/arasaac-2272.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "home"
+    ],
+    "themes": [
+      "home"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "zugaran",
+    "hy": "զուգարան",
+    "pronunciation": "зугаран",
+    "exception": false,
+    "ru": "туалет",
+    "image": {
+      "file": "img/words/arasaac-5921.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "home"
+    ],
+    "themes": [
+      "home"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "bnakaran",
+    "hy": "բնակարան",
+    "pronunciation": "бынакаран",
+    "exception": false,
+    "ru": "квартира",
+    "image": {
+      "file": "img/words/arasaac-11343.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "home"
+    ],
+    "themes": [
+      "home"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "hatak",
+    "hy": "հատակ",
+    "pronunciation": "хатак",
+    "exception": false,
+    "ru": "пол",
+    "image": {
+      "file": "img/words/arasaac-2575.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "home"
+    ],
+    "themes": [
+      "home"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "astichan",
+    "hy": "աստիճան",
+    "pronunciation": "астичан",
+    "exception": false,
+    "ru": "лестница",
+    "image": {
+      "file": "img/words/arasaac-2379.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "home"
+    ],
+    "themes": [
+      "home"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "bazmots",
+    "hy": "բազմոց",
+    "pronunciation": "базмоцх",
+    "exception": false,
+    "ru": "диван",
+    "image": {
+      "file": "img/words/arasaac-2571.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "home"
+    ],
+    "themes": [
+      "home"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "sarrnaran",
+    "hy": "սառնարան",
+    "pronunciation": "саррнаран",
+    "exception": false,
+    "ru": "холодильник",
+    "image": {
+      "file": "img/words/arasaac-4876.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "home"
+    ],
+    "themes": [
+      "home"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "herrustatsuyts",
+    "hy": "հեռուստացույց",
+    "pronunciation": "херрустацхуйцх",
+    "exception": false,
+    "ru": "телевизор",
+    "image": {
+      "file": "img/words/arasaac-25498.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "home"
+    ],
+    "themes": [
+      "home"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "verelak",
+    "hy": "վերելակ",
+    "pronunciation": "верелак",
+    "exception": false,
+    "ru": "лифт",
+    "image": {
+      "file": "img/words/arasaac-2260.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "home"
+    ],
+    "themes": [
+      "home"
+    ],
+    "level": 2,
+    "reviewed": false
+  },
+  {
+    "id": "harevan",
+    "hy": "հարևան",
+    "pronunciation": "хареван",
+    "exception": false,
+    "ru": "сосед",
+    "image": {
+      "file": "img/words/arasaac-6241.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "home"
+    ],
+    "themes": [
+      "home"
     ],
     "level": 2,
     "reviewed": false
