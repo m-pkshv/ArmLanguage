@@ -12,6 +12,7 @@ export interface Release {
 export const RELEASES: Release[] = [
   { version: "1.0", key: "r1_0", items: ["words", "continue", "review", "mine"] },
   { version: "1.1", key: "r1_1", items: ["palettes", "choose", "themes"] },
+  { version: "1.2", key: "r1_2", items: ["themes", "words", "tap", "dilijan"] },
 ];
 
 /** «1.0.0» → «1.0», «1.2.3» → «1.2.3». */
