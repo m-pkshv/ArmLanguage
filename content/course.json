@@ -1131,6 +1131,62 @@
               ]
             }
           ]
+        },
+        {
+          "id": "phone",
+          "title": "Телефон и интернет",
+          "emoji": "📱",
+          "status": "available",
+          "lessons": [
+            {
+              "id": "phone-1",
+              "title": "Звонок",
+              "newItems": [
+                "word:zangel",
+                "word:hamar",
+                "word:alo",
+                "word:litskavorich",
+                "word:martkots",
+                "word:akanjakal",
+                "word:ekran",
+                "phrase:vorn-e-qo-hamary",
+                "phrase:kzangem",
+                "phrase:alo-ov-e"
+              ]
+            },
+            {
+              "id": "phone-2",
+              "title": "Интернет",
+              "newItems": [
+                "word:internet",
+                "word:gaghtnabarr",
+                "word:kayk",
+                "word:post",
+                "word:havelvats",
+                "word:hghum",
+                "word:tesanyut",
+                "word:haghordagrutyun",
+                "phrase:aystegh-internet-ka",
+                "phrase:vorn-e-gaghtnabarry",
+                "phrase:kareli-e-litskavorel"
+              ]
+            },
+            {
+              "id": "phone-3",
+              "title": "Что делать",
+              "newItems": [
+                "word:grel",
+                "word:kardal",
+                "word:ugharkel",
+                "word:nerberrnel",
+                "word:miatsnel",
+                "word:anjatel",
+                "word:pntrel",
+                "phrase:grir-indz",
+                "phrase:ugharkir-lusankary"
+              ]
+            }
+          ]
         }
       ]
     },

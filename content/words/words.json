@@ -486,7 +486,10 @@
       "things"
     ],
     "level": 2,
-    "reviewed": false
+    "reviewed": false,
+    "themes": [
+      "phone"
+    ]
   },
   {
     "id": "ynker",
@@ -9177,6 +9180,437 @@
     "reviewed": false,
     "themes": [
       "cafe"
+    ]
+  },
+  {
+    "id": "zangel",
+    "hy": "զանգել",
+    "pronunciation": "зангел",
+    "exception": false,
+    "ru": "звонить",
+    "image": {
+      "file": "img/words/arasaac-4691.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "things"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "phone"
+    ]
+  },
+  {
+    "id": "hamar",
+    "hy": "համար",
+    "pronunciation": "хамар",
+    "exception": false,
+    "ru": "номер (телефона)",
+    "image": {
+      "file": "img/words/arasaac-38573.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "things"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "phone"
+    ]
+  },
+  {
+    "id": "alo",
+    "hy": "ալո",
+    "pronunciation": "ало",
+    "exception": false,
+    "ru": "алло",
+    "image": null,
+    "tags": [
+      "things"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "phone"
+    ]
+  },
+  {
+    "id": "litskavorich",
+    "hy": "լիցքավորիչ",
+    "pronunciation": "лицхкхаворич",
+    "exception": false,
+    "ru": "зарядка (зарядное устройство)",
+    "image": {
+      "file": "img/words/arasaac-27651.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "things"
+    ],
+    "level": 2,
+    "reviewed": false,
+    "themes": [
+      "phone"
+    ]
+  },
+  {
+    "id": "martkots",
+    "hy": "մարտկոց",
+    "pronunciation": "марткоцх",
+    "exception": false,
+    "ru": "батарея (аккумулятор)",
+    "image": {
+      "file": "img/words/arasaac-8320.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "things"
+    ],
+    "level": 2,
+    "reviewed": false,
+    "themes": [
+      "phone"
+    ]
+  },
+  {
+    "id": "akanjakal",
+    "hy": "ականջակալ",
+    "pronunciation": "аканджакал",
+    "exception": false,
+    "ru": "наушники",
+    "image": {
+      "file": "img/words/arasaac-11208.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "things"
+    ],
+    "level": 2,
+    "reviewed": false,
+    "themes": [
+      "phone"
+    ]
+  },
+  {
+    "id": "internet",
+    "hy": "ինտերնետ",
+    "pronunciation": "интернет",
+    "exception": false,
+    "ru": "интернет",
+    "image": {
+      "file": "img/words/arasaac-35503.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "things"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "phone"
+    ]
+  },
+  {
+    "id": "gaghtnabarr",
+    "hy": "գաղտնաբառ",
+    "pronunciation": "гагхтнабарр",
+    "exception": false,
+    "ru": "пароль",
+    "image": {
+      "file": "img/words/arasaac-27691.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "things"
+    ],
+    "level": 2,
+    "reviewed": false,
+    "themes": [
+      "phone"
+    ]
+  },
+  {
+    "id": "kayk",
+    "hy": "կայք",
+    "pronunciation": "кайкх",
+    "exception": false,
+    "ru": "сайт",
+    "image": {
+      "file": "img/words/arasaac-37366.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "things"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "phone"
+    ]
+  },
+  {
+    "id": "post",
+    "hy": "փոստ",
+    "pronunciation": "пхост",
+    "exception": false,
+    "ru": "почта",
+    "image": {
+      "file": "img/words/arasaac-32540.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "things"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "phone"
+    ]
+  },
+  {
+    "id": "havelvats",
+    "hy": "հավելված",
+    "pronunciation": "хавелвац",
+    "exception": false,
+    "ru": "приложение (в телефоне)",
+    "image": null,
+    "tags": [
+      "things"
+    ],
+    "level": 2,
+    "reviewed": false,
+    "themes": [
+      "phone"
+    ]
+  },
+  {
+    "id": "hghum",
+    "hy": "հղում",
+    "pronunciation": "хыгхум",
+    "exception": false,
+    "ru": "ссылка",
+    "image": {
+      "file": "img/words/arasaac-39888.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "things"
+    ],
+    "level": 2,
+    "reviewed": false,
+    "themes": [
+      "phone"
+    ]
+  },
+  {
+    "id": "tesanyut",
+    "hy": "տեսանյութ",
+    "pronunciation": "тесанютх",
+    "exception": false,
+    "ru": "видео",
+    "image": {
+      "file": "img/words/arasaac-38207.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "things"
+    ],
+    "level": 2,
+    "reviewed": false,
+    "themes": [
+      "phone"
+    ]
+  },
+  {
+    "id": "haghordagrutyun",
+    "hy": "հաղորդագրություն",
+    "pronunciation": "хагхордагрутхюн",
+    "exception": false,
+    "ru": "сообщение",
+    "image": {
+      "file": "img/words/arasaac-37867.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "things"
+    ],
+    "level": 2,
+    "reviewed": false,
+    "themes": [
+      "phone"
+    ]
+  },
+  {
+    "id": "grel",
+    "hy": "գրել",
+    "pronunciation": "гырел",
+    "exception": false,
+    "ru": "писать",
+    "image": {
+      "file": "img/words/arasaac-2380.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "things"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "phone"
+    ]
+  },
+  {
+    "id": "kardal",
+    "hy": "կարդալ",
+    "pronunciation": "кардал",
+    "exception": false,
+    "ru": "читать",
+    "image": {
+      "file": "img/words/arasaac-2447.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "things"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "phone"
+    ]
+  },
+  {
+    "id": "ugharkel",
+    "hy": "ուղարկել",
+    "pronunciation": "угхаркел",
+    "exception": false,
+    "ru": "отправлять",
+    "image": {
+      "file": "img/words/arasaac-27359.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "things"
+    ],
+    "level": 2,
+    "reviewed": false,
+    "themes": [
+      "phone"
+    ]
+  },
+  {
+    "id": "nerberrnel",
+    "hy": "ներբեռնել",
+    "pronunciation": "нерберрнел",
+    "exception": false,
+    "ru": "скачивать",
+    "image": {
+      "file": "img/words/arasaac-27397.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "things"
+    ],
+    "level": 2,
+    "reviewed": false,
+    "themes": [
+      "phone"
+    ]
+  },
+  {
+    "id": "miatsnel",
+    "hy": "միացնել",
+    "pronunciation": "миацхнел",
+    "exception": false,
+    "ru": "включать",
+    "image": {
+      "file": "img/words/arasaac-21818.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "things"
+    ],
+    "level": 2,
+    "reviewed": false,
+    "themes": [
+      "phone"
+    ]
+  },
+  {
+    "id": "anjatel",
+    "hy": "անջատել",
+    "pronunciation": "анджател",
+    "exception": false,
+    "ru": "выключать",
+    "image": {
+      "file": "img/words/arasaac-21365.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "things"
+    ],
+    "level": 2,
+    "reviewed": false,
+    "themes": [
+      "phone"
+    ]
+  },
+  {
+    "id": "pntrel",
+    "hy": "փնտրել",
+    "pronunciation": "пхынтрел",
+    "exception": false,
+    "ru": "искать",
+    "image": {
+      "file": "img/words/arasaac-27391.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "things"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "phone"
     ]
   }
 ]
