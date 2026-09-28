@@ -1,7 +1,7 @@
 import { content } from "../core/content";
-import { alphabetLessons, lessonLetters } from "../core/course";
+import { alphabetLessons, openLessons } from "../core/course";
 import { toDay } from "../core/dates";
-import { applyAnswer, scheduleForReview } from "../core/progress/knowledge";
+import { applyAnswer } from "../core/progress/knowledge";
 import { createEmptyProgress } from "../core/progress/schema";
 import { createProgressStore } from "../core/progress/store";
 import type { ProgressData, Settings } from "../core/progress/types";
@@ -111,6 +111,8 @@ class AppState {
         bestReading: better ? { correct: reading.correct, avgMs: Math.round(reading.avgMs) } : prevR,
       };
       track(passed ? "final-test-passed" : "final-test-failed");
+      // Тест сдан раньше уроков: уроки открываются, как «Я знаю эти буквы», буквы — в повторение (docs/09-navigation.md, 9.5)
+      if (passed) openLessons(this.progress, content, alphabetLessons(content).length, day, true);
     }
     this.progress.session = null;
     this.commit();
@@ -124,15 +126,7 @@ class AppState {
 
   /** «Я знаю эти буквы»: открыть уроки до указанного; их буквы попадут в повторение (docs/09-navigation.md, 9.3). */
   unlockUpTo(lessonIndex: number) {
-    const day = today();
-    alphabetLessons(content)
-      .slice(0, lessonIndex)
-      .forEach((lesson) => {
-        if (!this.progress.lessons[lesson.id]) {
-          this.progress.lessons[lesson.id] = { completedAt: day, skipped: true };
-          scheduleForReview(this.progress, lessonLetters(lesson), day);
-        }
-      });
+    openLessons(this.progress, content, lessonIndex, today(), false);
     this.commit();
   }
 }

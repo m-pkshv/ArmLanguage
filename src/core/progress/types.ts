@@ -47,6 +47,8 @@ export interface LessonProgress {
   completedAt: string; // YYYY-MM-DD
   /** Урок открыт кнопкой «Я знаю эти буквы», а не пройден. */
   skipped?: boolean;
+  /** Урок открыт сдачей итогового теста (вместе с skipped). */
+  byTest?: boolean;
 }
 
 export interface FinalTestProgress {

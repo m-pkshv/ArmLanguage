@@ -81,12 +81,15 @@ export function applyAnswer(
   }
 }
 
-/** Отметить буквы как «к повторению сегодня», если их ещё не было (урок открыт кнопкой «Я знаю эти буквы»). */
-export function scheduleForReview(p: ProgressData, letterIds: string[], today: Day): void {
+/**
+ * Отметить буквы «к повторению», если их ещё не было: сегодня (урок открыт кнопкой «Я знаю эти буквы»)
+ * или позже — `due` (уроки открыты сдачей итогового теста: сразу после теста — к словам, а не к повторению).
+ */
+export function scheduleForReview(p: ProgressData, letterIds: string[], today: Day, due: Day = today): void {
   for (const id of letterIds) {
     for (const s of MAIN_SKILLS) {
       const key = itemKey(id, s);
-      p.items[key] ??= { box: 0, due: today, ok: 0, bad: 0, last: today };
+      p.items[key] ??= { box: 0, due, ok: 0, bad: 0, last: today };
     }
   }
 }

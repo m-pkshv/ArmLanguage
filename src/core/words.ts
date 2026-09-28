@@ -40,11 +40,14 @@ export const themeById = (c: Content, id: string): Theme | undefined => themes(c
 
 export const themeItems = (t: Theme): string[] => t.lessons.flatMap((l) => l.newItems);
 
-/** Раздел открывается после 8-го (последнего) урока алфавита — решение владельца, 2026-09-28. */
+/**
+ * Раздел открывается после 8-го (последнего) урока алфавита или после сдачи итогового теста —
+ * тест доступен сразу, для тех, кто уже знает буквы (решения владельца, 2026-09-28; docs/10-first-words.md, 10.2).
+ */
 export function firstWordsOpen(p: ProgressData, c: Content): boolean {
   const lessons = alphabetLessons(c);
   const last = lessons[lessons.length - 1];
-  return !!last && !!p.lessons[last.id];
+  return (!!last && !!p.lessons[last.id]) || !!p.finalTest?.passedAt;
 }
 
 /** Уроки темы идут по порядку: открыт первый непройденный. */

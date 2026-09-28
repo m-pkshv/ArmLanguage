@@ -1,6 +1,6 @@
 import type { Content, Lesson, Word } from "./content/types";
-import type { Day } from "./dates";
-import { isSeen } from "./progress/knowledge";
+import { addDays, type Day } from "./dates";
+import { isSeen, scheduleForReview } from "./progress/knowledge";
 import type { ProgressData } from "./progress/types";
 import { indexLetters, lettersOf } from "./text/armenian";
 
@@ -21,6 +21,22 @@ export function lessonStatus(p: ProgressData, lessons: Lesson[], i: number): Les
   if (p.lessons[lesson.id]) return "done";
   if (i === 0 || p.lessons[lessons[i - 1]!.id]) return "current";
   return "locked";
+}
+
+/** Через сколько дней повторить буквы уроков, открытых сдачей итогового теста. */
+export const TEST_REVIEW_DELAY = 3;
+
+/**
+ * Отметить уроки до `upTo` (не включая) открытыми без прохождения; буквы — в повторение.
+ * Кнопка «Я знаю эти буквы» — повторение сегодня; сдача итогового теста (`byTest`) — через TEST_REVIEW_DELAY дней,
+ * чтобы сразу после теста «Продолжить» вело к словам (docs/09-navigation.md, 9.5).
+ */
+export function openLessons(p: ProgressData, c: Content, upTo: number, day: Day, byTest: boolean): void {
+  for (const lesson of alphabetLessons(c).slice(0, upTo)) {
+    if (p.lessons[lesson.id]) continue;
+    p.lessons[lesson.id] = { completedAt: day, skipped: true, ...(byTest ? { byTest: true } : {}) };
+    scheduleForReview(p, lessonLetters(lesson), day, byTest ? addDays(day, TEST_REVIEW_DELAY) : day);
+  }
 }
 
 /** Первый непройденный урок (или undefined, если пройдены все). */

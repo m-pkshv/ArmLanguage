@@ -3,7 +3,7 @@
   import { firstWordsOpen, seenItem, themeDone, themeItems, themes } from "../../core/words";
   import { t } from "../../i18n";
   import ScreenHeader from "../../ui/ScreenHeader.svelte";
-  import { startWordsReview } from "../../session/start";
+  import { startFinalTest, startWordsReview } from "../../session/start";
   import { wordsDue } from "../../session/wordPlan";
   import { hrefOf } from "../routes";
   import { app, today } from "../state.svelte";
@@ -21,6 +21,8 @@
 
 {#if !open}
   <p class="muted intro">{t("words.locked")}</p>
+  <!-- знающие буквы открывают раздел итоговым тестом (docs/10-first-words.md, 10.2); вид — как у главной кнопки -->
+  <button class="review" onclick={startFinalTest}>{t("words.toFinal")}</button>
   <a class="link" href="#/lessons">{t("words.toLessons")}</a>
 {:else}
   <p class="muted intro">{t("words.intro")}</p>

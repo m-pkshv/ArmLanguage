@@ -37,7 +37,7 @@
           <span class="letters hy" lang="hy">{lessonLetters(lesson).map((id) => letterById(id)!.upper).join(" ")}</span>
           <span class="meta">
             {t("lessons.words", { n: wordsAfter[i]! })}
-            {#if p.lessons[lesson.id]?.skipped}· {t("lessons.skipped")}{/if}
+            {#if p.lessons[lesson.id]?.skipped}· {p.lessons[lesson.id]?.byTest ? t("lessons.byTest") : t("lessons.skipped")}{/if}
           </span>
           {#if status === "done"}
             <span class="conf" aria-label={t("lessons.confidence")}><span style:width="{confidence(i) * 100}%"></span></span>
@@ -47,12 +47,13 @@
     </li>
   {/each}
   <li>
-    <button class="lesson final" class:locked={!allDone} disabled={!allDone} onclick={startFinalTest}>
+    <!-- Итоговый тест открыт всегда: знающие буквы сдают его и сразу переходят к словам (docs/09-navigation.md, 9.5) -->
+    <button class="lesson final" onclick={startFinalTest}>
       <span class="num">{p.finalTest?.passedAt ? "🏆" : "★"}</span>
       <span class="body">
         <span class="title">{t("lessons.final")}</span>
         <span class="meta">
-          {#if p.finalTest}{t("lessons.finalBest", { n: Math.round(p.finalTest.bestScore * 100) })}{#if p.finalTest.bestReading}{" · "}{t("lessons.finalBestReading", { correct: p.finalTest.bestReading.correct, s: (p.finalTest.bestReading.avgMs / 1000).toFixed(1).replace(".", ",") })}{/if}{:else if allDone}{t("lessons.finalReady")}{:else}{t("lessons.finalLocked")}{/if}
+          {#if p.finalTest}{t("lessons.finalBest", { n: Math.round(p.finalTest.bestScore * 100) })}{#if p.finalTest.bestReading}{" · "}{t("lessons.finalBestReading", { correct: p.finalTest.bestReading.correct, s: (p.finalTest.bestReading.avgMs / 1000).toFixed(1).replace(".", ",") })}{/if}{:else if allDone}{t("lessons.finalReady")}{:else}{t("lessons.finalEarly")}{/if}
         </span>
       </span>
     </button>

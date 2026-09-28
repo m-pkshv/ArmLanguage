@@ -165,6 +165,9 @@
         {t("results.nextLesson", { n: nextIndex + 1, letters: lessonLetters(lessons[nextIndex]!).map((id) => letterById(id)!.upper).join(" ") })}
       </button>
       <a class="btn" href="#/">{t("results.home")}</a>
+    {:else if session.kind === "final" && passed}
+      <a class="btn primary" href="#/words">{t("results.toWords")}</a>
+      <a class="btn" href="#/">{t("results.home")}</a>
     {:else if session.kind === "final" && !passed}
       <button class="btn primary" onclick={startFinalTest}>{t("results.retryFinal")}</button>
       <a class="btn" href="#/">{t("results.home")}</a>

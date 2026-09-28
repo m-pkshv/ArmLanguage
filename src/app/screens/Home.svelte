@@ -100,6 +100,7 @@
     </ul>
     <button class="primary" onclick={() => startLesson(0)}>{t("welcome.start")}</button>
     <a class="link" href="#/lessons">{t("welcome.know")}</a>
+    <button class="link" onclick={startFinalTest}>{t("welcome.knowAll")}</button>
   </div>
 {:else}
   <div class="hero">
@@ -164,7 +165,7 @@
     <ul class="sections">
       {#each sections as s (s.id)}
         {#if s.id === "first-words" && s.status === "available"}
-          <!-- «Первые слова» — после 8-го урока алфавита (docs/10-first-words.md, 10.2) -->
+          <!-- «Первые слова» — после 8-го урока алфавита или сдачи итогового теста (docs/10-first-words.md, 10.2) -->
           <li class="link-row">
             <a href="#/words">
               <span>{s.title}</span>
@@ -202,6 +203,14 @@
     margin-top: 16px;
     color: var(--muted);
     text-align: center;
+  }
+  button.link {
+    width: 100%;
+    padding: 0;
+    border: 0;
+    background: none;
+    font: inherit;
+    text-decoration: var(--link-decoration);
   }
   .hero {
     padding: 8px 4px 16px;
