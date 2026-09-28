@@ -63,7 +63,8 @@ function normalizeSettings(raw: unknown): Settings {
   const d = DEFAULT_SETTINGS;
   return {
     theme: pick(s.theme, ["system", "light", "dark"], d.theme),
-    palette: pick(s.palette, PALETTE_IDS, d.palette),
+    // «Хвоя на бумаге» (pine) переименована в «Дилиджан» (docs/08-decisions.md, 34)
+    palette: pick(s.palette === "pine" ? "dilijan" : s.palette, PALETTE_IDS, d.palette),
     letterSize: pick(s.letterSize, ["normal", "large"], d.letterSize),
     autoAdvance: typeof s.autoAdvance === "boolean" ? s.autoAdvance : d.autoAdvance,
     strictness: pick(s.strictness, ["soft", "strict"], d.strictness),

@@ -6,8 +6,8 @@ export const SCHEMA_VERSION = 6;
 
 export type Theme = "system" | "light" | "dark";
 /** Цветовая тема (docs/05-ui-mobile.md, 5.5): «Матенадаран», «Севан», «Дилиджан». */
-export type Palette = "ink" | "sevan" | "pine";
-export const PALETTE_IDS: readonly Palette[] = ["ink", "sevan", "pine"];
+export type Palette = "ink" | "sevan" | "dilijan";
+export const PALETTE_IDS: readonly Palette[] = ["ink", "sevan", "dilijan"];
 export type LetterSize = "normal" | "large";
 export type Strictness = "soft" | "strict";
 export type Script = "print" | "handwriting";

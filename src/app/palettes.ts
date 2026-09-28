@@ -30,7 +30,7 @@ export const PALETTES: readonly PaletteInfo[] = [
     dark: { bg: "#0e1519", surface: "#162027", accent: "#7db3f0", good: "#4ade80", text: "#e5edf2" },
   },
   {
-    id: "pine",
+    id: "dilijan",
     light: { bg: "#f5f0e6", surface: "#fffcf5", accent: "#1f5a3d", good: "#15803d", text: "#26221c" },
     dark: { bg: "#191712", surface: "#221f19", accent: "#8cc7a1", good: "#4ade80", text: "#efe7d8" },
   },

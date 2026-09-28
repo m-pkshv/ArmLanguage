@@ -59,7 +59,9 @@ describe("migrate", () => {
   });
 
   it("keeps a chosen color theme and drops unknown ones", () => {
-    expect(migrate({ schemaVersion: 6, settings: { palette: "pine" } }, NOW).settings.palette).toBe("pine");
+    expect(migrate({ schemaVersion: 6, settings: { palette: "dilijan" } }, NOW).settings.palette).toBe("dilijan");
+    // прежнее имя темы «Дилиджан»
+    expect(migrate({ schemaVersion: 6, settings: { palette: "pine" } }, NOW).settings.palette).toBe("dilijan");
     expect(migrate({ schemaVersion: 6, settings: { palette: "sevan" } }, NOW).settings.palette).toBe("sevan");
     expect(migrate({ schemaVersion: 6, settings: { palette: "apricot" } }, NOW).settings.palette).toBe("ink");
   });

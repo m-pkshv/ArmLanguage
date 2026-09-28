@@ -1,4 +1,4 @@
-/* Цветовые темы (палитры): «Матенадаран» (ink, по умолчанию), «Севан» (sevan), «Дилиджан» (pine).
+/* Цветовые темы (палитры): «Матенадаран» (ink, по умолчанию), «Севан» (sevan), «Дилиджан» (dilijan).
    Палитра — атрибут data-palette на <html>, светлый/тёмный вид — data-theme (docs/05-ui-mobile.md, 5.5;
    цвета и правила — docs/11-design.md).
    В каждой палитре три блока: светлый, тёмный по выбору (data-theme="dark") и тёмный по системе
@@ -204,8 +204,8 @@
   }
 }
 
-/* ── «Дилиджан» (pine) — песочная бумага, хвойная зелень, заголовки Lora ── */
-:root[data-palette="pine"] {
+/* ── «Дилиджан» (dilijan) — песочная бумага, хвойная зелень, заголовки Lora ── */
+:root[data-palette="dilijan"] {
   --bg: #f5f0e6;
   --surface: #fffcf5;
   --surface-2: #ede5d6;
@@ -239,7 +239,7 @@
   --link-decoration: none;
   color-scheme: light;
 }
-:root[data-palette="pine"][data-theme="dark"] {
+:root[data-palette="dilijan"][data-theme="dark"] {
   --bg: #191712;
   --surface: #221f19;
   --surface-2: #2c2820;
@@ -270,7 +270,7 @@
   color-scheme: dark;
 }
 @media (prefers-color-scheme: dark) {
-  :root[data-palette="pine"]:not([data-theme="light"]) {
+  :root[data-palette="dilijan"]:not([data-theme="light"]) {
     --bg: #191712;
     --surface: #221f19;
     --surface-2: #2c2820;

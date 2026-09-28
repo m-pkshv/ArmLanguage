@@ -12,7 +12,7 @@
       try {
         var s = JSON.parse(localStorage.getItem("hy:progress") || "{}").settings || {};
         var r = document.documentElement;
-        if (s.palette === "sevan" || s.palette === "pine") r.dataset.palette = s.palette;
+        if (s.palette === "sevan" || s.palette === "dilijan") r.dataset.palette = s.palette;
         if (s.theme === "light" || s.theme === "dark") r.dataset.theme = s.theme;
       } catch (e) {}
     </script>
