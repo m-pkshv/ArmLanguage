@@ -5,7 +5,7 @@ import type { SavedSession } from "../session/types";
 export const SCHEMA_VERSION = 6;
 
 export type Theme = "system" | "light" | "dark";
-/** Цветовая тема (docs/05-ui-mobile.md, 5.5): «Матенадаран», «Севан», «Хвоя на бумаге». */
+/** Цветовая тема (docs/05-ui-mobile.md, 5.5): «Матенадаран», «Севан», «Дилиджан». */
 export type Palette = "ink" | "sevan" | "pine";
 export const PALETTE_IDS: readonly Palette[] = ["ink", "sevan", "pine"];
 export type LetterSize = "normal" | "large";

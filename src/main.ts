@@ -6,7 +6,7 @@ import "@fontsource/noto-sans-armenian/400.css";
 import "@fontsource/noto-sans-armenian/500.css";
 import "@fontsource/noto-sans-armenian/600.css";
 import "@fontsource/noto-sans-armenian/700.css";
-// Lora — заголовки темы «Хвоя на бумаге»; только кириллица и латиница (и в офлайн-кэше тоже)
+// Lora — заголовки темы «Дилиджан»; только кириллица и латиница (и в офлайн-кэше тоже)
 import "@fontsource/lora/cyrillic-500.css";
 import "@fontsource/lora/latin-500.css";
 import "@fontsource/lora/cyrillic-600.css";
