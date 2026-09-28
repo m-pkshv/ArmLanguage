@@ -1072,6 +1072,65 @@
               ]
             }
           ]
+        },
+        {
+          "id": "cafe",
+          "title": "Кафе и ресторан",
+          "emoji": "🍽️",
+          "status": "available",
+          "lessons": [
+            {
+              "id": "cafe-1",
+              "title": "За столиком",
+              "newItems": [
+                "word:matutsogh",
+                "word:chashatsank",
+                "word:apse",
+                "word:bazhak",
+                "word:gavat",
+                "word:gdal",
+                "word:patarakagh",
+                "word:danak",
+                "word:andzerotsik",
+                "phrase:seghan-yerku-hogu",
+                "phrase:patarakagh-bereq"
+              ]
+            },
+            {
+              "id": "cafe-2",
+              "title": "Что заказать",
+              "newItems": [
+                "word:aghtsan",
+                "word:tolma",
+                "word:tan",
+                "word:matsun",
+                "word:gata",
+                "word:aghander",
+                "word:paghpaghak",
+                "word:tort",
+                "word:garejur",
+                "phrase:uzum-em-patvirel",
+                "phrase:inch-khorhurd-ktaq",
+                "phrase:arrants-shakari"
+              ]
+            },
+            {
+              "id": "cafe-3",
+              "title": "Вкус и счёт",
+              "newItems": [
+                "word:kaghtsr",
+                "word:aghi",
+                "word:darr",
+                "word:tarm",
+                "word:hashiv",
+                "word:teyavchar",
+                "word:patver",
+                "phrase:bari-akhorzhak",
+                "phrase:arrandzin-vcharel",
+                "phrase:manry-petq-che"
+              ]
+            }
+          ]
         }
       ]
     },

@@ -8668,5 +8668,515 @@
     "themes": [
       "travel"
     ]
+  },
+  {
+    "id": "matutsogh",
+    "hy": "մատուցող",
+    "pronunciation": "матуцхогх",
+    "exception": false,
+    "ru": "официант",
+    "image": {
+      "file": "img/words/arasaac-6072.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "food"
+    ],
+    "level": 2,
+    "reviewed": false,
+    "themes": [
+      "cafe"
+    ]
+  },
+  {
+    "id": "chashatsank",
+    "hy": "ճաշացանկ",
+    "pronunciation": "чашацханк",
+    "exception": false,
+    "ru": "меню",
+    "image": {
+      "file": "img/words/arasaac-34221.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "food"
+    ],
+    "level": 2,
+    "reviewed": false,
+    "themes": [
+      "cafe"
+    ]
+  },
+  {
+    "id": "apse",
+    "hy": "ափսե",
+    "pronunciation": "апхсе",
+    "exception": false,
+    "ru": "тарелка",
+    "image": {
+      "file": "img/words/arasaac-2532.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "food"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "cafe"
+    ]
+  },
+  {
+    "id": "bazhak",
+    "hy": "բաժակ",
+    "pronunciation": "бажак",
+    "exception": false,
+    "ru": "стакан",
+    "image": {
+      "file": "img/words/arasaac-4768.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "food"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "cafe"
+    ]
+  },
+  {
+    "id": "gavat",
+    "hy": "գավաթ",
+    "pronunciation": "гаватх",
+    "exception": false,
+    "ru": "чашка",
+    "image": {
+      "file": "img/words/arasaac-2581.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "food"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "cafe"
+    ]
+  },
+  {
+    "id": "gdal",
+    "hy": "գդալ",
+    "pronunciation": "гыдал",
+    "exception": false,
+    "ru": "ложка",
+    "image": {
+      "file": "img/words/arasaac-2362.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "food"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "cafe"
+    ]
+  },
+  {
+    "id": "patarakagh",
+    "hy": "պատառաքաղ",
+    "pronunciation": "патарракхагх",
+    "exception": false,
+    "ru": "вилка",
+    "image": {
+      "file": "img/words/arasaac-2588.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "food"
+    ],
+    "level": 2,
+    "reviewed": false,
+    "themes": [
+      "cafe"
+    ]
+  },
+  {
+    "id": "danak",
+    "hy": "դանակ",
+    "pronunciation": "данак",
+    "exception": false,
+    "ru": "нож",
+    "image": {
+      "file": "img/words/arasaac-4931.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "food"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "cafe"
+    ]
+  },
+  {
+    "id": "andzerotsik",
+    "hy": "անձեռոցիկ",
+    "pronunciation": "андзерроцхик",
+    "exception": false,
+    "ru": "салфетка",
+    "image": {
+      "file": "img/words/arasaac-36303.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "food"
+    ],
+    "level": 2,
+    "reviewed": false,
+    "themes": [
+      "cafe"
+    ]
+  },
+  {
+    "id": "aghtsan",
+    "hy": "աղցան",
+    "pronunciation": "агхцхан",
+    "exception": false,
+    "ru": "салат",
+    "image": {
+      "file": "img/words/arasaac-2377.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "food"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "cafe"
+    ]
+  },
+  {
+    "id": "tolma",
+    "hy": "տոլմա",
+    "pronunciation": "толма",
+    "exception": false,
+    "ru": "долма",
+    "image": null,
+    "tags": [
+      "food"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "cafe"
+    ]
+  },
+  {
+    "id": "tan",
+    "hy": "թան",
+    "pronunciation": "тхан",
+    "exception": false,
+    "ru": "тан (кисломолочный напиток)",
+    "image": null,
+    "tags": [
+      "food"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "cafe"
+    ]
+  },
+  {
+    "id": "matsun",
+    "hy": "մածուն",
+    "pronunciation": "мацун",
+    "exception": false,
+    "ru": "мацун (кислое молоко)",
+    "image": {
+      "file": "img/words/arasaac-2618.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "food"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "cafe"
+    ]
+  },
+  {
+    "id": "gata",
+    "hy": "գաթա",
+    "pronunciation": "гатха",
+    "exception": false,
+    "ru": "гата (сладкая выпечка)",
+    "image": {
+      "file": "img/words/arasaac-9057.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "food"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "cafe"
+    ]
+  },
+  {
+    "id": "aghander",
+    "hy": "աղանդեր",
+    "pronunciation": "агхандер",
+    "exception": false,
+    "ru": "десерт",
+    "image": {
+      "file": "img/words/arasaac-21890.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "food"
+    ],
+    "level": 2,
+    "reviewed": false,
+    "themes": [
+      "cafe"
+    ]
+  },
+  {
+    "id": "paghpaghak",
+    "hy": "պաղպաղակ",
+    "pronunciation": "пагхпагхак",
+    "exception": false,
+    "ru": "мороженое",
+    "image": {
+      "file": "img/words/arasaac-35209.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "food"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "cafe"
+    ]
+  },
+  {
+    "id": "tort",
+    "hy": "տորթ",
+    "pronunciation": "тортх",
+    "exception": false,
+    "ru": "торт",
+    "image": {
+      "file": "img/words/arasaac-2579.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "food"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "cafe"
+    ]
+  },
+  {
+    "id": "garejur",
+    "hy": "գարեջուր",
+    "pronunciation": "гареджур",
+    "exception": false,
+    "ru": "пиво",
+    "image": {
+      "file": "img/words/arasaac-2330.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "food"
+    ],
+    "level": 2,
+    "reviewed": false,
+    "themes": [
+      "cafe"
+    ]
+  },
+  {
+    "id": "kaghtsr",
+    "hy": "քաղցր",
+    "pronunciation": "кхагхцхыр",
+    "exception": false,
+    "ru": "сладкий",
+    "image": {
+      "file": "img/words/arasaac-32440.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "food"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "cafe"
+    ]
+  },
+  {
+    "id": "aghi",
+    "hy": "աղի",
+    "pronunciation": "агхи",
+    "exception": false,
+    "ru": "солёный",
+    "image": {
+      "file": "img/words/arasaac-32524.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "food"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "cafe"
+    ]
+  },
+  {
+    "id": "darr",
+    "hy": "դառը",
+    "pronunciation": "дарры",
+    "exception": false,
+    "ru": "горький",
+    "image": {
+      "file": "img/words/arasaac-37832.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "food"
+    ],
+    "level": 2,
+    "reviewed": false,
+    "themes": [
+      "cafe"
+    ]
+  },
+  {
+    "id": "tarm",
+    "hy": "թարմ",
+    "pronunciation": "тхарм",
+    "exception": false,
+    "ru": "свежий",
+    "image": null,
+    "tags": [
+      "food"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "cafe"
+    ]
+  },
+  {
+    "id": "hashiv",
+    "hy": "հաշիվ",
+    "pronunciation": "хашив",
+    "exception": false,
+    "ru": "счёт (в ресторане)",
+    "image": {
+      "file": "img/words/arasaac-5995.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "food"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "cafe"
+    ]
+  },
+  {
+    "id": "teyavchar",
+    "hy": "թեյավճար",
+    "pronunciation": "тхейавчар",
+    "exception": false,
+    "ru": "чаевые",
+    "image": {
+      "file": "img/words/arasaac-38972.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "food"
+    ],
+    "level": 2,
+    "reviewed": false,
+    "themes": [
+      "cafe"
+    ]
+  },
+  {
+    "id": "patver",
+    "hy": "պատվեր",
+    "pronunciation": "патвер",
+    "exception": false,
+    "ru": "заказ",
+    "image": {
+      "file": "img/words/arasaac-15377.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "food"
+    ],
+    "level": 2,
+    "reviewed": false,
+    "themes": [
+      "cafe"
+    ]
   }
 ]
