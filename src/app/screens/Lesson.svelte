@@ -1,8 +1,9 @@
 <script lang="ts">
   import { content, letterById, wordById } from "../../core/content";
-  import { alphabetLessons, lessonLetters, lessonStatus, readableWords } from "../../core/course";
+  import { alphabetLessons, lessonLetters, lessonNewWords, lessonStatus, lessonWords } from "../../core/course";
   import { t } from "../../i18n";
   import ScreenHeader from "../../ui/ScreenHeader.svelte";
+  import WordTiles from "../../ui/WordTiles.svelte";
   import { startLesson } from "../../session/start";
   import { app } from "../state.svelte";
   import NotFound from "./NotFound.svelte";
@@ -15,12 +16,9 @@
   const lesson = $derived(lessons[index]);
   const status = $derived(index >= 0 ? lessonStatus(app.progress, lessons, index) : "locked");
   const letters = $derived(lesson ? lessonLetters(lesson).map((l) => letterById(l)!) : []);
-  // Слова, которые откроются после урока
-  const newWords = $derived.by(() => {
-    if (index < 0) return [];
-    const before = new Set(readableWords(content, lessons.slice(0, index).flatMap(lessonLetters)));
-    return readableWords(content, lessons.slice(0, index + 1).flatMap(lessonLetters)).filter((w) => !before.has(w));
-  });
+  // Слова, которые откроются после урока (docs/09-navigation.md, «Слова урока»)
+  const newCount = $derived(index >= 0 ? lessonNewWords(content, lessons, index).length : 0);
+  const shown = $derived(index >= 0 ? lessonWords(content, lessons, index, 8).map((w) => wordById(w)!) : []);
 
   function unlock() {
     if (!confirm(t("lesson.unlockConfirm"))) return;
@@ -38,9 +36,9 @@
     <p class="muted">{t("lesson.duration")}</p>
   </div>
 
-  {#if newWords.length}
-    <p class="words-title">{t("lesson.newWords", { n: newWords.length })}</p>
-    <p class="words hy" lang="hy">{newWords.slice(0, 8).map((w) => wordById(w)!.hy).join(" · ")}</p>
+  {#if shown.length}
+    <p class="words-title">{t("lesson.newWords", { n: newCount })}</p>
+    <WordTiles words={shown} />
   {/if}
 
   {#if status === "locked"}
@@ -84,13 +82,9 @@
     margin: 8px 0 0;
   }
   .words-title {
-    margin: 20px 4px 4px;
+    margin: 20px 4px 8px;
     color: var(--muted);
     font-size: 14px;
-  }
-  .words {
-    margin: 0 4px;
-    font-size: 20px;
   }
   .locked {
     margin: 20px 4px 8px;

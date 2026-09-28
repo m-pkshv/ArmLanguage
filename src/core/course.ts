@@ -1,4 +1,4 @@
-import type { Content, Lesson } from "./content/types";
+import type { Content, Lesson, Word } from "./content/types";
 import type { Day } from "./dates";
 import { isSeen } from "./progress/knowledge";
 import type { ProgressData } from "./progress/types";
@@ -40,6 +40,32 @@ export function readableWords(c: Content, letterIds: Iterable<string>): string[]
   const known = new Set(letterIds);
   const index = indexLetters(c.letters);
   return c.words.filter((w) => lettersOf(w.hy, index).every((l) => l && known.has(l.id))).map((w) => w.id);
+}
+
+/** Слова, которые стало можно прочитать благодаря уроку `index` (в порядке банка слов). */
+export function lessonNewWords(c: Content, lessons: Lesson[], index: number): string[] {
+  const before = new Set(readableWords(c, lessons.slice(0, index).flatMap(lessonLetters)));
+  return readableWords(c, lessons.slice(0, index + 1).flatMap(lessonLetters)).filter((w) => !before.has(w));
+}
+
+/** Метки служебных слов, имён и фраз — плохие примеры «что теперь можно прочитать». */
+const WEAK_TAGS = ["words", "names", "phrases"];
+
+/** Хороший пример: предмет или понятие с картинкой, читается по правилам. */
+export const isGoodExample = (w: Word): boolean => !!w.image && !w.exception && !w.tags.some((t) => WEAK_TAGS.includes(t));
+
+/**
+ * Слова для показа у урока (docs/09-navigation.md, «Слова урока»): сначала хорошие примеры, среди них —
+ * простые (level 1), потом короткие; при равенстве — порядок банка. Набор для урока всегда один и тот же.
+ */
+export function lessonWords(c: Content, lessons: Lesson[], index: number, limit: number): string[] {
+  const letters = indexLetters(c.letters);
+  const words = lessonNewWords(c, lessons, index).map((id, order) => {
+    const w = c.words.find((x) => x.id === id)!;
+    return { id, order, good: isGoodExample(w) ? 0 : 1, level: w.level, length: lettersOf(w.hy, letters).length };
+  });
+  words.sort((a, b) => a.good - b.good || a.level - b.level || a.length - b.length || a.order - b.order);
+  return words.slice(0, limit).map((w) => w.id);
 }
 
 /** Сколько уроков пройдено сегодня (после двух — советуем закрепить завтра, docs/09-navigation.md, 9.9). */

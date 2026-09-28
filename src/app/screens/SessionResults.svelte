@@ -1,6 +1,6 @@
 <script lang="ts">
   import { content, letterById, wordById } from "../../core/content";
-  import { alphabetLessons, knownLetters, lessonLetters, lessonsDoneOn, nextLessonIndex, readableWords } from "../../core/course";
+  import { alphabetLessons, knownLetters, lessonLetters, lessonNewWords, lessonsDoneOn, lessonWords, nextLessonIndex, readableWords } from "../../core/course";
   import type { SavedSession } from "../../core/session/types";
   import { t } from "../../i18n";
   import { finalPassed, READING_MAX_AVG_MS, READING_MIN_CORRECT, readingResult, score } from "../../session/run";
@@ -8,6 +8,7 @@
   import { THEME_PASS } from "../../session/wordPlan";
   import { startFinalTest, startLesson, startPractice, startThemeLesson, startThemeTest } from "../../session/start";
   import { app, FINAL_PASS, today } from "../state.svelte";
+  import WordTiles from "../../ui/WordTiles.svelte";
   import ConfusionHint from "./ConfusionHint.svelte";
 
   // Итоги занятия и что дальше (docs/09-navigation.md, 9.9).
@@ -29,7 +30,9 @@
   );
   const themePassed = $derived(session.kind === "theme-test" && score(session) >= THEME_PASS);
   const readable = $derived(readableWords(content, knownLetters(app.progress, content)));
-  const sample = $derived(readable.slice(-4).map((id) => wordById(id)!));
+  // Слова, открытые этим уроком (docs/09-navigation.md, «Слова урока»)
+  const newCount = $derived(lessonIndex >= 0 ? lessonNewWords(content, lessons, lessonIndex).length : 0);
+  const sample = $derived(lessonIndex >= 0 ? lessonWords(content, lessons, lessonIndex, 6).map((id) => wordById(id)!) : []);
   const nextIndex = $derived(nextLessonIndex(app.progress, lessons));
   // После двух уроков за день советуем закрепить завтра, но не запрещаем.
   const tired = $derived(lessonsDoneOn(app.progress, today()) >= 2);
@@ -110,8 +113,11 @@
 
   {#if session.kind === "lesson"}
     <section class="box">
-      <p>{t("results.canRead", { n: readable.length })}</p>
-      <p class="hy words" lang="hy">{sample.map((w) => w.hy).join(" · ")}</p>
+      {#if sample.length}
+        <p class="new-title">{t("results.newWords", { n: newCount })}</p>
+        <WordTiles words={sample} />
+      {/if}
+      <p class="muted total">{t("results.readTotal", { n: readable.length })}</p>
     </section>
   {/if}
 
@@ -213,9 +219,12 @@
   .box p {
     margin: 0;
   }
-  .words {
-    margin-top: 6px !important;
-    font-size: 20px;
+  .new-title {
+    margin-bottom: 10px !important;
+  }
+  .total {
+    margin-top: 10px !important;
+    font-size: 14px;
   }
   .hard {
     display: flex;
