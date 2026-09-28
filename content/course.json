@@ -1187,6 +1187,60 @@
               ]
             }
           ]
+        },
+        {
+          "id": "clothes",
+          "title": "Одежда",
+          "emoji": "👕",
+          "status": "available",
+          "lessons": [
+            {
+              "id": "clothes-1",
+              "title": "Что надеть",
+              "newItems": [
+                "word:zgest",
+                "word:kisashrjazgest",
+                "word:bachkon",
+                "word:sviter",
+                "word:jins",
+                "word:kostyum",
+                "word:pizhama",
+                "phrase:bachkond-hagir",
+                "phrase:dur-e-galis-zgesty"
+              ]
+            },
+            {
+              "id": "clothes-2",
+              "title": "Обувь и вещи",
+              "newItems": [
+                "word:keder",
+                "word:hoghatapher",
+                "word:sharf",
+                "word:dzernotsner",
+                "word:goti",
+                "word:poghkap",
+                "word:aknots",
+                "word:andzrevanots",
+                "phrase:qez-sazum-e"
+              ]
+            },
+            {
+              "id": "clothes-3",
+              "title": "Примерка",
+              "newItems": [
+                "word:hagnel",
+                "word:hanel",
+                "word:pordzel",
+                "word:negh",
+                "word:layn",
+                "word:grpan",
+                "word:kochak",
+                "phrase:kareli-e-pordzel",
+                "phrase:indz-poqr-e",
+                "phrase:dzer-chapsy"
+              ]
+            }
+          ]
         }
       ]
     },

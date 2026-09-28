@@ -9612,5 +9612,462 @@
     "themes": [
       "phone"
     ]
+  },
+  {
+    "id": "zgest",
+    "hy": "զգեստ",
+    "pronunciation": "зыгест",
+    "exception": false,
+    "ru": "платье",
+    "image": {
+      "file": "img/words/arasaac-2613.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "clothes"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "clothes"
+    ]
+  },
+  {
+    "id": "kisashrjazgest",
+    "hy": "կիսաշրջազգեստ",
+    "pronunciation": "кисашырджазгест",
+    "exception": false,
+    "ru": "юбка",
+    "image": {
+      "file": "img/words/arasaac-2391.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "clothes"
+    ],
+    "level": 2,
+    "reviewed": false,
+    "themes": [
+      "clothes"
+    ]
+  },
+  {
+    "id": "bachkon",
+    "hy": "բաճկոն",
+    "pronunciation": "бачкон",
+    "exception": false,
+    "ru": "куртка",
+    "image": {
+      "file": "img/words/arasaac-2319.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "clothes"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "clothes"
+    ]
+  },
+  {
+    "id": "sviter",
+    "hy": "սվիտեր",
+    "pronunciation": "свитер",
+    "exception": false,
+    "ru": "свитер",
+    "image": {
+      "file": "img/words/arasaac-2436.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "clothes"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "clothes"
+    ]
+  },
+  {
+    "id": "jins",
+    "hy": "ջինս",
+    "pronunciation": "джинс",
+    "exception": false,
+    "ru": "джинсы",
+    "image": {
+      "file": "img/words/arasaac-24222.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "clothes"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "clothes"
+    ]
+  },
+  {
+    "id": "kostyum",
+    "hy": "կոստյում",
+    "pronunciation": "костюм",
+    "exception": false,
+    "ru": "костюм",
+    "image": {
+      "file": "img/words/arasaac-39694.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "clothes"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "clothes"
+    ]
+  },
+  {
+    "id": "pizhama",
+    "hy": "պիժամա",
+    "pronunciation": "пижама",
+    "exception": false,
+    "ru": "пижама",
+    "image": {
+      "file": "img/words/arasaac-2522.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "clothes"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "clothes"
+    ]
+  },
+  {
+    "id": "keder",
+    "hy": "կեդեր",
+    "pronunciation": "кедер",
+    "exception": false,
+    "ru": "кеды, кроссовки",
+    "image": {
+      "file": "img/words/arasaac-2621.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "clothes"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "clothes"
+    ]
+  },
+  {
+    "id": "hoghatapher",
+    "hy": "հողաթափեր",
+    "pronunciation": "хогхатхапхер",
+    "exception": false,
+    "ru": "тапочки",
+    "image": {
+      "file": "img/words/arasaac-2620.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "clothes"
+    ],
+    "level": 2,
+    "reviewed": false,
+    "themes": [
+      "clothes"
+    ]
+  },
+  {
+    "id": "sharf",
+    "hy": "շարֆ",
+    "pronunciation": "шарф",
+    "exception": false,
+    "ru": "шарф",
+    "image": {
+      "file": "img/words/arasaac-2290.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "clothes"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "clothes"
+    ]
+  },
+  {
+    "id": "dzernotsner",
+    "hy": "ձեռնոցներ",
+    "pronunciation": "дзерноцхнер",
+    "exception": false,
+    "ru": "перчатки",
+    "image": {
+      "file": "img/words/arasaac-2415.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "clothes"
+    ],
+    "level": 2,
+    "reviewed": false,
+    "themes": [
+      "clothes"
+    ]
+  },
+  {
+    "id": "goti",
+    "hy": "գոտի",
+    "pronunciation": "готи",
+    "exception": false,
+    "ru": "ремень, пояс",
+    "image": {
+      "file": "img/words/arasaac-2336.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "clothes"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "clothes"
+    ]
+  },
+  {
+    "id": "poghkap",
+    "hy": "փողկապ",
+    "pronunciation": "пхогхкап",
+    "exception": false,
+    "ru": "галстук",
+    "image": {
+      "file": "img/words/arasaac-2716.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "clothes"
+    ],
+    "level": 2,
+    "reviewed": false,
+    "themes": [
+      "clothes"
+    ]
+  },
+  {
+    "id": "aknots",
+    "hy": "ակնոց",
+    "pronunciation": "акноцх",
+    "exception": false,
+    "ru": "очки",
+    "image": {
+      "file": "img/words/arasaac-3329.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "clothes"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "clothes"
+    ]
+  },
+  {
+    "id": "andzrevanots",
+    "hy": "անձրևանոց",
+    "pronunciation": "андзреваноцх",
+    "exception": false,
+    "ru": "зонт",
+    "image": {
+      "file": "img/words/arasaac-2500.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "clothes"
+    ],
+    "level": 2,
+    "reviewed": false,
+    "themes": [
+      "clothes"
+    ]
+  },
+  {
+    "id": "hagnel",
+    "hy": "հագնել",
+    "pronunciation": "хагнел",
+    "exception": false,
+    "ru": "надевать (одежду)",
+    "image": {
+      "file": "img/words/arasaac-34494.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "clothes"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "clothes"
+    ]
+  },
+  {
+    "id": "hanel",
+    "hy": "հանել",
+    "pronunciation": "ханел",
+    "exception": false,
+    "ru": "снимать (одежду)",
+    "image": {
+      "file": "img/words/arasaac-11232.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "clothes"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "clothes"
+    ]
+  },
+  {
+    "id": "pordzel",
+    "hy": "փորձել",
+    "pronunciation": "пхордзел",
+    "exception": false,
+    "ru": "примерять; пробовать",
+    "image": null,
+    "tags": [
+      "clothes"
+    ],
+    "level": 2,
+    "reviewed": false,
+    "themes": [
+      "clothes"
+    ]
+  },
+  {
+    "id": "negh",
+    "hy": "նեղ",
+    "pronunciation": "негх",
+    "exception": false,
+    "ru": "узкий, тесный",
+    "image": {
+      "file": "img/words/arasaac-4643.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "clothes"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "clothes"
+    ]
+  },
+  {
+    "id": "layn",
+    "hy": "լայն",
+    "pronunciation": "лайн",
+    "exception": false,
+    "ru": "широкий",
+    "image": {
+      "file": "img/words/arasaac-4559.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "clothes"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "clothes"
+    ]
+  },
+  {
+    "id": "grpan",
+    "hy": "գրպան",
+    "pronunciation": "гырпан",
+    "exception": false,
+    "ru": "карман",
+    "image": {
+      "file": "img/words/arasaac-6937.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "clothes"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "clothes"
+    ]
+  },
+  {
+    "id": "kochak",
+    "hy": "կոճակ",
+    "pronunciation": "кочак",
+    "exception": false,
+    "ru": "пуговица",
+    "image": {
+      "file": "img/words/arasaac-2668.webp",
+      "source": "ARASAAC",
+      "license": "CC BY-NC-SA 4.0",
+      "author": "Sergio Palao (ARASAAC, Правительство Арагона)"
+    },
+    "tags": [
+      "clothes"
+    ],
+    "level": 1,
+    "reviewed": false,
+    "themes": [
+      "clothes"
+    ]
   }
 ]
